@@ -1,0 +1,26 @@
+# overnorms-client
+
+My own portfolio written in React using Next.js
+
+## Installation
+
+```bash
+$ npm install
+```
+
+## Running the app
+
+```bash
+# development
+$ npm run dev
+
+# build
+$ npm run build
+
+# production
+$ npm run start
+```
+
+### License
+
+© 2019 Łukasz Warchoł. All rights reserved
