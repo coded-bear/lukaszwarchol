@@ -1,4 +1,4 @@
-# overnorms-client
+# lukaszwarchol
 
 My own portfolio written in React using Next.js
 
