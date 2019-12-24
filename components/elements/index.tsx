@@ -14,11 +14,11 @@ export const Heading: React.FC<HeadingProps> = props => {
 };
 
 export const Button: React.FC<ButtonProps> = props => {
-  return <button onClick={props.onClick}>{props.title}</button>;
+  return <button onClick={props.onClick}>{props.text}</button>;
 };
 
 export const LinkButton: React.FC<LinkButtonProps> = props => (
   <Link href={props.href} as={props.as} prefetch={false}>
-    <a>{props.title}</a>
+    <a>{props.text}</a>
   </Link>
 );

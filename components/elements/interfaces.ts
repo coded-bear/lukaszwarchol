@@ -7,12 +7,12 @@ export interface HeadingProps {
 }
 
 export interface ButtonProps {
-  title: string;
+  text: string;
   onClick: any;
 }
 
 export interface LinkButtonProps {
-  title: string;
+  text: string;
   href: string;
   as: string;
 }
