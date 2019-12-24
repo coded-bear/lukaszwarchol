@@ -1,5 +1,6 @@
 import next from "next";
 import express from "express";
+import router from "./router";
 import compression from "compression";
 import { Server, Req, Res, Err } from "../common/utils/types";
 
@@ -29,9 +30,7 @@ app.prepare().then(() => {
   );
   server.use(compression());
 
-  server.get("/page", (req: Req, res: Res) => {
-    return app.render(req, res, "/page", req.query);
-  });
+  router(server, app);
 
   server.get("*", (req: Req, res: Res) => handle(req, res));
 
