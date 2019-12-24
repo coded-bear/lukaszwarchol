@@ -1,5 +1,10 @@
 import React from "react";
+import { Title } from "../elements";
 
-const Projects: React.FC = () => <div>Projects</div>;
+const Projects: React.FC = () => (
+  <>
+    <Title text="Projects" />
+  </>
+);
 
 export default Projects;

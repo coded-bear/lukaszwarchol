@@ -1,5 +1,5 @@
 export interface TitleProps {
-  title: string;
+  text: string;
 }
 
 export interface HeadingProps {

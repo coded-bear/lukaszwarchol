@@ -5,7 +5,7 @@ import { TitleProps, HeadingProps, ButtonProps, LinkButtonProps } from "./interf
 
 export const Title: React.FC<TitleProps> = props => (
   <Head>
-    <title>{props.title}</title>
+    <title>{props.text}</title>
   </Head>
 );
 
