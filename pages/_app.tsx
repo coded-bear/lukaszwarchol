@@ -1,10 +1,15 @@
 import App from "next/app";
+import Layout from "../Layout";
 
 class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
 
-    return <Component {...pageProps} />;
+    return (
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    );
   }
 }
 
