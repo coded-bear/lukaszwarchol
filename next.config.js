@@ -6,7 +6,11 @@ module.exports = withImages({
   exportTrailingSlash: true,
   exportPathMap: function() {
     return {
-      "/page": { page: "/page" }
+      "/": { page: "/home" },
+      "/about": { page: "/about" },
+      "/services": { page: "/services" },
+      "/projects": { page: "/projects" },
+      "/contact": { page: "/contact" }
     };
   },
   webpack: config => {
