@@ -9,7 +9,6 @@ const Navbar: React.FC = () => (
 
     <div>
       <div>{/* lang checking */}</div>
-      <div>{/* mode checking */}</div>
       <button>{/* navbtn */}</button>
     </div>
   </header>
