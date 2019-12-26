@@ -20,11 +20,11 @@ const Navigation: React.FC = () => (
         <img src={imgClose} alt="close" />
       </button>
 
-      <NavElem href="" as="" text="Home" />
-      <NavElem href="" as="" text="About" />
-      <NavElem href="" as="" text="Services" />
-      <NavElem href="" as="" text="Projects" />
-      <NavElem href="" as="" text="Contact" />
+      <NavElem href="/home" as="/" text="Home" />
+      <NavElem href="/about" as="/about" text="About" />
+      <NavElem href="/services" as="/services" text="Services" />
+      <NavElem href="/projects" as="/projects" text="Projects" />
+      <NavElem href="/contact" as="/contact" text="Contact" />
 
       <SocialMedia />
     </ul>
