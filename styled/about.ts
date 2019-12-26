@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import * as colors from "./colors";
 
 export const StyledAbout = styled.section`
   display: flex;
@@ -25,4 +26,11 @@ export const StyledAboutContent = styled.div`
   a {
     margin-top: 20px;
   }
+`;
+
+// EXPERIENCES
+
+export const StyledExperiences = styled.section`
+  padding: 80px;
+  background-color: ${colors.LIGHT_GRAY};
 `;

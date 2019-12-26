@@ -1,5 +1,6 @@
 import React from "react";
 import { Title, Heading, LinkButton } from "../elements";
+import Experiences from "./Experiences";
 import { StyledAbout, StyledAboutImage, StyledAboutContent } from "../../styled/about";
 
 const About: React.FC = () => (
@@ -30,6 +31,8 @@ const About: React.FC = () => (
         <LinkButton href="/contact" as="/contact" text="Hire me" />
       </StyledAboutContent>
     </StyledAbout>
+
+    <Experiences />
   </>
 );
 
