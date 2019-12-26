@@ -9,7 +9,9 @@ export const StyledHeader = styled.header`
   padding: 20px;
 `;
 
-export const StyledLogo = styled.div`
+export const StyledLogo = styled.h1`
+  margin: 0;
+
   img {
     height: 70px;
   }
