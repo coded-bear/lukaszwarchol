@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     color: ${colors.PRIMARY_TEXT};
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   *, *::before, *::after {

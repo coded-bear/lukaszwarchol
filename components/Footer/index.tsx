@@ -10,9 +10,9 @@ import imgInstagram from "../../static/images/common/instagram.svg";
 
 const NavElem: React.FC<NavElemProps> = props => (
   <Link href={props.href} as={props.as} prefetch={false}>
-    <li>
-      <a>{props.text}</a>
-    </li>
+    <a>
+      <li>{props.text}</li>
+    </a>
   </Link>
 );
 
@@ -26,11 +26,11 @@ const Footer: React.FC = () => (
   <StyledFooter>
     <nav>
       <ul>
-        <NavElem href="" as="" text="Home" />
-        <NavElem href="" as="" text="About" />
-        <NavElem href="" as="" text="Services" />
-        <NavElem href="" as="" text="Projects" />
-        <NavElem href="" as="" text="Contact" />
+        <NavElem href="/home" as="/" text="Home" />
+        <NavElem href="/about" as="/about" text="About" />
+        <NavElem href="/services" as="/services" text="Services" />
+        <NavElem href="/projects" as="/projects" text="Projects" />
+        <NavElem href="/contact" as="/contact" text="Contact" />
       </ul>
     </nav>
 
