@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { TitleProps, HeadingProps, ButtonProps, LinkButtonProps } from "./interfaces";
+import { StyledHeading } from "../../styled/layout";
 import { APP_NAME } from "../../common/utils/constants";
 
 export const Title: React.FC<TitleProps> = props => (
@@ -11,7 +12,11 @@ export const Title: React.FC<TitleProps> = props => (
 );
 
 export const Heading: React.FC<HeadingProps> = props => {
-  return <h2>{props.text}</h2>;
+  return (
+    <StyledHeading dark={props.dark} left={props.left}>
+      {props.text}
+    </StyledHeading>
+  );
 };
 
 export const Button: React.FC<ButtonProps> = props => {

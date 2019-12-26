@@ -4,6 +4,8 @@ export interface TitleProps {
 
 export interface HeadingProps {
   text: string;
+  dark?: boolean;
+  left?: boolean;
 }
 
 export interface ButtonProps {
