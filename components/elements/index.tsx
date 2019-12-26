@@ -2,10 +2,11 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { TitleProps, HeadingProps, ButtonProps, LinkButtonProps } from "./interfaces";
+import { APP_NAME } from "../../common/utils/constants";
 
 export const Title: React.FC<TitleProps> = props => (
   <Head>
-    <title>{props.text}</title>
+    <title>{APP_NAME + " | " + props.text}</title>
   </Head>
 );
 

@@ -3,7 +3,7 @@ import { Title } from "../elements";
 
 const Home: React.FC = () => (
   <>
-    <Title text="Home" />
+    <Title text="JavaScript Software Developer" />
   </>
 );
 
