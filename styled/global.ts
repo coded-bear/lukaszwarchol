@@ -23,9 +23,3 @@ export const GlobalStyle = createGlobalStyle`
     color: ${colors.PRIMARY_YELLOW};
   }
 `;
-
-export const Container = styled.div`
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-`;

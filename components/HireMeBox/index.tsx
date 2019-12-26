@@ -1,6 +1,6 @@
 import React from "react";
 import { LinkButton } from "../elements";
-import { Container } from "../../styled/global";
+import { Container } from "../../styled/layout";
 import { StyledHireMeBox } from "../../styled/layout";
 
 const HireMeBox: React.FC = () => (
