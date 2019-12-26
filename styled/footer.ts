@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
+  padding-top: 40px;
   text-align: center;
 
   nav {
