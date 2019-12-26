@@ -25,6 +25,7 @@ class MyDocument extends Document<Props> {
         <Head>
           <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
           <link rel="icon" href="/static/images/favicon.ico" />
+          <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet"></link>
 
           {styleTags}
         </Head>

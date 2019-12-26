@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     color: ${colors.PRIMARY_TEXT};
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
   }
 
