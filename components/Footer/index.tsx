@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { NavElemProps } from "./interfaces";
+import { StyledFooter } from "../../styled/footer";
 
 const NavElem: React.FC<NavElemProps> = props => (
   <Link href={props.href} as={props.as} prefetch={false}>
@@ -11,9 +12,7 @@ const NavElem: React.FC<NavElemProps> = props => (
 );
 
 const Footer: React.FC = () => (
-  <footer>
-    <div>{/* social media */}</div>
-
+  <StyledFooter>
     <nav>
       <ul>
         <NavElem href="" as="" text="Home" />
@@ -24,6 +23,8 @@ const Footer: React.FC = () => (
       </ul>
     </nav>
 
+    <div>{/* social media */}</div>
+
     <p>
       <Link href="" as="" prefetch={false}>
         <a>Privacy Policy</a>
@@ -33,7 +34,7 @@ const Footer: React.FC = () => (
     <p>
       &copy; {new Date().getFullYear()} <span>Łukasz Warchoł</span>. All rights reserved
     </p>
-  </footer>
+  </StyledFooter>
 );
 
 export default Footer;
