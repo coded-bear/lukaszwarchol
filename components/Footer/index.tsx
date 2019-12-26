@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { SocialMedia } from "../../components/elements";
+import { SocialMedia } from "../elements";
 import { NavElemProps } from "./interfaces";
 import { StyledFooter } from "../../styled/footer";
 

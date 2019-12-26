@@ -1,5 +1,5 @@
 <svg id="linkedin" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-  <path id="Path_88" data-name="Path 88" d="M27.87,28.106h.007v-11c0-5.382-1.159-9.529-7.451-9.529a6.532,6.532,0,0,0-5.884,3.234h-.088V8.077H8.489V28.105H14.7V18.188c0-2.611.5-5.136,3.729-5.136,3.186,0,3.234,2.98,3.234,5.3v9.751Z" transform="translate(2.122 1.893)"/>
-  <path id="Path_89" data-name="Path 89" d="M.4,7.977h6.22V28.006H.4Z" transform="translate(0.099 1.994)"/>
-  <path id="Path_90" data-name="Path 90" d="M3.6,0A3.619,3.619,0,1,0,7.2,3.6,3.6,3.6,0,0,0,3.6,0Z"/>
+  <path id="Path_88" data-name="Path 88" d="M27.87,28.106h.007v-11c0-5.382-1.159-9.529-7.451-9.529a6.532,6.532,0,0,0-5.884,3.234h-.088V8.077H8.489V28.105H14.7V18.188c0-2.611.5-5.136,3.729-5.136,3.186,0,3.234,2.98,3.234,5.3v9.751Z" transform="translate(2.122 1.893)" fill="#2e2e2e"/>
+  <path id="Path_89" data-name="Path 89" d="M.4,7.977h6.22V28.006H.4Z" transform="translate(0.099 1.994)" fill="#2e2e2e"/>
+  <path id="Path_90" data-name="Path 90" d="M3.6,0A3.619,3.619,0,1,0,7.2,3.6,3.6,3.6,0,0,0,3.6,0Z" fill="#2e2e2e"/>
 </svg>
