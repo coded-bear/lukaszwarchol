@@ -21,4 +21,8 @@ export const StyledAboutImage = styled.div`
 export const StyledAboutContent = styled.div`
   flex: 3;
   padding: 20px;
+
+  a {
+    margin-top: 20px;
+  }
 `;
