@@ -10,7 +10,8 @@ module.exports = withImages({
       "/about": { page: "/about" },
       "/services": { page: "/services" },
       "/projects": { page: "/projects" },
-      "/contact": { page: "/contact" }
+      "/contact": { page: "/contact" },
+      "/privacy-policy": { page: "/privacyPolicy" }
     };
   },
   webpack: config => {

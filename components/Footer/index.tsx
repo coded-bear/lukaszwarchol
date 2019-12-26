@@ -42,7 +42,7 @@ const Footer: React.FC = () => (
     </StyledSocialMedia>
 
     <p>
-      <Link href="" as="" prefetch={false}>
+      <Link href="/privacyPolicy" as="privacy-policy" prefetch={false}>
         <a>Privacy Policy</a>
       </Link>
     </p>
