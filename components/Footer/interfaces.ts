@@ -3,3 +3,9 @@ export interface NavElemProps {
   as: string;
   text: string;
 }
+
+export interface SocialMediaElemProps {
+  href: string;
+  name: string;
+  image: string;
+}
