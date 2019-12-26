@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { NavElemProps, SocialMediaElemProps } from "./interfaces";
-import { StyledFooter } from "../../styled/footer";
+import { StyledFooter, StyledSocialMedia } from "../../styled/footer";
 
 import imgFacebook from "../../static/images/common/facebook.svg";
 import imgLinkedin from "../../static/images/common/linkedin.svg";
@@ -34,12 +34,12 @@ const Footer: React.FC = () => (
       </ul>
     </nav>
 
-    <div>
+    <StyledSocialMedia>
       <SocialMediaElem href="https://www.facebook.com/lukasz.warchol14" name="Facebook" image={imgFacebook} />
       <SocialMediaElem href="https://www.linkedin.com/in/lukasz-warchol/" name="LinkedIn" image={imgLinkedin} />
       <SocialMediaElem href="https://github.com/coded-bear" name="GitHub" image={imgGithub} />
       <SocialMediaElem href="https://www.instagram.com/lukasz.warchol/" name="Instagram" image={imgInstagram} />
-    </div>
+    </StyledSocialMedia>
 
     <p>
       <Link href="" as="" prefetch={false}>

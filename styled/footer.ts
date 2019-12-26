@@ -17,3 +17,18 @@ export const StyledFooter = styled.footer`
     }
   }
 `;
+
+export const StyledSocialMedia = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  a {
+    margin: 0 10px;
+    padding: 0 5px;
+
+    img {
+      height: 30px;
+    }
+  }
+`;
