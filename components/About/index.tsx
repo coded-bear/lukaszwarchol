@@ -1,6 +1,7 @@
 import React from "react";
 import { Title, Heading, LinkButton } from "../elements";
 import Experiences from "./Experiences";
+import Technologies from "./Technologies";
 import { StyledAbout, StyledAboutImage, StyledAboutContent } from "../../styled/about";
 
 const About: React.FC = () => (
@@ -33,6 +34,8 @@ const About: React.FC = () => (
     </StyledAbout>
 
     <Experiences />
+
+    <Technologies />
   </>
 );
 
