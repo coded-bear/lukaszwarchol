@@ -30,19 +30,3 @@ export const StyledFooter = styled.footer`
     }
   }
 `;
-
-export const StyledSocialMedia = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin: 25px auto;
-
-  a {
-    margin: 0 10px;
-    padding: 0 5px;
-
-    img {
-      height: 30px;
-    }
-  }
-`;

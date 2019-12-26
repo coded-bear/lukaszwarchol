@@ -1,12 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import { NavElemProps, SocialMediaElemProps } from "./interfaces";
-import { StyledFooter, StyledSocialMedia } from "../../styled/footer";
-
-import imgFacebook from "../../static/images/common/facebook.svg";
-import imgLinkedin from "../../static/images/common/linkedin.svg";
-import imgGithub from "../../static/images/common/github.svg";
-import imgInstagram from "../../static/images/common/instagram.svg";
+import { SocialMedia } from "../../components/elements";
+import { NavElemProps } from "./interfaces";
+import { StyledFooter } from "../../styled/footer";
 
 const NavElem: React.FC<NavElemProps> = props => (
   <Link href={props.href} as={props.as} prefetch={false}>
@@ -14,12 +10,6 @@ const NavElem: React.FC<NavElemProps> = props => (
       <li>{props.text}</li>
     </a>
   </Link>
-);
-
-const SocialMediaElem: React.FC<SocialMediaElemProps> = props => (
-  <a href={props.href} target="_blank">
-    <img src={props.image} alt={props.name} />
-  </a>
 );
 
 const Footer: React.FC = () => (
@@ -34,12 +24,7 @@ const Footer: React.FC = () => (
       </ul>
     </nav>
 
-    <StyledSocialMedia>
-      <SocialMediaElem href="https://www.facebook.com/lukasz.warchol14" name="Facebook" image={imgFacebook} />
-      <SocialMediaElem href="https://www.linkedin.com/in/lukasz-warchol/" name="LinkedIn" image={imgLinkedin} />
-      <SocialMediaElem href="https://github.com/coded-bear" name="GitHub" image={imgGithub} />
-      <SocialMediaElem href="https://www.instagram.com/lukasz.warchol/" name="Instagram" image={imgInstagram} />
-    </StyledSocialMedia>
+    <SocialMedia />
 
     <p>
       <Link href="/privacyPolicy" as="privacy-policy" prefetch={false}>

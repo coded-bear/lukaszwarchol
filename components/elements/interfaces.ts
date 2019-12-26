@@ -18,3 +18,9 @@ export interface LinkButtonProps {
   as: string;
   light?: boolean;
 }
+
+export interface SocialMediaElemProps {
+  href: string;
+  name: string;
+  image: string;
+}
