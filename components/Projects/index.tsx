@@ -1,9 +1,11 @@
 import React from "react";
-import { Title } from "../elements";
+import { Title, Heading } from "../elements";
 
 const Projects: React.FC = () => (
   <>
     <Title text="Projects" />
+
+    <Heading text="Projects" />
   </>
 );
 
