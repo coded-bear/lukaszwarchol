@@ -39,7 +39,7 @@ export const StyledLinkButton = styled.a`
   display: inline-flex;
   padding: 15px 50px;
   background-color: ${(props: StyledLinkButtonProps) => (props.light ? "#ffffff" : colors.PRIMARY_YELLOW)};
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
