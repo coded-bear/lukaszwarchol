@@ -1,9 +1,10 @@
 const withImages = require("next-images");
 
 module.exports = withImages({
-  inlineImageLimit: false,
+  assetPrefix: "http://localhost:3000",
+  inlineImageLimit: 16384,
   useFileSystemPublicRoutes: false,
-  exportTrailingSlash: true,
+  // exportTrailingSlash: true,
   exportPathMap: function() {
     return {
       "/": { page: "/home" },
