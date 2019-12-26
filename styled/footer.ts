@@ -22,6 +22,7 @@ export const StyledSocialMedia = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  /* margin: 30px auto; */
 
   a {
     margin: 0 10px;

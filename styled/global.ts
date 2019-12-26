@@ -13,6 +13,11 @@ export const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
     box-sizing: border-box;
   }
+
+  a {
+    color: ${colors.PRIMARY_TEXT};
+    text-decoration: none;
+  }
   
   span {
     color: ${colors.PRIMARY_YELLOW};
