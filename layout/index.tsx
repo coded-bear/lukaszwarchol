@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 import HireMeBox from "../components/HireMeBox";
 import Footer from "../components/Footer";
 import { LayoutProps } from "./interfaces";
@@ -9,7 +9,7 @@ const Layout: React.FC<LayoutProps> = props => (
   <>
     <GlobalStyle />
 
-    <Navbar />
+    <Header />
 
     <main>
       {props.children}
