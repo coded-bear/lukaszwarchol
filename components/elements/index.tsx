@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { TitleProps, HeadingProps, ButtonProps, LinkButtonProps } from "./interfaces";
-import { StyledHeading } from "../../styled/layout";
+import { TitleProps, HeadingProps, LinkButtonProps } from "./interfaces";
+import { StyledHeading, StyledLinkButton } from "../../styled/layout";
 import { APP_NAME } from "../../common/utils/constants";
 
 export const Title: React.FC<TitleProps> = props => (
@@ -19,12 +19,8 @@ export const Heading: React.FC<HeadingProps> = props => {
   );
 };
 
-export const Button: React.FC<ButtonProps> = props => {
-  return <button onClick={props.onClick}>{props.text}</button>;
-};
-
 export const LinkButton: React.FC<LinkButtonProps> = props => (
   <Link href={props.href} as={props.as} prefetch={false}>
-    <a>{props.text}</a>
+    <StyledLinkButton light={props.light}>{props.text}</StyledLinkButton>
   </Link>
 );

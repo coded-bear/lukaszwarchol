@@ -8,7 +8,7 @@ const HireMeBox: React.FC = () => (
     <Container>
       <Heading dark left text="Have Any Project in Mind?" />
 
-      <LinkButton text="Hire Me" href="/contact" as="/contact" />
+      <LinkButton light href="/contact" as="/contact" text="Hire Me" />
     </Container>
   </StyledHireMeBox>
 );

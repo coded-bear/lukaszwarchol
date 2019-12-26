@@ -6,20 +6,19 @@ interface StyledHeadingProps {
   left?: boolean;
 }
 
+interface StyledLinkButtonProps {
+  light?: boolean;
+}
+
 export const Container = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: auto;
 `;
 
-export const StyledHireMeBox = styled.section`
-  padding: 60px 20px;
-  background-color: ${colors.PRIMARY_YELLOW};
-`;
-
 export const StyledHeading = styled.h2`
   position: relative;
-  margin: 0;
+  margin: 0 0 30px 0;
   padding-bottom: 10px;
   font-size: 44px;
   text-align: ${(props: StyledHeadingProps) => (props.left ? "left" : "center")};
@@ -34,4 +33,19 @@ export const StyledHeading = styled.h2`
     transform: ${(props: StyledHeadingProps) => (props.left ? "none" : "translate(-50%)")};
     background-color: ${(props: StyledHeadingProps) => (props.dark ? colors.PRIMARY_TEXT : colors.PRIMARY_YELLOW)};
   }
+`;
+
+export const StyledLinkButton = styled.a`
+  display: inline-flex;
+  padding: 15px 50px;
+  background-color: ${(props: StyledLinkButtonProps) => (props.light ? "#ffffff" : colors.PRIMARY_YELLOW)};
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+`;
+
+export const StyledHireMeBox = styled.section`
+  padding: 60px 20px;
+  background-color: ${colors.PRIMARY_YELLOW};
 `;

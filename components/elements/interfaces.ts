@@ -8,13 +8,9 @@ export interface HeadingProps {
   left?: boolean;
 }
 
-export interface ButtonProps {
-  text: string;
-  onClick: any;
-}
-
 export interface LinkButtonProps {
   text: string;
   href: string;
   as: string;
+  light?: boolean;
 }
