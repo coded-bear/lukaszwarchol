@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import * as colors from "./colors";
 
 export const GlobalStyle = createGlobalStyle`
@@ -22,4 +22,10 @@ export const GlobalStyle = createGlobalStyle`
   span {
     color: ${colors.PRIMARY_YELLOW};
   }
+`;
+
+export const Container = styled.div`
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 `;
