@@ -38,7 +38,7 @@ export const StyledHeading = styled.h2`
 export const StyledSubTitle = styled.p`
   width: 100%;
   max-width: 700px;
-  margin: auto;
+  margin: 0 auto 80px auto;
   text-align: center;
 `;
 
