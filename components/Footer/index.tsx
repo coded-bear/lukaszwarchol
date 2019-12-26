@@ -31,9 +31,7 @@ const Footer: React.FC = () => (
       </Link>
     </p>
 
-    <p>
-      &copy; {new Date().getFullYear()} <span>Łukasz Warchoł</span>. All rights reserved
-    </p>
+    <p>&copy; {new Date().getFullYear()} Łukasz Warchoł. All rights reserved</p>
   </StyledFooter>
 );
 
