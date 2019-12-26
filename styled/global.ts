@@ -29,6 +29,10 @@ export const GlobalStyle = createGlobalStyle`
     color: ${colors.PRIMARY_TEXT};
     text-decoration: none;
   }
+
+  p {
+    line-height: 22px;
+  }
   
   span {
     color: ${colors.PRIMARY_YELLOW};

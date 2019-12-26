@@ -8,6 +8,10 @@ export interface HeadingProps {
   left?: boolean;
 }
 
+export interface SubTitleProps {
+  text: string;
+}
+
 export interface LinkButtonProps {
   text: string;
   href: string;

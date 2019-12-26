@@ -35,6 +35,13 @@ export const StyledHeading = styled.h2`
   }
 `;
 
+export const StyledSubTitle = styled.p`
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+`;
+
 export const StyledLinkButton = styled.a`
   display: inline-flex;
   padding: 15px 50px;
