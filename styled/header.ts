@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import * as colors from "./colors";
 
 export const StyledHeader = styled.header`
   display: flex;
@@ -39,5 +40,56 @@ export const StyledMenuBtn = styled.button`
 
   img {
     height: 28px;
+  }
+`;
+
+export const StyledNavigation = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: ${colors.PRIMARY_YELLOW};
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+
+  button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    img {
+      height: 70px;
+    }
+  }
+
+  nav {
+    ul {
+      margin: 40px 0;
+      padding-left: 0;
+      list-style: none;
+
+      li {
+        margin: 15px;
+        padding: 5px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+`;
+
+export const StyledNavigationSocialMedia = styled.div`
+  img {
+    height: 40px !important;
+    margin: 0 5px;
   }
 `;

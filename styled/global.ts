@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     color: ${colors.PRIMARY_TEXT};
     font-family: 'Raleway', sans-serif;
     font-size: 16px;

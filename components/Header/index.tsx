@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
+import Navigation from "../Navigation";
 import { StyledHeader, StyledLogo, StyledHeaderRightBox, StyledLangBtns, StyledMenuBtn } from "../../styled/header";
+
 import logo from "../../static/images/common/logo.svg";
 import imgMenu from "../../static/images/common/menu.svg";
 
@@ -28,6 +30,8 @@ const Header: React.FC = () => (
         <img src={imgMenu} alt="menu" />
       </StyledMenuBtn>
     </StyledHeaderRightBox>
+
+    <Navigation />
   </StyledHeader>
 );
 
