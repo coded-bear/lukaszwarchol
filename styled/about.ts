@@ -31,7 +31,7 @@ export const StyledAboutContent = styled.div`
 // EXPERIENCES
 
 export const StyledExperiences = styled.section`
-  padding: 80px;
+  padding: 80px 0;
   background-color: ${colors.LIGHT_GRAY};
 `;
 
@@ -66,5 +66,30 @@ export const StyledExperienceElem = styled.div`
 
   @media only screen and (max-width: 900px) {
     width: 100%;
+  }
+`;
+
+// TECHNOLOGIES
+
+export const StyledTechnologies = styled.section`
+  padding: 80px 0;
+`;
+
+export const StyledTechnologiesBox = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+`;
+
+export const StyledTechnology = styled.div`
+  width: 100px;
+  margin: 20px;
+  font-size: 18px;
+  text-align: center;
+
+  img {
+    max-width: 90px;
+    height: 50px;
   }
 `;

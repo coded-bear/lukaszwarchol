@@ -3,3 +3,8 @@ export interface ExperienceElemProps {
   title: string;
   text: string;
 }
+
+export interface TechnologyProps {
+  image: string;
+  name: string;
+}
