@@ -8,6 +8,17 @@ export const GlobalStyle = createGlobalStyle`
     color: ${colors.PRIMARY_TEXT};
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 25%;
+      height: 50vh;
+      background-color: ${colors.PRIMARY_YELLOW};
+      z-index: -1;
+    }
   }
 
   *, *::before, *::after {
