@@ -1,5 +1,6 @@
 import React from "react";
 import { Title, Heading, SubTitle } from "../elements";
+import ContactForm from "./ContactForm";
 import { SocialMediaElemProps } from "./interfaces";
 
 import imgLocation from "../../static/images/contact/location.svg";
@@ -40,7 +41,7 @@ const Contact: React.FC = () => (
         </div>
       </div>
 
-      <form></form>
+      <ContactForm />
     </div>
   </section>
 );
