@@ -1,5 +1,5 @@
 import React from "react";
-import { LinkButton } from "components/elements";
+import { LinkButton } from "../../elements";
 import { QuestionElemProps } from "../interfaces";
 
 import imgPerson from "../../../static/images/home/person.svg";

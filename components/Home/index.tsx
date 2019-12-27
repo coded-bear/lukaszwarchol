@@ -6,6 +6,8 @@ import {
   SocialMediaHomeHeaderBox
 } from "../../styled/home";
 import { Title, LinkButton, SocialMedia } from "../elements";
+import HomQuestions from "./HomeQuestions";
+import HomeNumbers from "./HomeNumbers";
 
 const Home: React.FC = () => (
   <>
@@ -32,6 +34,10 @@ const Home: React.FC = () => (
         <SocialMedia />
       </SocialMediaHomeHeaderBox>
     </StyledHomeHeader>
+
+    <HomQuestions />
+
+    <HomeNumbers />
   </>
 );
 
