@@ -1,12 +1,21 @@
 import React from "react";
-import Router from "next/router";
 import { Res, ErrInterface } from "../common/utils/types";
+import { LinkButton } from "../components/elements";
+import { StyledError, StyledErrorContent, StyledErrorImage } from "../styled/error";
+import imgFoot from "../static/images/common/foot.svg";
 
 const Error = ({ statusCode }: { statusCode: number }) => (
-  <div>
-    <h2>{statusCode ? `An error ${statusCode} occurred on server` : "An error occurred on client"}</h2>
-    <button onClick={() => Router.back()}>Go back to the previous page</button>
-  </div>
+  <StyledError>
+    <StyledErrorContent>
+      <h2>{statusCode}</h2>
+      <p>Page not found</p>
+      <LinkButton href="/home" as="/" text="Homepage" />
+    </StyledErrorContent>
+
+    <StyledErrorImage>
+      <img src={imgFoot} alt="foot" />
+    </StyledErrorImage>
+  </StyledError>
 );
 
 Error.getInitialProps = async ({ res, err }: { res: Res; err: ErrInterface }): Promise<any> => {
