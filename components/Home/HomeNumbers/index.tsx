@@ -1,6 +1,6 @@
 import React from "react";
 import { NumbersElemProps } from "../interfaces";
-import { StyledHomeNumbers, StyledNumbersElem } from "../../../styled/home";
+import { StyledHomeNumbers, StyledNumbersBox, StyledNumbersElem } from "../../../styled/home";
 
 import imgCaffee from "../../../static/images/home/caffee.svg";
 import imgCode from "../../../static/images/home/code.svg";
@@ -18,9 +18,11 @@ const NumbersElem: React.FC<NumbersElemProps> = props => (
 
 const HomeNumbers: React.FC = () => (
   <StyledHomeNumbers>
-    <NumbersElem image={imgCaffee} title="Wypitych kaw" number="1 500+" />
-    <NumbersElem image={imgCode} title="Linijek kodu" number="1 000 000+" />
-    <NumbersElem image={imgLightning} title="Poznanych technologii" number="20+" />
+    <StyledNumbersBox>
+      <NumbersElem image={imgCaffee} title="Wypitych kaw" number="1 500+" />
+      <NumbersElem image={imgCode} title="Linijek kodu" number="1 000 000+" />
+      <NumbersElem image={imgLightning} title="Poznanych technologii" number="20+" />
+    </StyledNumbersBox>
   </StyledHomeNumbers>
 );
 
