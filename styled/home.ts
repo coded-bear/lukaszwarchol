@@ -45,3 +45,38 @@ export const SocialMediaHomeHeaderBox = styled.div`
   bottom: 20px;
   right: 20px;
 `;
+
+// NUMBERS
+
+export const StyledHomeNumbers = styled.section`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 0;
+
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+`;
+
+export const StyledNumbersElem = styled.div`
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+
+  img {
+    height: 70px;
+  }
+
+  p {
+    margin: 20px 0;
+    text-transform: uppercase;
+
+    &.number {
+      font-size: 44px;
+    }
+  }
+`;
