@@ -1,24 +1,23 @@
 import React from "react";
-import { StyledButton } from "../../../styled/contact";
+import { StyledContactForm, StyledInput, StyledButton, StyledFormError } from "../../../styled/contact";
 import useForm from "./useForm";
 
 const ContactForm: React.FC = () => {
   const [updateValue, submitHandler, error] = useForm({});
 
   return (
-    <form onSubmit={submitHandler}>
-      <label>
+    <StyledContactForm onSubmit={submitHandler}>
+      <StyledInput>
         <input type="email" name="email" onChange={updateValue} placeholder="Your email" />
-      </label>
+      </StyledInput>
+      <StyledInput>
+        <textarea name="message" onChange={updateValue} rows={10} placeholder="Your message" />
+      </StyledInput>
 
-      <label>
-        <textarea name="message" onChange={updateValue} placeholder="Your message" />
-      </label>
-
-      {error && <div>{error}</div>}
+      {error && <StyledFormError>{error}</StyledFormError>}
 
       <StyledButton>Send</StyledButton>
-    </form>
+    </StyledContactForm>
   );
 };
 

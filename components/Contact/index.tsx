@@ -1,4 +1,5 @@
 import React from "react";
+import { StyledContactBox, StyledContactContent } from "../../styled/contact";
 import { Title, Heading, SubTitle } from "../elements";
 import ContactForm from "./ContactForm";
 import { SocialMediaElemProps } from "./interfaces";
@@ -23,8 +24,8 @@ const Contact: React.FC = () => (
     <Heading text="Contact" />
     <SubTitle text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" />
 
-    <div>
-      <div>
+    <StyledContactBox>
+      <StyledContactContent>
         <div>
           <img src={imgLocation} alt="Location" /> Poland, Warsaw
         </div>
@@ -39,10 +40,10 @@ const Contact: React.FC = () => (
           <SocialMediaElem href="https://github.com/coded-bear" image={imgGithub} name="GitHub" />
           <SocialMediaElem href="https://www.instagram.com/lukasz.warchol/" image={imgInstagram} name="Instagram" />
         </div>
-      </div>
+      </StyledContactContent>
 
       <ContactForm />
-    </div>
+    </StyledContactBox>
   </section>
 );
 
