@@ -33,13 +33,15 @@ const Contact: React.FC = () => (
 
     <StyledContactBox>
       <StyledContactContent>
-        <div>
+        <div className="location">
           <img src={imgLocation} alt="Location" /> Poland, Warsaw
         </div>
 
-        <a href="mailto: contact@lukaszwarchol.pl">
-          <img src={imgEmail} alt="Email" /> contact@lukaszwarchol.pl
-        </a>
+        <div className="email">
+          <a href="mailto: contact@lukaszwarchol.pl">
+            <img src={imgEmail} alt="Email" /> contact@lukaszwarchol.pl
+          </a>
+        </div>
 
         <SocialMediaContactBox>
           <SocialMediaElem href="https://www.facebook.com/lukasz.warchol14" image={imgFacebook} name="Facebook" />

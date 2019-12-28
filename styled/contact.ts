@@ -17,6 +17,34 @@ export const StyledContactContent = styled.div`
   flex: 1;
   padding: 20px;
   font-weight: bold;
+
+  .location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    img {
+      height: 30px;
+      margin-right: 15px;
+    }
+  }
+
+  .email {
+    a {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 50px;
+
+      img {
+        height: 30px;
+        margin-right: 15px;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 `;
 
 export const SocialMediaContactBox = styled.div`
@@ -35,6 +63,10 @@ export const StyledSocialMediaElem = styled.div`
     img {
       height: 30px;
       margin-right: 15px;
+    }
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 `;
