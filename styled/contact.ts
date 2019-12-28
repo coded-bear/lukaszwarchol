@@ -85,14 +85,14 @@ export const StyledInput = styled.label`
     margin-bottom: 10px;
     padding: 10px;
     border: 0;
-    border-bottom: 1px solid ${colors.PRIMARY_TEXT};
+    border-bottom: 2px solid ${colors.PRIMARY_TEXT};
     background-color: transparent;
     color: ${colors.PRIMARY_TEXT};
-    font-size: 16px;
+    font-size: 18px;
     resize: none;
 
     &::placeholder {
-      color: ${colors.PRIMARY_TEXT};
+      color: ${colors.GRAY};
     }
   }
 `;
