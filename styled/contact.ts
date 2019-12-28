@@ -16,6 +16,27 @@ export const StyledContactBox = styled.div`
 export const StyledContactContent = styled.div`
   flex: 1;
   padding: 20px;
+  font-weight: bold;
+`;
+
+export const SocialMediaContactBox = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const StyledSocialMediaElem = styled.div`
+  width: 50%;
+  margin: 15px 0;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+
+    img {
+      height: 30px;
+      margin-right: 15px;
+    }
+  }
 `;
 
 // FORM

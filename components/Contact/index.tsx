@@ -1,5 +1,10 @@
 import React from "react";
-import { StyledContactBox, StyledContactContent } from "../../styled/contact";
+import {
+  StyledContactBox,
+  StyledContactContent,
+  SocialMediaContactBox,
+  StyledSocialMediaElem
+} from "../../styled/contact";
 import { Title, Heading, SubTitle } from "../elements";
 import ContactForm from "./ContactForm";
 import { SocialMediaElemProps } from "./interfaces";
@@ -12,9 +17,11 @@ import imgGithub from "../../static/images/common/github.svg";
 import imgInstagram from "../../static/images/common/instagram.svg";
 
 const SocialMediaElem: React.FC<SocialMediaElemProps> = props => (
-  <a href={props.href} target="_blank">
-    <img src={props.image} alt={props.name} /> {props.name}
-  </a>
+  <StyledSocialMediaElem>
+    <a href={props.href} target="_blank">
+      <img src={props.image} alt={props.name} /> {props.name}
+    </a>
+  </StyledSocialMediaElem>
 );
 
 const Contact: React.FC = () => (
@@ -34,12 +41,12 @@ const Contact: React.FC = () => (
           <img src={imgEmail} alt="Email" /> contact@lukaszwarchol.pl
         </a>
 
-        <div>
+        <SocialMediaContactBox>
           <SocialMediaElem href="https://www.facebook.com/lukasz.warchol14" image={imgFacebook} name="Facebook" />
           <SocialMediaElem href="https://www.linkedin.com/in/lukasz-warchol/" image={imgLinkedin} name="Linkedin" />
           <SocialMediaElem href="https://github.com/coded-bear" image={imgGithub} name="GitHub" />
           <SocialMediaElem href="https://www.instagram.com/lukasz.warchol/" image={imgInstagram} name="Instagram" />
-        </div>
+        </SocialMediaContactBox>
       </StyledContactContent>
 
       <ContactForm />
