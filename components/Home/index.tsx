@@ -1,5 +1,6 @@
 import React from "react";
 import { NextPage } from "next";
+import { checkLang } from "../../utils/checkLang";
 import {
   StyledHomeHeader,
   StyledHomeHeaderContent,
@@ -9,7 +10,6 @@ import {
 import { Title, LinkButton, SocialMedia } from "../elements";
 import HomQuestions from "./HomeQuestions";
 import HomeNumbers from "./HomeNumbers";
-import { checkLang } from "../../utils/checkLang";
 
 const Home: NextPage<{ lang: string }> = ({ lang }) => (
   <>
