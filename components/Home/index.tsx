@@ -1,4 +1,5 @@
 import React from "react";
+import { NextPage } from "next";
 import {
   StyledHomeHeader,
   StyledHomeHeaderContent,
@@ -10,7 +11,7 @@ import HomQuestions from "./HomeQuestions";
 import HomeNumbers from "./HomeNumbers";
 import { checkLang } from "../../utils/checkLang";
 
-const Home = ({ lang }: { lang: string }) => (
+const Home: NextPage<{ lang: string }> = ({ lang }) => (
   <>
     <Title text="JavaScript Software Developer" />
 
@@ -44,7 +45,7 @@ const Home = ({ lang }: { lang: string }) => (
 
 export default Home;
 
-Home.getInitialProps = async ({ asPath }: { asPath: string }) => {
-  const lang: string = await checkLang(asPath.split("/")[1]);
-  return { lang };
+Home.getInitialProps = async ({ asPath }) => {
+  if (typeof asPath !== "undefined") return { lang: await checkLang(asPath.split("/")[1]) };
+  return { lang: "pl" };
 };
