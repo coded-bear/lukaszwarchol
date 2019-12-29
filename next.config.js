@@ -4,17 +4,7 @@ module.exports = withImages({
   assetPrefix: "http://localhost:3000",
   inlineImageLimit: 16384,
   useFileSystemPublicRoutes: false,
-  // exportTrailingSlash: true,
-  exportPathMap: function() {
-    return {
-      "/": { page: "/home" },
-      "/about": { page: "/about" },
-      "/services": { page: "/services" },
-      "/projects": { page: "/projects" },
-      "/contact": { page: "/contact" },
-      "/privacy-policy": { page: "/privacyPolicy" }
-    };
-  },
+
   webpack: config => {
     const originalEntry = config.entry;
     config.entry = async () => {
@@ -25,5 +15,22 @@ module.exports = withImages({
       return entries;
     };
     return config;
+  },
+
+  exportTrailingSlash: true,
+  exportPathMap: async function() {
+    const paths = { "/": { page: "/home" } };
+    const locales = ["pl", "en"];
+
+    locales.forEach(locale => {
+      paths[`/${locale}`] = { page: "/home", query: { locale } };
+      paths[`/${locale}/about`] = { page: "/about", query: { locale } };
+      paths[`/${locale}/services`] = { page: "/services", query: { locale } };
+      paths[`/${locale}/projects`] = { page: "/projects", query: { locale } };
+      paths[`/${locale}/contact`] = { page: "/contact", query: { locale } };
+      paths[`/${locale}/privacy-policy`] = { page: "/privacyPolicy", query: { locale } };
+    });
+
+    return paths;
   }
 });
