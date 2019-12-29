@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { TitleProps, HeadingProps, SubTitleProps, LinkButtonProps, SocialMediaElemProps } from "./interfaces";
 import { StyledHeading, StyledSubTitle, StyledLinkButton, StyledSocialMedia } from "../../styled/layout";
-import { APP_NAME } from "../../common/utils/constants";
+import { APP_NAME } from "../../utils/constants";
 
 import imgFacebook from "../../static/images/common/facebook.svg";
 import imgLinkedin from "../../static/images/common/linkedin.svg";

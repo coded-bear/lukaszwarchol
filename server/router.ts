@@ -1,4 +1,4 @@
-import { Server, Req, Res } from "../common/utils/types";
+import { Server, Req, Res } from "../utils/types";
 
 export default async function router(server: Server, app: any) {
   server.get("/", async (req: Req, res: Res) => {

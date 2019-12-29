@@ -8,14 +8,15 @@ import {
 import { Title, LinkButton, SocialMedia } from "../elements";
 import HomQuestions from "./HomeQuestions";
 import HomeNumbers from "./HomeNumbers";
+import { checkLang } from "../../utils/checkLang";
 
-const Home: React.FC = () => (
+const Home = ({ lang }: { lang: string }) => (
   <>
     <Title text="JavaScript Software Developer" />
 
     <StyledHomeHeader>
       <StyledHomeHeaderContent>
-        <p>Hello</p>
+        <p>Hello - {lang}</p>
         <h3>
           <span>
             <strong>I'm Lucas</strong>
@@ -42,3 +43,8 @@ const Home: React.FC = () => (
 );
 
 export default Home;
+
+Home.getInitialProps = async ({ asPath }: { asPath: string }) => {
+  const lang: string = await checkLang(asPath.split("/")[1]);
+  return { lang };
+};

@@ -2,7 +2,7 @@ import next from "next";
 import express from "express";
 import router from "./router";
 import compression from "compression";
-import { Server, Req, Res, Err } from "../common/utils/types";
+import { Server, Req, Res, Err } from "../utils/types";
 
 const port: number = parseInt(process.env.PORT || "3000", 10);
 const dev: boolean = process.env.NODE_ENV !== "production";

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChangeEvent, FormEvent } from "../../../common/utils/types";
+import { ChangeEvent, FormEvent } from "../../../utils/types";
 import { FormState } from "../interfaces";
 
 const useForm = (initial: FormState): any => {

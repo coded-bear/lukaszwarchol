@@ -1,5 +1,5 @@
 import React from "react";
-import { Res, ErrInterface } from "../common/utils/types";
+import { Res, ErrInterface } from "../utils/types";
 import { LinkButton } from "../components/elements";
 import { StyledError, StyledErrorContent, StyledErrorImage } from "../styled/error";
 import imgFoot from "../static/images/common/foot.svg";
