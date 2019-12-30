@@ -1,6 +1,6 @@
 import React from "react";
 import { NextPage } from "next";
-import { getLang } from "../../utils/getLang";
+import { getLang } from "../../utils/langService";
 import {
   StyledHomeHeader,
   StyledHomeHeaderContent,
