@@ -6,6 +6,7 @@ interface AppProps {
   lang: string;
   pathname: string;
   asPath: string;
+  t: any;
 }
 
 class MyApp extends App<AppProps> {
@@ -16,15 +17,16 @@ class MyApp extends App<AppProps> {
     const pathname: string = ctx.pathname;
     const asPath: string = ctx.asPath;
     const lang: string = await getLang(ctx.asPath);
+    const t: any = require(`../static/locales/${lang}/layout.json`);
 
-    return { pageProps, lang, pathname, asPath };
+    return { pageProps, lang, pathname, asPath, t };
   }
 
   render() {
-    const { Component, pageProps, lang, pathname, asPath } = this.props;
+    const { Component, pageProps, lang, pathname, asPath, t } = this.props;
 
     return (
-      <Layout lang={lang} pathname={pathname} asPath={asPath}>
+      <Layout lang={lang} pathname={pathname} asPath={asPath} t={t}>
         <Component {...pageProps} />
       </Layout>
     );

@@ -3,4 +3,5 @@ export interface LayoutProps {
   lang: string;
   pathname: string;
   asPath: string;
+  t: any;
 }

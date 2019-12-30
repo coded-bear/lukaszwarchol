@@ -17,7 +17,7 @@ const Layout: React.FC<LayoutProps> = props => (
       <HireMeBox />
     </main>
 
-    <Footer />
+    <Footer t={props.t} lang={props.lang} />
   </>
 );
 

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { SocialMedia } from "../elements";
-import { NavElemProps } from "./interfaces";
+import { FooterProps, NavElemProps } from "./interfaces";
 import { StyledFooter } from "../../styled/footer";
 
 const NavElem: React.FC<NavElemProps> = props => (
@@ -12,27 +12,29 @@ const NavElem: React.FC<NavElemProps> = props => (
   </Link>
 );
 
-const Footer: React.FC = () => (
+const Footer: React.FC<FooterProps> = props => (
   <StyledFooter>
     <nav>
       <ul>
-        <NavElem href="/home" as="/" text="Home" />
-        <NavElem href="/about" as="/about" text="About" />
-        <NavElem href="/services" as="/services" text="Services" />
-        <NavElem href="/projects" as="/projects" text="Projects" />
-        <NavElem href="/contact" as="/contact" text="Contact" />
+        <NavElem href="/home" as={`/${props.lang}`} text="Home" />
+        <NavElem href="/about" as={`/${props.lang}/about`} text={props.t.nav.about} />
+        <NavElem href="/services" as={`/${props.lang}/services`} text={props.t.nav.services} />
+        <NavElem href="/projects" as={`/${props.lang}/projects`} text={props.t.nav.projects} />
+        <NavElem href="/contact" as={`/${props.lang}/contact`} text={props.t.nav.contact} />
       </ul>
     </nav>
 
     <SocialMedia />
 
     <p>
-      <Link href="/privacyPolicy" as="privacy-policy" prefetch={false}>
-        <a>Privacy Policy</a>
+      <Link href="/privacyPolicy" as={`/${props.lang}/privacy-policy`} prefetch={false}>
+        <a>{props.t.privacyPolicy}</a>
       </Link>
     </p>
 
-    <p>&copy; {new Date().getFullYear()} Łukasz Warchoł. All rights reserved</p>
+    <p>
+      &copy; {new Date().getFullYear()} Łukasz Warchoł. {props.t.rights}
+    </p>
   </StyledFooter>
 );
 
