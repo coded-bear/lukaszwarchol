@@ -11,7 +11,7 @@ import { Title, LinkButton, SocialMedia } from "../elements";
 import HomQuestions from "./HomeQuestions";
 import HomeNumbers from "./HomeNumbers";
 
-const Home: NextPage<{ t: any }> = ({ t }) => (
+const Home: NextPage<{ t: any; lang: string }> = ({ t, lang }) => (
   <>
     <Title text="JavaScript Software Developer" />
 
@@ -20,14 +20,14 @@ const Home: NextPage<{ t: any }> = ({ t }) => (
         <p>{t.header.hello}</p>
         <h3>
           <span>
-            <strong>I'm Lucas</strong>
+            <strong>{t.header.Im}</strong>
           </span>
         </h3>
         <p>
           <strong>JavaScript Software Developer</strong>
         </p>
 
-        <LinkButton href="/contact" as="/contact" text="Hire me" />
+        <LinkButton href="/contact" as={`/${lang}/contact`} text={t.header.hireMe} />
       </StyledHomeHeaderContent>
 
       <StyledHomeHeaderRight></StyledHomeHeaderRight>
@@ -37,9 +37,9 @@ const Home: NextPage<{ t: any }> = ({ t }) => (
       </SocialMediaHomeHeaderBox>
     </StyledHomeHeader>
 
-    <HomQuestions />
+    <HomQuestions t={t.questions} lang={lang} />
 
-    <HomeNumbers />
+    <HomeNumbers t={t.numbers} />
   </>
 );
 
@@ -48,5 +48,5 @@ export default Home;
 Home.getInitialProps = async ({ asPath }) => {
   const lang: string = await getLang(asPath);
   const t: any = await require(`../../static/locales/${lang}/home.json`);
-  return { t };
+  return { t, lang };
 };
