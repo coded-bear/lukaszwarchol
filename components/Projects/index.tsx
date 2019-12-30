@@ -1,13 +1,21 @@
 import React from "react";
+import { NextPage } from "next";
+import { getLang } from "../../utils/langService";
 import { Title, Heading, SubTitle } from "../elements";
 
-const Projects: React.FC = () => (
+const Projects: NextPage<{ t: any }> = ({ t }) => (
   <section>
-    <Title text="Projects" />
+    <Title text={t.title} />
 
-    <Heading text="Projects" />
-    <SubTitle text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" />
+    <Heading text={t.title} />
+    <SubTitle text={t.subtitle} />
   </section>
 );
+
+Projects.getInitialProps = async ({ asPath }) => {
+  const lang: string = await getLang(asPath);
+  const t: any = await require(`../../static/locales/${lang}/projects.json`);
+  return { t };
+};
 
 export default Projects;
