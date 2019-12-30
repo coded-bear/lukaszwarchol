@@ -1,5 +1,26 @@
 {
   "header": {
-    "hello": "Cześć"
-  }
+    "hello": "Cześć",
+    "Im": "Jestem Łukasz",
+    "hireMe": "Zatrudnij mnie"
+  },
+  "questions": {
+    "who": {
+      "title": "Kim jestem?",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "what": {
+      "title": "Co robię?",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "done": {
+      "title": "Co zrobiłem?",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  },
+  "numbers": [
+    { "title": "Wypitych kaw", "number": "1 500+" },
+    { "title": "Linijek kodu", "number": "1 000 000+" },
+    { "title": "Poznanych technologii", "number": "20+" }
+  ]
 }
