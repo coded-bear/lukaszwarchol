@@ -55,7 +55,7 @@ export const StyledNavigation = styled.div`
   justify-content: center;
   position: fixed;
   top: 0;
-  left: -100%;
+  left: 100%;
   width: 100%;
   height: 100vh;
   background-color: ${colors.PRIMARY_YELLOW};
@@ -63,6 +63,11 @@ export const StyledNavigation = styled.div`
   font-weight: bold;
   text-align: center;
   z-index: 10;
+  transition: 0.5s;
+
+  &.open {
+    left: 0;
+  }
 
   button {
     border: 0;

@@ -1,8 +1,9 @@
-import React, { memo } from "react";
+import React, { memo, useEffect, useState, createRef } from "react";
 import Link from "next/link";
 import Navigation from "../Navigation";
 import { StyledHeader, StyledLogo, StyledHeaderRightBox, StyledLangBtns, StyledMenuBtn } from "../../styled/header";
 import { HeaderProps, LangBtnsProps } from "./interfaces";
+import { RefObj } from "../../utils/types";
 import { langsList, changePath } from "../../utils/langService";
 
 import logo from "../../static/images/common/logo.svg";
@@ -18,26 +19,36 @@ const LangBtns: React.FC<LangBtnsProps> = memo(props => (
   </StyledLangBtns>
 ));
 
-const Header: React.FC<HeaderProps> = memo(props => (
-  <StyledHeader>
-    <StyledLogo>
-      <Link href="/home" as={`/${props.lang}`} prefetch={false}>
-        <a>
-          <img src={logo} alt="Łukasz Warchoł" />
-        </a>
-      </Link>
-    </StyledLogo>
+const Header: React.FC<HeaderProps> = memo(props => {
+  const ref: RefObj = createRef();
 
-    <StyledHeaderRightBox>
-      <LangBtns pathname={props.pathname} asPath={props.asPath} lang={props.lang} />
+  const [menu, setMenu] = useState(false);
 
-      <StyledMenuBtn>
-        <img src={imgMenu} alt="menu" />
-      </StyledMenuBtn>
-    </StyledHeaderRightBox>
+  useEffect(() => {
+    if (menu) ref.current?.classList.add("open");
+    else ref.current?.classList.remove("open");
+  }, [menu]);
 
-    <Navigation t={props.t} lang={props.lang} />
-  </StyledHeader>
-));
+  return (
+    <StyledHeader>
+      <StyledLogo>
+        <Link href="/home" as={`/${props.lang}`} prefetch={false}>
+          <a>
+            <img src={logo} alt="Łukasz Warchoł" />
+          </a>
+        </Link>
+      </StyledLogo>
+      <StyledHeaderRightBox>
+        <LangBtns pathname={props.pathname} asPath={props.asPath} lang={props.lang} />
+
+        <StyledMenuBtn onClick={() => setMenu(true)}>
+          <img src={imgMenu} alt="menu" />
+        </StyledMenuBtn>
+      </StyledHeaderRightBox>
+
+      <Navigation ref={ref} closeMenu={() => setMenu(false)} t={props.t} lang={props.lang} />
+    </StyledHeader>
+  );
+});
 
 export default Header;
