@@ -14,7 +14,7 @@ const Layout: React.FC<LayoutProps> = props => (
     <main>
       {props.children}
 
-      <HireMeBox />
+      <HireMeBox t={props.t} lang={props.lang} />
     </main>
 
     <Footer t={props.t} lang={props.lang} />

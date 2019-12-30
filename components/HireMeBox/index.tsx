@@ -1,14 +1,15 @@
 import React from "react";
-import { Heading, LinkButton } from "../elements";
 import { Container } from "../../styled/layout";
 import { StyledHireMeBox } from "../../styled/layout";
+import { HireMeBoxProps } from "./interfaces";
+import { Heading, LinkButton } from "../elements";
 
-const HireMeBox: React.FC = () => (
+const HireMeBox: React.FC<HireMeBoxProps> = props => (
   <StyledHireMeBox>
     <Container>
-      <Heading dark left text="Have Any Project in Mind?" />
+      <Heading dark left text={props.t.havaAnyProject} />
 
-      <LinkButton light href="/contact" as="/contact" text="Hire Me" />
+      <LinkButton light href="/contact" as={`/${props.lang}/contact`} text={props.t.hireMe} />
     </Container>
   </StyledHireMeBox>
 );
