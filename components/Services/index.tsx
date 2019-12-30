@@ -1,48 +1,41 @@
 import React from "react";
-import { Title, Heading, SubTitle } from "../elements";
-import { ServiceElemProps } from "./interface";
+import { NextPage } from "next";
 import { Container } from "../../styled/layout";
 import { StyledServicesBox, StyledServiceElem } from "../../styled/services";
+import { getLang } from "../../utils/langService";
+import { Title, Heading, SubTitle } from "../elements";
 
 import imgWebApp from "../../static/images/services/web-app.svg";
 import imgWebsite from "../../static/images/services/website.svg";
 import imgMockup from "../../static/images/services/mockup.svg";
 
-const ServiceElem: React.FC<ServiceElemProps> = props => (
-  <StyledServiceElem>
-    <img src={props.image} alt={props.title} />
-    <h4>{props.title}</h4>
-    <p>{props.text}</p>
-  </StyledServiceElem>
-);
+const images: string[] = [imgWebApp, imgWebsite, imgMockup];
 
-const Services: React.FC = () => (
+const Services: NextPage<{ t: any }> = ({ t }) => (
   <section>
     <Container>
-      <Title text="Services" />
+      <Title text={t.title} />
 
-      <Heading text="Services" />
-      <SubTitle text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" />
+      <Heading text={t.title} />
+      <SubTitle text={t.subtitle} />
 
       <StyledServicesBox>
-        <ServiceElem
-          image={imgWebApp}
-          title="WEB Applications"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        />
-        <ServiceElem
-          image={imgWebsite}
-          title="Websites"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        />
-        <ServiceElem
-          image={imgMockup}
-          title="Mockups"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        />
+        {t.boxes.map((elem: any, index: number) => (
+          <StyledServiceElem key={index}>
+            <img src={images[index]} alt={elem.title} />
+            <h4>{elem.title}</h4>
+            <p>{elem.description}</p>
+          </StyledServiceElem>
+        ))}
       </StyledServicesBox>
     </Container>
   </section>
 );
+
+Services.getInitialProps = async ({ asPath }) => {
+  const lang: string = await getLang(asPath);
+  const t: any = await require(`../../static/locales/${lang}/services.json`);
+  return { t };
+};
 
 export default Services;
