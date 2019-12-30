@@ -1,0 +1,18 @@
+{
+  "title": "Contact",
+  "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+  "location": "Poland, Warsaw",
+  "form": {
+    "email": {
+      "placeholder": "Your email",
+      "errors": ["Enter Your email", "Incorrect email"]
+    },
+    "message": {
+      "placeholder": "Your message",
+      "errors": ["Write your message"]
+    },
+    "submit": "Send",
+    "success": "The message was sent",
+    "error": "Oops, something went wrong :("
+  }
+}

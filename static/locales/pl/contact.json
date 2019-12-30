@@ -1,0 +1,18 @@
+{
+  "title": "Kontakt",
+  "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+  "location": "Polska, Warszawa",
+  "form": {
+    "email": {
+      "placeholder": "Twój email",
+      "errors": ["Podaj adres email", "Nieprawidłowy adres email"]
+    },
+    "message": {
+      "placeholder": "Twoja wiadomość",
+      "errors": ["Napisz wiadomość"]
+    },
+    "submit": "Wyślij",
+    "success": "Wiadomość została wysłana",
+    "error": "Ups, coś poszło nie tak :("
+  }
+}
