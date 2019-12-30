@@ -3,3 +3,5 @@ export interface HeaderProps {
   pathname: string;
   asPath: string;
 }
+
+export interface LangBtnsProps extends HeaderProps {}
