@@ -1,10 +1,12 @@
 import React from "react";
+import { NextPage } from "next";
 import {
   StyledContactBox,
   StyledContactContent,
   SocialMediaContactBox,
   StyledSocialMediaElem
 } from "../../styled/contact";
+import { getLang } from "../../utils/langService";
 import { Title, Heading, SubTitle } from "../elements";
 import ContactForm from "./ContactForm";
 import { SocialMediaElemProps } from "./interfaces";
@@ -24,17 +26,17 @@ const SocialMediaElem: React.FC<SocialMediaElemProps> = props => (
   </StyledSocialMediaElem>
 );
 
-const Contact: React.FC = () => (
+const Contact: NextPage<{ t: any }> = ({ t }) => (
   <section>
-    <Title text="Contact" />
+    <Title text={t.title} />
 
-    <Heading text="Contact" />
-    <SubTitle text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" />
+    <Heading text={t.title} />
+    <SubTitle text={t.subtitle} />
 
     <StyledContactBox>
       <StyledContactContent>
         <div className="location">
-          <img src={imgLocation} alt="Location" /> Poland, Warsaw
+          <img src={imgLocation} alt="Location" /> {t.location}
         </div>
 
         <div className="email">
@@ -51,9 +53,15 @@ const Contact: React.FC = () => (
         </SocialMediaContactBox>
       </StyledContactContent>
 
-      <ContactForm />
+      <ContactForm t={t.form} />
     </StyledContactBox>
   </section>
 );
+
+Contact.getInitialProps = async ({ asPath }) => {
+  const lang: string = await getLang(asPath);
+  const t: any = await require(`../../static/locales/${lang}/contact.json`);
+  return { t };
+};
 
 export default Contact;
