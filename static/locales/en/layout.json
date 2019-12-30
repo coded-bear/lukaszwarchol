@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "privacyPolicy": "Privacy Policy",
+  "rights": "All rights reserved",
+  "havaAnyProject": "You have an idea for a Project?",
+  "hireMe": "Hire me"
+}
