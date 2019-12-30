@@ -9,7 +9,7 @@ const Layout: React.FC<LayoutProps> = props => (
   <>
     <GlobalStyle />
 
-    <Header lang={props.lang} pathname={props.pathname} asPath={props.asPath} />
+    <Header lang={props.lang} pathname={props.pathname} asPath={props.asPath} t={props.t} />
 
     <main>
       {props.children}

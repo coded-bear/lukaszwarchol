@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = memo(props => (
       </StyledMenuBtn>
     </StyledHeaderRightBox>
 
-    <Navigation />
+    <Navigation t={props.t} lang={props.lang} />
   </StyledHeader>
 ));
 
