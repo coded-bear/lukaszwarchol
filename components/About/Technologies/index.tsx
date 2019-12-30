@@ -30,11 +30,11 @@ const Technology: React.FC<TechnologyProps> = props => (
   </StyledTechnology>
 );
 
-const Technologies: React.FC = () => (
+const Technologies: React.FC<{ t: any }> = ({ t }) => (
   <StyledTechnologies>
     <Container>
-      <Heading text="Known technologies" />
-      <SubTitle text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" />
+      <Heading text={t.title} />
+      <SubTitle text={t.subtitle} />
 
       <StyledTechnologiesBox>
         <Technology image={imgHTML} name="HTML 5" />
