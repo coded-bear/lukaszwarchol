@@ -1,7 +1,7 @@
 const withImages = require("next-images");
 
 module.exports = withImages({
-  assetPrefix: isProd ? "http://localhost:3000" : "",
+  assetPrefix: "http://localhost:3000",
   inlineImageLimit: 16384,
   useFileSystemPublicRoutes: false,
 
