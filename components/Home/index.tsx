@@ -1,12 +1,12 @@
 import React from "react";
 import { NextPage } from "next";
-import { getLang } from "../../utils/langService";
 import {
   StyledHomeHeader,
   StyledHomeHeaderContent,
   StyledHomeHeaderRight,
   SocialMediaHomeHeaderBox
 } from "../../styled/home";
+import { getLang } from "../../utils/langService";
 import { Title, LinkButton, SocialMedia } from "../elements";
 import HomQuestions from "./HomeQuestions";
 import HomeNumbers from "./HomeNumbers";
