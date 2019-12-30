@@ -2,14 +2,16 @@ import React from "react";
 import Link from "next/link";
 import Navigation from "../Navigation";
 import { StyledHeader, StyledLogo, StyledHeaderRightBox, StyledLangBtns, StyledMenuBtn } from "../../styled/header";
+import { HeaderProps } from "./interfaces";
+import { langsList, changePath } from "../../utils/langService";
 
 import logo from "../../static/images/common/logo.svg";
 import imgMenu from "../../static/images/common/menu.svg";
 
-const Header: React.FC = () => (
+const Header: React.FC<HeaderProps> = props => (
   <StyledHeader>
     <StyledLogo>
-      <Link href="/home" as="/" prefetch={false}>
+      <Link href="/home" as={`/${props.lang}`} prefetch={false}>
         <a>
           <img src={logo} alt="Łukasz Warchoł" />
         </a>
@@ -18,12 +20,11 @@ const Header: React.FC = () => (
 
     <StyledHeaderRightBox>
       <StyledLangBtns>
-        <Link href="/home" as="/" prefetch={false}>
-          <a>PL</a>
-        </Link>
-        <Link href="/home" as="/" prefetch={false}>
-          <a>EN</a>
-        </Link>
+        {langsList.map((lang, index) => (
+          <Link key={index} href={props.pathname} as={changePath(props.asPath, lang)} prefetch={false}>
+            <a className={lang === props.lang ? "active" : ""}>{lang}</a>
+          </Link>
+        ))}
       </StyledLangBtns>
 
       <StyledMenuBtn>

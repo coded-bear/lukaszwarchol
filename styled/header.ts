@@ -29,6 +29,11 @@ export const StyledLangBtns = styled.div`
   a {
     margin: 0 5px;
     font-size: 18px;
+    text-transform: uppercase;
+
+    &.active {
+      font-weight: bold;
+    }
   }
 `;
 
