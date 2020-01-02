@@ -6,12 +6,16 @@ import { Title, Heading, LinkButton } from "../elements";
 import Experiences from "./Experiences";
 import Technologies from "./Technologies";
 
+import imgMe from "../../static/images/about/me.jpg";
+
 const About: NextPage<{ t: any; lang: string }> = ({ t, lang }) => (
   <>
     <Title text={t.title} />
 
     <StyledAbout>
-      <StyledAboutImage></StyledAboutImage>
+      <StyledAboutImage>
+        <img src={imgMe} alt="Łukasz Warchoł" />
+      </StyledAboutImage>
 
       <StyledAboutContent>
         <Heading left text={t.title} />

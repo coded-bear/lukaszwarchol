@@ -17,10 +17,14 @@ export const StyledAbout = styled.section`
 export const StyledAboutImage = styled.div`
   flex: 2;
   padding: 20px;
+
+  img {
+    width: 100%;
+  }
 `;
 
 export const StyledAboutContent = styled.div`
-  flex: 3;
+  flex: 4;
   padding: 20px;
 
   a {
