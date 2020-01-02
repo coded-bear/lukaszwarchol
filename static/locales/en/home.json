@@ -7,19 +7,19 @@
   "questions": [
     {
       "title": "Who am I?",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "description": "I'm passionate about new technologies. A person who tries to push his limits and never gives up. A programmer who wants to know as much as possible.",
       "href": "/about",
       "btn": "Learn more"
     },
     {
       "title": "What I do?",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "description": "I create websites, web applications and mock-ups for customers. Check my offer. Maybe you will also be interested in something.",
       "href": "/services",
       "btn": "Learn more"
     },
     {
       "title": "What have I done?",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "description": "I have already created many websites and web applications based on various technologies. I have also designed several mock-ups. See for yourself.",
       "href": "/projects",
       "btn": "Learn more"
     }
