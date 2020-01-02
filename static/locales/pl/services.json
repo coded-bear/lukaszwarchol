@@ -1,18 +1,18 @@
 {
   "title": "Usługi",
-  "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+  "subtitle": "Zajmuję się tworzeniem stron internetowych, aplikacji webowych oraz makiet. Może Ciebie też coś zainteresuje.",
   "boxes": [
     {
       "title": "Aplikacje webowe",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Tworzę aplikacje webowe, zazwyczaj z wykorzystaniem frameworków i bibliotek  języka JavaScript. Moje aplikacje są bardzo wydajne, szybkie, oraz zrobine tak, jak to umiem najlepiej."
     },
     {
       "title": "Strony internetowe",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Tworzę strony internetowe w najnowszych technologiach. Dzięki temu moje strony są bardzo szybkie. Mogę też przygotować stronę pod SEO."
     },
     {
       "title": "Makiety",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Projektuję makiety dla aplikacji webowych oraz stron internetowych. Moje makiety są intuicyjne, ładne, oraz bardzo precyzyjne."
     }
   ]
 }
