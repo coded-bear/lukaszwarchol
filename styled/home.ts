@@ -57,7 +57,7 @@ export const StyledHomeQuestions = styled.section`
 export const StyledQuestionsBox = styled.div`
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   max-width: 1200px;
   margin: auto;
