@@ -1,43 +1,44 @@
 {
   "title": "O Mnie",
   "description": [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+    "Programowaniem interesuję się od ponad trzech lat. Naukę rozpocząłem od Web Developmentu. Jestem pasjonatem nowych technologii i rozwiązań. Moim ulubionym językiem programowania jest JavaScript i to na nim głównie się skupiam, lecz nie zamykam się na inne technologie. Jest ich tak wiele, że szkoda nic o nich nie wiedzieć. Jestem osobą kreatywną, która nigdy nie odpuszcza i próbuje osiągnąć jak najwięcej.",
+    "Obecnie pracuję jako Front-End Developer. Po godzinach rozwijam własne projekty oraz uczę się nowych technologii. Jestem także wielkim fanem technologii Blockchain i to właśnie na niej chciałbym się skupić w najbliższym czasie.",
+    "Poza IT kocham podróże, dobre wino, drinki oraz seriale. Lubię pograć w tenisa stołowego oraz bilard. Interesuję się także dziedziną fitnessu."
   ],
   "hireMe": "Zatrudnij mnie",
   "experiences": {
     "title": "Doświadczenie zawodowe",
-    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+    "subtitle": "Mam za sobą ponad trzy lata samodzielnej nauki programowania, pracy w wielu zespołach podczas tworzenia przeróżnych projektów",
     "boxes": [
       {
-        "date": "Czerwiec 2016 - Marzec 2017",
-        "title": "Front-end Developer",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "date": "Styczeń 2017 - Aktualnie",
+        "title": "Software Freelancer",
+        "description": "Tworzenie stron internetowych, aplikacji webowych, makiet na potrzeby klientów. Praca z przeróżnymi technologiami wymienionymi poniżej."
       },
       {
-        "date": "Czerwiec 2016 - Marzec 2017",
-        "title": "Front-end Developer",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "date": "Maj 2019 - Aktualnie",
+        "title": "Front-End Developer",
+        "description": "Moja pierwsza praca stacjonarna w korporacji. Tworzenie aplikacji webowych samodzielnie oraz w zespole. Współpraca z grafikami, copywriterami, wykorzystując przy tym przeróżne technologie webowe, C#, JavaScript."
       },
       {
-        "date": "Czerwiec 2016 - Marzec 2017",
-        "title": "Front-end Developer",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "date": "Wrzesień 2018 - Marzec 2019",
+        "title": "WordPress Developer",
+        "description": "Tworzenie stron internetowych opartych o CMS WordPress."
       },
       {
-        "date": "Czerwiec 2016 - Marzec 2017",
-        "title": "Front-end Developer",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "date": "Sierpień 2017 - Sierpień 2018",
+        "title": "WEB Developer",
+        "description": "Tworzenie stron internetowych (wizytówek formowych, reklamowych), oraz opartych o CMS WordPress. Współpraca z zespołem i grafikami, wykorzystując przy tym technologie HTML5, CSS3, JavaScript, PHP, WordPress."
       },
       {
-        "date": "Czerwiec 2016 - Marzec 2017",
-        "title": "Front-end Developer",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "date": "Październik 2016",
+        "title": "Praktyki zawodowe - Serwisant komputerów",
+        "description": "Praca przy serwisie komputerów podczas praktyk zawodowych."
       }
     ]
   },
   "technologies": {
     "title": "Poznane technologie",
-    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+    "subtitle": "Jestem pasjonatem nowych technologii i wiem, że jest jeszcze dużo miejsca na kolejne"
   }
 }
