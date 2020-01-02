@@ -7,19 +7,19 @@
   "questions": [
     {
       "title": "Kim jestem?",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "description": "Jestem pasjonatem nowych technologii. Osobą, która próbuje przełamywać swoje granice i nigdy się nie poddaje. Programistą, który chce umieć jak najwięcej.",
       "href": "/about",
       "btn": "Zobacz więcej"
     },
     {
       "title": "Co robię?",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "description": "Zajmuję się tworzeniem stron internetowych, aplikacji webowych oraz makiet na potrzeby klientów.",
       "href": "/services",
       "btn": "Zobacz więcej"
     },
     {
       "title": "Co zrobiłem?",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "description": "Stworzyłem już wiele stron internetowych oraz aplikacji webowych opartych o różne technologie. Zaprojektowałem też kilka makiet. Sam zobacz.",
       "href": "/projects",
       "btn": "Zobacz więcej"
     }
