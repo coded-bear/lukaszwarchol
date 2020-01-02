@@ -11,6 +11,7 @@ export const StyledServicesBox = styled.div`
 `;
 
 export const StyledServiceElem = styled.div`
+  flex: 1;
   margin: 10px;
   padding: 30px;
   border: 1px solid ${colors.PRIMARY_TEXT};
