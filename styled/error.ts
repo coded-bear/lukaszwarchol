@@ -17,6 +17,7 @@ export const StyledError = styled.section`
     margin: 20px 0 50px 0;
     font-size: 40px;
     font-weight: bold;
+    line-height: 40px;
   }
 
   @media only screen and (max-width: 700px) {
