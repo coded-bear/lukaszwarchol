@@ -8,7 +8,7 @@
   "hireMe": "Zatrudnij mnie",
   "experiences": {
     "title": "Doświadczenie zawodowe",
-    "subtitle": "Mam za sobą ponad trzy lata samodzielnej nauki programowania, pracy w wielu zespołach podczas tworzenia przeróżnych projektów",
+    "subtitle": "Mam za sobą ponad trzy lata samodzielnej nauki programowania oraz pracy w wielu zespołach podczas tworzenia przeróżnych projektów",
     "boxes": [
       {
         "date": "Styczeń 2017 - Aktualnie",
@@ -28,7 +28,7 @@
       {
         "date": "Sierpień 2017 - Sierpień 2018",
         "title": "WEB Developer",
-        "description": "Tworzenie stron internetowych (wizytówek formowych, reklamowych), oraz opartych o CMS WordPress. Współpraca z zespołem i grafikami, wykorzystując przy tym technologie HTML5, CSS3, JavaScript, PHP, WordPress."
+        "description": "Tworzenie stron internetowych (wizytówek firmowych, reklamowych), oraz opartych o CMS WordPress. Współpraca z zespołem i grafikami, wykorzystując przy tym technologie HTML5, CSS3, JavaScript, PHP, WordPress."
       },
       {
         "date": "Październik 2016",
@@ -39,6 +39,6 @@
   },
   "technologies": {
     "title": "Poznane technologie",
-    "subtitle": "Jestem pasjonatem nowych technologii i wiem, że jest jeszcze dużo miejsca na kolejne"
+    "subtitle": "Jestem pasjonatem nowych technologii i chcę poznać ich jeszcze więcej"
   }
 }

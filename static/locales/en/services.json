@@ -1,18 +1,18 @@
 {
   "title": "Services",
-  "subtitle": "I am involved in creating websites, web applications and mock-ups. Maybe you will also be interested in something.",
+  "subtitle": "I create websites, web applications and mock-ups. Maybe you will be interest in something.",
   "boxes": [
     {
       "title": "WEB Applications",
-      "description": "I create web applications, usually using frameworks and JavaScript libraries. My applications are very efficient, fast, and I will do as I know best."
+      "description": "I create web applications, usually using frameworks and JavaScript libraries. My applications are very efficient, and made at the highest level."
     },
     {
       "title": "Websites",
-      "description": "I create websites in the latest technologies. Thanks to that my websites are very fast. I can also prepare a page for SEO."
+      "description": "I create websites with the latest technology, so they are very fast. I can also prepare them for SEO."
     },
     {
       "title": "Mockups",
-      "description": "I design mock-ups for web applications and websites. My mock-ups are intuitive, nice and very precise."
+      "description": "I design mock-ups for web applications and websites. They are intuitive, modern, and very precise."
     }
   ]
 }

@@ -7,19 +7,19 @@
   "questions": [
     {
       "title": "Who am I?",
-      "description": "I'm passionate about new technologies. A person who tries to push his limits and never gives up. A programmer who wants to know as much as possible.",
+      "description": "I'm passionate about new technologies. A person who tries to push his limits and never give up. A programmer who wants to know as much as possible.",
       "href": "/about",
       "btn": "Learn more"
     },
     {
       "title": "What I do?",
-      "description": "I create websites, web applications and mock-ups. Check my offer. Maybe you will also be interested in something.",
+      "description": "I create websites, web applications and mock-ups. Check my offer. Maybe you will be interest in something.",
       "href": "/services",
       "btn": "Learn more"
     },
     {
       "title": "What have I done?",
-      "description": "I have already created many websites and web applications based on various technologies. I have also designed several mock-ups. See for yourself.",
+      "description": "I have already created many websites and web applications based on various technologies. I have also designed several mock-ups. Check it out.",
       "href": "/projects",
       "btn": "Learn more"
     }
