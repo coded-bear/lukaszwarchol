@@ -1,3 +1,4 @@
+import React from "react";
 import App from "next/app";
 import Layout from "../Layout";
 import { getLang } from "../utils/langService";
