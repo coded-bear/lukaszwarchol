@@ -32,6 +32,10 @@ app.prepare().then(() => {
 
   router(server, app);
 
+  const options: any = { root: __dirname + "/static/", headers: { "Content-Type": "text/xml;charset=UTF-8" } };
+  server.get("/sitemap.xml", (_req: Req, res: Res) => res.status(200).sendFile("sitemap.xml", options));
+  server.get("/robots.txt", (_req: Req, res: Res) => res.status(200).sendFile("robots.txt", options));
+
   server.get("*", (req: Req, res: Res) => handle(req, res));
 
   server.listen(port, (err: Err) => {
