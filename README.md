@@ -23,4 +23,4 @@ $ npm run start
 
 ### License
 
-© 2019 Łukasz Warchoł. All rights reserved
+© 2020 Łukasz Warchoł. All rights reserved
