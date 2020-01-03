@@ -2,7 +2,7 @@ const withImages = require("next-images");
 
 module.exports = withImages({
   assetPrefix: "http://localhost:3000",
-  inlineImageLimit: 16384,
+  inlineImageLimit: 8192,
   useFileSystemPublicRoutes: false,
 
   webpack: config => {
