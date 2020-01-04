@@ -26,9 +26,5 @@ export default async function router(server: Server, app: any) {
     server.get(`/${locale}/contact`, async (req: Req, res: Res) => {
       return await app.render(req, res, "/contact", req.query);
     });
-
-    server.get(`/${locale}/privacy-policy`, async (req: Req, res: Res) => {
-      return await app.render(req, res, "/privacyPolicy", req.query);
-    });
   });
 }

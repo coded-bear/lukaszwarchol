@@ -27,12 +27,6 @@ const Footer: React.FC<FooterProps> = props => (
     <SocialMedia />
 
     <p>
-      <Link href="/privacyPolicy" as={`/${props.lang}/privacy-policy`} prefetch={false}>
-        <a>{props.t.privacyPolicy}</a>
-      </Link>
-    </p>
-
-    <p>
       &copy; {new Date().getFullYear()} Łukasz Warchoł. {props.t.rights}
     </p>
   </StyledFooter>

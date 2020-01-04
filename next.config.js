@@ -28,7 +28,6 @@ module.exports = withImages({
       paths[`/${locale}/services`] = { page: "/services", query: { locale } };
       paths[`/${locale}/projects`] = { page: "/projects", query: { locale } };
       paths[`/${locale}/contact`] = { page: "/contact", query: { locale } };
-      paths[`/${locale}/privacy-policy`] = { page: "/privacyPolicy", query: { locale } };
     });
 
     return paths;
