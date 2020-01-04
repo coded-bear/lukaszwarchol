@@ -1,10 +1,10 @@
 import React from "react";
 import { Heading, SubTitle } from "../../elements";
-import { StyledExperiences, StyledExperienceBox, StyledExperienceElem } from "../../../styled/about";
+import { StyledExperience, StyledExperienceBox, StyledExperienceElem } from "../../../styled/about";
 import { Container } from "../../../styled/layout";
 
-const Experiences: React.FC<{ t: any }> = ({ t }) => (
-  <StyledExperiences>
+const Experience: React.FC<{ t: any }> = ({ t }) => (
+  <StyledExperience>
     <Container>
       <Heading text={t.title} />
       <SubTitle text={t.subtitle} />
@@ -19,7 +19,7 @@ const Experiences: React.FC<{ t: any }> = ({ t }) => (
         ))}
       </StyledExperienceBox>
     </Container>
-  </StyledExperiences>
+  </StyledExperience>
 );
 
-export default Experiences;
+export default Experience;

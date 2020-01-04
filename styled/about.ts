@@ -34,7 +34,7 @@ export const StyledAboutContent = styled.div`
 
 // EXPERIENCES
 
-export const StyledExperiences = styled.section`
+export const StyledExperience = styled.section`
   padding: 80px 0;
   background-color: ${colors.LIGHT_GRAY};
 `;

@@ -26,9 +26,7 @@ const Footer: React.FC<FooterProps> = props => (
 
     <SocialMedia />
 
-    <p>
-      &copy; {new Date().getFullYear()} Łukasz Warchoł. {props.t.rights}
-    </p>
+    <p>&copy; {new Date().getFullYear()} Łukasz Warchoł. All rights reserved</p>
   </StyledFooter>
 );
 
