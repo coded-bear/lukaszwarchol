@@ -3,9 +3,3 @@ export interface SocialMediaElemProps {
   image: string;
   name: string;
 }
-
-export interface FormState {
-  email?: string;
-  message?: string;
-  recaptcha?: boolean;
-}

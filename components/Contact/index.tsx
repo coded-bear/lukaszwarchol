@@ -26,7 +26,7 @@ const SocialMediaElem: React.FC<SocialMediaElemProps> = props => (
   </StyledSocialMediaElem>
 );
 
-const Contact: NextPage<{ t: any }> = ({ t }) => (
+const Contact: NextPage<{ t: any; lang: string }> = ({ t, lang }) => (
   <section>
     <Title text={t.title} />
 
@@ -53,7 +53,7 @@ const Contact: NextPage<{ t: any }> = ({ t }) => (
         </SocialMediaContactBox>
       </StyledContactContent>
 
-      <ContactForm t={t.form} />
+      <ContactForm t={t.form} lang={lang} />
     </StyledContactBox>
   </section>
 );
@@ -61,7 +61,7 @@ const Contact: NextPage<{ t: any }> = ({ t }) => (
 Contact.getInitialProps = async ({ asPath }) => {
   const lang: string = await getLang(asPath);
   const t: any = await require(`../../static/locales/${lang}/contact.json`);
-  return { t };
+  return { t, lang };
 };
 
 export default Contact;

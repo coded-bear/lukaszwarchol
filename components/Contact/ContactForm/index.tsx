@@ -3,13 +3,13 @@ import { ChangeEvent, TextareaEvent, FormEvent } from "../../../utils/types";
 import { StyledContactForm, StyledInput, StyledButton, StyledFormError } from "../../../styled/contact";
 import ReCAPTCHA from "react-google-recaptcha";
 
-const ContactForm: React.FC<{ t: any }> = ({ t }) => {
+const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [recaptcha, setRecaptcha] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
 
-  const recaptchaChange = (value: any) => {
+  const recaptchaChange = (value: any): void => {
     setRecaptcha(value);
   };
 
@@ -48,7 +48,7 @@ const ContactForm: React.FC<{ t: any }> = ({ t }) => {
         />
       </StyledInput>
 
-      <ReCAPTCHA sitekey="Your client site key" hl={"pl"} onChange={recaptchaChange} />
+      <ReCAPTCHA sitekey="Your client site key" hl={lang} onChange={recaptchaChange} />
 
       {error && <StyledFormError>{error}</StyledFormError>}
 
