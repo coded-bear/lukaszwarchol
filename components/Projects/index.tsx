@@ -26,11 +26,11 @@ const Projects: NextPage<{ t: any }> = ({ t }) => {
 
       <Container>
         <div>
-          <Button onClick={() => changeView(1)} name="All" />
-          <Button onClick={() => changeView(2)} name="WEB Applications" />
-          <Button onClick={() => changeView(3)} name="Websites" />
-          <Button onClick={() => changeView(4)} name="Mockups" />
+          {t.views.map((elem: string, index: number) => (
+            <Button key={index} onClick={() => changeView(index + 1)} name={elem} />
+          ))}
         </div>
+        <div></div>
       </Container>
     </section>
   );
