@@ -10,6 +10,7 @@ export interface ErrInterface {
 }
 
 export type ChangeEvent = React.ChangeEvent<HTMLInputElement>;
+export type TextareaEvent = React.ChangeEvent<HTMLTextAreaElement>;
 export type FormEvent = React.FormEvent<HTMLFormElement>;
 export type SelectEvent = React.FormEvent<HTMLSelectElement>;
 

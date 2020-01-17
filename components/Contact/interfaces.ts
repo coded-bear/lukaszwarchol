@@ -7,4 +7,5 @@ export interface SocialMediaElemProps {
 export interface FormState {
   email?: string;
   message?: string;
+  recaptcha?: boolean;
 }
