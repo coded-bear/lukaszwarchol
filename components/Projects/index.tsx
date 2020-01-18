@@ -5,6 +5,7 @@ import { StyledProjectsBtn } from "../../styled/projects";
 import { getLang } from "../../utils/langService";
 import { Title, Heading, SubTitle } from "../elements";
 import { ButtonProps } from "./interfaces";
+import { All, WebApplications, Websites, Mockups } from "./allProjects";
 
 const Button = memo((props: ButtonProps) => (
   <StyledProjectsBtn onClick={props.onClick}>{props.name}</StyledProjectsBtn>
@@ -33,7 +34,8 @@ const Projects: NextPage<{ t: any }> = ({ t }) => {
             <Button key={index} onClick={() => changeView(index + 1)} name={elem} />
           ))}
         </div>
-        <div></div>
+
+        <div>{view === 2 ? <WebApplications /> : view === 3 ? <Websites /> : view === 4 ? <Mockups /> : <All />}</div>
       </Container>
     </section>
   );

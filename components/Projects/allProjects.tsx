@@ -10,11 +10,11 @@ const Project: React.FC<ProjectProps> = props => (
   </Link>
 );
 
-const GymFreak: any = <Project id="1" class="gym-freak" />;
-const KeepYourTime: any = <Project id="2" class="keep-your-time" />;
-const LukaszWarchol: any = <Project id="3" class="lukasz-warchol" />;
-const SWYM: any = <Project id="4" class="swym" />;
-const Droplead: any = <Project id="5" class="droplead" />;
+const GymFreak: React.FC = () => <Project id="1" class="gym-freak" />;
+const KeepYourTime: React.FC = () => <Project id="2" class="keep-your-time" />;
+const LukaszWarchol: React.FC = () => <Project id="3" class="lukasz-warchol" />;
+const SWYM: React.FC = () => <Project id="4" class="swym" />;
+const Droplead: React.FC = () => <Project id="5" class="droplead" />;
 
 export const All: React.FC = () => (
   <>
