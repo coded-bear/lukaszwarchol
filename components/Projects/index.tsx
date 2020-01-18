@@ -1,11 +1,14 @@
 import React, { useState, useCallback, memo } from "react";
 import { NextPage } from "next";
 import { Container } from "../../styled/layout";
+import { StyledProjectsBtn } from "../../styled/projects";
 import { getLang } from "../../utils/langService";
 import { Title, Heading, SubTitle } from "../elements";
 import { ButtonProps } from "./interfaces";
 
-const Button = memo((props: ButtonProps) => <button onClick={props.onClick}>{props.name}</button>);
+const Button = memo((props: ButtonProps) => (
+  <StyledProjectsBtn onClick={props.onClick}>{props.name}</StyledProjectsBtn>
+));
 
 const Projects: NextPage<{ t: any }> = ({ t }) => {
   const [view, setView] = useState<number>(1);
