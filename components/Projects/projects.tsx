@@ -10,8 +10,34 @@ const Project: React.FC<ProjectProps> = props => (
   </Link>
 );
 
-export const GymFreak = <Project id="1" class="gym-freak" />;
-export const KeepYourTime = <Project id="2" class="keep-your-time" />;
-export const LukaszWarchol = <Project id="3" class="lukasz-warchol" />;
-export const SWYM = <Project id="4" class="swym" />;
-export const Droplead = <Project id="5" class="droplead" />;
+const GymFreak: any = <Project id="1" class="gym-freak" />;
+const KeepYourTime: any = <Project id="2" class="keep-your-time" />;
+const LukaszWarchol: any = <Project id="3" class="lukasz-warchol" />;
+const SWYM: any = <Project id="4" class="swym" />;
+const Droplead: any = <Project id="5" class="droplead" />;
+
+export const All: React.FC = () => (
+  <>
+    <GymFreak />
+    <KeepYourTime />
+    <LukaszWarchol />
+    <SWYM />
+    <Droplead />
+  </>
+);
+
+export const WebApplications: React.FC = () => (
+  <>
+    <GymFreak />
+    <KeepYourTime />
+    <Droplead />
+  </>
+);
+
+export const Websites: React.FC = () => (
+  <>
+    <LukaszWarchol />
+  </>
+);
+
+export const Mockups: React.FC = () => <></>;
