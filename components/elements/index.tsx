@@ -28,7 +28,9 @@ export const SubTitle: React.FC<SubTitleProps> = props => {
 
 export const LinkButton: React.FC<LinkButtonProps> = props => (
   <Link href={props.href} as={props.as} prefetch={false}>
-    <StyledLinkButton light={props.light}>{props.text}</StyledLinkButton>
+    <StyledLinkButton light={props.light}>
+      <strong>{props.text}</strong>
+    </StyledLinkButton>
   </Link>
 );
 

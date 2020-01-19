@@ -55,7 +55,9 @@ const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
 
       {error && <StyledFormError>{error}</StyledFormError>}
 
-      <StyledButton>{t.submit}</StyledButton>
+      <StyledButton>
+        <strong>{t.submit}</strong>
+      </StyledButton>
     </StyledContactForm>
   );
 };

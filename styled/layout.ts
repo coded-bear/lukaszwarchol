@@ -43,13 +43,32 @@ export const StyledSubTitle = styled.p`
 `;
 
 export const StyledLinkButton = styled.a`
+  position: relative;
   display: inline-flex;
   padding: 15px 50px;
-  background-color: ${(props: StyledLinkButtonProps) => (props.light ? "#ffffff" : colors.PRIMARY_YELLOW)};
+  border: 3px solid ${(props: StyledLinkButtonProps) => (props.light ? "#ffffff" : colors.PRIMARY_YELLOW)};
   font-size: 18px;
-  font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
+
+  strong {
+    z-index: 10;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: ${(props: StyledLinkButtonProps) => (props.light ? "#ffffff" : colors.PRIMARY_YELLOW)};
+    transition: 0.3s;
+  }
+
+  &:hover::after {
+    left: 75%;
+  }
 `;
 
 export const StyledSocialMedia = styled.div`

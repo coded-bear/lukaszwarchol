@@ -98,14 +98,32 @@ export const StyledInput = styled.label`
 `;
 
 export const StyledButton = styled.button`
+  position: relative;
   display: inline-flex;
   padding: 15px 50px;
-  border: 0;
-  background-color: ${colors.PRIMARY_YELLOW};
+  border: 3px solid ${colors.PRIMARY_YELLOW};
   font-size: 18px;
-  font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
+
+  strong {
+    z-index: 10;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: ${colors.PRIMARY_YELLOW};
+    transition: 0.3s;
+  }
+
+  &:hover::after {
+    left: 75%;
+  }
 `;
 
 export const StyledFormError = styled.div`
