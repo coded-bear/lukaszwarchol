@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ChangeEvent, TextareaEvent, FormEvent } from "../../../utils/types";
 import { StyledContactForm, StyledInput, StyledButton, StyledFormError } from "../../../styled/contact";
 import ReCAPTCHA from "react-google-recaptcha";
+import { isEmail } from "../../../utils/validation";
 
 const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
   const [email, setEmail] = useState<string>("");
@@ -15,6 +16,7 @@ const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
 
   const validate = (): string | null => {
     if (!email) return t.email.errors[0];
+    if (!isEmail(email)) return t.email.errors[1];
     if (!message) return t.message.errors[0];
     if (!recaptcha) return t.recaptcha.errors[0];
     return null;
@@ -45,6 +47,7 @@ const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
           onChange={(e: TextareaEvent) => setMessage(e.target.value)}
           rows={10}
           placeholder={t.message.placeholder}
+          maxLength={500}
         />
       </StyledInput>
 
