@@ -11,6 +11,9 @@
       "placeholder": "Twoja wiadomość",
       "errors": ["Napisz wiadomość"]
     },
+    "recaptcha": {
+      "errors": ["Zaznacz re-captcha"]
+    },
     "submit": "Wyślij",
     "success": "Wiadomość została wysłana",
     "error": "Ups, coś poszło nie tak :("

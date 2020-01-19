@@ -14,9 +14,9 @@ const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
   };
 
   const validate = (): string | null => {
-    if (!email) return "Enter your email";
-    if (!message) return "Type your message";
-    if (!recaptcha) return "Accept ReCaptcha";
+    if (!email) return t.email.errors[0];
+    if (!message) return t.message.errors[0];
+    if (!recaptcha) return t.recaptcha.errors[0];
     return null;
   };
 
