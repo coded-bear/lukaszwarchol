@@ -62,7 +62,7 @@ export const StyledNavigation = styled.div`
   font-size: 50px;
   font-weight: bold;
   text-align: center;
-  z-index: 10;
+  z-index: 100;
   transition: 0.5s;
 
   &.open {

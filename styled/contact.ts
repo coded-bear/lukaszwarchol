@@ -107,7 +107,7 @@ export const StyledButton = styled.button`
   cursor: pointer;
 
   strong {
-    z-index: 10;
+    z-index: 1;
   }
 
   &::after {
