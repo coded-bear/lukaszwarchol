@@ -98,8 +98,20 @@ export const StyledNavigation = styled.div`
 `;
 
 export const StyledNavigationSocialMedia = styled.div`
-  img {
-    height: 40px !important;
-    margin: 0 5px;
+  a {
+    img {
+      height: 40px;
+      margin: 0 5px;
+    }
+
+    &::after {
+      bottom: 0;
+      background-color: ${colors.LIGHT_GRAY};
+    }
+
+    &:hover::after {
+      width: 25px;
+      height: 25px;
+    }
   }
 `;
