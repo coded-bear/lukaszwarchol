@@ -78,11 +78,31 @@ export const StyledSocialMedia = styled.div`
   margin: 25px auto;
 
   a {
+    position: relative;
     margin: 0 10px;
     padding: 0 5px;
 
     img {
       height: 30px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 0;
+      height: 0;
+      border-radius: 20px;
+      background-color: ${colors.PRIMARY_YELLOW};
+      z-index: -1;
+      transition: 0.3s;
+    }
+
+    &:hover::after {
+      width: 20px;
+      height: 20px;
     }
   }
 `;
