@@ -9,18 +9,21 @@
       "title": "Kim jestem?",
       "description": "Jestem pasjonatem nowych technologii. Osobą, która próbuje przełamywać swoje granice i nigdy się nie poddaje. Programistą, który chce umieć jak najwięcej.",
       "href": "/about",
+      "as": "/about-me",
       "btn": "Zobacz więcej"
     },
     {
       "title": "Co robię?",
       "description": "Zajmuję się tworzeniem stron internetowych, aplikacji webowych oraz makiet. Sprawdź moją ofertę. Może Ciebie też coś zainteresuje.",
       "href": "/services",
+      "as": "/services",
       "btn": "Zobacz więcej"
     },
     {
       "title": "Co zrobiłem?",
       "description": "Stworzyłem już wiele stron internetowych i aplikacji internetowych opartych o różne technologie. Zaprojektowałem również kilka makiet. Przekonaj się sam.",
       "href": "/projects",
+      "as": "/projects",
       "btn": "Zobacz więcej"
     }
   ],

@@ -24,7 +24,7 @@ module.exports = withImages({
 
     locales.forEach(locale => {
       paths[`/${locale}`] = { page: "/home", query: { locale } };
-      paths[`/${locale}/about`] = { page: "/about", query: { locale } };
+      paths[`/${locale}/about-me`] = { page: "/about", query: { locale } };
       paths[`/${locale}/services`] = { page: "/services", query: { locale } };
       paths[`/${locale}/projects`] = { page: "/projects", query: { locale } };
       paths[`/${locale}/contact`] = { page: "/contact", query: { locale } };

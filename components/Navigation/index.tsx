@@ -23,7 +23,7 @@ const Navigation: React.FC<NavigationProps> = forwardRef((props, ref) => (
     <nav>
       <ul>
         <NavElem href="/home" as={`/${props.lang}/`} text="Home" closeMenu={props.closeMenu} />
-        <NavElem href="/about" as={`/${props.lang}/about`} text={props.t.nav.about} closeMenu={props.closeMenu} />
+        <NavElem href="/about" as={`/${props.lang}/about-me`} text={props.t.nav.about} closeMenu={props.closeMenu} />
         <NavElem
           href="/services"
           as={`/${props.lang}/services`}

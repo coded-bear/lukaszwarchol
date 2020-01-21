@@ -17,7 +17,7 @@ const Footer: React.FC<FooterProps> = props => (
     <nav>
       <ul>
         <NavElem href="/home" as={`/${props.lang}`} text="Home" />
-        <NavElem href="/about" as={`/${props.lang}/about`} text={props.t.nav.about} />
+        <NavElem href="/about" as={`/${props.lang}/about-me`} text={props.t.nav.about} />
         <NavElem href="/services" as={`/${props.lang}/services`} text={props.t.nav.services} />
         <NavElem href="/projects" as={`/${props.lang}/projects`} text={props.t.nav.projects} />
         <NavElem href="/contact" as={`/${props.lang}/contact`} text={props.t.nav.contact} />

@@ -11,7 +11,7 @@ export default async function router(server: Server, app: any) {
       return await app.render(req, res, "/home", req.query);
     });
 
-    server.get(`/${locale}/about`, async (req: Req, res: Res) => {
+    server.get(`/${locale}/about-me`, async (req: Req, res: Res) => {
       return await app.render(req, res, "/about", req.query);
     });
 

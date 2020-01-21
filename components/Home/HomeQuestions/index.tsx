@@ -19,7 +19,7 @@ const HomeQuestions: React.FC<{ t: any; lang: string }> = ({ t, lang }) => (
           </h4>
           <p>{elem.description}</p>
 
-          <LinkButton href={elem.href} as={`/${lang + elem.href}`} text={elem.btn} />
+          <LinkButton href={elem.href} as={`/${lang + elem.as}`} text={elem.btn} />
         </StyledQuestionsElem>
       ))}
     </StyledQuestionsBox>
