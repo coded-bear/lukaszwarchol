@@ -16,6 +16,13 @@ const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
     setRecaptcha(value);
   };
 
+  const resetForm = (): void => {
+    setEmail("");
+    setMessage("");
+    setRecaptcha(null);
+    setError(null);
+  };
+
   const validate = (): string | null => {
     if (!email) return t.email.errors[0];
     if (!isEmail(email)) return t.email.errors[1];
@@ -24,11 +31,10 @@ const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
     return null;
   };
 
-  const submitHandler = (e: FormEvent): void => {
+  const submitHandler = async (e: FormEvent): Promise<void> => {
     e.preventDefault();
 
     if (validate()) return setError(validate());
-    setError(null);
 
     console.log(email, message, recaptcha);
 
@@ -38,7 +44,13 @@ const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
       message: message
     };
 
-    emailjs.send(service_id, template_id, templateParams, user_id);
+    try {
+      await emailjs.send(service_id, template_id, templateParams, user_id);
+      console.log("Wiadomość została wysłana!");
+      resetForm();
+    } catch (err) {
+      console.log("Ups, coś poszło nie tak :(");
+    }
   };
 
   return (
