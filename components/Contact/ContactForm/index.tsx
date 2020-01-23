@@ -3,6 +3,7 @@ import { ChangeEvent, TextareaEvent, FormEvent } from "../../../utils/types";
 import { StyledContactForm, StyledInput, StyledButton, StyledFormError } from "../../../styled/contact";
 import ReCAPTCHA from "react-google-recaptcha";
 import * as emailjs from "emailjs-com";
+import { TemplateParamsTypes } from "../interfaces";
 import { isEmail } from "../../../utils/validation";
 import { service_id, template_id, user_id, recaptcha_public_key } from "../../../utils/secret";
 
@@ -36,9 +37,7 @@ const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
 
     if (validate()) return setError(validate());
 
-    console.log(email, message, recaptcha);
-
-    const templateParams = {
+    const templateParams: TemplateParamsTypes = {
       reply_to: email,
       email: email,
       message: message
