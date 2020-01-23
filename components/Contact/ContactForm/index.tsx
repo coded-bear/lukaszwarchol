@@ -46,7 +46,12 @@ const ContactForm: React.FC<{ t: any; lang: string }> = memo(({ t, lang }) => {
     };
 
     try {
-      const response = await emailjs.send(service_id, template_id, templateParams, user_id);
+      const response: emailjs.EmailJSResponseStatus = await emailjs.send(
+        service_id,
+        template_id,
+        templateParams,
+        user_id
+      );
       if (response.status === 200) {
         setInfoPopup("Wiadomość została wysłana!");
         resetForm();
