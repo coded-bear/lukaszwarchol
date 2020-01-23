@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 import { ChangeEvent, TextareaEvent, FormEvent } from "../../../utils/types";
 import { StyledContactForm, StyledInput, StyledButton, StyledFormError } from "../../../styled/contact";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -7,7 +7,7 @@ import { TemplateParamsTypes } from "../interfaces";
 import { isEmail } from "../../../utils/validation";
 import { service_id, template_id, user_id, recaptcha_public_key } from "../../../utils/secret";
 
-const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
+const ContactForm: React.FC<{ t: any; lang: string }> = memo(({ t, lang }) => {
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [recaptcha, setRecaptcha] = useState<any>(null);
@@ -83,6 +83,6 @@ const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
       </StyledButton>
     </StyledContactForm>
   );
-};
+});
 
 export default ContactForm;
