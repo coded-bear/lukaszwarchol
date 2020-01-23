@@ -9,3 +9,8 @@ export interface TemplateParamsTypes {
   email: string;
   message: string;
 }
+
+export interface FormInfoPopupProps {
+  info: string;
+  close: any;
+}

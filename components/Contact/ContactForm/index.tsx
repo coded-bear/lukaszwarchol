@@ -1,4 +1,5 @@
 import React, { useState, memo } from "react";
+import FormInfoPopup from "../FormInfoPopup";
 import { ChangeEvent, TextareaEvent, FormEvent } from "../../../utils/types";
 import { StyledContactForm, StyledInput, StyledButton, StyledFormError } from "../../../styled/contact";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -12,6 +13,7 @@ const ContactForm: React.FC<{ t: any; lang: string }> = memo(({ t, lang }) => {
   const [message, setMessage] = useState<string>("");
   const [recaptcha, setRecaptcha] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
+  const [infoPopup, setInfoPopup] = useState<string>("");
 
   const recaptchaChange = (value: any): void => {
     setRecaptcha(value);
@@ -46,11 +48,11 @@ const ContactForm: React.FC<{ t: any; lang: string }> = memo(({ t, lang }) => {
     try {
       const response = await emailjs.send(service_id, template_id, templateParams, user_id);
       if (response.status === 200) {
-        console.log("Wiadomość została wysłana!");
+        setInfoPopup("Wiadomość została wysłana!");
         resetForm();
       } else throw new Error();
     } catch (err) {
-      console.log("Ups, coś poszło nie tak :(");
+      setInfoPopup("Ups, coś poszło nie tak :(");
     }
   };
 
@@ -81,6 +83,8 @@ const ContactForm: React.FC<{ t: any; lang: string }> = memo(({ t, lang }) => {
       <StyledButton>
         <strong>{t.submit}</strong>
       </StyledButton>
+
+      {infoPopup && <FormInfoPopup info={infoPopup} close={() => setInfoPopup("")} />}
     </StyledContactForm>
   );
 });
