@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { ChangeEvent, TextareaEvent, FormEvent } from "../../../utils/types";
 import { StyledContactForm, StyledInput, StyledButton, StyledFormError } from "../../../styled/contact";
 import ReCAPTCHA from "react-google-recaptcha";
+import * as emailjs from "emailjs-com";
 import { isEmail } from "../../../utils/validation";
+import { service_id, template_id, user_id, recaptcha_public_key } from "../../../utils/secret";
 
 const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
   const [email, setEmail] = useState<string>("");
@@ -28,7 +30,15 @@ const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
     if (validate()) return setError(validate());
     setError(null);
 
-    console.log({ email, message, recaptcha });
+    console.log(email, message, recaptcha);
+
+    const templateParams = {
+      reply_to: email,
+      email: email,
+      message: message
+    };
+
+    emailjs.send(service_id, template_id, templateParams, user_id);
   };
 
   return (
@@ -51,7 +61,7 @@ const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
         />
       </StyledInput>
 
-      <ReCAPTCHA sitekey="Your client site key" hl={lang} onChange={recaptchaChange} />
+      <ReCAPTCHA sitekey={recaptcha_public_key} hl={lang} onChange={recaptchaChange} />
 
       {error && <StyledFormError>{error}</StyledFormError>}
 

@@ -9,3 +9,6 @@ dist
 
 # static export output
 out
+
+# email
+utils/secret.ts
