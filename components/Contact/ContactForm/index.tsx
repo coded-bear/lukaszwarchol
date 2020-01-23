@@ -44,9 +44,11 @@ const ContactForm: React.FC<{ t: any; lang: string }> = ({ t, lang }) => {
     };
 
     try {
-      await emailjs.send(service_id, template_id, templateParams, user_id);
-      console.log("Wiadomość została wysłana!");
-      resetForm();
+      const response = await emailjs.send(service_id, template_id, templateParams, user_id);
+      if (response.status === 200) {
+        console.log("Wiadomość została wysłana!");
+        resetForm();
+      } else throw new Error();
     } catch (err) {
       console.log("Ups, coś poszło nie tak :(");
     }
