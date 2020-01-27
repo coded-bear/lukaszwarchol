@@ -53,11 +53,11 @@ const ContactForm: React.FC<{ t: any; lang: string }> = memo(({ t, lang }) => {
         user_id
       );
       if (response.status === 200) {
-        setInfoPopup("Wiadomość została wysłana!");
+        setInfoPopup(t.success);
         resetForm();
       } else throw new Error();
     } catch (err) {
-      setInfoPopup("Ups, coś poszło nie tak :(");
+      setInfoPopup(t.error);
     }
   };
 
