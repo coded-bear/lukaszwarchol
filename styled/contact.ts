@@ -130,3 +130,45 @@ export const StyledFormError = styled.div`
   margin-bottom: 10px;
   color: ${colors.PRIMARY_YELLOW};
 `;
+
+export const StyledFormInfoPopupContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 10;
+`;
+
+export const StyledFormInfoPopup = styled.div`
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border: 5px solid ${colors.PRIMARY_TEXT};
+  background-color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+
+  button {
+    display: block;
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    img {
+      height: 24px;
+    }
+  }
+
+  p {
+    margin: 60px 0;
+  }
+`;

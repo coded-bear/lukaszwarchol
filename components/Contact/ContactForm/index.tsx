@@ -30,7 +30,7 @@ const ContactForm: React.FC<{ t: any; lang: string }> = memo(({ t, lang }) => {
     if (!email) return t.email.errors[0];
     if (!isEmail(email)) return t.email.errors[1];
     if (!message) return t.message.errors[0];
-    if (!recaptcha) return t.recaptcha.errors[0];
+    // if (!recaptcha) return t.recaptcha.errors[0];
     return null;
   };
 
@@ -44,6 +44,8 @@ const ContactForm: React.FC<{ t: any; lang: string }> = memo(({ t, lang }) => {
       email: email,
       message: message
     };
+
+    console.log(recaptcha);
 
     try {
       const response: emailjs.EmailJSResponseStatus = await emailjs.send(
