@@ -15,7 +15,7 @@
       "errors": ["Zaznacz re-captcha"]
     },
     "submit": "Wyślij",
-    "success": "Wiadomość została wysłana",
+    "success": "Wiadomość została wysłana!",
     "error": "Ups, coś poszło nie tak :("
   }
 }

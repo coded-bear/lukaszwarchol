@@ -15,7 +15,7 @@
       "errors": ["Check re-captcha"]
     },
     "submit": "Send",
-    "success": "The message was sent",
+    "success": "The message was sent!",
     "error": "Oops, something went wrong :("
   }
 }
