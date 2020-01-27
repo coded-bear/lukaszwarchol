@@ -8,7 +8,9 @@ import { ButtonProps } from "./interfaces";
 import { All, WebApplications, Websites, Mockups } from "./allProjects";
 
 const Button = memo((props: ButtonProps) => (
-  <StyledProjectsBtn onClick={props.onClick}>{props.name}</StyledProjectsBtn>
+  <StyledProjectsBtn onClick={props.onClick} active={props.active}>
+    {props.name}
+  </StyledProjectsBtn>
 ));
 
 const Projects: NextPage<{ t: any }> = ({ t }) => {
@@ -31,7 +33,7 @@ const Projects: NextPage<{ t: any }> = ({ t }) => {
       <Container>
         <div>
           {t.views.map((elem: string, index: number) => (
-            <Button key={index} onClick={() => changeView(index + 1)} name={elem} />
+            <Button key={index} onClick={() => changeView(index + 1)} active={view === index + 1} name={elem} />
           ))}
         </div>
 

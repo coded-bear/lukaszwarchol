@@ -1,5 +1,6 @@
 export interface ButtonProps {
   onClick: any;
+  active: boolean;
   name: string;
 }
 
