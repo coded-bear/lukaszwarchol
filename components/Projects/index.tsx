@@ -1,7 +1,7 @@
 import React, { useState, useCallback, memo } from "react";
 import { NextPage } from "next";
 import { Container } from "../../styled/layout";
-import { StyledProjectsBtn } from "../../styled/projects";
+import { StyledProjectsBtn, StyledProjectsList } from "../../styled/projects";
 import { getLang } from "../../utils/langService";
 import { Title, Heading, SubTitle } from "../elements";
 import { ButtonProps } from "./interfaces";
@@ -35,7 +35,9 @@ const Projects: NextPage<{ t: any }> = ({ t }) => {
           ))}
         </div>
 
-        <div>{view === 2 ? <WebApplications /> : view === 3 ? <Websites /> : view === 4 ? <Mockups /> : <All />}</div>
+        <StyledProjectsList>
+          {view === 2 ? <WebApplications /> : view === 3 ? <Websites /> : view === 4 ? <Mockups /> : <All />}
+        </StyledProjectsList>
       </Container>
     </section>
   );

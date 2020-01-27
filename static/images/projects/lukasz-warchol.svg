@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="449" height="280" viewBox="0 0 449 280">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="rect4246" width="130" height="130" transform="translate(0 0)" fill="#dfdfdf"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="rect4238" width="130" height="130" fill="#dfdfdf"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="rect4234" width="130" height="130" rx="57.735" fill="#dfdfdf"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <rect id="rect4226" width="130" height="130" rx="57.735" transform="translate(0)" fill="#dfdfdf"/>
+    </clipPath>
+    <clipPath id="clip-path-7">
+      <rect id="rect4222" width="130" height="130" rx="57.735" transform="translate(0 0)" fill="#dfdfdf"/>
+    </clipPath>
+    <clipPath id="clip-path-12">
+      <rect id="rect4202" width="130" height="130" transform="translate(0)" fill="#dfdfdf"/>
+    </clipPath>
+  </defs>
+  <g id="Group_69" data-name="Group 69" transform="translate(-1209 -540)">
+    <rect id="Rectangle_25" data-name="Rectangle 25" width="449" height="280" transform="translate(1209 540)" fill="#adadad"/>
+    <g id="layer1" transform="translate(1347.587 661.455)" opacity="0.999">
+      <g id="Group_8" data-name="Group 8" transform="translate(21.206 -46.728)" clip-path="url(#clip-path)">
+        <path id="path4209" d="M87.329,47.569h83.348L129,140.457Z" transform="translate(-50.209 -28.943)" fill="#252934" fill-rule="evenodd"/>
+      </g>
+      <g id="Group_9" data-name="Group 9" transform="translate(21.206 -46.728)" clip-path="url(#clip-path)">
+        <path id="path4207" d="M44.587,47.569h83.348L86.26,140.457Z" transform="translate(-35.25 -28.943)" fill="rgba(255,175,25,0.8)" fill-rule="evenodd"/>
+      </g>
+      <g id="Group_10" data-name="Group 10" transform="translate(21.206 -46.728)" clip-path="url(#clip-path-3)">
+        <rect id="rect4154" width="31.511" height="10.398" rx="5.199" transform="translate(-12.07 32.421)" fill="#252934"/>
+      </g>
+      <g id="Group_11" data-name="Group 11" transform="translate(21.206 -46.728)" clip-path="url(#clip-path-4)">
+        <rect id="rect4158" width="32.422" height="10.398" rx="5.199" transform="translate(25.961 32.421)" fill="#252934"/>
+      </g>
+      <g id="Group_12" data-name="Group 12" transform="translate(21.206 -46.728)" clip-path="url(#clip-path-3)">
+        <rect id="rect4160" width="34.699" height="10.398" rx="5.199" transform="translate(-22.773 46.114)" fill="#252934"/>
+      </g>
+      <g id="Group_13" data-name="Group 13" transform="translate(21.206 -46.728)" clip-path="url(#clip-path-6)">
+        <rect id="rect4166" width="32.422" height="10.398" rx="5.199" transform="translate(18.674 46.114)" fill="#252934"/>
+      </g>
+      <g id="Group_14" data-name="Group 14" transform="translate(21.206 -46.728)" clip-path="url(#clip-path-7)">
+        <rect id="rect4168" width="39.937" height="10.398" rx="5.199" transform="translate(-7.515 59.808)" fill="#252934"/>
+      </g>
+      <g id="Group_15" data-name="Group 15" transform="translate(21.206 -46.728)" clip-path="url(#clip-path-7)">
+        <rect id="rect4174" width="12.969" height="10.398" rx="5.199" transform="translate(38.941 59.808)" fill="#252934"/>
+      </g>
+      <g id="Group_16" data-name="Group 16" transform="translate(21.206 -46.728)" clip-path="url(#clip-path-4)">
+        <rect id="rect4176" width="12.969" height="10.398" rx="5.199" transform="translate(57.387 46.114)" fill="#252934"/>
+      </g>
+      <g id="Group_17" data-name="Group 17" transform="translate(21.206 -46.728)" clip-path="url(#clip-path-3)">
+        <rect id="rect4178" width="42.214" height="10.398" rx="5.199" transform="translate(-23 73.501)" fill="#252934"/>
+      </g>
+      <g id="Group_18" data-name="Group 18" transform="translate(21.206 -46.728)" clip-path="url(#clip-path-4)">
+        <rect id="rect4184" width="32.422" height="10.398" rx="5.199" transform="translate(25.961 73.501)" fill="#252934"/>
+      </g>
+      <g id="Group_19" data-name="Group 19" transform="translate(21.206 -46.728)" clip-path="url(#clip-path-12)">
+        <rect id="rect4186" width="45.63" height="10.398" rx="5.199" transform="translate(-7.743 87.195)" fill="#252934"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -5,5 +5,5 @@ export interface ButtonProps {
 
 export interface ProjectProps {
   id: string;
-  class: string;
+  image: string;
 }
