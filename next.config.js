@@ -21,6 +21,7 @@ module.exports = withImages({
   exportPathMap: async function() {
     const paths = { "/": { page: "/home" } };
     const locales = ["pl", "en"];
+    const projects = ["LukaszWarchol", "KeepYourTime", "GymFreak"];
 
     locales.forEach(locale => {
       paths[`/${locale}`] = { page: "/home", query: { locale } };
@@ -28,6 +29,10 @@ module.exports = withImages({
       paths[`/${locale}/services`] = { page: "/services", query: { locale } };
       paths[`/${locale}/projects`] = { page: "/projects", query: { locale } };
       paths[`/${locale}/contact`] = { page: "/contact", query: { locale } };
+
+      projects.forEach(projectName => {
+        paths[`${locale}/projects/${projectName}`] = { page: "/project", query: { locale, projectName } };
+      });
     });
 
     return paths;

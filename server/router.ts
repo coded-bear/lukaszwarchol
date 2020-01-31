@@ -1,12 +1,14 @@
 import { Server, Req, Res } from "../utils/types";
 import { langsList } from "../utils/langService";
 
+const projects = ["LukaszWarchol", "KeepYourTime", "GymFreak"];
+
 export default async function router(server: Server, app: any) {
   server.get("/", async (req: Req, res: Res) => {
     return await app.render(req, res, "/home", req.query);
   });
 
-  langsList.forEach(locale => {
+  langsList.forEach((locale: string) => {
     server.get(`/${locale}`, async (req: Req, res: Res) => {
       return await app.render(req, res, "/home", req.query);
     });
@@ -25,6 +27,12 @@ export default async function router(server: Server, app: any) {
 
     server.get(`/${locale}/contact`, async (req: Req, res: Res) => {
       return await app.render(req, res, "/contact", req.query);
+    });
+
+    projects.forEach((projectName: string) => {
+      server.get(`/${locale}/projects/${projectName}`, async (req: Req, res: Res) => {
+        return await app.render(req, res, "/project", req.query);
+      });
     });
   });
 }
