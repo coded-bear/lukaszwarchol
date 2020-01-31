@@ -9,19 +9,19 @@ import imgLukaszWarchol from "../../static/images/projects/lukasz-warchol.svg";
 
 const Project: React.FC<ProjectProps> = props => (
   <StyledProject>
-    <Link href={`/Projects/${props.id}`} as={`/project/${props.id}`} prefetch={false}>
+    <Link href={`/project/${props.projectName}`} as={`/projects/${props.projectName}`} prefetch={false}>
       <a>
-        <img src={props.image} alt="" />
+        <img src={props.image} alt={props.projectName} />
       </a>
     </Link>
   </StyledProject>
 );
 
-const GymFreak: React.FC = () => <Project id="1" image={imgGymFreak} />;
-const KeepYourTime: React.FC = () => <Project id="2" image={imgKeepYourTime} />;
-const LukaszWarchol: React.FC = () => <Project id="3" image={imgLukaszWarchol} />;
-const SWYM: React.FC = () => <Project id="4" image={imgGymFreak} />;
-const Droplead: React.FC = () => <Project id="5" image={imgGymFreak} />;
+const GymFreak: React.FC = () => <Project projectName="GymFreak" image={imgGymFreak} />;
+const KeepYourTime: React.FC = () => <Project projectName="KeepYourTime" image={imgKeepYourTime} />;
+const LukaszWarchol: React.FC = () => <Project projectName="LukaszWarchol" image={imgLukaszWarchol} />;
+const SWYM: React.FC = () => <Project projectName="SWYM" image={imgGymFreak} />;
+const Droplead: React.FC = () => <Project projectName="Droplead" image={imgGymFreak} />;
 
 export const All: React.FC = () => (
   <>
