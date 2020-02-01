@@ -13,7 +13,7 @@ const Button = memo((props: ButtonProps) => (
   </StyledProjectsBtn>
 ));
 
-const Projects: NextPage<{ t: any }> = ({ t }) => {
+const Projects: NextPage<{ t: any; lang: string }> = ({ t, lang }) => {
   const [view, setView] = useState<number>(1);
 
   const changeView = useCallback(
@@ -38,7 +38,15 @@ const Projects: NextPage<{ t: any }> = ({ t }) => {
         </div>
 
         <StyledProjectsList>
-          {view === 2 ? <WebApplications /> : view === 3 ? <Websites /> : view === 4 ? <Mockups /> : <All />}
+          {view === 2 ? (
+            <WebApplications lang={lang} />
+          ) : view === 3 ? (
+            <Websites lang={lang} />
+          ) : view === 4 ? (
+            <Mockups lang={lang} />
+          ) : (
+            <All lang={lang} />
+          )}
         </StyledProjectsList>
       </Container>
     </section>
@@ -48,7 +56,7 @@ const Projects: NextPage<{ t: any }> = ({ t }) => {
 Projects.getInitialProps = async ({ asPath }) => {
   const lang: string = await getLang(asPath);
   const t: any = await require(`../../static/locales/${lang}/projects.json`);
-  return { t };
+  return { t, lang };
 };
 
 export default Projects;
