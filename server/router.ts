@@ -1,7 +1,7 @@
 import { Server, Req, Res } from "../utils/types";
 import { langsList } from "../utils/langService";
 
-const projects: string[] = ["lukasz-warchol", "keep-your-yime", "gym-freak", "swym", "droplead"];
+const projects: string[] = ["lukasz-warchol", "keep-your-time", "gym-freak", "swym", "droplead"];
 
 export default async function router(server: Server, app: any) {
   server.get("/", async (req: Req, res: Res) => {
