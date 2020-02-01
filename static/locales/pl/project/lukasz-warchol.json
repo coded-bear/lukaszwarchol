@@ -1,7 +1,11 @@
 {
   "projectName": "Łukasz Warchoł - website",
-  "mainImage": "",
-  "description": "",
-  "github": "",
-  "images": [""]
+  "mainImage": "/static/images/projects/lukasz-warchol.svg",
+  "description": "My own portfolio written in React using Next.js",
+  "github": "https://github.com/coded-bear/lukaszwarchol",
+  "images": [
+    "/static/images/projects/lukasz-warchol.svg",
+    "/static/images/projects/lukasz-warchol.svg",
+    "/static/images/projects/lukasz-warchol.svg"
+  ]
 }
