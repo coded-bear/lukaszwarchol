@@ -12,17 +12,31 @@ const Project: NextPage<{ t: any }> = ({ t }) => (
 
     <Container>
       <div>
-        <div></div>
-        <div></div>
+        <div>
+          <img src={t.mainImage} alt={t.projectName} />
+        </div>
+        <div>
+          <p>{t.description}</p>
+          <a href={t.github} target="_blank">
+            Zobacz na GitHub
+          </a>
+        </div>
       </div>
-      <div></div>
+
+      <div>
+        {t.images.map((elem: string, index: number) => (
+          <div key={index}>
+            <img src={elem} alt={t.projectName} />
+          </div>
+        ))}
+      </div>
     </Container>
   </section>
 );
 
 Project.getInitialProps = async ({ asPath }) => {
   const lang: string = await getLang(asPath);
-  const projectName: string = "lukaszwarchol";
+  const projectName: string = "lukasz-warchol";
   const t: any = await require(`../../static/locales/${lang}/project/${projectName}.json`);
   return { t };
 };

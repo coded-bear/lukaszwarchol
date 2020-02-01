@@ -21,7 +21,7 @@ module.exports = withImages({
   exportPathMap: async function() {
     const paths = { "/": { page: "/home" } };
     const locales = ["pl", "en"];
-    const projects = ["LukaszWarchol", "KeepYourTime", "GymFreak"];
+    const projects = ["lukasz-warchol", "keep-your-yime", "gym-freak"];
 
     locales.forEach(locale => {
       paths[`/${locale}`] = { page: "/home", query: { locale } };
