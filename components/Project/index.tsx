@@ -17,8 +17,8 @@ const Project: NextPage<{ t: any }> = ({ t }) => (
         </div>
         <div>
           <p>{t.description}</p>
-          <a href={t.github} target="_blank">
-            Zobacz na GitHub
+          <a href={t.github.link} target="_blank">
+            {t.github.text}
           </a>
         </div>
       </div>
