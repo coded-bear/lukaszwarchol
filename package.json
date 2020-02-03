@@ -19,6 +19,7 @@
     "compression": "^1.7.4",
     "emailjs-com": "^2.4.1",
     "express": "^4.17.1",
+    "gsap": "^3.1.1",
     "next": "^9.1.6",
     "next-images": "^1.2.0",
     "react": "^16.12.0",
