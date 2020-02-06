@@ -17,7 +17,7 @@ export const StyledServiceElem = styled.div`
   border: 1px solid ${colors.PRIMARY_TEXT};
 
   img {
-    height: 60px;
+    height: 50px;
   }
 
   h4 {
