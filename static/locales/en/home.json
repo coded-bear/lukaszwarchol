@@ -26,10 +26,5 @@
       "as": "/projects",
       "btn": "Learn more"
     }
-  ],
-  "numbers": [
-    { "title": "drinks", "number": "1 500+" },
-    { "title": "Lines of code", "number": "1 000 000+" },
-    { "title": "Technologies lerned", "number": "20+" }
   ]
 }

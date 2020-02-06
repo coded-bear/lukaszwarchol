@@ -26,10 +26,5 @@
       "as": "/projects",
       "btn": "Zobacz więcej"
     }
-  ],
-  "numbers": [
-    { "title": "Wypitych kaw", "number": "1 500+" },
-    { "title": "Linijek kodu", "number": "1 000 000+" },
-    { "title": "Poznanych technologii", "number": "20+" }
   ]
 }

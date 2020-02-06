@@ -9,7 +9,6 @@ import {
 import { getLang } from "../../utils/langService";
 import { Title, LinkButton, SocialMedia } from "../elements";
 import HomQuestions from "./HomeQuestions";
-import HomeNumbers from "./HomeNumbers";
 
 const Home: NextPage<{ t: any; lang: string }> = ({ t, lang }) => (
   <>
@@ -38,8 +37,6 @@ const Home: NextPage<{ t: any; lang: string }> = ({ t, lang }) => (
     </StyledHomeHeader>
 
     <HomQuestions t={t.questions} lang={lang} />
-
-    <HomeNumbers t={t.numbers} />
   </>
 );
 
