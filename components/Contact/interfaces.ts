@@ -4,6 +4,11 @@ export interface SocialMediaElemProps {
   name: string;
 }
 
+export interface FormInterface {
+  email: string;
+  message: string;
+}
+
 export interface TemplateParamsTypes {
   reply_to: string;
   email: string;

@@ -4,12 +4,12 @@ import { ChangeEvent, TextareaEvent, FormEvent } from "../../../utils/types";
 import { StyledContactForm, StyledInput, StyledButton, StyledFormError } from "../../../styled/contact";
 import ReCAPTCHA from "react-google-recaptcha";
 import * as emailjs from "emailjs-com";
-import { TemplateParamsTypes } from "../interfaces";
+import { FormInterface, TemplateParamsTypes } from "../interfaces";
 import { isEmail } from "../../../utils/validation";
 import { service_id, template_id, user_id, recaptcha_public_key } from "../../../utils/secret";
 
 const ContactForm: React.FC<{ t: any; lang: string }> = memo(({ t, lang }) => {
-  const [form, setForm] = useState<{ email: string; message: string }>({ email: "", message: "" });
+  const [form, setForm] = useState<FormInterface>({ email: "", message: "" });
   const [recaptcha, setRecaptcha] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
   const [infoPopup, setInfoPopup] = useState<string>("");
