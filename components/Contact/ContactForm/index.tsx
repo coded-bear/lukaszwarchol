@@ -9,27 +9,29 @@ import { isEmail } from "../../../utils/validation";
 import { service_id, template_id, user_id, recaptcha_public_key } from "../../../utils/secret";
 
 const ContactForm: React.FC<{ t: any; lang: string }> = memo(({ t, lang }) => {
-  const [email, setEmail] = useState<string>("");
-  const [message, setMessage] = useState<string>("");
+  const [form, setForm] = useState<{ email: string; message: string }>({ email: "", message: "" });
   const [recaptcha, setRecaptcha] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
   const [infoPopup, setInfoPopup] = useState<string>("");
+
+  const updateForm = (e: ChangeEvent | TextareaEvent): void => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
   const recaptchaChange = (value: any): void => {
     setRecaptcha(value);
   };
 
   const resetForm = (): void => {
-    setEmail("");
-    setMessage("");
+    setForm({ email: "", message: "" });
     setRecaptcha(null);
     setError(null);
   };
 
   const validate = (): string | null => {
-    if (!email) return t.email.errors[0];
-    if (!isEmail(email)) return t.email.errors[1];
-    if (!message) return t.message.errors[0];
+    if (!form.email) return t.email.errors[0];
+    if (!isEmail(form.email)) return t.email.errors[1];
+    if (!form.message) return t.message.errors[0];
     if (!recaptcha) return t.recaptcha.errors[0];
     return null;
   };
@@ -40,9 +42,9 @@ const ContactForm: React.FC<{ t: any; lang: string }> = memo(({ t, lang }) => {
     if (validate()) return setError(validate());
 
     const templateParams: TemplateParamsTypes = {
-      reply_to: email,
-      email: email,
-      message: message
+      reply_to: form.email,
+      email: form.email,
+      message: form.message
     };
 
     try {
@@ -64,21 +66,10 @@ const ContactForm: React.FC<{ t: any; lang: string }> = memo(({ t, lang }) => {
   return (
     <StyledContactForm onSubmit={submitHandler}>
       <StyledInput>
-        <input
-          type="email"
-          name="email"
-          onChange={(e: ChangeEvent) => setEmail(e.target.value)}
-          placeholder={t.email.placeholder}
-        />
+        <input type="email" name="email" onChange={updateForm} placeholder={t.email.placeholder} />
       </StyledInput>
       <StyledInput>
-        <textarea
-          name="message"
-          onChange={(e: TextareaEvent) => setMessage(e.target.value)}
-          rows={10}
-          placeholder={t.message.placeholder}
-          maxLength={500}
-        />
+        <textarea name="message" onChange={updateForm} rows={10} placeholder={t.message.placeholder} maxLength={500} />
       </StyledInput>
 
       <ReCAPTCHA sitekey={recaptcha_public_key} hl={lang} onChange={recaptchaChange} />
