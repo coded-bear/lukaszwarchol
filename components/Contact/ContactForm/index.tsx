@@ -8,6 +8,14 @@ import { FormInterface, TemplateParamsTypes } from "../interfaces";
 import { isEmail } from "../../../utils/validation";
 import { service_id, template_id, user_id, recaptcha_public_key } from "../../../utils/secret";
 
+const validate = (form: FormInterface, recaptcha: any, t: any): string | null => {
+  if (!form.email) return t.email.errors[0];
+  if (!isEmail(form.email)) return t.email.errors[1];
+  if (!form.message) return t.message.errors[0];
+  if (!recaptcha) return t.recaptcha.errors[0];
+  return null;
+};
+
 const ContactForm: React.FC<{ t: any; lang: string }> = memo(({ t, lang }) => {
   const [form, setForm] = useState<FormInterface>({ email: "", message: "" });
   const [recaptcha, setRecaptcha] = useState<any>(null);
@@ -28,18 +36,11 @@ const ContactForm: React.FC<{ t: any; lang: string }> = memo(({ t, lang }) => {
     setError(null);
   };
 
-  const validate = (): string | null => {
-    if (!form.email) return t.email.errors[0];
-    if (!isEmail(form.email)) return t.email.errors[1];
-    if (!form.message) return t.message.errors[0];
-    if (!recaptcha) return t.recaptcha.errors[0];
-    return null;
-  };
-
   const submitHandler = async (e: FormEvent): Promise<void> => {
     e.preventDefault();
 
-    if (validate()) return setError(validate());
+    const error: string | null = validate(form, recaptcha, t);
+    if (error) return setError(error);
 
     const templateParams: TemplateParamsTypes = {
       reply_to: form.email,
