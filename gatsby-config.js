@@ -22,6 +22,12 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/favicon.ico`
       }
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: false
+      }
     }
   ]
 };
