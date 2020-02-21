@@ -23,7 +23,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     });
     createPage({
-      path: `/${locale}/about/`,
+      path: `/${locale}/about-me/`,
       component: path.resolve("src/components/About/index.jsx"),
       context: {
         lang: locale,
