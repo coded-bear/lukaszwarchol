@@ -14,3 +14,6 @@ yarn-error.log*
 
 # Mac files
 .DS_Store
+
+# secret
+src/utils/secret.js
