@@ -1,6 +1,6 @@
-# lukaszwarchol
+# lukaszwarchol-website
 
-My own portfolio written in React using Next.js
+My portfolio website written in Gatsby.
 
 ## Installation
 
@@ -12,13 +12,13 @@ $ npm install
 
 ```bash
 # development
-$ npm run dev
+$ npm run develop
 
 # build
 $ npm run build
 
-# production
-$ npm run start
+# serve
+$ npm run serve
 ```
 
 ### License

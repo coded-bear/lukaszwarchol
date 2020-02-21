@@ -1,44 +1,36 @@
 {
-  "name": "lukaszwarchol",
-  "description": "My own portfolio written in React using Next.js",
-  "keywords": [
-    "Software Development",
-    "Łukasz Warchoł"
-  ],
+  "name": "lukaszwarchol-website",
+  "description": "My portfolio website written in Gatsby",
+  "version": "0.1.0",
   "author": "Łukasz Warchoł",
+  "keywords": [
+    "lukaszwarchol-website",
+    "Łukasz Warchoł",
+    "portfolio"
+  ],
   "license": "ISC",
-  "version": "1.0.0",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coded-bear/lukaszwarchol"
+  },
   "scripts": {
-    "dev": "nodemon",
-    "build": "next build && tsc --project tsconfig.server.json",
-    "start": "cross-env NODE_ENV=production node dist/server/index.js",
-    "export": "next export"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "compression": "^1.7.4",
-    "emailjs-com": "^2.4.1",
-    "express": "^4.17.1",
-    "next": "^9.1.6",
-    "next-images": "^1.2.0",
+    "gatsby": "^2.19.7",
+    "gatsby-image": "^2.2.39",
+    "gatsby-plugin-manifest": "^2.2.39",
+    "gatsby-plugin-offline": "^3.0.32",
+    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-sharp": "^2.4.3",
+    "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-transformer-sharp": "^2.3.13",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-google-recaptcha": "^2.0.1",
-    "styled-components": "^4.4.1"
-  },
-  "devDependencies": {
-    "@types/compression": "^1.0.1",
-    "@types/express": "^4.17.2",
-    "@types/node": "^12.12.21",
-    "@types/react": "^16.9.17",
-    "@types/react-dom": "^16.9.4",
-    "@types/react-google-recaptcha": "^1.1.1",
-    "@types/styled-components": "^4.4.1",
-    "babel-plugin-styled-components": "^1.10.6",
-    "babel-polyfill": "^6.26.0",
-    "cross-env": "^6.0.3",
-    "nodemon": "^2.0.2",
-    "ts-node": "^8.5.4",
-    "typescript": "^3.7.4"
+    "react-helmet": "^5.2.1"
   }
 }
