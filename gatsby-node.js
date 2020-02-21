@@ -30,5 +30,13 @@ exports.createPages = ({ graphql, actions }) => {
         t: require(`./src/locales/${locale}/about.json`)
       }
     });
+    createPage({
+      path: `/${locale}/projects/`,
+      component: path.resolve("src/components/Projects/index.jsx"),
+      context: {
+        lang: locale,
+        t: require(`./src/locales/${locale}/projects.json`)
+      }
+    });
   });
 };
