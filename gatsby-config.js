@@ -28,6 +28,13 @@ module.exports = {
       options: {
         displayName: false
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Raleway\:400,700`],
+        display: "swap"
+      }
     }
   ]
 };
