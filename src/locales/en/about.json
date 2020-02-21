@@ -1,0 +1,44 @@
+{
+  "title": "About Me",
+  "description": [
+    "I have been interested in programming for over three years. I started with Web Development. I am passionate about new technologies and solutions. My favorite programming language is JavaScript and I focus on it, but I don't close my horizons to other technologies. There are so many of them that it is a shame not to know anything about them. I am a creative person who never gives up and tries to achieve as much as possible.",
+    "I currently work as a Front-End Developer. After hours I develop my own projects and learn new technologies. I am also a big fan of Blockchain technology and I would like to focus on it in the near future.",
+    "Outside of IT, I love traveling, good wine, drinks and series. I like to play table tennis and billiards. I am also interested in the field of fitness."
+  ],
+  "hireMe": "Write to me",
+  "experience": {
+    "title": "Work Experience",
+    "subtitle": "I have more than three years of learning self-study programming and working in many teams while creating various projects.",
+    "boxes": [
+      {
+        "date": "January 2017 - Currently",
+        "title": "Software Freelancer",
+        "description": "Creating websites, web applications, mock-ups for customers. Working with various technologies listed below."
+      },
+      {
+        "date": "May 2019 - Currently",
+        "title": "Front-end Developer",
+        "description": "My first full-time job at the corporation. Creating web applications on my own and as a member of team. Cooperation with graphic designers, copywriters, using various web technologies, C#, JavaScript."
+      },
+      {
+        "date": "September 2018 - March 2019",
+        "title": "WordPress Developer",
+        "description": "Creating websites based on WordPress CMS."
+      },
+      {
+        "date": "August 2017 - August 2018",
+        "title": "WEB Developer",
+        "description": "Creating websites (business cards, advertising), and websites based on CMS WordPress. Cooperation with the team and graphic designers, using HTML5, CSS3, JavaScript, PHP, WordPress technologies."
+      },
+      {
+        "date": "October 2016",
+        "title": "Apprenticeship - Computer service technician",
+        "description": "Working on the computer service during the apprenticeship."
+      }
+    ]
+  },
+  "technologies": {
+    "title": "Known technologies",
+    "subtitle": "I'm passionate about new technologies and I want to know more of them"
+  }
+}
