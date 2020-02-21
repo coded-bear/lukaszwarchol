@@ -31,6 +31,14 @@ exports.createPages = ({ graphql, actions }) => {
       }
     });
     createPage({
+      path: `/${locale}/services/`,
+      component: path.resolve("src/components/Services/index.jsx"),
+      context: {
+        lang: locale,
+        t: require(`./src/locales/${locale}/services.json`)
+      }
+    });
+    createPage({
       path: `/${locale}/projects/`,
       component: path.resolve("src/components/Projects/index.jsx"),
       context: {
