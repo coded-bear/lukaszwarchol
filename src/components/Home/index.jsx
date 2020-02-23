@@ -10,11 +10,12 @@ import {
 import { LinkButton, SocialMedia } from "../elements";
 import { getHrefs } from "../../utils/langService";
 
-const Home = ({ pageContext }) => {
-  const { lang, t, layoutT } = pageContext;
+const Home = props => {
+  const { lang, t, layoutT } = props.pageContext;
+  const { path } = props;
 
   return (
-    <Layout t={layoutT} lang={lang}>
+    <Layout lang={lang} path={path} t={layoutT}>
       <SEO title="JavaScript Software Developer" lang={lang} />
 
       <StyledHomeHeader>

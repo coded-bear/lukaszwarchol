@@ -24,11 +24,12 @@ const SocialMediaElem = ({ href, image, name }) => (
   </StyledSocialMediaElem>
 );
 
-const Contact = ({ pageContext }) => {
-  const { lang, t, layoutT } = pageContext;
+const Contact = props => {
+  const { lang, t, layoutT } = props.pageContext;
+  const { path } = props;
 
   return (
-    <Layout t={layoutT} lang={lang}>
+    <Layout lang={lang} path={path} t={layoutT}>
       <SEO title={t.title} lang={lang} />
 
       <section>

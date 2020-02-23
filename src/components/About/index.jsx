@@ -8,11 +8,12 @@ import Technologies from "./Technologies";
 import { getHrefs } from "../../utils/langService";
 import imgMe from "../../images/about/me.jpg";
 
-const About = ({ pageContext }) => {
-  const { t, lang, layoutT } = pageContext;
+const About = props => {
+  const { t, lang, layoutT } = props.pageContext;
+  const { path } = props;
 
   return (
-    <Layout t={layoutT} lang={lang}>
+    <Layout t={layoutT} path={path} lang={lang}>
       <SEO title={t.title} lang={lang} />
 
       <StyledAbout>

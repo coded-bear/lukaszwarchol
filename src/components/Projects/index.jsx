@@ -19,7 +19,7 @@ const Projects = props => {
   const { path } = props;
 
   return (
-    <Layout t={layoutT} lang={lang}>
+    <Layout lang={lang} path={path} t={layoutT}>
       <SEO title={t.title} lang={lang} />
 
       <section>

@@ -10,11 +10,12 @@ import imgMockup from "../../images/services/mockup.svg";
 
 const images = [imgWebApp, imgWebsite, imgMockup];
 
-const Services = ({ pageContext }) => {
-  const { lang, t, layoutT } = pageContext;
+const Services = props => {
+  const { lang, t, layoutT } = props.pageContext;
+  const { path } = props;
 
   return (
-    <Layout t={layoutT} lang={lang}>
+    <Layout lang={lang} path={path} t={layoutT}>
       <SEO title={t.title} lang={lang} />
 
       <section>

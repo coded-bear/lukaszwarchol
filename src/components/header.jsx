@@ -1,22 +1,22 @@
 import React, { useEffect, useState, createRef } from "react";
 import { Link } from "gatsby";
 import Navigation from "./Navigation";
-import { StyledHeader, StyledLogo, StyledHeaderRightBox, /*StyledLangBtns,*/ StyledMenuBtn } from "../styled/header";
-// import { langsList, changePath } from "../../utils/langService";
+import { StyledHeader, StyledLogo, StyledHeaderRightBox, StyledLangBtns, StyledMenuBtn } from "../styled/header";
+import { langsList, changePath } from "../utils/langService";
 import logo from "../images/common/logo.svg";
 import imgMenu from "../images/common/menu.svg";
 
-// const LangBtns = props => (
-//   <StyledLangBtns>
-//     {langsList.map((lang, index) => (
-//       <Link key={index} to={changePath(props.asPath, lang)}>
-//         <p className={lang === props.lang ? "active" : ""}>{lang}</p>
-//       </Link>
-//     ))}
-//   </StyledLangBtns>
-// );
+const LangBtns = props => (
+  <StyledLangBtns>
+    {langsList.map((lang, index) => (
+      <Link key={index} to={changePath(lang, props.path)}>
+        <p className={lang === props.lang ? "active" : ""}>{lang}</p>
+      </Link>
+    ))}
+  </StyledLangBtns>
+);
 
-const Header = ({ lang, t }) => {
+const Header = ({ lang, path, t }) => {
   const ref = createRef();
   const [menu, setMenu] = useState(false);
 
@@ -33,7 +33,7 @@ const Header = ({ lang, t }) => {
         </Link>
       </StyledLogo>
       <StyledHeaderRightBox>
-        {/* <LangBtns pathname={props.pathname} asPath={props.asPath} lang={lang} /> */}
+        <LangBtns lang={lang} path={path} />
 
         <StyledMenuBtn onClick={() => setMenu(true)}>
           <img src={imgMenu} alt="menu" />

@@ -26,7 +26,9 @@ export const StyledHeaderRightBox = styled.div`
 `;
 
 export const StyledLangBtns = styled.div`
-  a {
+  display: flex;
+
+  p {
     margin: 0 5px;
     font-size: 18px;
     text-transform: uppercase;

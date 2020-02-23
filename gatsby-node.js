@@ -1,7 +1,7 @@
 const path = require("path");
 
 const getHrefs = locale => {
-  const plHrefs = ["o-mnie", "usługi", "projekty", "kontakt"];
+  const plHrefs = ["o-mnie", "uslugi", "projekty", "kontakt"];
   const enHrefs = ["about-me", "services", "projects", "contact"];
 
   switch (locale) {
@@ -20,9 +20,9 @@ exports.createPages = ({ actions }) => {
     path: `/`,
     component: path.resolve("src/components/Home/index.jsx"),
     context: {
-      lang: `pl`,
-      t: require(`./src/locales/pl/home.json`),
-      layoutT: require(`./src/locales/pl/layout.json`)
+      lang: locales[0],
+      t: require(`./src/locales/${locales[0]}/home.json`),
+      layoutT: require(`./src/locales/${locales[0]}/layout.json`)
     }
   });
 

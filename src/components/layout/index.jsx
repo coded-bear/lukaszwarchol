@@ -4,11 +4,11 @@ import Header from "../Header";
 import HireMeBox from "../HireMeBox";
 import Footer from "../Footer";
 
-const Layout = ({ children, lang, t }) => (
+const Layout = ({ children, lang, path, t }) => (
   <>
     <GlobalStyle />
 
-    <Header lang={lang} t={t} />
+    <Header lang={lang} path={path} t={t} />
 
     <main>
       {children}
