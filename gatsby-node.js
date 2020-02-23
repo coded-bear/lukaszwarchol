@@ -1,6 +1,18 @@
 const path = require("path");
 
-exports.createPages = ({ graphql, actions }) => {
+const getHrefs = locale => {
+  const plHrefs = ["o-mnie", "usługi", "projekty", "kontakt"];
+  const enHrefs = ["about-me", "services", "projects", "contact"];
+
+  switch (locale) {
+    case "pl":
+      return plHrefs;
+    case "en":
+      return enHrefs;
+  }
+};
+
+exports.createPages = ({ actions }) => {
   const { createPage } = actions;
   const locales = ["pl", "en"];
 
@@ -25,7 +37,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     });
     createPage({
-      path: `/${locale}/about-me/`,
+      path: `/${locale}/${getHrefs(locale)[0]}/`,
       component: path.resolve("src/components/About/index.jsx"),
       context: {
         lang: locale,
@@ -34,7 +46,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     });
     createPage({
-      path: `/${locale}/services/`,
+      path: `/${locale}/${getHrefs(locale)[1]}/`,
       component: path.resolve("src/components/Services/index.jsx"),
       context: {
         lang: locale,
@@ -43,7 +55,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     });
     createPage({
-      path: `/${locale}/projects/`,
+      path: `/${locale}/${getHrefs(locale)[2]}/`,
       component: path.resolve("src/components/Projects/index.jsx"),
       context: {
         lang: locale,
@@ -52,7 +64,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     });
     createPage({
-      path: `/${locale}/contact/`,
+      path: `/${locale}/${getHrefs(locale)[3]}/`,
       component: path.resolve("src/components/Contact/index.jsx"),
       context: {
         lang: locale,

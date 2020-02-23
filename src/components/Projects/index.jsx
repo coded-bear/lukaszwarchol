@@ -12,10 +12,11 @@ const Button = ({ onClick, active, name }) => (
   </StyledProjectsBtn>
 );
 
-const Projects = ({ pageContext }) => {
+const Projects = props => {
   const [view, setView] = useState(1);
 
-  const { lang, t, layoutT } = pageContext;
+  const { lang, t, layoutT } = props.pageContext;
+  const { path } = props;
 
   return (
     <Layout t={layoutT} lang={lang}>
@@ -34,13 +35,13 @@ const Projects = ({ pageContext }) => {
 
           <StyledProjectsList>
             {view === 2 ? (
-              <WebApplications lang={lang} />
+              <WebApplications path={path} />
             ) : view === 3 ? (
-              <Websites lang={lang} />
+              <Websites path={path} />
             ) : view === 4 ? (
-              <Mockups lang={lang} />
+              <Mockups path={path} />
             ) : (
-              <All lang={lang} />
+              <All path={path} />
             )}
           </StyledProjectsList>
         </Container>

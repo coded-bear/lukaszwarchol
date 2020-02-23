@@ -5,6 +5,7 @@ import { StyledAbout, StyledAboutImage, StyledAboutContent } from "../../styled/
 import { Heading, LinkButton } from "../elements";
 import Experience from "./Experience";
 import Technologies from "./Technologies";
+import { getHrefs } from "../../utils/langService";
 import imgMe from "../../images/about/me.jpg";
 
 const About = ({ pageContext }) => {
@@ -26,7 +27,7 @@ const About = ({ pageContext }) => {
             <p key={index}>{elem}</p>
           ))}
 
-          <LinkButton to={`/${lang}/contact/`} text={t.hireMe} />
+          <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`} text={t.hireMe} />
         </StyledAboutContent>
       </StyledAbout>
 

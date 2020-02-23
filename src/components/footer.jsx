@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { SocialMedia } from "./elements";
 import { StyledFooter } from "../styled/footer";
+import { getHrefs } from "../utils/langService";
 
 const NavElem = ({ to, text }) => (
   <Link to={to}>
@@ -14,10 +15,10 @@ const Footer = ({ lang, t }) => (
     <nav>
       <ul>
         <NavElem to={`/${lang}/`} text="Home" />
-        <NavElem to={`/${lang}/about-me/`} text={t.nav.about} />
-        <NavElem to={`/${lang}/services/`} text={t.nav.services} />
-        <NavElem to={`/${lang}/projects/`} text={t.nav.projects} />
-        <NavElem to={`/${lang}/contact/`} text={t.nav.contact} />
+        <NavElem to={`/${lang}/${getHrefs(lang)[0]}/`} text={t.nav.about} />
+        <NavElem to={`/${lang}/${getHrefs(lang)[1]}/`} text={t.nav.services} />
+        <NavElem to={`/${lang}/${getHrefs(lang)[2]}/`} text={t.nav.projects} />
+        <NavElem to={`/${lang}/${getHrefs(lang)[3]}/`} text={t.nav.contact} />
       </ul>
     </nav>
 

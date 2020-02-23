@@ -8,6 +8,7 @@ import {
   SocialMediaHomeHeaderBox
 } from "../../styled/home";
 import { LinkButton, SocialMedia } from "../elements";
+import { getHrefs } from "../../utils/langService";
 
 const Home = ({ pageContext }) => {
   const { lang, t, layoutT } = pageContext;
@@ -28,7 +29,7 @@ const Home = ({ pageContext }) => {
             <strong>JavaScript Software Developer</strong>
           </p>
 
-          <LinkButton to={`/${lang}/contact/`} text={t.header.hireMe} />
+          <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`} text={t.header.hireMe} />
         </StyledHomeHeaderContent>
 
         <StyledHomeHeaderRight></StyledHomeHeaderRight>

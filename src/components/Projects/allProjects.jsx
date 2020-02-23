@@ -5,41 +5,41 @@ import imgGymFreak from "../../images/projects/gym-freak.svg";
 import imgKeepYourTime from "../../images/projects/keep-your-time.svg";
 import imgLukaszWarchol from "../../images/projects/lukasz-warchol.svg";
 
-const Project = ({ projectName, image, lang }) => (
+const Project = ({ projectName, image, path }) => (
   <StyledProject>
-    <Link to={`/${lang}/projects/${projectName}/`}>
+    <Link to={`${path + projectName}/`}>
       <img src={image} alt={projectName} />
     </Link>
   </StyledProject>
 );
 
-const GymFreak = ({ lang }) => <Project projectName="gym-freak" image={imgGymFreak} lang={lang} />;
-const KeepYourTime = ({ lang }) => <Project projectName="keep-your-time" image={imgKeepYourTime} lang={lang} />;
-const LukaszWarchol = ({ lang }) => <Project projectName="lukasz-warchol" image={imgLukaszWarchol} lang={lang} />;
-const SWYM = ({ lang }) => <Project projectName="swym" image={imgGymFreak} lang={lang} />;
-const Droplead = ({ lang }) => <Project projectName="droplead" image={imgGymFreak} lang={lang} />;
+const GymFreak = ({ path }) => <Project projectName="gym-freak" image={imgGymFreak} path={path} />;
+const KeepYourTime = ({ path }) => <Project projectName="keep-your-time" image={imgKeepYourTime} path={path} />;
+const LukaszWarchol = ({ path }) => <Project projectName="lukasz-warchol" image={imgLukaszWarchol} path={path} />;
+const SWYM = ({ path }) => <Project projectName="swym" image={imgGymFreak} path={path} />;
+const Droplead = ({ path }) => <Project projectName="droplead" image={imgGymFreak} path={path} />;
 
-export const All = ({ lang }) => (
+export const All = ({ path }) => (
   <>
-    <GymFreak lang={lang} />
-    <KeepYourTime lang={lang} />
-    <LukaszWarchol lang={lang} />
-    <SWYM lang={lang} />
-    <Droplead lang={lang} />
+    <GymFreak path={path} />
+    <KeepYourTime path={path} />
+    <LukaszWarchol path={path} />
+    <SWYM path={path} />
+    <Droplead path={path} />
   </>
 );
 
-export const WebApplications = ({ lang }) => (
+export const WebApplications = ({ path }) => (
   <>
-    <GymFreak lang={lang} />
-    <KeepYourTime lang={lang} />
-    <Droplead lang={lang} />
+    <GymFreak path={path} />
+    <KeepYourTime path={path} />
+    <Droplead path={path} />
   </>
 );
 
-export const Websites = ({ lang }) => (
+export const Websites = ({ path }) => (
   <>
-    <LukaszWarchol lang={lang} />
+    <LukaszWarchol path={path} />
   </>
 );
 
