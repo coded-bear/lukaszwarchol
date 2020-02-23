@@ -1,4 +1,5 @@
-import React, { useState, memo } from "react";
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 import FormInfoPopup from "./FormInfoPopup";
 import { StyledContactForm, StyledInput, StyledButton, StyledFormError } from "../../styled/contact";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -14,7 +15,7 @@ const validate = (form, recaptcha, t) => {
   return null;
 };
 
-const ContactForm = memo(({ t, lang }) => {
+const ContactForm = ({ lang, t }) => {
   const [form, setForm] = useState({ email: "", message: "" });
   const [recaptcha, setRecaptcha] = useState(null);
   const [error, setError] = useState(null);
@@ -77,6 +78,11 @@ const ContactForm = memo(({ t, lang }) => {
       {infoPopup && <FormInfoPopup info={infoPopup} close={() => setInfoPopup("")} />}
     </StyledContactForm>
   );
-});
+};
+
+ContactForm.propTypes = {
+  lang: PropTypes.string.isRequired,
+  t: PropTypes.object.isRequired
+};
 
 export default ContactForm;

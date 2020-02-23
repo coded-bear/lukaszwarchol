@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import SEO from "../seo";
 import Layout from "../layout";
 import {
@@ -61,6 +62,21 @@ const Contact = props => {
       </section>
     </Layout>
   );
+};
+
+SocialMediaElem.propTypes = {
+  href: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired
+};
+
+Contact.propTypes = {
+  path: PropTypes.string.isRequired,
+  pageContext: PropTypes.shape({
+    lang: PropTypes.string.isRequired,
+    t: PropTypes.object.isRequired,
+    layoutT: PropTypes.object.isRequired
+  }).isRequired
 };
 
 export default Contact;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { StyledHeading, StyledSubTitle, StyledLinkButton, StyledSocialMedia } from "../../styled/layout";
 import imgFacebook from "../../images/common/facebook.svg";
@@ -22,7 +23,7 @@ export const LinkButton = ({ to, light, text }) => (
   </Link>
 );
 
-const SocialMediaElem = ({ href, image, name }) => (
+export const SocialMediaElem = ({ href, image, name, withName }) => (
   <a href={href} target="_blank" rel="noopener noreferrer">
     <img src={image} alt={name} />
   </a>
@@ -36,3 +37,25 @@ export const SocialMedia = () => (
     <SocialMediaElem href="https://www.instagram.com/lukasz.warchol/" name="Instagram" image={imgInstagram} />
   </StyledSocialMedia>
 );
+
+Heading.propTypes = {
+  dark: PropTypes.bool,
+  left: PropTypes.bool,
+  text: PropTypes.string.isRequired
+};
+
+SubTitle.propTypes = {
+  text: PropTypes.string.isRequired
+};
+
+LinkButton.propTypes = {
+  to: PropTypes.string.isRequired,
+  light: PropTypes.bool,
+  text: PropTypes.string.isRequired
+};
+
+SocialMediaElem.propTypes = {
+  href: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired
+};

@@ -1,4 +1,5 @@
 import React, { useEffect, useState, createRef } from "react";
+import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import Navigation from "./Navigation";
 import { StyledHeader, StyledLogo, StyledHeaderRightBox, StyledLangBtns, StyledMenuBtn } from "../styled/header";
@@ -43,6 +44,17 @@ const Header = ({ lang, path, t }) => {
       <Navigation ref={ref} closeMenu={() => setMenu(false)} t={t.nav} lang={lang} />
     </StyledHeader>
   );
+};
+
+LangBtns.propTypes = {
+  lang: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired
+};
+
+Header.propTypes = {
+  lang: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired,
+  t: PropTypes.object.isRequired
 };
 
 export default Header;

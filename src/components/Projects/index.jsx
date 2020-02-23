@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import SEO from "../seo";
 import Layout from "../layout";
 import { Container } from "../../styled/layout";
@@ -48,6 +49,21 @@ const Projects = props => {
       </section>
     </Layout>
   );
+};
+
+Button.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  active: PropTypes.bool.isRequired,
+  name: PropTypes.string.isRequired
+};
+
+Projects.propTypes = {
+  path: PropTypes.string.isRequired,
+  pageContext: PropTypes.shape({
+    lang: PropTypes.string.isRequired,
+    t: PropTypes.object.isRequired,
+    layoutT: PropTypes.object.isRequired
+  }).isRequired
 };
 
 export default Projects;

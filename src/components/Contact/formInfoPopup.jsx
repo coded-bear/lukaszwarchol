@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { StyledFormInfoPopupContainer, StyledFormInfoPopup } from "../../styled/contact";
 import imgClose from "../../images/common/close.svg";
 
@@ -12,5 +13,10 @@ const FormInfoPopup = ({ info, close }) => (
     </StyledFormInfoPopup>
   </StyledFormInfoPopupContainer>
 );
+
+FormInfoPopup.propTypes = {
+  info: PropTypes.string.isRequired,
+  close: PropTypes.func.isRequired
+};
 
 export default FormInfoPopup;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Heading, SubTitle } from "../elements";
 import { Container } from "../../styled/layout";
 import { StyledTechnologies, StyledTechnologiesBox, StyledTechnology } from "../../styled/about";
@@ -57,5 +58,14 @@ const Technologies = ({ t }) => (
     </Container>
   </StyledTechnologies>
 );
+
+Technology.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired
+};
+
+Technologies.propTypes = {
+  t: PropTypes.object.isRequired
+};
 
 export default Technologies;

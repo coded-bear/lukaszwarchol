@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { SocialMedia } from "./elements";
 import { StyledFooter } from "../styled/footer";
@@ -27,5 +28,15 @@ const Footer = ({ lang, t }) => (
     <p>&copy; {new Date().getFullYear()} Łukasz Warchoł. All rights reserved</p>
   </StyledFooter>
 );
+
+NavElem.propTypes = {
+  to: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired
+};
+
+Footer.propTypes = {
+  lang: PropTypes.string.isRequired,
+  t: PropTypes.object.isRequired
+};
 
 export default Footer;

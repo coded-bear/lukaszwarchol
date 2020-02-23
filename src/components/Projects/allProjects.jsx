@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { StyledProject } from "../../styled/projects";
 import imgGymFreak from "../../images/projects/gym-freak.svg";
@@ -44,3 +45,21 @@ export const Websites = ({ path }) => (
 );
 
 export const Mockups = () => <></>;
+
+Project.propTypes = {
+  projectName: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired
+};
+
+All.propTypes = {
+  path: PropTypes.string.isRequired
+};
+
+WebApplications.propTypes = {
+  path: PropTypes.string.isRequired
+};
+
+Websites.propTypes = {
+  path: PropTypes.string.isRequired
+};

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { GlobalStyle } from "../../styled/global";
 import Header from "../Header";
 import HireMeBox from "../HireMeBox";
@@ -19,5 +20,12 @@ const Layout = ({ children, lang, path, t }) => (
     <Footer lang={lang} t={t} />
   </>
 );
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+  lang: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired,
+  t: PropTypes.object.isRequired
+};
 
 export default Layout;

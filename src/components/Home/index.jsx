@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import SEO from "../seo";
 import Layout from "../layout";
 import {
@@ -41,6 +42,15 @@ const Home = props => {
       </StyledHomeHeader>
     </Layout>
   );
+};
+
+Home.propTypes = {
+  path: PropTypes.string.isRequired,
+  pageContext: PropTypes.shape({
+    lang: PropTypes.string.isRequired,
+    t: PropTypes.object.isRequired,
+    layoutT: PropTypes.object.isRequired
+  }).isRequired
 };
 
 export default Home;

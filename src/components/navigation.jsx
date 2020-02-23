@@ -1,4 +1,5 @@
 import React, { forwardRef } from "react";
+import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { SocialMedia } from "./elements";
 import { StyledNavigation, StyledNavigationSocialMedia } from "../styled/header";
@@ -32,5 +33,17 @@ const Navigation = forwardRef(({ lang, t, closeMenu }, ref) => (
     </StyledNavigationSocialMedia>
   </StyledNavigation>
 ));
+
+NavElem.propTypes = {
+  to: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  closeMenu: PropTypes.func.isRequired
+};
+
+Navigation.propTypes = {
+  lang: PropTypes.string.isRequired,
+  t: PropTypes.object.isRequired,
+  closeMenu: PropTypes.func.isRequired
+};
 
 export default Navigation;

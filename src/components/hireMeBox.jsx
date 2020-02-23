@@ -1,9 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Container, StyledHireMeBox } from "../styled/layout";
 import { Heading, LinkButton } from "./elements";
 import { getHrefs } from "../utils/langService";
 
-const HireMeBox = ({ t, lang }) => (
+const HireMeBox = ({ lang, t }) => (
   <StyledHireMeBox>
     <Container>
       <Heading dark left text={t.havaAnyProject} />
@@ -12,5 +13,10 @@ const HireMeBox = ({ t, lang }) => (
     </Container>
   </StyledHireMeBox>
 );
+
+HireMeBox.propTypes = {
+  lang: PropTypes.string.isRequired,
+  t: PropTypes.object.isRequired
+};
 
 export default HireMeBox;
