@@ -1,5 +1,5 @@
 import React, { useState, memo } from "react";
-import FormInfoPopup from "./formInfoPopup";
+import FormInfoPopup from "./FormInfoPopup";
 import { StyledContactForm, StyledInput, StyledButton, StyledFormError } from "../../styled/contact";
 import ReCAPTCHA from "react-google-recaptcha";
 import * as emailjs from "emailjs-com";

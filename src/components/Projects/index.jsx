@@ -3,7 +3,7 @@ import Layout from "../layout";
 import { Container } from "../../styled/layout";
 import { StyledProjectsBtn, StyledProjectsList } from "../../styled/projects";
 import { Heading, SubTitle } from "../elements";
-import { All, WebApplications, Websites, Mockups } from "./allProjects";
+import { All, WebApplications, Websites, Mockups } from "./AllProjects";
 
 const Button = ({ onClick, active, name }) => (
   <StyledProjectsBtn onClick={onClick} active={active}>

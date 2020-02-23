@@ -1,8 +1,8 @@
 import React from "react";
 import { GlobalStyle } from "../../styled/global";
-import Header from "../header";
-import HireMeBox from "../hireMeBox";
-import Footer from "../footer";
+import Header from "../Header";
+import HireMeBox from "../HireMeBox";
+import Footer from "../Footer";
 
 const Layout = ({ children, lang, t }) => (
   <>

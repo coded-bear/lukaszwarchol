@@ -2,8 +2,8 @@ import React from "react";
 import Layout from "../layout";
 import { StyledAbout, StyledAboutImage, StyledAboutContent } from "../../styled/about";
 import { Heading, LinkButton } from "../elements";
-import Experience from "./experience";
-import Technologies from "./technologies";
+import Experience from "./Experience";
+import Technologies from "./Technologies";
 
 import imgMe from "../../images/about/me.jpg";
 

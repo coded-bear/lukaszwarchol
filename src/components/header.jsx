@@ -1,6 +1,6 @@
 import React, { useEffect, useState, createRef } from "react";
 import { Link } from "gatsby";
-import Navigation from "./navigation";
+import Navigation from "./Navigation";
 import { StyledHeader, StyledLogo, StyledHeaderRightBox, /*StyledLangBtns,*/ StyledMenuBtn } from "../styled/header";
 // import { langsList, changePath } from "../../utils/langService";
 import logo from "../images/common/logo.svg";
