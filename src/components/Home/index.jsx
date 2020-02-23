@@ -25,7 +25,7 @@ const Home = ({ pageContext }) => {
             <strong>JavaScript Software Developer</strong>
           </p>
 
-          <LinkButton to={`/${lang}/contact`} text={t.header.hireMe} />
+          <LinkButton to={`/${lang}/contact/`} text={t.header.hireMe} />
         </StyledHomeHeaderContent>
 
         <StyledHomeHeaderRight></StyledHomeHeaderRight>

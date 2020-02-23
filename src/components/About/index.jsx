@@ -24,7 +24,7 @@ const About = ({ pageContext }) => {
             <p key={index}>{elem}</p>
           ))}
 
-          <LinkButton to={`/${lang}/contact`} text={t.hireMe} />
+          <LinkButton to={`/${lang}/contact/`} text={t.hireMe} />
         </StyledAboutContent>
       </StyledAbout>
 
