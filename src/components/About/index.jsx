@@ -4,7 +4,6 @@ import { StyledAbout, StyledAboutImage, StyledAboutContent } from "../../styled/
 import { Heading, LinkButton } from "../elements";
 import Experience from "./Experience";
 import Technologies from "./Technologies";
-
 import imgMe from "../../images/about/me.jpg";
 
 const About = ({ pageContext }) => {

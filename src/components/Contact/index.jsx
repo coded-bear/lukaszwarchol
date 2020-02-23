@@ -8,7 +8,6 @@ import {
 } from "../../styled/contact";
 import { Heading, SubTitle } from "../elements";
 import ContactForm from "./ContactForm";
-
 import imgLocation from "../../images/contact/location.svg";
 import imgEmail from "../../images/contact/email.svg";
 import imgFacebook from "../../images/common/facebook.svg";

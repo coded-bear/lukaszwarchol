@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import { StyledHeading, StyledSubTitle, StyledLinkButton, StyledSocialMedia } from "../../styled/layout";
-
 import imgFacebook from "../../images/common/facebook.svg";
 import imgLinkedin from "../../images/common/linkedin.svg";
 import imgGithub from "../../images/common/github.svg";

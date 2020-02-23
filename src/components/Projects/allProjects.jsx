@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import { StyledProject } from "../../styled/projects";
-
 import imgGymFreak from "../../images/projects/gym-freak.svg";
 import imgKeepYourTime from "../../images/projects/keep-your-time.svg";
 import imgLukaszWarchol from "../../images/projects/lukasz-warchol.svg";

@@ -2,7 +2,6 @@ import React from "react";
 import { Heading, SubTitle } from "../elements";
 import { Container } from "../../styled/layout";
 import { StyledTechnologies, StyledTechnologiesBox, StyledTechnology } from "../../styled/about";
-
 import imgHTML from "../../images/about/html.svg";
 import imgCSS from "../../images/about/css.svg";
 import imgSASS from "../../images/about/sass.svg";
