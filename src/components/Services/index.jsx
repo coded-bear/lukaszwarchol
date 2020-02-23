@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../seo";
 import Layout from "../layout";
 import { Container } from "../../styled/layout";
 import { StyledServicesBox, StyledServiceElem } from "../../styled/services";
@@ -14,6 +15,8 @@ const Services = ({ pageContext }) => {
 
   return (
     <Layout t={layoutT} lang={lang}>
+      <SEO title={t.title} lang={lang} />
+
       <section>
         <Container>
           <Heading text={t.title} />

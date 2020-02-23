@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SEO from "../seo";
 import Layout from "../layout";
 import { Container } from "../../styled/layout";
 import { StyledProjectsBtn, StyledProjectsList } from "../../styled/projects";
@@ -18,6 +19,8 @@ const Projects = ({ pageContext }) => {
 
   return (
     <Layout t={layoutT} lang={lang}>
+      <SEO title={t.title} lang={lang} />
+
       <section>
         <Heading text={t.title} />
         <SubTitle text={t.subtitle} />

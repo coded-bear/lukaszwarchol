@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../seo";
 import Layout from "../layout";
 import {
   StyledHomeHeader,
@@ -13,6 +14,8 @@ const Home = ({ pageContext }) => {
 
   return (
     <Layout t={layoutT} lang={lang}>
+      <SEO title="JavaScript Software Developer" lang={lang} />
+
       <StyledHomeHeader>
         <StyledHomeHeaderContent>
           <p>{t.header.hello}</p>

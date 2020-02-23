@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `lukaszwarchol-website`,
-    description: `My portfolio website written in Gatsby.`,
+    title: `Łukasz Warchoł`,
+    description: `JavaScript Developer, Software Developer, Programista, Programista Warszawa`,
     author: `Łukasz Warchoł`
   },
   plugins: [

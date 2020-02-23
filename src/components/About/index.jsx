@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../seo";
 import Layout from "../layout";
 import { StyledAbout, StyledAboutImage, StyledAboutContent } from "../../styled/about";
 import { Heading, LinkButton } from "../elements";
@@ -11,6 +12,8 @@ const About = ({ pageContext }) => {
 
   return (
     <Layout t={layoutT} lang={lang}>
+      <SEO title={t.title} lang={lang} />
+
       <StyledAbout>
         <StyledAboutImage>
           <img src={imgMe} alt="Łukasz Warchoł" />
