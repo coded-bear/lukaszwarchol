@@ -14,10 +14,10 @@ const Button = ({ onClick, active, name }) => (
 const Projects = ({ pageContext }) => {
   const [view, setView] = useState(1);
 
-  const { lang, t } = pageContext;
+  const { lang, t, layoutT } = pageContext;
 
   return (
-    <Layout>
+    <Layout t={layoutT} lang={lang}>
       <section>
         <Heading text={t.title} />
         <SubTitle text={t.subtitle} />

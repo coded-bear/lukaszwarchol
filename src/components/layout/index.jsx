@@ -1,11 +1,19 @@
 import React from "react";
 import { GlobalStyle } from "../../styled/global";
+import HireMeBox from "../hireMeBox";
+import Footer from "../footer";
 
-const Layout = ({ children }) => (
+const Layout = ({ children, lang, t }) => (
   <>
     <GlobalStyle />
 
-    <main>{children}</main>
+    <main>
+      {children}
+
+      <HireMeBox lang={lang} t={t} />
+    </main>
+
+    <Footer lang={lang} t={t} />
   </>
 );
 

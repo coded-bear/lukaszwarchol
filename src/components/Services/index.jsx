@@ -11,10 +11,10 @@ import imgMockup from "../../images/services/mockup.svg";
 const images = [imgWebApp, imgWebsite, imgMockup];
 
 const Services = ({ pageContext }) => {
-  const { t } = pageContext;
+  const { lang, t, layoutT } = pageContext;
 
   return (
-    <Layout>
+    <Layout t={layoutT} lang={lang}>
       <section>
         <Container>
           <Heading text={t.title} />

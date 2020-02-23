@@ -8,10 +8,10 @@ import Technologies from "./technologies";
 import imgMe from "../../images/about/me.jpg";
 
 const About = ({ pageContext }) => {
-  const { t, lang } = pageContext;
+  const { t, lang, layoutT } = pageContext;
 
   return (
-    <Layout>
+    <Layout t={layoutT} lang={lang}>
       <StyledAbout>
         <StyledAboutImage>
           <img src={imgMe} alt="Łukasz Warchoł" />

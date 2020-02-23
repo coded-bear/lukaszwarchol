@@ -25,10 +25,10 @@ const SocialMediaElem = ({ href, image, name }) => (
 );
 
 const Contact = ({ pageContext }) => {
-  const { lang, t } = pageContext;
+  const { lang, t, layoutT } = pageContext;
 
   return (
-    <Layout>
+    <Layout t={layoutT} lang={lang}>
       <section>
         <Heading text={t.title} />
         <SubTitle text={t.subtitle} />

@@ -9,7 +9,8 @@ exports.createPages = ({ graphql, actions }) => {
     component: path.resolve("src/components/Home/index.jsx"),
     context: {
       lang: `pl`,
-      t: require(`./src/locales/pl/home.json`)
+      t: require(`./src/locales/pl/home.json`),
+      layoutT: require(`./src/locales/pl/layout.json`)
     }
   });
 
@@ -19,7 +20,8 @@ exports.createPages = ({ graphql, actions }) => {
       component: path.resolve("src/components/Home/index.jsx"),
       context: {
         lang: locale,
-        t: require(`./src/locales/${locale}/home.json`)
+        t: require(`./src/locales/${locale}/home.json`),
+        layoutT: require(`./src/locales/${locale}/layout.json`)
       }
     });
     createPage({
@@ -27,7 +29,8 @@ exports.createPages = ({ graphql, actions }) => {
       component: path.resolve("src/components/About/index.jsx"),
       context: {
         lang: locale,
-        t: require(`./src/locales/${locale}/about.json`)
+        t: require(`./src/locales/${locale}/about.json`),
+        layoutT: require(`./src/locales/${locale}/layout.json`)
       }
     });
     createPage({
@@ -35,7 +38,8 @@ exports.createPages = ({ graphql, actions }) => {
       component: path.resolve("src/components/Services/index.jsx"),
       context: {
         lang: locale,
-        t: require(`./src/locales/${locale}/services.json`)
+        t: require(`./src/locales/${locale}/services.json`),
+        layoutT: require(`./src/locales/${locale}/layout.json`)
       }
     });
     createPage({
@@ -43,7 +47,8 @@ exports.createPages = ({ graphql, actions }) => {
       component: path.resolve("src/components/Projects/index.jsx"),
       context: {
         lang: locale,
-        t: require(`./src/locales/${locale}/projects.json`)
+        t: require(`./src/locales/${locale}/projects.json`),
+        layoutT: require(`./src/locales/${locale}/layout.json`)
       }
     });
     createPage({
@@ -51,7 +56,8 @@ exports.createPages = ({ graphql, actions }) => {
       component: path.resolve("src/components/Contact/index.jsx"),
       context: {
         lang: locale,
-        t: require(`./src/locales/${locale}/contact.json`)
+        t: require(`./src/locales/${locale}/contact.json`),
+        layoutT: require(`./src/locales/${locale}/layout.json`)
       }
     });
   });

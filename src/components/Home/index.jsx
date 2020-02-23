@@ -9,10 +9,10 @@ import {
 import { LinkButton, SocialMedia } from "../elements";
 
 const Home = ({ pageContext }) => {
-  const { lang, t } = pageContext;
+  const { lang, t, layoutT } = pageContext;
 
   return (
-    <Layout>
+    <Layout t={layoutT} lang={lang}>
       <StyledHomeHeader>
         <StyledHomeHeaderContent>
           <p>{t.header.hello}</p>
