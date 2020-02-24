@@ -35,6 +35,7 @@ module.exports = {
         fonts: [`Raleway\:400,700`],
         display: "swap"
       }
-    }
+    },
+    `gatsby-plugin-recaptcha`
   ]
 };
