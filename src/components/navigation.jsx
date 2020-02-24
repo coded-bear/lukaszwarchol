@@ -7,8 +7,8 @@ import imgClose from "../images/common/close.svg";
 import { getHrefs } from "../utils/langService";
 
 const NavElem = ({ to, text, closeMenu }) => (
-  <Link to={to}>
-    <li onClick={closeMenu}>{text}</li>
+  <Link to={to} onClick={closeMenu}>
+    <li>{text}</li>
   </Link>
 );
 
