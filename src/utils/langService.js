@@ -5,10 +5,10 @@ export const getHrefs = locale => {
   const enHrefs = ["about-me", "services", "projects", "contact"];
 
   switch (locale) {
-    case "pl":
-      return plHrefs;
     case "en":
       return enHrefs;
+    default:
+      return plHrefs;
   }
 };
 
