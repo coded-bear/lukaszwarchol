@@ -6,9 +6,11 @@ import imgClose from "../images/common/close.svg";
 import { getHrefs } from "../utils/langService";
 
 const NavElem = ({ to, text, closeMenu }) => (
-  <Link to={to} onClick={closeMenu}>
-    <li>{text}</li>
-  </Link>
+  <li>
+    <Link to={to} onClick={closeMenu}>
+      {text}
+    </Link>
+  </li>
 );
 
 const Navigation = forwardRef(({ lang, t, closeMenu }, ref) => (

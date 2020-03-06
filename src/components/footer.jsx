@@ -5,9 +5,9 @@ import { SocialMedia } from "./elements";
 import { getHrefs } from "../utils/langService";
 
 const NavElem = ({ to, text }) => (
-  <Link to={to}>
-    <li>{text}</li>
-  </Link>
+  <li>
+    <Link to={to}>{text}</Link>
+  </li>
 );
 
 const Footer = ({ lang, t }) => (
