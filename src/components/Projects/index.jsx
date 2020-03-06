@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import "../../styles/projects.scss";
 import SEO from "../seo";
 import Layout from "../layout";
 import { Heading, SubTitle } from "../elements";
 import { All, WebApplications, Websites, Mockups } from "./AllProjects";
 
 const Button = ({ onClick, active, name }) => (
-  <button className="Projects__btn" onClick={onClick} active={active}>
+  <button className={`Projects__btn ${active && "active"}`} onClick={onClick}>
     {name}
   </button>
 );

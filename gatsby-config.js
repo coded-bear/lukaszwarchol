@@ -27,12 +27,6 @@ module.exports = {
         icon: `src/images/favicon.ico`
       }
     },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        displayName: false
-      }
-    },
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-google-fonts`,
