@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../../styles/services.scss";
 import SEO from "../seo";
 import Layout from "../layout";
-import { Container } from "../../styled/layout";
-import { StyledServicesBox, StyledServiceElem } from "../../styled/services";
 import { Heading, SubTitle } from "../elements";
 import imgWebApp from "../../images/services/web-app.svg";
 import imgWebsite from "../../images/services/website.svg";
@@ -21,21 +20,21 @@ const Services = props => {
     <Layout lang={lang} path={path} t={layoutT}>
       <SEO title={t.title} lang={lang} />
 
-      <section>
-        <Container>
+      <section className="Services">
+        <div className="container">
           <Heading text={t.title} />
           <SubTitle text={t.subtitle} />
 
-          <StyledServicesBox>
+          <div className="Services__container">
             {t.boxes.map((elem, index) => (
-              <StyledServiceElem key={index}>
+              <div className="Services__elem" key={index}>
                 <img src={images[index]} alt={elem.title} />
                 <h4>{elem.title}</h4>
                 <p>{elem.description}</p>
-              </StyledServiceElem>
+              </div>
             ))}
-          </StyledServicesBox>
-        </Container>
+          </div>
+        </div>
       </section>
     </Layout>
   );

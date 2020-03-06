@@ -1,0 +1,36 @@
+@import "./colors.scss";
+
+.Services {
+  .Services__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 80px;
+
+    .Services__elem {
+      width: calc(100% / 3 - 20px);
+      margin: 10px;
+      padding: 30px;
+      border: 1px solid $text-primary;
+
+      img {
+        height: 100px;
+      }
+
+      h4 {
+        margin: 20px 0;
+        font-size: 24px;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .Services__container {
+      flex-direction: column;
+    }
+  }
+}
