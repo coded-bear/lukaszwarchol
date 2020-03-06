@@ -2,7 +2,6 @@ import React, { forwardRef } from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { SocialMedia } from "./elements";
-import { StyledNavigation, StyledNavigationSocialMedia } from "../styled/header";
 import imgClose from "../images/common/close.svg";
 import { getHrefs } from "../utils/langService";
 
@@ -13,7 +12,7 @@ const NavElem = ({ to, text, closeMenu }) => (
 );
 
 const Navigation = forwardRef(({ lang, t, closeMenu }, ref) => (
-  <StyledNavigation ref={ref}>
+  <div className="navigation" ref={ref}>
     <button onClick={closeMenu}>
       <img src={imgClose} alt="close" />
     </button>
@@ -28,10 +27,10 @@ const Navigation = forwardRef(({ lang, t, closeMenu }, ref) => (
       </ul>
     </nav>
 
-    <StyledNavigationSocialMedia>
+    <div className="navigation__social-media">
       <SocialMedia />
-    </StyledNavigationSocialMedia>
-  </StyledNavigation>
+    </div>
+  </div>
 ));
 
 NavElem.propTypes = {

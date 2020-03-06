@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { SocialMedia } from "./elements";
-import { StyledFooter } from "../styled/footer";
 import { getHrefs } from "../utils/langService";
 
 const NavElem = ({ to, text }) => (
@@ -12,7 +11,7 @@ const NavElem = ({ to, text }) => (
 );
 
 const Footer = ({ lang, t }) => (
-  <StyledFooter>
+  <footer className="footer">
     <nav>
       <ul>
         <NavElem to={`/${lang}/`} text="Home" />
@@ -26,7 +25,7 @@ const Footer = ({ lang, t }) => (
     <SocialMedia />
 
     <p>&copy; {new Date().getFullYear()} Łukasz Warchoł. All rights reserved</p>
-  </StyledFooter>
+  </footer>
 );
 
 NavElem.propTypes = {
