@@ -4,6 +4,7 @@ import SEO from "../components/seo";
 const NotFoundPage = () => (
   <section>
     <SEO title="Nie znaleziono strony" />
+
     <h1>404</h1>
     <h2>Nie znaleziono strony</h2>
   </section>
