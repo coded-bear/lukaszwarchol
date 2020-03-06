@@ -11,8 +11,16 @@
       "description": "Tworzę strony internetowe w najnowszych technologiach, dzięki czemu są bardzo szybkie. Umiem również przygotować je pod SEO."
     },
     {
-      "title": "Makiety",
+      "title": "UX/UI Design",
       "description": "Projektuję makiety dla aplikacji webowych oraz stron internetowych. Są one intuicyjne, nowoczesne, oraz bardzo precyzyjne."
+    },
+    {
+      "title": "Code review",
+      "description": "Lorem ipsum."
+    },
+    {
+      "title": "Optymalizacja",
+      "description": "Lorem ipsum."
     }
   ]
 }

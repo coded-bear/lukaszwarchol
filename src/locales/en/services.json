@@ -11,8 +11,16 @@
       "description": "I create websites with the latest technology, so they are very fast. I can also prepare them for SEO."
     },
     {
-      "title": "Mockups",
+      "title": "UX/UI Design",
       "description": "I design mock-ups for web applications and websites. They are intuitive, modern, and very precise."
+    },
+    {
+      "title": "Code review",
+      "description": "Lorem ipsum."
+    },
+    {
+      "title": "Optimalization",
+      "description": "Lorem ipsum."
     }
   ]
 }

@@ -3,6 +3,8 @@ import * as colors from "./colors";
 
 export const StyledServicesBox = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin-bottom: 80px;
 
   @media only screen and (max-width: 900px) {
@@ -11,13 +13,13 @@ export const StyledServicesBox = styled.div`
 `;
 
 export const StyledServiceElem = styled.div`
-  flex: 1;
+  width: calc(100% / 3 - 20px);
   margin: 10px;
   padding: 30px;
   border: 1px solid ${colors.PRIMARY_TEXT};
 
   img {
-    height: 50px;
+    height: 100px;
   }
 
   h4 {
