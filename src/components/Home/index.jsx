@@ -1,13 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../../styles/home.scss";
 import SEO from "../seo";
 import Layout from "../layout";
-import {
-  StyledHomeHeader,
-  StyledHomeHeaderContent,
-  StyledHomeHeaderRight,
-  SocialMediaHomeHeaderBox
-} from "../../styled/home";
 import { LinkButton, SocialMedia } from "../elements";
 import { getHrefs } from "../../utils/langService";
 
@@ -19,8 +14,8 @@ const Home = props => {
     <Layout lang={lang} path={path} t={layoutT}>
       <SEO title="JavaScript Software Developer" lang={lang} />
 
-      <StyledHomeHeader>
-        <StyledHomeHeaderContent>
+      <section className="home-header">
+        <div className="home-header__content">
           <p>{t.header.hello}</p>
           <h3>
             <span>
@@ -32,14 +27,14 @@ const Home = props => {
           </p>
 
           <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`} text={t.header.hireMe} />
-        </StyledHomeHeaderContent>
+        </div>
 
-        <StyledHomeHeaderRight></StyledHomeHeaderRight>
+        <div className="home-header__right"></div>
 
-        <SocialMediaHomeHeaderBox>
+        <div className="home-header__social-media-container">
           <SocialMedia />
-        </SocialMediaHomeHeaderBox>
-      </StyledHomeHeader>
+        </div>
+      </section>
     </Layout>
   );
 };

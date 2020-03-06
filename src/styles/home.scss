@@ -1,0 +1,47 @@
+@import "./colors.scss";
+
+.home-header {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  height: 80vh;
+  margin: auto;
+  padding-top: 10vh;
+
+  .home-header__content {
+    flex: 1;
+    padding: 20px;
+    font-size: 30px;
+
+    h3 {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    a {
+      margin-top: 30px;
+    }
+  }
+
+  .home-header__right {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .home-header__social-media-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+}
