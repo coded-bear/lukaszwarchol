@@ -33,6 +33,7 @@ module.exports = {
         displayName: false
       }
     },
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

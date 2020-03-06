@@ -1,14 +1,12 @@
 import React from "react";
+import "../../styles/index.scss";
 import PropTypes from "prop-types";
-import { GlobalStyle } from "../../styled/global";
 import Header from "../Header";
-import HireMeBox from "../HireMeBox";
+import { HireMeBox } from "../elements";
 import Footer from "../Footer";
 
 const Layout = ({ children, lang, path, t }) => (
   <>
-    <GlobalStyle />
-
     <Header lang={lang} path={path} t={t} />
 
     <main>

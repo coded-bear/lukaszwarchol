@@ -1,0 +1,165 @@
+@import "./colors.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: $text-primary;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 50vh;
+    background-color: $primary;
+    z-index: -1;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: $text-primary;
+  text-decoration: none;
+}
+
+p {
+  line-height: 22px;
+}
+
+span {
+  color: $primary;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.heading {
+  position: relative;
+  margin: 0 0 30px 0;
+  padding-bottom: 10px;
+  font-size: 44px;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80px;
+    height: 4px;
+    transform: translate(-50%);
+    background-color: $primary;
+  }
+
+  &.left {
+    text-align: left;
+
+    &::after {
+      left: 0;
+      transform: none;
+    }
+  }
+
+  &.dark {
+    &::after {
+      background-color: $text-primary;
+    }
+  }
+}
+
+.subtitle {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 80px auto;
+  text-align: center;
+}
+
+.link-button {
+  position: relative;
+  display: inline-flex;
+  padding: 15px 50px;
+  border: 3px solid $primary;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  strong {
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $primary;
+    transition: 0.3s;
+  }
+
+  &:hover::after {
+    left: 75%;
+  }
+
+  &.light {
+    border-color: #fff;
+
+    &::after {
+      background-color: #fff;
+    }
+  }
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 25px auto;
+
+  a {
+    position: relative;
+    margin: 0 10px;
+    padding: 0 5px;
+
+    img {
+      height: 30px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 0;
+      height: 0;
+      border-radius: 20px;
+      background-color: $primary;
+      z-index: -1;
+      transition: 0.3s;
+    }
+
+    &:hover::after {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.hire-me-box {
+  padding: 60px 20px;
+  background-color: $primary;
+}
