@@ -17,11 +17,11 @@ const Home = props => {
       <section className="home-header">
         <div className="home-header__content">
           <p>{t.header.hello}</p>
-          <h3>
+          <h1>
             <span>
               <strong>{t.header.Im}</strong>
             </span>
-          </h3>
+          </h1>
           <p>
             <strong>JavaScript Software Developer</strong>
           </p>

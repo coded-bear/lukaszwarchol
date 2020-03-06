@@ -27,11 +27,9 @@ const Header = ({ lang, path, t }) => {
 
   return (
     <header className="header">
-      <h1 className="header__logo">
-        <Link to={`/${lang}/`}>
-          <img src={logo} alt="Łukasz Warchoł" />
-        </Link>
-      </h1>
+      <Link to={`/${lang}/`}>
+        <img src={logo} alt="Łukasz Warchoł" className="header__logo" />
+      </Link>
 
       <div className="header__right-box">
         <LangBtns lang={lang} path={path} />

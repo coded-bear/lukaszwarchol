@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Heading, SubTitle } from "../elements";
+import { Intro, SubTitle } from "../elements";
 
 const Experience = ({ t }) => (
   <section className="Experience">
     <div className="container">
-      <Heading text={t.title} />
+      <Intro text={t.title} />
       <SubTitle text={t.subtitle} />
 
       <div className="Experience__container">
