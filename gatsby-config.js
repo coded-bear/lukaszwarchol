@@ -18,7 +18,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
+        name: `Łukasz Warchoł`,
+        short_name: `Łukasz Warchoł`,
         start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
         icon: `src/images/favicon.ico`
       }
@@ -36,6 +40,27 @@ module.exports = {
         display: "swap"
       }
     },
-    `gatsby-plugin-recaptcha`
+    `gatsby-plugin-recaptcha`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [
+          `/`,
+          `/pl/`,
+          `/pl/o-mnie/`,
+          `/pl/uslugi/`,
+          `/pl/projekty/`,
+          `/pl/kontakt/`,
+          `/en/`,
+          `/en/about-me/`,
+          `/en/services/`,
+          `/en/projects/`,
+          `en/contact/`
+        ],
+        workboxConfig: {
+          importWorkboxFrom: `cdn`
+        }
+      }
+    }
   ]
 };

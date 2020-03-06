@@ -39,5 +39,8 @@
     "react-google-recaptcha": "^2.0.1",
     "react-helmet": "^5.2.1",
     "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "@hot-loader/react-dom": "^16.12.0"
   }
 }

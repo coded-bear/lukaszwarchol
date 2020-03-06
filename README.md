@@ -23,4 +23,4 @@ $ npm run serve
 
 ### License
 
-© 2020 Łukasz Warchoł. All rights reserved
+(c) 2020 Łukasz Warchoł. All rights reserved
