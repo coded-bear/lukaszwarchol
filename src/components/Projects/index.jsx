@@ -2,15 +2,13 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import SEO from "../seo";
 import Layout from "../layout";
-import { Container } from "../../styled/layout";
-import { StyledProjectsBtn, StyledProjectsList } from "../../styled/projects";
 import { Heading, SubTitle } from "../elements";
 import { All, WebApplications, Websites, Mockups } from "./AllProjects";
 
 const Button = ({ onClick, active, name }) => (
-  <StyledProjectsBtn onClick={onClick} active={active}>
+  <button className="Projects__btn" onClick={onClick} active={active}>
     {name}
-  </StyledProjectsBtn>
+  </button>
 );
 
 const Projects = props => {
@@ -23,18 +21,18 @@ const Projects = props => {
     <Layout lang={lang} path={path} t={layoutT}>
       <SEO title={t.title} lang={lang} />
 
-      <section>
+      <section className="Projects">
         <Heading text={t.title} />
         <SubTitle text={t.subtitle} />
 
-        <Container>
+        <div className="container">
           <div>
             {t.views.map((elem, index) => (
               <Button key={index} onClick={() => setView(index + 1)} active={view === index + 1} name={elem} />
             ))}
           </div>
 
-          <StyledProjectsList>
+          <div className="Projects__list">
             {view === 2 ? (
               <WebApplications path={path} />
             ) : view === 3 ? (
@@ -44,8 +42,8 @@ const Projects = props => {
             ) : (
               <All path={path} />
             )}
-          </StyledProjectsList>
-        </Container>
+          </div>
+        </div>
       </section>
     </Layout>
   );

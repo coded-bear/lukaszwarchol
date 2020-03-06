@@ -1,17 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
-import { StyledProject } from "../../styled/projects";
 import imgGymFreak from "../../images/projects/gym-freak.svg";
 import imgKeepYourTime from "../../images/projects/keep-your-time.svg";
 import imgLukaszWarchol from "../../images/projects/lukasz-warchol.svg";
 
 const Project = ({ projectName, image, path }) => (
-  <StyledProject>
+  <div className="Projects__project">
     <Link to={`${path + projectName}/`}>
       <img src={image} alt={projectName} />
     </Link>
-  </StyledProject>
+  </div>
 );
 
 const GymFreak = ({ path }) => <Project projectName="gym-freak" image={imgGymFreak} path={path} />;

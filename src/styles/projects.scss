@@ -1,0 +1,59 @@
+@import "./colors.scss";
+
+.Projects {
+  .Projects__btn {
+    margin: 0 10px;
+    padding: 5px;
+    border: 0;
+    background-color: transparent;
+    color: $text-primary;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary;
+    }
+
+    &.active {
+      color: $primary;
+    }
+  }
+
+  .Projects__list {
+    display: flex;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+
+    .Projects__project {
+      position: relative;
+      width: calc(100% / 3 - 20px);
+      margin: 10px;
+      background-color: #ddd;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .Projects__list {
+      .Projects__project {
+        width: calc(100% - 20px);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .Projects__list {
+      flex-direction: column;
+
+      .Projects__project {
+        width: calc(100% - 20px);
+      }
+    }
+  }
+}
