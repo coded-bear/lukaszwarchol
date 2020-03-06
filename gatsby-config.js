@@ -40,7 +40,6 @@ module.exports = {
         display: "swap"
       }
     },
-    `gatsby-plugin-recaptcha`,
     {
       resolve: `gatsby-plugin-offline`,
       options: {
