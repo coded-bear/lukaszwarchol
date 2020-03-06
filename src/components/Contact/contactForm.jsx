@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import FormInfoPopup from "./FormInfoPopup";
-import { StyledContactForm, StyledInput, StyledButton, StyledFormError } from "../../styled/contact";
 import * as emailjs from "emailjs-com";
 import { isEmail } from "../../utils/validation";
 import { service_id, template_id, user_id } from "../../utils/secret";
@@ -51,22 +50,22 @@ const ContactForm = ({ lang, t }) => {
   };
 
   return (
-    <StyledContactForm onSubmit={submitHandler}>
-      <StyledInput>
+    <form className="Contact__form" onSubmit={submitHandler}>
+      <label className="input-label">
         <input type="email" name="email" onChange={updateForm} placeholder={t.email.placeholder} />
-      </StyledInput>
-      <StyledInput>
+      </label>
+      <label className="input-label">
         <textarea name="message" onChange={updateForm} rows={10} placeholder={t.message.placeholder} maxLength={500} />
-      </StyledInput>
+      </label>
 
-      {error && <StyledFormError>{error}</StyledFormError>}
+      {error && <div className="form-primary">{error}</div>}
 
-      <StyledButton>
+      <button className="form-submit">
         <strong>{t.submit}</strong>
-      </StyledButton>
+      </button>
 
       {infoPopup && <FormInfoPopup info={infoPopup} close={() => setInfoPopup("")} />}
-    </StyledContactForm>
+    </form>
   );
 };
 
