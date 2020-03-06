@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../../styles/about.scss";
 import SEO from "../seo";
 import Layout from "../layout";
-import { StyledAbout, StyledAboutImage, StyledAboutContent } from "../../styled/about";
 import { Heading, LinkButton } from "../elements";
 import Experience from "./Experience";
 import Technologies from "./Technologies";
@@ -17,12 +17,12 @@ const About = props => {
     <Layout t={layoutT} path={path} lang={lang}>
       <SEO title={t.title} lang={lang} />
 
-      <StyledAbout>
-        <StyledAboutImage>
+      <section className="About">
+        <div className="About__main-image">
           <img src={imgMe} alt="Łukasz Warchoł" />
-        </StyledAboutImage>
+        </div>
 
-        <StyledAboutContent>
+        <div className="About__content">
           <Heading left text={t.title} />
 
           {t.description.map((elem, index) => (
@@ -30,8 +30,8 @@ const About = props => {
           ))}
 
           <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`} text={t.hireMe} />
-        </StyledAboutContent>
-      </StyledAbout>
+        </div>
+      </section>
 
       <Experience t={t.experience} />
 

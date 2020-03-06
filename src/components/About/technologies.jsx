@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Heading, SubTitle } from "../elements";
-import { Container } from "../../styled/layout";
-import { StyledTechnologies, StyledTechnologiesBox, StyledTechnology } from "../../styled/about";
 import imgHTML from "../../images/about/html.svg";
 import imgCSS from "../../images/about/css.svg";
 import imgSASS from "../../images/about/sass.svg";
@@ -23,19 +21,19 @@ import imgExpress from "../../images/about/express.svg";
 import imgNest from "../../images/about/nest.svg";
 
 const Technology = ({ image, name }) => (
-  <StyledTechnology>
+  <div className="Technologies__technology">
     <img src={image} alt={name} />
     <p>{name}</p>
-  </StyledTechnology>
+  </div>
 );
 
 const Technologies = ({ t }) => (
-  <StyledTechnologies>
-    <Container>
+  <section className="Technologies">
+    <div className="container">
       <Heading text={t.title} />
       <SubTitle text={t.subtitle} />
 
-      <StyledTechnologiesBox>
+      <div className="Technologies__container">
         <Technology image={imgHTML} name="HTML 5" />
         <Technology image={imgCSS} name="CSS 3" />
         <Technology image={imgSASS} name="SASS" />
@@ -54,9 +52,9 @@ const Technologies = ({ t }) => (
         <Technology image={imgNode} name="Node.js" />
         <Technology image={imgExpress} name="Express.js" />
         <Technology image={imgNest} name="Nest.js" />
-      </StyledTechnologiesBox>
-    </Container>
-  </StyledTechnologies>
+      </div>
+    </div>
+  </section>
 );
 
 Technology.propTypes = {

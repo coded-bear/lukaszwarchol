@@ -1,26 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Heading, SubTitle } from "../elements";
-import { StyledExperience, StyledExperienceBox, StyledExperienceElem } from "../../styled/about";
-import { Container } from "../../styled/layout";
 
 const Experience = ({ t }) => (
-  <StyledExperience>
-    <Container>
+  <section className="Experience">
+    <div className="container">
       <Heading text={t.title} />
       <SubTitle text={t.subtitle} />
 
-      <StyledExperienceBox>
+      <div className="Experience__container">
         {t.boxes.map((elem, index) => (
-          <StyledExperienceElem key={index}>
+          <div className="Experience__elem" key={index}>
             <p className="date">{elem.date}</p>
             <h4>{elem.title}</h4>
             <p>{elem.description}</p>
-          </StyledExperienceElem>
+          </div>
         ))}
-      </StyledExperienceBox>
-    </Container>
-  </StyledExperience>
+      </div>
+    </div>
+  </section>
 );
 
 Experience.propTypes = {
