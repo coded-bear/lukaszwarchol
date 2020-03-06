@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
-import { getHrefs } from "../../utils/langService";
-import imgFacebook from "../../images/common/facebook.svg";
-import imgLinkedin from "../../images/common/linkedin.svg";
-import imgGithub from "../../images/common/github.svg";
-import imgInstagram from "../../images/common/instagram.svg";
+import { getHrefs } from "../utils/langService";
+import imgFacebook from "../images/common/facebook.svg";
+import imgLinkedin from "../images/common/linkedin.svg";
+import imgGithub from "../images/common/github.svg";
+import imgInstagram from "../images/common/instagram.svg";
 
 export const Heading = ({ dark, left, text }) => (
   <h2 className={`heading ${dark && "dark"} ${left && "left"}`}>{text}</h2>
