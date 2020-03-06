@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Łukasz Warchoł`,
     description: `JavaScript Developer, Software Developer, Programista, Programista Warszawa`,
-    author: `Łukasz Warchoł`
+    author: `Łukasz Warchoł`,
+    siteUrl: `localhost:9000`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -54,6 +55,43 @@ module.exports = {
         workboxConfig: {
           importWorkboxFrom: `cdn`
         }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        exclude: [],
+        query: `{
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+
+            allSitePage {
+              edges {
+                node {
+                  path
+                }
+              }
+            }
+          }
+        `,
+        serialize: ({ site, allSitePage }) =>
+          allSitePage.edges.map(edge => {
+            return {
+              url: site.siteMetadata.siteUrl + edge.node.path,
+              changefreq: `daily`,
+              priority: 0.7
+            };
+          })
+      }
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        configFile: `robots-txt.config.js`
       }
     }
   ]
