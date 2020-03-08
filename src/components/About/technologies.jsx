@@ -15,6 +15,7 @@ import imgJQuery from "../../images/about/jquery.svg";
 import imgReact from "../../images/about/react.svg";
 import imgRedux from "../../images/about/redux.svg";
 import imgNext from "../../images/about/nextjs.svg";
+import imgGatsby from "../../images/about/gatsbyjs.svg";
 import imgWebpack from "../../images/about/webpack.svg";
 import imgNode from "../../images/about/nodejs.svg";
 import imgExpress from "../../images/about/express.svg";
@@ -48,6 +49,7 @@ const Technologies = ({ t }) => (
         <Technology image={imgReact} name="React" />
         <Technology image={imgRedux} name="Redux" />
         <Technology image={imgNext} name="Next.js" />
+        <Technology image={imgGatsby} name="Gatsby" />
         <Technology image={imgWebpack} name="Webpack" />
         <Technology image={imgNode} name="Node.js" />
         <Technology image={imgExpress} name="Express.js" />
