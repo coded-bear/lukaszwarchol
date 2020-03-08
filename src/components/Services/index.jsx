@@ -8,9 +8,9 @@ import imgWebApp from "../../images/services/web-app.svg";
 import imgWebsite from "../../images/services/website.svg";
 import imgMockup from "../../images/services/mockup.svg";
 import imgCodeReview from "../../images/services/code-review.svg";
-import imgFast from "../../images/services/fast.svg";
+import imgOptimization from "../../images/services/optimization.svg";
 
-const images = [imgWebApp, imgWebsite, imgMockup, imgCodeReview, imgFast];
+const images = [imgWebApp, imgWebsite, imgMockup, imgCodeReview, imgOptimization];
 
 const Services = props => {
   const { lang, t, layoutT } = props.pageContext;
