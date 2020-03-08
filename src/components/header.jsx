@@ -1,4 +1,4 @@
-import React, { useEffect, useState, createRef } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import Navigation from "./Navigation";
@@ -17,13 +17,7 @@ const LangBtns = props => (
 );
 
 const Header = ({ lang, path, t }) => {
-  const ref = createRef();
   const [menu, setMenu] = useState(false);
-
-  useEffect(() => {
-    if (menu) ref.current.classList.add("open");
-    else ref.current.classList.remove("open");
-  }, [menu, ref]);
 
   return (
     <header className="header">
@@ -39,7 +33,7 @@ const Header = ({ lang, path, t }) => {
         </button>
       </div>
 
-      <Navigation ref={ref} closeMenu={() => setMenu(false)} t={t.nav} lang={lang} />
+      {menu && <Navigation closeMenu={() => setMenu(false)} t={t.nav} lang={lang} />}
     </header>
   );
 };
