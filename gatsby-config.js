@@ -93,6 +93,7 @@ module.exports = {
       options: {
         configFile: `robots-txt.config.js`
       }
-    }
+    },
+    `gatsby-plugin-preload-link-crossorigin`
   ]
 };

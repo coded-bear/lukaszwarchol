@@ -9,6 +9,7 @@ import imgPHP from "../../images/about/php.svg";
 import imgSQL from "../../images/about/sql.svg";
 import imgWordPress from "../../images/about/wordpress.svg";
 import imgGit from "../../images/about/git.svg";
+import imgStrapi from "../../images/about/strapi.svg";
 import imgJavaScript from "../../images/about/javascript.svg";
 import imgTypeScript from "../../images/about/typescript.svg";
 import imgJQuery from "../../images/about/jquery.svg";
@@ -43,6 +44,7 @@ const Technologies = ({ t }) => (
         <Technology image={imgSQL} name="SQL" />
         <Technology image={imgWordPress} name="WordPress" />
         <Technology image={imgGit} name="Git" />
+        <Technology image={imgStrapi} name="Strapi" />
         <Technology image={imgJavaScript} name="JavaScript" />
         <Technology image={imgTypeScript} name="TypeScript" />
         <Technology image={imgJQuery} name="jQuery" />
