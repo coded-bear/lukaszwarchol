@@ -1,7 +1,10 @@
 {
   "title": "Kontakt",
   "subtitle": "Masz jakiś problem? Może pomysł na projekt? Skontaktuj się ze mną za pomocą poniższego formularza. A jeśli wolisz inne metody kontaktu, to poniżej znajduje się mój adres email oraz linki do profili społecznościowych",
-  "location": "Polska, Warszawa",
+  "location": {
+    "name": "Lokalizacja",
+    "value": "Polska, Warszawa"
+  },
   "form": {
     "email": {
       "placeholder": "Twój email",

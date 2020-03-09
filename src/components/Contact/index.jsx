@@ -7,18 +7,6 @@ import { Heading, SubTitle } from "../elements";
 import ContactForm from "./ContactForm";
 import imgLocation from "../../images/contact/location.svg";
 import imgEmail from "../../images/contact/email.svg";
-import imgFacebook from "../../images/common/facebook.svg";
-import imgLinkedin from "../../images/common/linkedin.svg";
-import imgGithub from "../../images/common/github.svg";
-import imgInstagram from "../../images/common/instagram.svg";
-
-const SocialMediaElem = ({ href, image, name }) => (
-  <div className="Contact__social-media-elem">
-    <a href={href} target="_blank" rel="noopener noreferrer">
-      <img src={image} alt={name} /> {name}
-    </a>
-  </div>
-);
 
 const Contact = props => {
   const { lang, t, layoutT } = props.pageContext;
@@ -34,22 +22,20 @@ const Contact = props => {
 
         <div className="Contact__container">
           <div className="Contact__content">
-            <div className="location">
-              <img src={imgLocation} alt="Location" /> {t.location}
+            <div className="Contact__content-elem location">
+              <img src={imgLocation} alt="Location" />
+              <div>
+                <p className="name">{t.location.name}</p>
+                <p>{t.location.value}</p>
+              </div>
             </div>
-
-            <div className="email">
-              <a href="mailto: contact@lukaszwarchol.pl">
-                <img src={imgEmail} alt="Email" /> contact@lukaszwarchol.pl
-              </a>
-            </div>
-
-            <div className="Contact__social-media-container">
-              <SocialMediaElem href="https://www.facebook.com/lukasz.warchol14" image={imgFacebook} name="Facebook" />
-              <SocialMediaElem href="https://www.linkedin.com/in/lukasz-warchol/" image={imgLinkedin} name="Linkedin" />
-              <SocialMediaElem href="https://github.com/coded-bear" image={imgGithub} name="GitHub" />
-              <SocialMediaElem href="https://www.instagram.com/lukasz.warchol/" image={imgInstagram} name="Instagram" />
-            </div>
+            <a className="Contact__content-elem email" href="mailto: contact@lukaszwarchol.pl">
+              <img src={imgEmail} alt="Email" />
+              <div>
+                <p className="name">E-mail</p>
+                <p>contact@lukaszwarchol.pl</p>
+              </div>
+            </a>
           </div>
 
           <ContactForm t={t.form} lang={lang} />
@@ -57,12 +43,6 @@ const Contact = props => {
       </section>
     </Layout>
   );
-};
-
-SocialMediaElem.propTypes = {
-  href: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired
 };
 
 Contact.propTypes = {
