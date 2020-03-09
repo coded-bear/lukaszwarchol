@@ -25,7 +25,8 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.ico`
+        icon: `src/images/favicon.ico`,
+        crossOrigin: `use-credentials`
       }
     },
     `gatsby-plugin-sass`,
@@ -93,7 +94,6 @@ module.exports = {
       options: {
         configFile: `robots-txt.config.js`
       }
-    },
-    `gatsby-plugin-preload-link-crossorigin`
+    }
   ]
 };
