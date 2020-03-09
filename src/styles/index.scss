@@ -90,7 +90,7 @@ span {
   position: relative;
   display: inline-flex;
   padding: 15px 50px;
-  border: 3px solid $primary;
+  border: 0;
   font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
@@ -104,14 +104,14 @@ span {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: 60%;
     right: 0;
     background-color: $primary;
     transition: 0.3s;
   }
 
   &:hover::after {
-    left: 75%;
+    left: 0;
   }
 
   &.light {
