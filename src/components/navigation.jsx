@@ -5,10 +5,10 @@ import { SocialMedia } from "./elements";
 import imgClose from "../images/common/close.svg";
 import { getHrefs } from "../utils/langService";
 
-const NavElem = ({ to, text, closeMenu }) => (
+const NavElem = ({ to, name, closeMenu }) => (
   <li>
     <Link to={to} onClick={closeMenu}>
-      {text}
+      {name}
     </Link>
   </li>
 );
@@ -21,11 +21,11 @@ const Navigation = forwardRef(({ lang, t, closeMenu }, ref) => (
 
     <nav>
       <ul>
-        <NavElem to={`/${lang}/`} text="Home" closeMenu={closeMenu} />
-        <NavElem to={`/${lang}/${getHrefs(lang)[0]}/`} text={t.about} closeMenu={closeMenu} />
-        <NavElem to={`/${lang}/${getHrefs(lang)[1]}/`} text={t.services} closeMenu={closeMenu} />
-        <NavElem to={`/${lang}/${getHrefs(lang)[2]}/`} text={t.projects} closeMenu={closeMenu} />
-        <NavElem to={`/${lang}/${getHrefs(lang)[3]}/`} text={t.contact} closeMenu={closeMenu} />
+        <NavElem to={`/${lang}/`} name="Home" closeMenu={closeMenu} />
+        <NavElem to={`/${lang}/${getHrefs(lang)[0]}/`} name={t.about} closeMenu={closeMenu} />
+        <NavElem to={`/${lang}/${getHrefs(lang)[1]}/`} name={t.services} closeMenu={closeMenu} />
+        <NavElem to={`/${lang}/${getHrefs(lang)[2]}/`} name={t.projects} closeMenu={closeMenu} />
+        <NavElem to={`/${lang}/${getHrefs(lang)[3]}/`} name={t.contact} closeMenu={closeMenu} />
       </ul>
     </nav>
 
@@ -37,7 +37,7 @@ const Navigation = forwardRef(({ lang, t, closeMenu }, ref) => (
 
 NavElem.propTypes = {
   to: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   closeMenu: PropTypes.func.isRequired
 };
 

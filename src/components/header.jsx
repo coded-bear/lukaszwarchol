@@ -20,7 +20,7 @@ const Header = ({ lang, path, t }) => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className="header">
+    <header className="Header">
       <Link to={`/${lang}/`}>
         <img src={logo} alt="Łukasz Warchoł" className="header__logo" />
       </Link>
