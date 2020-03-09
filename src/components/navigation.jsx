@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { SocialMedia } from "./elements";
@@ -13,8 +13,8 @@ const NavElem = ({ to, name, closeMenu }) => (
   </li>
 );
 
-const Navigation = forwardRef(({ lang, t, closeMenu }, ref) => (
-  <div className="navigation" ref={ref}>
+const Navigation = ({ lang, t, closeMenu }) => (
+  <div className="navigation">
     <button onClick={closeMenu}>
       <img src={imgClose} alt="close" />
     </button>
@@ -33,7 +33,7 @@ const Navigation = forwardRef(({ lang, t, closeMenu }, ref) => (
       <SocialMedia />
     </div>
   </div>
-));
+);
 
 NavElem.propTypes = {
   to: PropTypes.string.isRequired,
