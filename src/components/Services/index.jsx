@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../../styles/services.scss";
 import SEO from "../seo";
+import "../../styles/services.scss";
 import Layout from "../layout";
 import { Heading, SubTitle } from "../elements";
 import imgWebApp from "../../images/services/web-app.svg";

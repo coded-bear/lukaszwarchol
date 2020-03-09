@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../../styles/contact.scss";
 import SEO from "../seo";
+import "../../styles/contact.scss";
 import Layout from "../layout";
 import { Heading, SubTitle } from "../elements";
 import ContactForm from "./ContactForm";

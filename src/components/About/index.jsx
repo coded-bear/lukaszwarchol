@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../../styles/about.scss";
 import SEO from "../seo";
+import "../../styles/about.scss";
 import Layout from "../layout";
 import { Heading, LinkButton } from "../elements";
 import Experience from "./Experience";

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../../styles/home.scss";
 import SEO from "../seo";
+import "../../styles/home.scss";
 import Layout from "../layout";
 import { LinkButton, SocialMedia } from "../elements";
 import { getHrefs } from "../../utils/langService";
