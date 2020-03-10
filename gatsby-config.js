@@ -31,13 +31,6 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`Raleway\:400,700`],
-        display: "swap"
-      }
-    },
-    {
       resolve: `gatsby-plugin-offline`,
       options: {
         precachePages: [
