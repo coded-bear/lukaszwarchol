@@ -21,6 +21,14 @@
         margin: 0;
         font-size: 22px;
       }
+
+      .Project__link {
+        font-weight: 700;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
 
     .swym {

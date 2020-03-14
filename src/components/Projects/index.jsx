@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import SEO from "../seo";
 import "../../styles/projects.scss";
 import Layout from "../layout";
-import { Heading, SubTitle, LinkButton } from "../elements";
+import { Heading, SubTitle } from "../elements";
+import { Link } from "gatsby";
 
 const Projects = props => {
   const { lang, t, layoutT } = props.pageContext;
@@ -24,7 +25,9 @@ const Projects = props => {
               <div className="Project__content">
                 <h3 className="name">{project.name}</h3>
                 <p>{project.description}</p>
-                <LinkButton to={path + project.url} text={t.learnMore} />
+                <Link to={path + project.url} className="Project__link">
+                  {t.learnMore}
+                </Link>
               </div>
             </div>
           ))}
