@@ -3,7 +3,15 @@
   "subtitle": "Below you can find some projects that I have already done. There is also place for your projects",
   "learnMore": "Learn more",
   "projectsList": [
-    { "name": "SWYM", "description": "Lorem ipsum dolor sit amet.", "url": "swym", "image": "" },
-    { "name": "Droplead", "description": "Lorem ipsum dolor sit amet.", "url": "droplead", "image": "" }
+    {
+      "name": "SWYM",
+      "description": "Lorem ipsum dolor sit amet.",
+      "url": "swym"
+    },
+    {
+      "name": "Droplead",
+      "description": "Lorem ipsum dolor sit amet.",
+      "url": "droplead"
+    }
   ]
 }

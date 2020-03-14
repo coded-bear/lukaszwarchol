@@ -20,9 +20,7 @@ const Projects = props => {
         <div className="container Projects__list">
           {t.projectsList.map((project, index) => (
             <div key={index} className="Project">
-              <div className="Project__image">
-                <img src={project.image} alt={project.name} />
-              </div>
+              <div className={`Project__image ${project.url}`}></div>
               <div className="Project__content">
                 <h3 className="name">{project.name}</h3>
                 <p>{project.description}</p>

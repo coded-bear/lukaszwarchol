@@ -3,7 +3,15 @@
   "subtitle": "Poniżej znajduje się część projektów, które do tej pory wykonałem. Jest też miejsce na Twoje projekty",
   "learnMore": "Zobacz więcej",
   "projectsList": [
-    { "name": "SWYM", "description": "Lorem ipsum dolor sit amet.", "url": "swym", "image": "" },
-    { "name": "Droplead", "description": "Lorem ipsum dolor sit amet.", "url": "droplead", "image": "" }
+    {
+      "name": "SWYM",
+      "description": "Lorem ipsum dolor sit amet.",
+      "url": "swym"
+    },
+    {
+      "name": "Droplead",
+      "description": "Lorem ipsum dolor sit amet.",
+      "url": "droplead"
+    }
   ]
 }
