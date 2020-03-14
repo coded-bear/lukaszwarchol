@@ -1,0 +1,44 @@
+.Projects {
+  .Project {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 20px;
+
+    .Project__image {
+      width: 50%;
+
+      img {
+        width: 90%;
+      }
+    }
+
+    .Project__content {
+      width: 50%;
+
+      .name {
+        margin: 0;
+        font-size: 22px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .Project {
+      flex-direction: column;
+
+      .Project__image {
+        width: 100%;
+        margin-bottom: 20px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .Project__content {
+        width: 100%;
+      }
+    }
+  }
+}

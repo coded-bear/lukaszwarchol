@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import SEO from "../seo";
+import "../../styles/projects.scss";
 import Layout from "../layout";
-import { Heading, SubTitle } from "../elements";
+import { Heading, SubTitle, LinkButton } from "../elements";
 
 const Projects = props => {
   const { lang, t, layoutT } = props.pageContext;
@@ -16,7 +17,20 @@ const Projects = props => {
         <Heading text={t.title} />
         <SubTitle text={t.subtitle} />
 
-        <div className="container"></div>
+        <div className="container Projects__list">
+          {t.projectsList.map((project, index) => (
+            <div key={index} className="Project">
+              <div className="Project__image">
+                <img src={project.image} alt={project.name} />
+              </div>
+              <div className="Project__content">
+                <h3 className="name">{project.name}</h3>
+                <p>{project.description}</p>
+                <LinkButton to={path + project.url} text={t.learnMore} />
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </Layout>
   );
