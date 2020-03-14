@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import SEO from "../seo";
 import "../../styles/projects.scss";
+import { Link } from "gatsby";
 import Layout from "../layout";
 import { Heading, SubTitle } from "../elements";
-import { Link } from "gatsby";
 
 const Projects = props => {
   const { lang, t, layoutT } = props.pageContext;
