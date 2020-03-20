@@ -21,8 +21,8 @@ exports.createPages = ({ actions }) => {
     component: path.resolve("src/components/Home/index.jsx"),
     context: {
       lang: locales[0],
-      t: require(`./src/locales/${locales[0]}/home.json`),
-      layoutT: require(`./src/locales/${locales[0]}/layout.json`)
+      t: require(`./src/static/locales/${locales[0]}/home.json`),
+      layoutT: require(`./src/static/locales/${locales[0]}/layout.json`)
     }
   });
 
@@ -32,8 +32,8 @@ exports.createPages = ({ actions }) => {
       component: path.resolve("src/components/Home/index.jsx"),
       context: {
         lang: locale,
-        t: require(`./src/locales/${locale}/home.json`),
-        layoutT: require(`./src/locales/${locale}/layout.json`)
+        t: require(`./src/static/locales/${locale}/home.json`),
+        layoutT: require(`./src/static/locales/${locale}/layout.json`)
       }
     });
     createPage({
@@ -41,8 +41,8 @@ exports.createPages = ({ actions }) => {
       component: path.resolve("src/components/About/index.jsx"),
       context: {
         lang: locale,
-        t: require(`./src/locales/${locale}/about.json`),
-        layoutT: require(`./src/locales/${locale}/layout.json`)
+        t: require(`./src/static/locales/${locale}/about.json`),
+        layoutT: require(`./src/static/locales/${locale}/layout.json`)
       }
     });
     createPage({
@@ -50,8 +50,8 @@ exports.createPages = ({ actions }) => {
       component: path.resolve("src/components/Services/index.jsx"),
       context: {
         lang: locale,
-        t: require(`./src/locales/${locale}/services.json`),
-        layoutT: require(`./src/locales/${locale}/layout.json`)
+        t: require(`./src/static/locales/${locale}/services.json`),
+        layoutT: require(`./src/static/locales/${locale}/layout.json`)
       }
     });
     createPage({
@@ -59,8 +59,8 @@ exports.createPages = ({ actions }) => {
       component: path.resolve("src/components/Projects/index.jsx"),
       context: {
         lang: locale,
-        t: require(`./src/locales/${locale}/projects.json`),
-        layoutT: require(`./src/locales/${locale}/layout.json`)
+        t: require(`./src/static/locales/${locale}/projects.json`),
+        layoutT: require(`./src/static/locales/${locale}/layout.json`)
       }
     });
     createPage({
@@ -68,8 +68,8 @@ exports.createPages = ({ actions }) => {
       component: path.resolve("src/components/Contact/index.jsx"),
       context: {
         lang: locale,
-        t: require(`./src/locales/${locale}/contact.json`),
-        layoutT: require(`./src/locales/${locale}/layout.json`)
+        t: require(`./src/static/locales/${locale}/contact.json`),
+        layoutT: require(`./src/static/locales/${locale}/layout.json`)
       }
     });
     createPage({
@@ -77,8 +77,8 @@ exports.createPages = ({ actions }) => {
       component: path.resolve("src/components/PrivacyPolicy/index.jsx"),
       context: {
         lang: locale,
-        t: require(`./src/locales/${locale}/privacyPolicy.json`),
-        layoutT: require(`./src/locales/${locale}/layout.json`)
+        t: require(`./src/static/locales/${locale}/privacyPolicy.json`),
+        layoutT: require(`./src/static/locales/${locale}/layout.json`)
       }
     });
   });
