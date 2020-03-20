@@ -1,0 +1,25 @@
+{
+  "title": "Polityka prywatności",
+  "description": [
+    "Niniejsza polityka prywatności i plików cookies opisuje zasady postępowania z danymi osobowymi oraz wykorzystywania plików cookies i innych technologii w ramach strony internetowej dostępnej pod adresem ",
+    "Administratorem strony jest Łukasz Warchoł, prowadzący działalność gospodarczą pod firmą Łukasz Warchoł, wpisany do Centralnej Ewidencji i Informacji o Działalności Gospodarczej, posługujący się numerem NIP 7962992882. Kontakt z Administratorem możliwy pod adresem e-mail "
+  ],
+  "definitions": {
+    "name": "Definicje",
+    "label": "Na potrzeby niniejszej polityki prywatności, przyjmuje się następujące znaczenie poniższych pojęć:",
+    "list": [
+      "a) Administrator - Łukasz Warchoł, prowadzący działalność gospodarczą pod firmą Łukasz Warchoł, wpisany do Centralnej Ewidencji i Informacji o Działalności Gospodarczej, posługujący się numerem NIP 7962992882",
+      "b) Strona – strona internetowa dostępna pod adresem ",
+      "c) Użytkownik – każdy podmiot, który korzysta ze Strony."
+    ]
+  },
+  "cookies": {
+    "name": "Pliki cookies",
+    "list": [
+      "Administrator wykorzystuje pliki cookies (ciasteczka), czyli niewielkie informacje tekstowe, przechowywane na urządzeniu końcowym Użytkownika (np. komputerze, tablecie, smartfonie).",
+      "Administrator przechowuje pliki cookies na urządzeniu końcowym Użytkownika, w celu zapewnienia prawidłowego działania Strony.",
+      "Administrator informuje niniejszym Użytkownika, że istnieje możliwość takiej konfiguracji przeglądarki internetowej, która uniemożliwia przechowywanie plików cookies na urządzeniu końcowym Użytkownika. W takiej sytuacji, korzystanie ze Strony przez Użytkownika może być utrudnione.",
+      "Administrator wskazuje niniejszym, że pliki cookies mogą być przez Użytkownika usunięte po ich zapisaniu przez Administratora, poprzez odpowiednie funkcje przeglądarki internetowej, programy służące w tym celu lub skorzystanie z odpowiednich narzędzi dostępnych w ramach systemu operacyjnego, z którego korzysta Użytkownik."
+    ]
+  }
+}

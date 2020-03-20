@@ -1,0 +1,35 @@
+.PrivacyPolicy {
+  max-width: 1000px;
+  padding: 0 20px 80px 20px;
+
+  .paragraph {
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      padding: 5px 0;
+
+      &:first-child {
+        padding-top: 10px;
+      }
+    }
+  }
+
+  ol {
+    padding-left: 15px;
+
+    li {
+      padding: 5px 0;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

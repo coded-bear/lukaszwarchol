@@ -8,24 +8,24 @@ import imgGithub from "../images/common/github.svg";
 import imgInstagram from "../images/common/instagram.svg";
 
 export const Heading = ({ dark, left, text }) => (
-  <h1 className={`heading ${dark && "dark"} ${left && "left"}`}>{text}</h1>
+  <h1 className={`heading ${dark ? "dark" : ""} ${left ? "left" : ""}`}>{text}</h1>
 );
 
 export const Intro = ({ dark, left, text }) => (
-  <h2 className={`heading ${dark && "dark"} ${left && "left"}`}>{text}</h2>
+  <h2 className={`heading ${dark ? "dark" : ""} ${left ? "left" : ""}`}>{text}</h2>
 );
 
 export const SubTitle = ({ text }) => <p className="subtitle">{text}</p>;
 
 export const LinkButton = ({ to, light, text }) => (
   <Link to={to}>
-    <h2 className={`link-button ${light && "light"}`}>
+    <h2 className={`link-button ${light ? "light" : ""}`}>
       <strong>{text}</strong>
     </h2>
   </Link>
 );
 
-export const SocialMediaElem = ({ href, image, name, withName }) => (
+export const SocialMediaElem = ({ href, image, name }) => (
   <a href={href} target="_blank" rel="noopener noreferrer">
     <img src={image} alt={name} />
   </a>

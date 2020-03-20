@@ -24,6 +24,8 @@ const Footer = ({ lang, t }) => (
 
     <SocialMedia />
 
+    <Link to={`/${lang}/${getHrefs(lang)[4]}/`}>{t.privacyPolicy}</Link>
+
     <p>&copy; {new Date().getFullYear()} Łukasz Warchoł. All rights reserved</p>
   </footer>
 );

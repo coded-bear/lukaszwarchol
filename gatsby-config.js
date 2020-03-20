@@ -40,11 +40,13 @@ module.exports = {
           `/pl/uslugi/`,
           `/pl/projekty/`,
           `/pl/kontakt/`,
+          `/pl/polityka-prywatnosci/`,
           `/en/`,
           `/en/about-me/`,
           `/en/services/`,
           `/en/projects/`,
-          `en/contact/`
+          `/en/contact/`,
+          `/en/privacy-policy/`
         ],
         workboxConfig: {
           importWorkboxFrom: `cdn`
