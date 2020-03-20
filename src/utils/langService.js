@@ -18,9 +18,10 @@ export const changePath = (lang, path) => {
   const splitPath = path.split("/");
   const actualHrefs = getHrefs(splitPath[1]);
   const actualHref = splitPath[2];
+  const project = splitPath[3];
   const newHrefs = getHrefs(lang);
   const hrefPosition = actualHrefs.indexOf(actualHref);
 
   if (hrefPosition === -1) return `/${lang}/`;
-  return `/${lang}/${newHrefs[hrefPosition]}/`;
+  return `/${lang}/${newHrefs[hrefPosition]}/${project && project}/`;
 };
