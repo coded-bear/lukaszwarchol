@@ -25,7 +25,7 @@ const Projects = props => {
               <div className="Project__content">
                 <h3 className="name">{project.name}</h3>
                 <p>{project.description}</p>
-                <Link to={path + project.url} className="Project__link">
+                <Link to={`${path + project.url}/`} className="Project__link">
                   {t.learnMore}
                 </Link>
               </div>

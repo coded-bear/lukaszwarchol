@@ -1,6 +1,8 @@
 @import "./colors.scss";
 
 .Contact {
+  padding: 0 20px;
+
   .Contact__container {
     display: flex;
     align-items: flex-start;
@@ -14,7 +16,6 @@
 
     .Contact__content {
       flex: 1;
-      padding: 20px;
       font-weight: bold;
 
       .Contact__content-elem {
@@ -51,7 +52,7 @@
 
 .Contact__form {
   flex: 1;
-  padding: 20px;
+  padding: 20px 0;
 
   .input-label {
     input,
@@ -77,6 +78,7 @@
     display: inline-flex;
     padding: 15px 50px;
     border: 0;
+    background-color: transparent;
     font-size: 18px;
     text-transform: uppercase;
     cursor: pointer;
@@ -102,8 +104,7 @@
   }
 
   .form-error {
-    margin-bottom: 10px;
-    color: $primary;
+    margin-bottom: 15px;
   }
 }
 

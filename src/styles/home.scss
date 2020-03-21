@@ -44,4 +44,17 @@
   @media only screen and (max-width: 1000px) {
     flex-direction: column;
   }
+
+  @media only screen and (max-width: 600px) {
+    .home-header__content {
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 26px;
+        line-height: 30px;
+      }
+    }
+  }
 }

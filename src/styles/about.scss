@@ -34,7 +34,7 @@
 // EXPERIENCE
 
 .Experience {
-  padding: 80px 0;
+  padding: 80px 10px;
   background-color: $light-gray;
 
   .Experience__container {
@@ -65,10 +65,23 @@
 
   @media only screen and (max-width: 900px) {
     .Experience__container {
-      flex-direction: column;
-
       .Experience__elem {
-        width: 100%;
+        width: calc(50% - 20px);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    & {
+      padding: 80px 20px;
+
+      .Experience__container {
+        flex-direction: column;
+
+        .Experience__elem {
+          width: 100%;
+          margin: 10px 0;
+        }
       }
     }
   }
@@ -77,7 +90,7 @@
 // TECHNOLOGIES
 
 .Technologies {
-  padding: 80px 0;
+  padding: 80px 20px;
 
   .Technologies__container {
     display: flex;

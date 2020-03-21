@@ -298,7 +298,7 @@ span {
 // FOOTER
 
 .footer {
-  padding-top: 40px;
+  padding: 40px 20px 0 20px;
   text-align: center;
 
   nav {
@@ -323,5 +323,29 @@ span {
 
   a:hover {
     text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 36px;
+  }
+
+  .navigation {
+    font-size: 36px;
+
+    button {
+      img {
+        height: 50px;
+      }
+    }
+
+    .navigation__social-media {
+      a {
+        img {
+          height: 32px;
+        }
+      }
+    }
   }
 }

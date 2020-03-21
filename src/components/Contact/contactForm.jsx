@@ -58,7 +58,7 @@ const ContactForm = ({ lang, t }) => {
         <textarea name="message" onChange={updateForm} rows={10} placeholder={t.message.placeholder} maxLength={500} />
       </label>
 
-      {error && <div className="form-primary">{error}</div>}
+      {error && <div className="form-error">{error}</div>}
 
       <button className="form-submit">
         <strong>{t.submit}</strong>
