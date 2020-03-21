@@ -41,11 +41,11 @@
     right: 20px;
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .home-header__content {
       h1 {
         font-size: 36px;
