@@ -8,6 +8,11 @@
       "shortName": "swym"
     },
     {
+      "name": "Weather app",
+      "description": "Weather application written in the context of learning in React.",
+      "shortName": "weather-app"
+    },
+    {
       "name": "Droplead",
       "description": "Lorem ipsum dolor sit amet.",
       "shortName": "droplead"

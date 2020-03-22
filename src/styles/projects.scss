@@ -12,7 +12,7 @@
 
     .Project__image {
       width: 45%;
-      min-height: 200px;
+      height: 240px;
       background-position: center;
       background-size: 20%;
       background-repeat: no-repeat;
@@ -29,7 +29,12 @@
 
     .swym {
       background-image: url("../images/projects/swym.svg");
-      background-color: rgb(21, 108, 207);
+      background-color: #156ccf;
+    }
+
+    .weather-app {
+      background-image: url("../images/projects/weather-app.svg");
+      background-color: #dceeff;
     }
 
     .droplead {
