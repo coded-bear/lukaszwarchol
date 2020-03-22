@@ -6,11 +6,12 @@ import Layout from "../layout";
 import { Heading, SubTitle } from "../elements";
 import imgWebApp from "../../images/services/web-app.svg";
 import imgWebsite from "../../images/services/website.svg";
+import imgConsoleApp from "../../images/services/console-app.svg";
 import imgMockup from "../../images/services/mockup.svg";
 import imgCodeReview from "../../images/services/code-review.svg";
 import imgOptimization from "../../images/services/optimization.svg";
 
-const images = [imgWebApp, imgWebsite, imgMockup, imgCodeReview, imgOptimization];
+const images = [imgWebApp, imgWebsite, imgConsoleApp, imgMockup, imgCodeReview, imgOptimization];
 
 const Services = props => {
   const { lang, t, layoutT } = props.pageContext;
