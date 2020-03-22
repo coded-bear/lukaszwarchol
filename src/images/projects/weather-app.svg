@@ -8,23 +8,25 @@
     </linearGradient>
   </defs>
   <g id="Group_244" data-name="Group 244" transform="translate(-207 -222)">
-    <rect id="Rectangle_107" data-name="Rectangle 107" width="150" height="150" rx="10" transform="translate(207 222)" fill="url(#linear-gradient)"/>
-    <circle id="Ellipse_5" data-name="Ellipse 5" cx="25" cy="25" r="25" transform="translate(227 257)" fill="#ffd834"/>
-    <g id="water" transform="translate(180.56 338)">
-      <g id="Group_242" data-name="Group 242" transform="translate(79.44)">
-        <path id="Path_109" data-name="Path 109" d="M85.556,2.952c-.913-1.426-1.84-2.6-1.849-2.614L83.44,0l-.267.338c-.009.012-.936,1.188-1.849,2.614C80.074,4.9,79.44,6.382,79.44,7.344a4.008,4.008,0,1,0,8,0C87.44,6.382,86.806,4.9,85.556,2.952Z" transform="translate(-79.44)" fill="#39c2ff"/>
+    <rect id="Rectangle_107" data-name="Rectangle 107" width="150" height="150" rx="75" transform="translate(207 222)" fill="url(#linear-gradient)"/>
+    <g id="Group_245" data-name="Group 245" transform="translate(3 -8)">
+      <circle id="Ellipse_5" data-name="Ellipse 5" cx="25" cy="25" r="25" transform="translate(227 257)" fill="#ffd834"/>
+      <g id="water" transform="translate(180.56 338)">
+        <g id="Group_242" data-name="Group 242" transform="translate(79.44)">
+          <path id="Path_109" data-name="Path 109" d="M85.556,2.952c-.913-1.426-1.84-2.6-1.849-2.614L83.44,0l-.267.338c-.009.012-.936,1.188-1.849,2.614C80.074,4.9,79.44,6.382,79.44,7.344a4.008,4.008,0,1,0,8,0C87.44,6.382,86.806,4.9,85.556,2.952Z" transform="translate(-79.44)" fill="#39c2ff"/>
+        </g>
       </g>
-    </g>
-    <g id="water-2" data-name="water" transform="translate(198.56 344)">
-      <g id="Group_242-2" data-name="Group 242" transform="translate(79.44)">
-        <path id="Path_109-2" data-name="Path 109" d="M85.556,2.952c-.913-1.426-1.84-2.6-1.849-2.614L83.44,0l-.267.338c-.009.012-.936,1.188-1.849,2.614C80.074,4.9,79.44,6.382,79.44,7.344a4.008,4.008,0,1,0,8,0C87.44,6.382,86.806,4.9,85.556,2.952Z" transform="translate(-79.44)" fill="#39c2ff"/>
+      <g id="water-2" data-name="water" transform="translate(198.56 344)">
+        <g id="Group_242-2" data-name="Group 242" transform="translate(79.44)">
+          <path id="Path_109-2" data-name="Path 109" d="M85.556,2.952c-.913-1.426-1.84-2.6-1.849-2.614L83.44,0l-.267.338c-.009.012-.936,1.188-1.849,2.614C80.074,4.9,79.44,6.382,79.44,7.344a4.008,4.008,0,1,0,8,0C87.44,6.382,86.806,4.9,85.556,2.952Z" transform="translate(-79.44)" fill="#39c2ff"/>
+        </g>
       </g>
-    </g>
-    <g id="thunder" transform="translate(189.333 324)">
-      <g id="Group_243" data-name="Group 243" transform="translate(106.667)">
-        <path id="Path_110" data-name="Path 110" d="M126.667,0h-20V22h6V40l14-24h-8Z" transform="translate(-106.667)" fill="#ffd834"/>
+      <g id="thunder" transform="translate(189.333 324)">
+        <g id="Group_243" data-name="Group 243" transform="translate(106.667)">
+          <path id="Path_110" data-name="Path 110" d="M126.667,0h-20V22h6V40l14-24h-8Z" transform="translate(-106.667)" fill="#ffd834"/>
+        </g>
       </g>
+      <path id="cloud" d="M20.868,27.087A20.844,20.844,0,0,1,25,27.5,17.043,17.043,0,0,1,48.87,15.383,22.748,22.748,0,0,1,91.635,30.909a18.963,18.963,0,0,1-.57,37.917h-70.2a20.869,20.869,0,1,1,0-41.739Zm0,0" transform="translate(227.321 262.618)" fill="#fff"/>
     </g>
-    <path id="cloud" d="M20.868,27.087A20.844,20.844,0,0,1,25,27.5,17.043,17.043,0,0,1,48.87,15.383,22.748,22.748,0,0,1,91.635,30.909a18.963,18.963,0,0,1-.57,37.917h-70.2a20.869,20.869,0,1,1,0-41.739Zm0,0" transform="translate(227.321 262.618)" fill="#fff"/>
   </g>
 </svg>
