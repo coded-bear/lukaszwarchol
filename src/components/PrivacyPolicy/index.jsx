@@ -38,6 +38,15 @@ const PrivacyPolicy = props => {
         </ul>
 
         <p className="paragraph">
+          <strong>§ {t.personalData.name}</strong>
+        </p>
+        <ol>
+          {t.personalData.list.map((elem, index) => (
+            <li key={index}>{elem}</li>
+          ))}
+        </ol>
+
+        <p className="paragraph">
           <strong>§ {t.cookies.name}</strong>
         </p>
         <ol>

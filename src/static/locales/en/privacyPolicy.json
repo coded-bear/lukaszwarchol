@@ -1,7 +1,7 @@
 {
   "title": "Privacy policy",
   "description": [
-    "This privacy and cookie policy describes the principles of handling personal data and using cookies and other technologies within the website available at ",
+    "This Privacy and Cookie Policy describes the principles of handling personal data and the use of cookies and other technologies within the website available at ",
     "The Administrator of the website is Łukasz Warchoł, who conducts business activity under the name of Łukasz Warchoł, registered in the Central Register and Information on Business Activity, using the NIP number 7962992882. Contact with the Administrator is possible at the e-mail address "
   ],
   "definitions": {
@@ -11,6 +11,17 @@
       "a) Administrator - Łukasz Warchoł, conducting business activity under the name of Łukasz Warchoł, entered into the Central Register and Information on Business Activity, using NIP number 7962992882",
       "b) Website - website available at ",
       "c) User - any entity that uses the Website."
+    ]
+  },
+  "personalData": {
+    "name": "Personal data",
+    "list": [
+      "The User may submit his personal data to the Administrator using forms available on the Website, such as the contact form.",
+      "The Administrator is the User's personal data administrator.",
+      "The data provided to the Administrator as part of the contact form are processed for the purpose of contact with the User.",
+      "The Administrator guarantees the confidentiality of any personal data provided to him/her.",
+      "The controller shall not make the data provided to it available to any third parties.",
+      "Personal data is collected with due diligence and properly protected against access by unauthorized persons."
     ]
   },
   "cookies": {

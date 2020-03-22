@@ -13,6 +13,17 @@
       "c) Użytkownik – każdy podmiot, który korzysta ze Strony."
     ]
   },
+  "personalData": {
+    "name": "Dane osobowe",
+    "list": [
+      "Użytkownik może przekazywać swoje dane osobowe Administratorowi za pomocą formularzy dostępnych na Stronie, takich jak formularz kontaktowy.",
+      "Administratorem danych osobowych Użytkownika jest Administrator.",
+      "Dane przekazane Administratorowi w ramach formularza kontaktowego, przetwarzane są w celu informacji do kontaktu z Użytkownikiem.",
+      "Administrator gwarantuje poufność wszelkich przekazanych mu danych osobowych.",
+      "Administrator nie udostępnia przekazanych mu danych jakimkolwiek podmiotom trzecim.",
+      "Dane osobowe są gromadzone z należytą starannością i odpowiednio chronione przed dostępem do nich przez osoby do tego nieupoważnione."
+    ]
+  },
   "cookies": {
     "name": "Pliki cookies",
     "list": [
