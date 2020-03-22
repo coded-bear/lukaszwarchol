@@ -31,8 +31,16 @@
   }
 
   .home-header__right {
+    position: relative;
     flex: 1;
     padding: 20px;
+
+    .home-header__landscape {
+      position: absolute;
+      top: -100px;
+      right: 20px;
+      width: 130%;
+    }
   }
 
   .home-header__social-media-container {

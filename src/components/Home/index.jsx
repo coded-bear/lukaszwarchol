@@ -5,6 +5,7 @@ import "../../styles/home.scss";
 import Layout from "../layout";
 import { LinkButton, SocialMedia } from "../elements";
 import { getHrefs } from "../../utils/langService";
+import imgLandscape from "../../images/common/landscape.svg";
 
 const Home = props => {
   const { lang, t, layoutT } = props.pageContext;
@@ -29,7 +30,9 @@ const Home = props => {
           <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`} text={t.header.hireMe} />
         </div>
 
-        <div className="home-header__right"></div>
+        <div className="home-header__right">
+          <img className="home-header__landscape" src={imgLandscape} alt="landscape" />
+        </div>
 
         <div className="home-header__social-media-container">
           <SocialMedia />
