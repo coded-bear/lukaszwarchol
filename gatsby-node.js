@@ -1,7 +1,5 @@
 const path = require("path");
 
-const projects = ["swym", "droplead"];
-
 const getHrefs = locale => {
   const plHrefs = ["o-mnie", "uslugi", "projekty", "kontakt", "polityka-prywatnosci"];
   const enHrefs = ["about-me", "services", "projects", "contact", "privacy-policy"];
@@ -82,18 +80,6 @@ exports.createPages = ({ actions }) => {
         t: require(`./src/static/locales/${locale}/privacyPolicy.json`),
         layoutT: require(`./src/static/locales/${locale}/layout.json`)
       }
-    });
-
-    projects.map(project => {
-      createPage({
-        path: `/${locale}/${getHrefs(locale)[2]}/${project}/`,
-        component: path.resolve("src/components/Project/index.jsx"),
-        context: {
-          lang: locale,
-          t: require(`./src/static/locales/${locale}/projects/${project}.json`),
-          layoutT: require(`./src/static/locales/${locale}/layout.json`)
-        }
-      });
     });
   });
 };

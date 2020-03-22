@@ -1,17 +1,16 @@
 {
   "title": "Projekty",
   "subtitle": "Poniżej znajduje się część projektów, które do tej pory wykonałem. Jest też miejsce na Twoje projekty",
-  "learnMore": "Zobacz więcej",
   "projectsList": [
     {
-      "name": "SWYM",
-      "description": "Lorem ipsum dolor sit amet.",
-      "url": "swym"
+      "name": "SWYM (See What You Missed)",
+      "description": "Na WawCode, 24-godzinnym hackatonie w Warszawie, wraz z kolegami z drużyny - Piotr Adamczyk i Marcello Bardus, pracowałem nad aplikacją SWYM. Naszą ideą było stworzenie aplikacji mobilnej, która pozwoliłaby ludziom, którzy często prowadzą bardzo szybki tryb życia, odkrywać nowe, ciekawe miejsca, które mijali w ciągu dnia. Po minięciu nowego miejsca, aplikacja rejestruje je i informuje o tym użytkownika w formie wysyłanego wieczorem powiadomienia w trybie push. Następnie użytkownik może przeczytać więcej informacji o tym miejscu, sprawdzić kierunek podróży, odwiedzić je (i oznaczyć jako \"odwiedzone\" w aplikacji).",
+      "shortName": "swym"
     },
     {
       "name": "Droplead",
       "description": "Lorem ipsum dolor sit amet.",
-      "url": "droplead"
+      "shortName": "droplead"
     }
   ]
 }
