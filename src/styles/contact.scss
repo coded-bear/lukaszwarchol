@@ -16,7 +16,7 @@
 
     .Contact__content {
       flex: 1;
-      font-weight: bold;
+      font-size: 18px;
 
       .Contact__content-elem {
         display: flex;
@@ -34,13 +34,16 @@
 
         .name {
           color: $primary;
+          font-weight: 700;
         }
 
         &.email {
           display: inline-flex;
 
-          &:hover {
-            color: $primary;
+          a {
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
       }

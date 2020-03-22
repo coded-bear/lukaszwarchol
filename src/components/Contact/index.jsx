@@ -29,13 +29,13 @@ const Contact = props => {
                 <p>{t.location.value}</p>
               </div>
             </div>
-            <a className="Contact__content-elem email" href="mailto: contact@lukaszwarchol.pl">
+            <div className="Contact__content-elem email">
               <img src={imgEmail} alt="Email" />
               <div>
                 <p className="name">E-mail</p>
-                <p>contact@lukaszwarchol.pl</p>
+                <a href="mailto: contact@lukaszwarchol.pl">contact@lukaszwarchol.pl</a>
               </div>
-            </a>
+            </div>
           </div>
 
           <ContactForm t={t.form} lang={lang} />
