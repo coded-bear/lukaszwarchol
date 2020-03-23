@@ -14,8 +14,8 @@
       "placeholder": "Your message",
       "errors": ["Write your message"]
     },
-    "recaptcha": {
-      "errors": ["Check re-captcha"]
+    "captcha": {
+      "errors": ["Accept re-captcha"]
     },
     "submit": "Send",
     "success": "The message was sent!",

@@ -31,6 +31,14 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     {
+      resolve: `gatsby-plugin-recaptcha`,
+      options: {
+        async: true,
+        defer: true,
+        args: `?onload=onloadCallback&render=explicit`
+      }
+    },
+    {
       resolve: `gatsby-plugin-offline`,
       options: {
         precachePages: [
