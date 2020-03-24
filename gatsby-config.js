@@ -31,6 +31,14 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /images\/common\/landscape.svg/
+        }
+      }
+    },
+    {
       resolve: `gatsby-plugin-recaptcha`,
       options: {
         async: true,

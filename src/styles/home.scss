@@ -37,7 +37,7 @@
 
     .home-header__landscape {
       position: absolute;
-      top: -100px;
+      top: -160px;
       right: 20px;
       width: 130%;
     }
@@ -51,6 +51,14 @@
 
   @media (max-width: 1000px) {
     flex-direction: column;
+
+    .home-header__content {
+      width: 100%;
+    }
+
+    .home-header__right {
+      display: none;
+    }
   }
 
   @media (max-width: 600px) {
