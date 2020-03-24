@@ -22,10 +22,6 @@ const ContactForm = ({ lang, t }) => {
 
   const captchaRef = useRef();
 
-  const callback = () => {
-    console.log("recaptcha callback");
-  };
-
   const verifyCallback = response => {
     setCaptcha(response);
   };
@@ -41,11 +37,20 @@ const ContactForm = ({ lang, t }) => {
     setError(null);
   };
 
+  const resetCaptcha = () => {
+    setCaptcha(null);
+    captchaRef.current.reset();
+  };
+
   const submitHandler = async e => {
     e.preventDefault();
 
     const error = validate(form, t, captcha);
-    if (error) return setError(error);
+
+    if (error) {
+      resetCaptcha();
+      return setError(error);
+    }
 
     const templateParams = {
       reply_to: form.email,
@@ -54,9 +59,14 @@ const ContactForm = ({ lang, t }) => {
     };
 
     try {
-      await emailjs.send(service_id, template_id, templateParams, user_id);
-      setInfoPopup(t.success);
-      resetForm();
+      const response = await emailjs.send(service_id, template_id, templateParams, user_id);
+
+      resetCaptcha();
+
+      if (response.status === 200) {
+        setInfoPopup(t.success);
+        resetForm();
+      } else throw new Error();
     } catch (err) {
       setInfoPopup(t.error);
       setError(null);
@@ -91,7 +101,7 @@ const ContactForm = ({ lang, t }) => {
         render="explicit"
         sitekey={recaptcha_public_key}
         verifyCallback={verifyCallback}
-        onloadCallback={callback}
+        onloadCallback={() => console.log("callback")}
         hl={lang}
       />
 
