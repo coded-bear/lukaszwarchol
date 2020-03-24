@@ -28,7 +28,7 @@ const Services = props => {
 
           <div className="Services__container">
             {t.boxes.map((elem, index) => (
-              <div className="Services__elem" key={index}>
+              <div key={index} className="Services__elem">
                 <img src={images[index]} alt={elem.title} />
                 <h4>{elem.title}</h4>
                 <p>{elem.description}</p>

@@ -10,7 +10,7 @@ const Experience = ({ t }) => (
 
       <div className="Experience__container">
         {t.boxes.map((elem, index) => (
-          <div className="Experience__elem" key={index}>
+          <div key={index} className="Experience__elem">
             <p className="date">{elem.date}</p>
             <h4>{elem.title}</h4>
             <p>{elem.description}</p>
