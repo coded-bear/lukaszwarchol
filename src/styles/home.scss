@@ -40,6 +40,15 @@
       top: -160px;
       right: 20px;
       width: 130%;
+
+      #mountains,
+      #tree,
+      #plants,
+      #sunshine,
+      #cloud1,
+      #cloud2 {
+        opacity: 0;
+      }
     }
   }
 
