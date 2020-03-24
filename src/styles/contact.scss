@@ -131,12 +131,11 @@
   .form-info-popup {
     position: relative;
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     padding: 20px;
-    border: 5px solid $text-primary;
+    border: 2px solid $text-primary;
     background-color: #fff;
     font-size: 24px;
-    font-weight: bold;
     text-align: center;
 
     button {

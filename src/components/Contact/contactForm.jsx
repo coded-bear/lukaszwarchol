@@ -54,13 +54,10 @@ const ContactForm = ({ lang, t }) => {
     };
 
     try {
-      const response = await emailjs.send(service_id, template_id, templateParams, user_id);
-      if (response.status === 200) {
-        setInfoPopup(t.success);
-        resetForm();
-      } else throw new Error();
+      await emailjs.send(service_id, template_id, templateParams, user_id);
+      setInfoPopup(t.success);
+      resetForm();
     } catch (err) {
-      console.log(err);
       setInfoPopup(t.error);
       setError(null);
     }
@@ -69,10 +66,24 @@ const ContactForm = ({ lang, t }) => {
   return (
     <form className="Contact__form" onSubmit={submitHandler}>
       <label className="input-label">
-        <input type="email" name="email" onChange={updateForm} placeholder={t.email.placeholder} />
+        <input
+          type="email"
+          name="email"
+          value={form.email}
+          onChange={updateForm}
+          placeholder={t.email.placeholder}
+          maxLength={255}
+        />
       </label>
       <label className="input-label">
-        <textarea name="message" onChange={updateForm} rows={10} placeholder={t.message.placeholder} maxLength={500} />
+        <textarea
+          name="message"
+          value={form.message}
+          onChange={updateForm}
+          rows={10}
+          placeholder={t.message.placeholder}
+          maxLength={500}
+        />
       </label>
 
       <Recaptcha
