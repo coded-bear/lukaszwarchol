@@ -7,5 +7,9 @@
   },
   "privacyPolicy": "Privacy policy",
   "havaAnyProject": "Have Any Project in Mind?",
-  "hireMe": "Write to me"
+  "hireMe": "Write to me",
+  "cookiesInfo": {
+    "text": "This website uses cookies to ensure the highest quality of service. More details in our ",
+    "privacyPolicy": "Privacy Policy"
+  }
 }

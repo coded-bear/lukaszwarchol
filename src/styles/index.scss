@@ -183,12 +183,14 @@ span {
 // HEADER
 
 .Header {
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto 30px auto;
   padding: 20px;
+  z-index: 10;
 
   .header__logo {
     height: 56px;
@@ -326,6 +328,38 @@ span {
     text-decoration: underline;
   }
 }
+
+// COOKIES INFO
+
+.CookiesInfo {
+  padding: 20px 20px 30px 20px;
+  border-top: 1px solid $middle-gray;
+  background-color: #fff;
+
+  .container {
+    .CookiesInfo__close {
+      display: block;
+      margin-left: auto;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+
+      img {
+        height: 20px;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+// RWD
 
 @media (max-width: 600px) {
   .heading {

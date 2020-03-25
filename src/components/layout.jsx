@@ -4,6 +4,7 @@ import "../styles/index.scss";
 import Header from "./Header";
 import { HireMeBox } from "./elements";
 import Footer from "./Footer";
+import CookiesInfo from "./CookiesInfo";
 
 const Layout = ({ children, lang, path, t }) => (
   <>
@@ -16,6 +17,8 @@ const Layout = ({ children, lang, path, t }) => (
     </main>
 
     <Footer lang={lang} t={t} />
+
+    <CookiesInfo lang={lang} t={t.cookiesInfo} />
   </>
 );
 

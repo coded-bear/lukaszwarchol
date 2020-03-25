@@ -7,5 +7,9 @@
   },
   "privacyPolicy": "Polityka prywatności",
   "havaAnyProject": "Masz Jakiś Projekt na Myśli?",
-  "hireMe": "Napisz do mnie"
+  "hireMe": "Napisz do mnie",
+  "cookiesInfo": {
+    "text": "Ta witryna wykorzystuje pliki cookies w celu zapewnienia najwyższej jakości obsługi. Więcej szczegółów w naszej ",
+    "privacyPolicy": "Polityce prywatności"
+  }
 }
