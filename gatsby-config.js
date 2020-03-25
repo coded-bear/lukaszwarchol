@@ -105,6 +105,19 @@ module.exports = {
       options: {
         configFile: `robots-txt.config.js`
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-97392728-1",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        pageTransitionDelay: 0,
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "lukaszwarchol.pl"
+      }
     }
   ]
 };
