@@ -1,6 +1,6 @@
 export const langsList = ["pl", "en"];
 
-export const getHrefs = locale => {
+export const getHrefs = (locale) => {
   const plHrefs = ["o-mnie", "uslugi", "projekty", "kontakt", "polityka-prywatnosci"];
   const enHrefs = ["about-me", "services", "projects", "contact", "privacy-policy"];
 
@@ -23,5 +23,5 @@ export const changePath = (lang, path) => {
   const hrefPosition = actualHrefs.indexOf(actualHref);
 
   if (hrefPosition === -1) return `/${lang}/`;
-  return `/${lang}/${newHrefs[hrefPosition]}/${project && project}/`;
+  return `/${lang}/${newHrefs[hrefPosition]}/${project && project + "/"}`;
 };
