@@ -7,13 +7,9 @@ import imgLinkedin from "../images/common/linkedin.svg";
 import imgGithub from "../images/common/github.svg";
 import imgInstagram from "../images/common/instagram.svg";
 
-export const Heading = ({ dark, left, text }) => (
-  <h1 className={`heading ${dark ? "dark" : ""} ${left ? "left" : ""}`}>{text}</h1>
-);
+export const Heading = ({ dark, left, text }) => <h1 className={`heading ${dark ? "dark" : ""} ${left ? "left" : ""}`}>{text}</h1>;
 
-export const Intro = ({ dark, left, text }) => (
-  <h2 className={`heading ${dark ? "dark" : ""} ${left ? "left" : ""}`}>{text}</h2>
-);
+export const Intro = ({ dark, left, text }) => <h2 className={`heading ${dark ? "dark" : ""} ${left ? "left" : ""}`}>{text}</h2>;
 
 export const SubTitle = ({ text }) => <p className="subtitle">{text}</p>;
 

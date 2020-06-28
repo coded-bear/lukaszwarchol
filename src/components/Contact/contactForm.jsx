@@ -76,24 +76,10 @@ const ContactForm = ({ lang, t }) => {
   return (
     <form className="Contact__form" onSubmit={submitHandler}>
       <label className="input-label">
-        <input
-          type="email"
-          name="email"
-          value={form.email}
-          onChange={updateForm}
-          placeholder={t.email.placeholder}
-          maxLength={255}
-        />
+        <input type="email" name="email" value={form.email} onChange={updateForm} placeholder={t.email.placeholder} maxLength={255} />
       </label>
       <label className="input-label">
-        <textarea
-          name="message"
-          value={form.message}
-          onChange={updateForm}
-          rows={10}
-          placeholder={t.message.placeholder}
-          maxLength={500}
-        />
+        <textarea name="message" value={form.message} onChange={updateForm} rows={10} placeholder={t.message.placeholder} maxLength={500} />
       </label>
 
       <Recaptcha

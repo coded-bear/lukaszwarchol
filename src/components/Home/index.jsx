@@ -55,7 +55,6 @@ const Home = props => {
         </div>
 
         <div ref={landscapeWrapper} className="home-header__right">
-          {/* <img className="home-header__landscape" src={imgLandscape} alt="landscape" /> */}
           <Landscape className="home-header__landscape" />
         </div>
 
