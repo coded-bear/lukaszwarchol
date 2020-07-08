@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
 import "../styles/index.scss";
-import Header from "./Header";
+import Header from "../components/Header";
 import HireMeBox from "../components/common/HireMeBox";
-import Footer from "./Footer";
+import Footer from "../components/Footer";
 import CookiesInfo from "../components/CookiesInfo";
 import Cookies from "js-cookie";
 

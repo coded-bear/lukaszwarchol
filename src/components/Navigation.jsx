@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
-import SocialMedia from "../components/common/SocialMedia";
+import SocialMedia from "./common/SocialMedia";
 import gsap from "gsap";
 import { getHrefs } from "../utils/langService";
 import imgClose from "../images/common/close.svg";
