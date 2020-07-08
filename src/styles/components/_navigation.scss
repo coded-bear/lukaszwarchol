@@ -16,13 +16,20 @@
   z-index: 100;
   transition: 0.5s;
 
-  button {
+  &__close {
+    margin-top: 30px;
+    padding: 10px;
     border: 0;
     background-color: transparent;
     cursor: pointer;
+    transition: 0.3s;
 
     img {
       height: 70px;
+    }
+
+    &:hover {
+      transform: rotate(90deg);
     }
   }
 
@@ -68,7 +75,7 @@
   @media (max-width: 600px) {
     font-size: 36px;
 
-    button {
+    &__close {
       img {
         height: 50px;
       }

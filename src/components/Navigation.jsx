@@ -27,7 +27,7 @@ const Navigation = ({ lang, t, closeMenu }) => {
 
   return (
     <div className="Navigation">
-      <button onClick={closeMenu}>
+      <button className="Navigation__close" onClick={closeMenu}>
         <img src={imgClose} salt="close" />
       </button>
 

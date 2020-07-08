@@ -3,7 +3,7 @@
 .Contact {
   padding: 0 20px;
 
-  .Contact__container {
+  &__container {
     display: flex;
     align-items: flex-start;
     width: 100%;
@@ -13,104 +13,104 @@
     @media (max-width: 900px) {
       flex-direction: column;
     }
+  }
 
-    .Contact__content {
-      flex: 1;
-      font-size: 18px;
+  &__content {
+    flex: 1;
+    font-size: 18px;
+  }
 
-      .Contact__content-elem {
-        display: flex;
-        align-items: center;
-        margin: 25px 0;
+  &__content-elem {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
 
-        img {
-          width: 40px;
-          margin-right: 25px;
-        }
+    img {
+      width: 40px;
+      margin-right: 25px;
+    }
 
-        p {
-          margin: 5px 0;
-        }
+    p {
+      margin: 5px 0;
+    }
 
-        .name {
-          color: $primary;
-          font-weight: 700;
-        }
+    .name {
+      color: $primary;
+      font-weight: 700;
+    }
 
-        &.email {
-          display: inline-flex;
+    &.email {
+      display: inline-flex;
 
-          a {
-            &:hover {
-              text-decoration: underline;
-            }
-          }
+      a {
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
   }
-}
 
-// FORM
+  // FORM
 
-.Contact__form {
-  flex: 1;
-  padding: 20px 0;
+  &__form {
+    flex: 1;
+    padding: 20px 0;
 
-  .input-label {
-    input,
-    textarea {
-      width: 100%;
-      margin-bottom: 10px;
-      padding: 10px;
+    .input-label {
+      input,
+      textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 0;
+        border-bottom: 2px solid $text-primary;
+        background-color: transparent;
+        color: $text-primary;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        resize: none;
+
+        &::placeholder {
+          color: $gray;
+        }
+      }
+    }
+
+    .form-submit {
+      position: relative;
+      display: inline-flex;
+      margin-top: 15px;
+      padding: 15px 50px;
       border: 0;
-      border-bottom: 2px solid $text-primary;
       background-color: transparent;
-      color: $text-primary;
       font-family: "Raleway", sans-serif;
       font-size: 18px;
-      resize: none;
+      text-transform: uppercase;
+      cursor: pointer;
 
-      &::placeholder {
-        color: $gray;
+      strong {
+        z-index: 1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 60%;
+        right: 0;
+        background-color: $primary;
+        transition: 0.3s;
+      }
+
+      &:hover::after {
+        left: 0;
       }
     }
-  }
 
-  .form-submit {
-    position: relative;
-    display: inline-flex;
-    margin-top: 15px;
-    padding: 15px 50px;
-    border: 0;
-    background-color: transparent;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    cursor: pointer;
-
-    strong {
-      z-index: 1;
+    .form-error {
+      margin-top: 15px;
     }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 60%;
-      right: 0;
-      background-color: $primary;
-      transition: 0.3s;
-    }
-
-    &:hover::after {
-      left: 0;
-    }
-  }
-
-  .form-error {
-    margin-top: 15px;
   }
 }
 
