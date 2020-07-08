@@ -8,11 +8,11 @@
   padding: 20px;
   z-index: 10;
 
-  .header__logo {
+  &__logo {
     height: 56px;
   }
 
-  .header__right-box {
+  &__right-box {
     display: flex;
     justify-content: flex-end;
     align-items: center;

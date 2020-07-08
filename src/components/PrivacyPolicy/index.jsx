@@ -13,7 +13,7 @@ const PrivacyPolicy = props => {
     <Layout t={layoutT} path={path} lang={lang}>
       <SEO title={t.title} lang={lang} />
 
-      <section className="PrivacyPolicy container">
+      <section className="container PrivacyPolicy">
         <Intro text={t.title} />
 
         <p>

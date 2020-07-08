@@ -22,8 +22,11 @@
     transition: 0.3s;
   }
 
-  &:hover::after {
-    left: 0;
+  &:hover,
+  &:focus {
+    &::after {
+      left: 0;
+    }
   }
 
   &.light {

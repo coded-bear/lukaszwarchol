@@ -20,7 +20,12 @@ p {
   margin: 0;
 }
 
-ul {
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
   margin: 0;
   padding-left: 0;
 }

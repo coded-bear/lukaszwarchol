@@ -8,7 +8,7 @@
   margin: auto;
   padding-bottom: 80px;
 
-  .About__main-image {
+  &__main-image {
     flex: 2;
     padding: 20px;
 
@@ -17,7 +17,7 @@
     }
   }
 
-  .About__content {
+  &__content {
     flex: 4;
     padding: 20px;
 
@@ -37,52 +37,44 @@
   padding: 80px 10px;
   background-color: $light-gray;
 
-  .Experience__container {
+  &__container {
     display: flex;
     flex-wrap: wrap;
+  }
 
-    .Experience__elem {
-      width: calc(100% / 3 - 20px);
-      margin: 10px;
-      padding: 30px;
-      border: 1px solid $text-primary;
+  &__elem {
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    padding: 30px;
+    border: 1px solid $text-primary;
 
-      .date {
-        font-weight: bold;
-        text-transform: uppercase;
-      }
+    .date {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
 
-      h4 {
-        margin: 10px 0 20px 0;
-        font-size: 24px;
-      }
-
-      p {
-        margin: 0;
-      }
+    h4 {
+      margin: 10px 0 20px 0;
+      font-size: 24px;
     }
   }
 
   @media (max-width: 900px) {
-    .Experience__container {
-      .Experience__elem {
-        width: calc(50% - 20px);
-      }
+    &__elem {
+      width: calc(50% - 20px);
     }
   }
 
   @media (max-width: 900px) {
-    & {
-      padding: 80px 20px;
+    padding: 80px 20px;
 
-      .Experience__container {
-        flex-direction: column;
+    &__container {
+      flex-direction: column;
+    }
 
-        .Experience__elem {
-          width: 100%;
-          margin: 10px 0;
-        }
-      }
+    &__elem {
+      width: 100%;
+      margin: 10px 0;
     }
   }
 }
@@ -92,22 +84,22 @@
 .Technologies {
   padding: 80px 20px;
 
-  .Technologies__container {
+  &__container {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: center;
+  }
 
-    .Technologies__technology {
-      width: 100px;
-      margin: 20px;
-      font-size: 18px;
-      text-align: center;
+  &__technology {
+    width: 100px;
+    margin: 20px;
+    font-size: 18px;
+    text-align: center;
 
-      img {
-        max-width: 90px;
-        height: 50px;
-      }
+    img {
+      max-width: 90px;
+      height: 50px;
     }
   }
 }

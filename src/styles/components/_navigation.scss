@@ -26,12 +26,11 @@
     }
   }
 
-  nav {
+  &__nav {
     opacity: 0;
 
     ul {
       margin: 40px 0;
-      padding-left: 0;
       list-style: none;
 
       li {
@@ -45,21 +44,23 @@
     }
   }
 
-  .navigation__social-media {
-    a {
-      img {
-        height: 40px;
-        margin: 0 5px;
-      }
+  &__social-media-container {
+    .SocialMedia {
+      a {
+        img {
+          height: 40px;
+          margin: 0 5px;
+        }
 
-      &::after {
-        bottom: 0;
-        background-color: $light-gray;
-      }
+        &::after {
+          bottom: 0;
+          background-color: $light-gray;
+        }
 
-      &:hover::after {
-        width: 25px;
-        height: 25px;
+        &:hover::after {
+          width: 25px;
+          height: 25px;
+        }
       }
     }
   }
@@ -73,10 +74,12 @@
       }
     }
 
-    .navigation__social-media {
-      a {
-        img {
-          height: 32px;
+    &__social-media-container {
+      .SocialMedia {
+        a {
+          img {
+            height: 32px;
+          }
         }
       }
     }

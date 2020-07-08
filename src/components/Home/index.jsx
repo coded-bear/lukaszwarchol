@@ -40,29 +40,31 @@ const Home = props => {
     <Layout lang={lang} path={path} t={layoutT}>
       <SEO title="JavaScript Software Developer" lang={lang} />
 
-      <section className="home-header">
-        <div className="home-header__content">
-          <p>{t.header.hello}</p>
-          <h1>
-            <span>
-              <strong>{t.header.Im}</strong>
-            </span>
-          </h1>
-          <p>
-            <strong>JavaScript Software Developer</strong>
-          </p>
+      <div className="Home">
+        <section className="Home__hero">
+          <div className="Home__hero--content">
+            <p>{t.header.hello}</p>
+            <h1>
+              <span>
+                <strong>{t.header.Im}</strong>
+              </span>
+            </h1>
+            <p>
+              <strong>JavaScript Software Developer</strong>
+            </p>
 
-          <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`} text={t.header.hireMe} />
-        </div>
+            <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`} text={t.header.hireMe} />
+          </div>
 
-        <div ref={landscapeWrapper} className="home-header__right">
-          <Landscape className="home-header__landscape" />
-        </div>
+          <div ref={landscapeWrapper} className="Home__hero--right">
+            <Landscape className="Home__hero--landscape" />
+          </div>
 
-        <div className="home-header__social-media-container">
-          <SocialMedia />
-        </div>
-      </section>
+          <div className="Home__hero--social-media-container">
+            <SocialMedia />
+          </div>
+        </section>
+      </div>
     </Layout>
   );
 };

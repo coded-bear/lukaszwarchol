@@ -1,41 +1,42 @@
 @import "../colors.scss";
 
-.home-header {
-  display: flex;
-  position: relative;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 1200px;
-  height: 80vh;
-  margin: auto;
-  padding-top: 10vh;
-
-  .home-header__content {
-    flex: 1;
-    padding: 20px;
-    font-size: 30px;
-
-    h1 {
-      margin: 0;
-      font-size: 60px;
-      font-weight: 400;
-    }
-
-    p {
-      margin: 10px 0;
-    }
-
-    a {
-      margin-top: 30px;
-    }
-  }
-
-  .home-header__right {
+.Home {
+  &__hero {
+    display: flex;
     position: relative;
-    flex: 1;
-    padding: 20px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    height: 80vh;
+    margin: auto;
+    padding-top: 10vh;
 
-    .home-header__landscape {
+    &--content {
+      flex: 1;
+      padding: 20px;
+      font-size: 30px;
+
+      h1 {
+        font-size: 60px;
+        font-weight: 400;
+      }
+
+      p {
+        margin: 15px 0;
+      }
+
+      .LinkButton {
+        margin-top: 30px;
+      }
+    }
+
+    &--right {
+      position: relative;
+      flex: 1;
+      padding: 20px;
+    }
+
+    &--landscape {
       position: absolute;
       top: -160px;
       right: 20px;
@@ -50,35 +51,35 @@
         opacity: 0;
       }
     }
-  }
 
-  .home-header__social-media-container {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-  }
-
-  @media (max-width: 1000px) {
-    flex-direction: column;
-
-    .home-header__content {
-      width: 100%;
+    &--social-media-container {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
     }
 
-    .home-header__right {
-      display: none;
-    }
-  }
+    @media (max-width: 1000px) {
+      flex-direction: column;
 
-  @media (max-width: 600px) {
-    .home-header__content {
-      h1 {
-        font-size: 36px;
+      &--content {
+        width: 100%;
       }
 
-      p {
-        font-size: 26px;
-        line-height: 30px;
+      &--right {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      &--content {
+        h1 {
+          font-size: 36px;
+        }
+
+        p {
+          font-size: 26px;
+          line-height: 30px;
+        }
       }
     }
   }

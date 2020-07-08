@@ -3,53 +3,45 @@
 .Services {
   padding: 0 10px;
 
-  .Services__container {
+  &__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-bottom: 80px;
+  }
 
-    .Services__elem {
-      width: calc(100% / 3 - 20px);
-      margin: 10px;
-      padding: 30px;
-      border: 1px solid $text-primary;
+  &__elem {
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    padding: 30px;
+    border: 1px solid $text-primary;
 
-      img {
-        height: 100px;
-      }
+    img {
+      height: 100px;
+    }
 
-      h4 {
-        margin: 20px 0;
-        font-size: 24px;
-      }
-
-      p {
-        margin: 0;
-      }
+    h4 {
+      margin: 20px 0;
+      font-size: 24px;
     }
   }
 
   @media (max-width: 900px) {
-    .Services__container {
-      .Services__elem {
-        width: calc(50% - 20px);
-      }
+    &__elem {
+      width: calc(50% - 20px);
     }
   }
 
   @media (max-width: 600px) {
-    & {
-      padding: 0 20px;
+    padding: 0 20px;
 
-      .Services__container {
-        flex-direction: column;
+    &__container {
+      flex-direction: column;
+    }
 
-        .Services__elem {
-          width: 100%;
-          margin: 10px 0;
-        }
-      }
+    &__elem {
+      width: 100%;
+      margin: 10px 0;
     }
   }
 }

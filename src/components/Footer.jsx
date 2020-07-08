@@ -12,7 +12,7 @@ const NavElem = ({ to, text }) => (
 
 const Footer = ({ lang, t }) => (
   <footer className="Footer">
-    <nav>
+    <nav className="Footer__nav">
       <ul>
         <NavElem to={`/${lang}/`} text="Home" />
         <NavElem to={`/${lang}/${getHrefs(lang)[0]}/`} text={t.nav.about} />
@@ -26,7 +26,7 @@ const Footer = ({ lang, t }) => (
 
     <Link to={`/${lang}/${getHrefs(lang)[4]}/`}>{t.privacyPolicy}</Link>
 
-    <p>&copy; {new Date().getFullYear()} Łukasz Warchoł. All rights reserved</p>
+    <p className="Footer__copy">&copy; {new Date().getFullYear()} Łukasz Warchoł. All rights reserved</p>
   </footer>
 );
 

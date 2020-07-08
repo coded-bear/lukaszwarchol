@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
-import SocialMedia from "./common/SocialMedia";
+import SocialMedia from "../components/common/SocialMedia";
 import gsap from "gsap";
 import { getHrefs } from "../utils/langService";
 import imgClose from "../images/common/close.svg";
@@ -28,10 +28,10 @@ const Navigation = ({ lang, t, closeMenu }) => {
   return (
     <div className="Navigation">
       <button onClick={closeMenu}>
-        <img src={imgClose} alt="close" />
+        <img src={imgClose} salt="close" />
       </button>
 
-      <nav ref={navigation}>
+      <nav className="Navigation__nav" ref={navigation}>
         <ul>
           <NavElem to={`/${lang}/`} name="Home" closeMenu={closeMenu} />
           <NavElem to={`/${lang}/${getHrefs(lang)[0]}/`} name={t.about} closeMenu={closeMenu} />
@@ -41,7 +41,7 @@ const Navigation = ({ lang, t, closeMenu }) => {
         </ul>
       </nav>
 
-      <div className="navigation__social-media">
+      <div className="Navigation__social-media-container">
         <SocialMedia />
       </div>
     </div>

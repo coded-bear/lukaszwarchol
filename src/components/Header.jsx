@@ -30,10 +30,10 @@ const Header = ({ lang, path, t }) => {
   return (
     <header className="Header">
       <Link to={`/${lang}/`}>
-        <img src={logo} alt="Łukasz Warchoł" className="header__logo" />
+        <img src={logo} alt="Łukasz Warchoł" className="Header__logo" />
       </Link>
 
-      <div className="header__right-box">
+      <div className="Header__right-box">
         <LangBtns lang={lang} path={path} />
 
         <button className="menu-btn" onClick={openMenu}>
