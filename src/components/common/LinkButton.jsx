@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 const LinkButton = ({ to, light, text }) => (
   <Link to={to}>
-    <h2 className={`link-button ${light ? "light" : ""}`}>
+    <h2 className={`LinkButton ${light ? "light" : ""}`}>
       <strong>{text}</strong>
     </h2>
   </Link>

@@ -5,7 +5,7 @@ import LinkButton from "./LinkButton";
 import { getHrefs } from "../../utils/langService";
 
 const HireMeBox = ({ lang, t }) => (
-  <div className="hire-me-box">
+  <div className="HireMeBox">
     <div className="container">
       <Heading dark left text={t.havaAnyProject} />
 

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
-import SocialMedia from "./common/SocialMedia";
+import SocialMedia from "../components/common/SocialMedia";
 import { getHrefs } from "../utils/langService";
 
 const NavElem = ({ to, text }) => (

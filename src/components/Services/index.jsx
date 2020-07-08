@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import SEO from "../seo";
-import "../../styles/services.scss";
-import Layout from "../layout";
+import "../../styles/pages/services.scss";
+import Layout from "../../layout";
 import Subtitle from "../common/Subtitle";
 import Heading from "../common/Heading";
 import imgWebApp from "../../images/services/web-app.svg";

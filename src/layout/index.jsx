@@ -1,12 +1,11 @@
-import React, { useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
 import "../styles/index.scss";
 import Header from "./Header";
-import HireMeBox from "./common/HireMeBox";
+import HireMeBox from "../components/common/HireMeBox";
 import Footer from "./Footer";
-import CookiesInfo from "./CookiesInfo";
+import CookiesInfo from "../components/CookiesInfo";
 import Cookies from "js-cookie";
-import { useState } from "react";
 
 const Layout = ({ children, lang, path, t }) => {
   const [cookiesInfo, setCookiesInfo] = useState(false);

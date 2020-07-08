@@ -12,7 +12,7 @@ export const SocialMediaElem = ({ href, image, name }) => (
 );
 
 const SocialMedia = () => (
-  <div className="social-media">
+  <div className="SocialMedia">
     <SocialMediaElem href="https://www.facebook.com/lukasz.warchol14" name="Facebook" image={imgFacebook} />
     <SocialMediaElem href="https://www.linkedin.com/in/lukasz-warchol/" name="LinkedIn" image={imgLinkedin} />
     <SocialMediaElem href="https://github.com/coded-bear" name="GitHub" image={imgGithub} />

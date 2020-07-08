@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import SEO from "../seo";
-import "../../styles/home.scss";
-import Layout from "../layout";
+import "../../styles/pages/home.scss";
+import Layout from "../../layout";
 import SocialMedia from "../common/SocialMedia";
 import LinkButton from "../common/LinkButton";
 import { getHrefs } from "../../utils/langService";

@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
-import Navigation from "./Navigation";
+import Navigation from "./navigation";
 import { langsList, changePath } from "../utils/langService";
 import logo from "../images/common/logo.svg";
 import imgMenu from "../images/common/menu.svg";

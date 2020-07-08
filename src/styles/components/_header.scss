@@ -1,0 +1,46 @@
+.Header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  z-index: 10;
+
+  .header__logo {
+    height: 56px;
+  }
+
+  .header__right-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+
+    .lang-btns {
+      display: flex;
+
+      p {
+        margin: 0 5px;
+        font-size: 18px;
+        text-transform: uppercase;
+
+        &.active {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .menu-btn {
+      margin-left: 25px;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+
+      img {
+        height: 28px;
+      }
+    }
+  }
+}

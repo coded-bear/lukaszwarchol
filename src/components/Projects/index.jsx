@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import SEO from "../seo";
-import "../../styles/projects.scss";
-import Layout from "../layout";
+import "../../styles/pages/projects.scss";
+import Layout from "../../layout";
 import Subtitle from "../common/Subtitle";
 import Heading from "../common/Heading";
 
