@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import Navigation from "./Navigation";
@@ -19,6 +19,14 @@ const LangBtns = props => (
 const Header = ({ lang, path, t }) => {
   const [menu, setMenu] = useState(false);
 
+  const openMenu = useCallback(() => {
+    setMenu(true);
+  }, [setMenu]);
+
+  const closeMenu = useCallback(() => {
+    setMenu(false);
+  }, [setMenu]);
+
   return (
     <header className="Header">
       <Link to={`/${lang}/`}>
@@ -28,12 +36,12 @@ const Header = ({ lang, path, t }) => {
       <div className="header__right-box">
         <LangBtns lang={lang} path={path} />
 
-        <button className="menu-btn" onClick={() => setMenu(true)}>
+        <button className="menu-btn" onClick={openMenu}>
           <img src={imgMenu} alt="menu" />
         </button>
       </div>
 
-      {menu && <Navigation closeMenu={() => setMenu(false)} t={t.nav} lang={lang} />}
+      {menu && <Navigation closeMenu={closeMenu} t={t.nav} lang={lang} />}
     </header>
   );
 };

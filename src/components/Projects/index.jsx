@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import SEO from "../seo";
 import "../../styles/projects.scss";
 import Layout from "../layout";
-import { Heading, SubTitle } from "../elements";
+import Subtitle from "../common/Subtitle";
+import Heading from "../common/Heading";
 
 const Projects = props => {
   const { lang, t, layoutT } = props.pageContext;
@@ -15,7 +16,7 @@ const Projects = props => {
 
       <section className="Projects">
         <Heading text={t.title} />
-        <SubTitle text={t.subtitle} />
+        <Subtitle text={t.subtitle} />
 
         <div className="container Projects__list">
           {t.projectsList.map((project, index) => (

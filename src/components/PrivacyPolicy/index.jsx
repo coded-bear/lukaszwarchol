@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import SEO from "../seo";
 import "../../styles/privacyPolicy.scss";
 import Layout from "../layout";
-import { Intro } from "../elements";
+import Intro from "../common/Intro";
 
 const PrivacyPolicy = props => {
   const { t, lang, layoutT } = props.pageContext;

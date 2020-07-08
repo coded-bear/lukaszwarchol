@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import SEO from "../seo";
 import "../../styles/contact.scss";
 import Layout from "../layout";
-import { Heading, SubTitle } from "../elements";
+import Subtitle from "../common/Subtitle";
+import Heading from "../common/Heading";
 import ContactForm from "./ContactForm";
 import imgLocation from "../../images/contact/location.svg";
 import imgEmail from "../../images/contact/email.svg";
@@ -18,7 +19,7 @@ const Contact = props => {
 
       <section className="Contact">
         <Heading text={t.title} />
-        <SubTitle text={t.subtitle} />
+        <Subtitle text={t.subtitle} />
 
         <div className="Contact__container">
           <div className="Contact__content">

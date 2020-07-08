@@ -2,9 +2,9 @@ import React from "react";
 import "../styles/notFoundPage.scss";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
+import LinkButton from "../components/common/LinkButton";
 import imgNotFound from "../images/common/not-found.svg";
 import layoutT from "../static/locales/pl/layout.json";
-import { LinkButton } from "../components/elements";
 
 const NotFoundPage = ({ path }) => (
   <Layout t={layoutT} path={path} lang="pl">

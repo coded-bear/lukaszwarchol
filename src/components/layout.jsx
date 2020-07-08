@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
 import "../styles/index.scss";
 import Header from "./Header";
-import { HireMeBox } from "./elements";
+import HireMeBox from "./common/HireMeBox";
 import Footer from "./Footer";
 import CookiesInfo from "./CookiesInfo";
 import Cookies from "js-cookie";
@@ -16,10 +16,10 @@ const Layout = ({ children, lang, path, t }) => {
     if (!ca) setCookiesInfo(true);
   }, []);
 
-  const closeCookiesInfo = () => {
+  const closeCookiesInfo = useCallback(() => {
     Cookies.set("ca", true, { expires: 365 });
     setCookiesInfo(false);
-  };
+  }, [setCookiesInfo]);
 
   return (
     <>

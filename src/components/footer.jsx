@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
-import { SocialMedia } from "./elements";
+import SocialMedia from "./common/SocialMedia";
 import { getHrefs } from "../utils/langService";
 
 const NavElem = ({ to, text }) => (
@@ -11,7 +11,7 @@ const NavElem = ({ to, text }) => (
 );
 
 const Footer = ({ lang, t }) => (
-  <footer className="footer">
+  <footer className="Footer">
     <nav>
       <ul>
         <NavElem to={`/${lang}/`} text="Home" />

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Intro, SubTitle } from "../elements";
+import Subtitle from "../common/Subtitle";
+import Intro from "../common/Intro";
 import imgHTML from "../../images/about/html.svg";
 import imgCSS from "../../images/about/css.svg";
 import imgSASS from "../../images/about/sass.svg";
@@ -33,7 +34,7 @@ const Technologies = ({ t }) => (
   <section className="Technologies">
     <div className="container">
       <Intro text={t.title} />
-      <SubTitle text={t.subtitle} />
+      <Subtitle text={t.subtitle} />
 
       <div className="Technologies__container">
         <Technology image={imgHTML} name="HTML 5" />

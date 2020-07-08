@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import SEO from "../seo";
 import "../../styles/services.scss";
 import Layout from "../layout";
-import { Heading, SubTitle } from "../elements";
+import Subtitle from "../common/Subtitle";
+import Heading from "../common/Heading";
 import imgWebApp from "../../images/services/web-app.svg";
 import imgWebsite from "../../images/services/website.svg";
 import imgConsoleApp from "../../images/services/console-app.svg";
@@ -24,7 +25,7 @@ const Services = props => {
       <section className="Services">
         <div className="container">
           <Heading text={t.title} />
-          <SubTitle text={t.subtitle} />
+          <Subtitle text={t.subtitle} />
 
           <div className="Services__container">
             {t.boxes.map((elem, index) => (
