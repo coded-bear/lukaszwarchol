@@ -4,11 +4,11 @@ import SEO from "../seo";
 import "../../styles/pages/about.scss";
 import Layout from "../../layout";
 import LinkButton from "../common/LinkButton";
+import Image from "./Image";
 import Heading from "../common/Heading";
 import Experience from "./Experience";
 import Technologies from "./Technologies";
 import { getHrefs } from "../../utils/langService";
-import imgMe from "../../images/about/me.jpg";
 
 const About = props => {
   const { t, lang, layoutT } = props.pageContext;
@@ -20,7 +20,7 @@ const About = props => {
 
       <section className="About">
         <div className="About__main-image">
-          <img src={imgMe} alt="Łukasz Warchoł" />
+          <Image />
         </div>
 
         <div className="About__content">
