@@ -1,6 +1,6 @@
 {
   "nav": {
-    "about": "About Me",
+    "about": "About me",
     "services": "Services",
     "projects": "Projects",
     "contact": "Contact"
@@ -9,7 +9,7 @@
   "havaAnyProject": "Have Any Project in Mind?",
   "hireMe": "Write to me",
   "cookiesInfo": {
-    "text": "This website uses cookies to ensure the highest quality of service. More details in our ",
+    "text": "This website uses cookies to ensure its proper functioning. More details in our ",
     "privacyPolicy": "Privacy Policy"
   }
 }

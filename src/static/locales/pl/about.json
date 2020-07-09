@@ -8,7 +8,7 @@
   "hireMe": "Napisz do mnie",
   "experience": {
     "title": "Doświadczenie zawodowe",
-    "subtitle": "Mam za sobą ponad trzy lata samodzielnej nauki programowania oraz pracy w wielu zespołach podczas tworzenia przeróżnych projektów",
+    "subtitle": "Mam za sobą ponad trzy lata samodzielnej nauki programowania oraz pracy w wielu zespołach podczas tworzenia przeróżnych projektów.",
     "boxes": [
       {
         "date": "Styczeń 2017 - Aktualnie",
@@ -39,6 +39,6 @@
   },
   "technologies": {
     "title": "Poznane technologie",
-    "subtitle": "Jestem pasjonatem nowych technologii i chcę poznać ich jeszcze więcej"
+    "subtitle": "Jestem pasjonatem nowych technologii i chcę poznać ich jeszcze więcej."
   }
 }
