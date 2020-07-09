@@ -1,10 +1,12 @@
 {
   "title": "Contact",
   "subtitle": "Do you have a problem? Maybe an idea for a project? Contact with me using the form below. If you prefer other methods of contact, below you can find my email address and links to social media.",
+  "business": "Business",
   "location": {
     "name": "Location",
     "value": "Poland, Warsaw"
   },
+  "taxNumber": "Tax number",
   "form": {
     "email": {
       "placeholder": "Your email",

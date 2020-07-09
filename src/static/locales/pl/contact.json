@@ -1,10 +1,12 @@
 {
   "title": "Kontakt",
   "subtitle": "Masz jakiś problem? Może pomysł na projekt? Skontaktuj się ze mną za pomocą poniższego formularza. Jeśli wolisz inne metody kontaktu, poniżej znajduje się mój adres email oraz linki do profili społecznościowych.",
+  "business": "Firma",
   "location": {
     "name": "Lokalizacja",
     "value": "Polska, Warszawa"
   },
+  "taxNumber": "NIP",
   "form": {
     "email": {
       "placeholder": "Twój email",

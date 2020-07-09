@@ -21,17 +21,10 @@
   }
 
   &__content-elem {
-    display: flex;
-    align-items: center;
     margin: 25px 0;
 
-    img {
-      width: 40px;
-      margin-right: 25px;
-    }
-
     p {
-      margin: 5px 0;
+      margin: 4px 0;
     }
 
     .name {
@@ -39,15 +32,16 @@
       font-weight: 700;
     }
 
-    &.email {
-      display: inline-flex;
-
-      a {
-        &:hover {
-          text-decoration: underline;
-        }
+    a {
+      &:hover {
+        text-decoration: underline;
       }
     }
+  }
+
+  .SocialMedia {
+    margin-top: 50px;
+    justify-content: flex-start;
   }
 
   // FORM

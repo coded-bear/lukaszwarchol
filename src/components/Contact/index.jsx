@@ -6,8 +6,7 @@ import Layout from "../../layout";
 import Subtitle from "../common/Subtitle";
 import Heading from "../common/Heading";
 import ContactForm from "./ContactForm";
-import imgLocation from "../../images/contact/location.svg";
-import imgEmail from "../../images/contact/email.svg";
+import SocialMedia from "../common/SocialMedia";
 
 const Contact = props => {
   const { lang, t, layoutT } = props.pageContext;
@@ -23,20 +22,23 @@ const Contact = props => {
 
         <div className="Contact__container">
           <div className="Contact__content">
-            <div className="Contact__content-elem location">
-              <img src={imgLocation} alt="Location" />
-              <div>
-                <p className="name">{t.location.name}</p>
-                <p>{t.location.value}</p>
-              </div>
+            <div className="Contact__content-elem">
+              <p className="name">{t.business}</p>
+              <p>Łukasz Warchoł</p>
             </div>
-            <div className="Contact__content-elem email">
-              <img src={imgEmail} alt="Email" />
-              <div>
-                <p className="name">E-mail</p>
-                <a href="mailto: contact@lukaszwarchol.pl">contact@lukaszwarchol.pl</a>
-              </div>
+            <div className="Contact__content-elem">
+              <p className="name">{t.location.name}</p>
+              <p>{t.location.value}</p>
             </div>
+            <div className="Contact__content-elem">
+              <p className="name">{t.taxNumber}</p>
+              <p>7962992882</p>
+            </div>
+            <div className="Contact__content-elem">
+              <p className="name">E-mail</p>
+              <a href="mailto: contact@lukaszwarchol.pl">contact@lukaszwarchol.pl</a>
+            </div>
+            <SocialMedia />
           </div>
 
           <ContactForm t={t.form} lang={lang} />
