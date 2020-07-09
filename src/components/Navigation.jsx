@@ -41,9 +41,7 @@ const Navigation = ({ lang, t, closeMenu }) => {
         </ul>
       </nav>
 
-      <div className="Navigation__social-media-container">
-        <SocialMedia />
-      </div>
+      <SocialMedia />
     </div>
   );
 };

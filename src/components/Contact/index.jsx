@@ -38,6 +38,7 @@ const Contact = props => {
               <p className="name">E-mail</p>
               <a href="mailto: contact@lukaszwarchol.pl">contact@lukaszwarchol.pl</a>
             </div>
+
             <SocialMedia />
           </div>
 

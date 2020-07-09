@@ -51,23 +51,21 @@
     }
   }
 
-  &__social-media-container {
-    .SocialMedia {
-      a {
-        img {
-          height: 40px;
-          margin: 0 5px;
-        }
+  .SocialMedia {
+    a {
+      img {
+        height: 40px;
+        margin: 0 5px;
+      }
 
-        &::after {
-          bottom: 0;
-          background-color: $light-gray;
-        }
+      &::after {
+        bottom: 0;
+        background-color: $light-gray;
+      }
 
-        &:hover::after {
-          width: 25px;
-          height: 25px;
-        }
+      &:hover::after {
+        width: 25px;
+        height: 25px;
       }
     }
   }
@@ -81,12 +79,10 @@
       }
     }
 
-    &__social-media-container {
-      .SocialMedia {
-        a {
-          img {
-            height: 32px;
-          }
+    .SocialMedia {
+      a {
+        img {
+          height: 32px;
         }
       }
     }
