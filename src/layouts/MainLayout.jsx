@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import CookiesInfo from "../components/CookiesInfo";
 import Cookies from "js-cookie";
 
-const Layout = ({ children, lang, path, t }) => {
+const MainLayout = ({ children, lang, path, t }) => {
   const [cookiesInfo, setCookiesInfo] = useState(false);
 
   useEffect(() => {
@@ -37,11 +37,11 @@ const Layout = ({ children, lang, path, t }) => {
   );
 };
 
-Layout.propTypes = {
+MainLayout.propTypes = {
   children: PropTypes.node.isRequired,
   lang: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
   t: PropTypes.object.isRequired
 };
 
-export default Layout;
+export default MainLayout;

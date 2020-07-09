@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import SEO from "../seo";
 import "../../styles/pages/contact.scss";
-import Layout from "../../layout";
+import MainLayout from "../../layouts/MainLayout";
 import Subtitle from "../common/Subtitle";
 import Heading from "../common/Heading";
 import ContactForm from "./ContactForm";
@@ -13,7 +13,7 @@ const Contact = props => {
   const { path } = props;
 
   return (
-    <Layout lang={lang} path={path} t={layoutT}>
+    <MainLayout lang={lang} path={path} t={layoutT}>
       <SEO title={t.title} lang={lang} />
 
       <section className="Contact">
@@ -45,7 +45,7 @@ const Contact = props => {
           <ContactForm t={t.form} lang={lang} />
         </div>
       </section>
-    </Layout>
+    </MainLayout>
   );
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import SEO from "../seo";
 import "../../styles/pages/about.scss";
-import Layout from "../../layout";
+import MainLayout from "../../layouts/MainLayout";
 import LinkButton from "../common/LinkButton";
 import Image from "./Image";
 import Heading from "../common/Heading";
@@ -15,7 +15,7 @@ const About = props => {
   const { path } = props;
 
   return (
-    <Layout t={layoutT} path={path} lang={lang}>
+    <MainLayout t={layoutT} path={path} lang={lang}>
       <SEO title={t.title} lang={lang} />
 
       <section className="About">
@@ -37,7 +37,7 @@ const About = props => {
       <Experience t={t.experience} />
 
       <Technologies t={t.technologies} />
-    </Layout>
+    </MainLayout>
   );
 };
 

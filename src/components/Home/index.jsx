@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import SEO from "../seo";
 import "../../styles/pages/home.scss";
-import Layout from "../../layout";
+import MainLayout from "../../layouts/MainLayout";
 import SocialMedia from "../common/SocialMedia";
 import LinkButton from "../common/LinkButton";
 import { getHrefs } from "../../utils/langService";
@@ -37,7 +37,7 @@ const Home = props => {
   }, []);
 
   return (
-    <Layout lang={lang} path={path} t={layoutT}>
+    <MainLayout lang={lang} path={path} t={layoutT}>
       <SEO title="JavaScript Software Developer" lang={lang} />
 
       <div className="Home">
@@ -65,7 +65,7 @@ const Home = props => {
           </div>
         </section>
       </div>
-    </Layout>
+    </MainLayout>
   );
 };
 

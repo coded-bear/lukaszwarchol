@@ -1,13 +1,13 @@
 import React from "react";
 import "../styles/pages/notFoundPage.scss";
 import SEO from "../components/seo";
-import Layout from "../layout";
+import MainLayout from "../layouts/MainLayout";
 import LinkButton from "../components/common/LinkButton";
 import imgNotFound from "../images/common/not-found.svg";
 import layoutT from "../static/locales/pl/layout.json";
 
 const NotFoundPage = ({ path }) => (
-  <Layout t={layoutT} path={path} lang="pl">
+  <MainLayout t={layoutT} path={path} lang="pl">
     <section className="NotFoundPage">
       <SEO title="Nie znaleziono strony" />
 
@@ -20,7 +20,7 @@ const NotFoundPage = ({ path }) => (
         <img src={imgNotFound} alt="Nie znaleziono" />
       </div>
     </section>
-  </Layout>
+  </MainLayout>
 );
 
 export default NotFoundPage;

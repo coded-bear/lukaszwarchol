@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import SEO from "../seo";
 import "../../styles/pages/services.scss";
-import Layout from "../../layout";
+import MainLayout from "../../layouts/MainLayout";
 import Subtitle from "../common/Subtitle";
 import Heading from "../common/Heading";
 import imgWebApp from "../../images/services/web-app.svg";
@@ -19,7 +19,7 @@ const Services = props => {
   const { path } = props;
 
   return (
-    <Layout lang={lang} path={path} t={layoutT}>
+    <MainLayout lang={lang} path={path} t={layoutT}>
       <SEO title={t.title} lang={lang} />
 
       <section className="Services">
@@ -38,7 +38,7 @@ const Services = props => {
           </div>
         </div>
       </section>
-    </Layout>
+    </MainLayout>
   );
 };
 
