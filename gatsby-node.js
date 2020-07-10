@@ -86,7 +86,7 @@ exports.createPages = ({ actions }) => {
 
     projectsList.map(projectName => {
       createPage({
-        path: `/${locale}/projects/${projectName}/`,
+        path: `/${locale}/${getHrefs(locale)[2]}/${projectName}/`,
         component: path.resolve(`src/components/Project/${projectName}.jsx`),
         context: {
           lang: locale,

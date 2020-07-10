@@ -4,18 +4,13 @@
   "projectsList": [
     {
       "name": "SWYM (See What You Missed)",
-      "description": "Na WawCode, 24-godzinnym hackatonie w Warszawie, wraz z kolegami z drużyny - Piotr Adamczyk i Marcello Bardus, pracowałem nad aplikacją SWYM. Naszą ideą było stworzenie aplikacji mobilnej, która pozwoliłaby ludziom, którzy często prowadzą bardzo szybki tryb życia, odkrywać nowe, ciekawe miejsca, które mijali w ciągu dnia. Po minięciu nowego miejsca, aplikacja rejestruje je i informuje o tym użytkownika w formie wysyłanego wieczorem powiadomienia w trybie push. Następnie użytkownik może przeczytać więcej informacji o tym miejscu, sprawdzić kierunek podróży, odwiedzić je (i oznaczyć jako \"odwiedzone\" w aplikacji).",
+      "description": "Aplikacja mobilna, stworzona podczas 24-godzinnego hackathonu w Warszawie.",
       "shortName": "swym"
     },
     {
       "name": "Weather app",
-      "description": "Aplikacja pogodowa napisana w ramach nauki w React.",
+      "description": "Aplikacja pogodowa napisana w React.",
       "shortName": "weather-app"
-    },
-    {
-      "name": "Droplead",
-      "description": "Aplikacja webowa stworzona na potrzeby klienta.",
-      "shortName": "droplead"
     }
   ]
 }
