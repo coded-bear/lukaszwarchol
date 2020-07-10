@@ -13,9 +13,14 @@
     border: 0;
     background-color: transparent;
     cursor: pointer;
+    transition: 0.3s;
 
     img {
       height: 20px;
+    }
+
+    &:hover {
+      transform: rotate(90deg);
     }
   }
 }

@@ -5,12 +5,21 @@
     {
       "name": "SWYM (See What You Missed)",
       "description": "Aplikacja mobilna, stworzona podczas 24-godzinnego hackathonu w Warszawie.",
-      "shortName": "swym"
+      "shortName": "swym",
+      "links": {
+        "learnMore": "swym"
+      }
     },
     {
       "name": "Weather app",
       "description": "Aplikacja pogodowa napisana w React.",
-      "shortName": "weather-app"
+      "shortName": "weather-app",
+      "links": {
+        "github": "https://github.com/coded-bear/weather-app",
+        "learnMore": "weather-app"
+      }
     }
-  ]
+  ],
+  "learnMore": "Czytaj więcej",
+  "go": "Przejdź do projektu"
 }
