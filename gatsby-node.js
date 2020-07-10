@@ -12,6 +12,8 @@ const getHrefs = locale => {
   }
 };
 
+const projectsList = ["swym"];
+
 exports.createPages = ({ actions }) => {
   const { createPage } = actions;
   const locales = ["pl", "en"];
@@ -80,6 +82,18 @@ exports.createPages = ({ actions }) => {
         t: require(`./src/static/locales/${locale}/privacyPolicy.json`),
         layoutT: require(`./src/static/locales/${locale}/layout.json`)
       }
+    });
+
+    projectsList.map(projectName => {
+      createPage({
+        path: `/${locale}/projects/${projectName}/`,
+        component: path.resolve(`src/components/Project/${projectName}.jsx`),
+        context: {
+          lang: locale,
+          t: require(`./src/static/locales/${locale}/project/${projectName}.json`),
+          layoutT: require(`./src/static/locales/${locale}/layout.json`)
+        }
+      });
     });
   });
 };

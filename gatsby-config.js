@@ -57,12 +57,14 @@ module.exports = {
           `/pl/projekty/`,
           `/pl/kontakt/`,
           `/pl/polityka-prywatnosci/`,
+          `/pl/swym/`,
           `/en/`,
           `/en/about-me/`,
           `/en/services/`,
           `/en/projects/`,
           `/en/contact/`,
-          `/en/privacy-policy/`
+          `/en/privacy-policy/`,
+          `/en/swym/`
         ],
         workboxConfig: {
           importWorkboxFrom: `cdn`

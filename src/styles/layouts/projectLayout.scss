@@ -1,0 +1,49 @@
+@import "../colors.scss";
+
+.ProjectLayout {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 80px 10px;
+
+    img {
+      width: 50%;
+    }
+  }
+
+  &__additional-images {
+    padding: 80px 10px;
+    background-color: $light-gray;
+
+    &--container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+
+      img {
+        width: 30%;
+      }
+    }
+  }
+
+  @media (max-width: 750px) {
+    &__content {
+      img {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__additional-images {
+      &__container {
+        img {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
