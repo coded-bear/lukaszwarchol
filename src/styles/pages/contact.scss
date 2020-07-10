@@ -9,10 +9,6 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto 80px auto;
-
-    @media (max-width: 900px) {
-      flex-direction: column;
-    }
   }
 
   &__content {
@@ -104,6 +100,17 @@
 
     .form-error {
       margin-top: 15px;
+      color: $error;
+    }
+  }
+
+  @media (max-width: 900px) {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__form {
+      margin-top: 40px;
     }
   }
 }

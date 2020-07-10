@@ -1,14 +1,27 @@
 @import "../colors.scss";
 
 .ProjectLayout {
+  &__intro {
+    padding: 0 20px;
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 80px 10px;
+    padding: 80px 20px;
 
-    img {
+    &--mainImage {
+      display: flex;
+      width: 45%;
+
+      img {
+        width: 50%;
+      }
+    }
+
+    &--description {
       width: 50%;
     }
   }
@@ -19,28 +32,38 @@
 
     &--container {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: flex-start;
       flex-wrap: wrap;
 
       img {
-        width: 30%;
+        width: 25%;
       }
     }
   }
 
   @media (max-width: 750px) {
     &__content {
-      img {
+      flex-direction: column;
+
+      &--mainImage {
         width: 100%;
-        margin-bottom: 30px;
+
+        img {
+          width: 50%;
+          margin-bottom: 30px;
+        }
+      }
+
+      &--description {
+        width: 100%;
       }
     }
 
     &__additional-images {
-      &__container {
+      &--container {
         img {
-          width: 100%;
+          width: 50%;
           margin-bottom: 30px;
         }
       }

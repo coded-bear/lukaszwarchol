@@ -18,6 +18,14 @@
         "github": "https://github.com/coded-bear/weather-app",
         "learnMore": "weather-app"
       }
+    },
+    {
+      "name": "Custom hook form controller",
+      "description": "A customized way to manage forms using hooks in React.",
+      "shortName": "custom-hook-form-controller",
+      "links": {
+        "github": "https://github.com/coded-bear/custom-hook-form-controller"
+      }
     }
   ],
   "learnMore": "Learn more",

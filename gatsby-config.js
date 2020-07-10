@@ -58,13 +58,15 @@ module.exports = {
           `/pl/kontakt/`,
           `/pl/polityka-prywatnosci/`,
           `/pl/projekty/swym/`,
+          `/pl/projekty/weather-app/`,
           `/en/`,
           `/en/about-me/`,
           `/en/services/`,
           `/en/projects/`,
           `/en/contact/`,
           `/en/privacy-policy/`,
-          `/en/projects/swym/`
+          `/en/projects/swym/`,
+          `/en/projects/weather-app/`
         ],
         workboxConfig: {
           importWorkboxFrom: `cdn`

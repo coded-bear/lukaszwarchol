@@ -15,7 +15,7 @@ const Image = () => {
     }
   `);
 
-  return <Img fluid={data.desktopImage.childImageSharp.fluid} alt="Łukasz Warchoł" />;
+  return <Img fluid={data.desktopImage.childImageSharp.fluid} alt="Łukasz Warchoł" loading="auto" />;
 };
 
 export default Image;

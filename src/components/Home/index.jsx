@@ -45,9 +45,7 @@ const Home = props => {
           <div className="Home__hero--content">
             <p>{t.header.hello}</p>
             <h1>
-              <span>
-                <strong>{t.header.Im}</strong>
-              </span>
+              <strong>{t.header.Im}</strong>
             </h1>
             <p>
               <strong>JavaScript Software Developer</strong>
