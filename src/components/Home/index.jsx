@@ -8,6 +8,7 @@ import LinkButton from "../common/LinkButton";
 import { getHrefs } from "../../utils/langService";
 import gsap from "gsap";
 import Landscape from "../../images/common/landscape.svg";
+import Numbers from "../Numbers";
 
 const Home = props => {
   const { lang, t, layoutT } = props.pageContext;
@@ -62,6 +63,8 @@ const Home = props => {
             <SocialMedia />
           </div>
         </section>
+
+        <Numbers t={t.numbers} />
       </div>
     </MainLayout>
   );

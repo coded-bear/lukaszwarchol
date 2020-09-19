@@ -1,0 +1,23 @@
+.Numbers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  border-radius: 5px;
+  background-color: $dark;
+  color: $light-gray;
+  font-size: 18px;
+  text-align: center;
+
+  .number {
+    margin-bottom: 30px;
+    color: $white;
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  &__elem {
+    margin: 20px;
+  }
+}
