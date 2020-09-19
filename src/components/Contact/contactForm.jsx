@@ -81,6 +81,10 @@ const ContactForm = ({ lang, t }) => {
       <label className="input-label">
         <textarea name="message" value={form.message} onChange={updateForm} rows={10} placeholder={t.message.placeholder} maxLength={500} />
       </label>
+      <label>
+        <input type="checkbox" />
+        Lorem ipsum dolor sit amet.
+      </label>
 
       <Recaptcha
         ref={captchaRef}
@@ -93,9 +97,7 @@ const ContactForm = ({ lang, t }) => {
 
       {error && <div className="form-error">{error}</div>}
 
-      <button className="form-submit">
-        <strong>{t.submit}</strong>
-      </button>
+      <button className="LinkButton form-submit">{t.submit}</button>
 
       {infoPopup && <FormInfoPopup info={infoPopup} close={() => setInfoPopup("")} />}
     </form>
