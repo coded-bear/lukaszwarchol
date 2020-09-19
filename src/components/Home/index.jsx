@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import SEO from "../seo";
 import "../../styles/pages/home.scss";
 import MainLayout from "../../layouts/MainLayout";
-import SocialMedia from "../common/SocialMedia";
 import LinkButton from "../common/LinkButton";
+import SocialMedia from "../common/SocialMedia";
 import { getHrefs } from "../../utils/langService";
 import gsap from "gsap";
 import Landscape from "../../images/common/landscape.svg";
@@ -51,6 +51,8 @@ const Home = props => {
             <p className="description">{t.hero.description}</p>
 
             <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`}>{t.hero.contactMe}</LinkButton>
+
+            <SocialMedia />
           </div>
 
           <div ref={landscapeWrapper} className="Home__hero--right">

@@ -62,7 +62,7 @@ const Footer = ({ lang, t, path }) => (
             <FooterBasicLink name="LinkedIn" to="https://www.linkedin.com/in/lukasz-warchol/" />
             <FooterBasicLink name="GitHub" to="https://github.com/coded-bear" />
             <FooterBasicLink name="Behance" to="https://www.behance.net/" />
-            <FooterBasicLink name="Instagram" to={`https://www.instagram.com/lukasz.warchol/?hl=${lang}`} />
+            <FooterBasicLink name="Instagram" to="https://www.instagram.com/lukasz.warchol/" />
           </ul>
         </div>
       </div>

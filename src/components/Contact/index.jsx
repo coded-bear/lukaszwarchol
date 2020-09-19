@@ -5,6 +5,7 @@ import "../../styles/pages/contact.scss";
 import MainLayout from "../../layouts/MainLayout";
 import Intro from "../common/Intro";
 import ContactForm from "./ContactForm";
+import SocialMedia from "../common/SocialMedia";
 
 const Contact = props => {
   const { lang, t, layoutT } = props.pageContext;
@@ -26,6 +27,8 @@ const Contact = props => {
               <p>
                 E-mail: <a href="mailto:contact@lukaszwarchol.pl">contact@lukaszwarchol.pl</a>
               </p>
+
+              <SocialMedia />
             </div>
 
             <ContactForm t={t.form} lang={lang} />
