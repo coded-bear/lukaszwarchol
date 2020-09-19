@@ -1,4 +1,0 @@
-{
-  "title": "SWYM (See What You Missed)",
-  "description": "On WawCode, a 24h hackathon in Warsaw, together with my teammates - Piotr Adamczyk and Marcello Bardus, I was working on an app called SWYM. Our idea was to create a mobile application that would allow people, who often live a very fast lifestyle, to discover new interesting places which they pass during the day. After they pass a new place, the app registers that and informs the user about that in a form of push notification sent in the evening. User can then read more information about that place, check travel directions, visit the place (and mark it as \"visited\" in the app)."
-}

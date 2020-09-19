@@ -1,55 +1,35 @@
-import React, { useState, useCallback } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import Navigation from "./Navigation";
-import { langsList, changePath } from "../utils/langService";
-import logo from "../images/common/logo.svg";
-import imgMenu from "../images/common/menu.svg";
+import LinkButton from "./common/LinkButton";
+import { langsList, changePath, getHrefs } from "../utils/langService";
 
-const LangBtns = props => (
-  <div className="lang-btns">
-    {langsList.map((lang, index) => (
-      <Link key={index} to={changePath(lang, props.path)}>
-        <p className={lang === props.lang ? "active" : ""}>{lang}</p>
-      </Link>
-    ))}
-  </div>
-);
+import imgLogo from "../images/common/lukaszwarchol-logo.svg";
 
-const Header = ({ lang, path, t }) => {
-  const [menu, setMenu] = useState(false);
-
-  const openMenu = useCallback(() => {
-    setMenu(true);
-  }, [setMenu]);
-
-  const closeMenu = useCallback(() => {
-    setMenu(false);
-  }, [setMenu]);
-
-  return (
-    <header className="Header">
+const Header = ({ lang, path, t }) => (
+  <header className="Header">
+    <div className="container Header__container">
       <Link to={`/${lang}/`}>
-        <img src={logo} alt="Łukasz Warchoł" className="Header__logo" />
+        <img src={imgLogo} alt="Łukasz Warchoł" className="Header__logo" />
       </Link>
 
-      <div className="Header__right-box">
-        <LangBtns lang={lang} path={path} />
+      <Navigation lang={lang} t={t.nav} path={path} />
 
-        <button className="menu-btn" onClick={openMenu}>
-          <img src={imgMenu} alt="menu" />
-        </button>
+      <div className="Header__right">
+        <div className="Header__change-lang">
+          {langsList.map((elem, index) => (
+            <Link key={index} to={changePath(elem, path)} className={elem === lang ? "active" : ""}>
+              <p>{elem}</p>
+            </Link>
+          ))}
+        </div>
+
+        <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`}>{t.estimate}</LinkButton>
       </div>
-
-      {menu && <Navigation closeMenu={closeMenu} t={t.nav} lang={lang} />}
-    </header>
-  );
-};
-
-LangBtns.propTypes = {
-  lang: PropTypes.string.isRequired,
-  path: PropTypes.string.isRequired
-};
+    </div>
+  </header>
+);
 
 Header.propTypes = {
   lang: PropTypes.string.isRequired,

@@ -4,24 +4,13 @@
 
 html,
 body {
-  color: $text-primary;
-  font-family: "Raleway", sans-serif;
+  color: $dark;
+  font-family: "Ubuntu", sans-serif;
   font-size: 16px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 50vh;
-    background-color: $primary;
-    z-index: -1;
-  }
 }
 
 a {
-  color: $text-primary;
+  color: $dark;
 }
 
 p {
@@ -38,6 +27,20 @@ span {
   margin: auto;
 }
 
+.active {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: $primary;
+  }
+}
+
 @import "./components/header";
 @import "./components/navigation";
 @import "./components/footer";
@@ -46,6 +49,3 @@ span {
 @import "./components/subtitle";
 @import "./components/linkButton";
 @import "./components/socialMedia";
-@import "./components/hireMeBox";
-
-@import "./layouts/projectLayout.scss";

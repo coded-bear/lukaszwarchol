@@ -53,10 +53,10 @@
         margin-bottom: 10px;
         padding: 10px;
         border: 0;
-        border-bottom: 2px solid $text-primary;
+        border-bottom: 2px solid $dark;
         background-color: transparent;
-        color: $text-primary;
-        font-family: "Raleway", sans-serif;
+        color: $dark;
+        font-family: "Ubuntu", sans-serif;
         font-size: 18px;
         resize: none;
 
@@ -73,7 +73,7 @@
       padding: 15px 50px;
       border: 0;
       background-color: transparent;
-      font-family: "Raleway", sans-serif;
+      font-family: "Ubuntu", sans-serif;
       font-size: 18px;
       text-transform: uppercase;
       cursor: pointer;
@@ -134,7 +134,7 @@
     width: 90%;
     max-width: 600px;
     padding: 20px;
-    border: 2px solid $text-primary;
+    border: 2px solid $dark;
     background-color: #fff;
     font-size: 24px;
     text-align: center;

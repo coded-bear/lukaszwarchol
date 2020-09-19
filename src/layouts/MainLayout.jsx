@@ -2,7 +2,6 @@ import React, { useState, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
 import "../styles/index.scss";
 import Header from "../components/Header";
-import HireMeBox from "../components/common/HireMeBox";
 import Footer from "../components/Footer";
 import CookiesInfo from "../components/CookiesInfo";
 import Cookies from "js-cookie";
@@ -24,11 +23,7 @@ const MainLayout = ({ children, lang, path, t }) => {
     <>
       <Header lang={lang} path={path} t={t} />
 
-      <main>
-        {children}
-
-        <HireMeBox lang={lang} t={t} />
-      </main>
+      <main>{children}</main>
 
       <Footer lang={lang} t={t} />
 

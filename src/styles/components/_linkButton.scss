@@ -1,39 +1,8 @@
 .LinkButton {
-  position: relative;
-  display: inline-flex;
-  padding: 15px 50px;
-  border: 0;
-  font-size: 18px;
-  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 3px;
+  background-color: $dark;
+  color: $white;
+  font-weight: 700;
   cursor: pointer;
-
-  strong {
-    z-index: 1;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 60%;
-    right: 0;
-    background-color: $primary;
-    transition: 0.3s;
-  }
-
-  &:hover,
-  &:focus {
-    &::after {
-      left: 0;
-    }
-  }
-
-  &.light {
-    border-color: #fff;
-
-    &::after {
-      background-color: #fff;
-    }
-  }
 }
