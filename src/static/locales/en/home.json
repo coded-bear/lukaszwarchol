@@ -1,8 +1,8 @@
 {
-  "header": {
-    "hello": "Hello",
-    "Im": "I'm Lucas",
-    "hireMe": "Write to me"
+  "hero": {
+    "hello": "Hi! I'm Lucas -",
+    "contactMe": "Contact me",
+    "description": "Freelancer and Software Developer creating applications and mockups with 4 years of experience."
   },
 
   "numbers": {

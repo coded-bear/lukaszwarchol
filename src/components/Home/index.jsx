@@ -42,25 +42,19 @@ const Home = props => {
       <SEO title="JavaScript Software Developer" lang={lang} />
 
       <div className="Home">
-        <section className="Home__hero">
+        <section className="container Home__hero">
           <div className="Home__hero--content">
-            <p>{t.header.hello}</p>
-            <h1>
-              <strong>{t.header.Im}</strong>
-            </h1>
-            <p>
-              <strong>JavaScript Software Developer</strong>
-            </p>
+            <h2>{t.hero.hello}</h2>
+            <h2>
+              <span>JavaScript Software Developer</span>
+            </h2>
+            <p className="description">{t.hero.description}</p>
 
-            <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`} text={t.header.hireMe} />
+            <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`}>{t.hero.contactMe}</LinkButton>
           </div>
 
           <div ref={landscapeWrapper} className="Home__hero--right">
             <Landscape className="Home__hero--landscape" />
-          </div>
-
-          <div className="Home__hero--social-media-container">
-            <SocialMedia />
           </div>
         </section>
 

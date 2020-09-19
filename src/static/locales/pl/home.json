@@ -1,8 +1,8 @@
 {
-  "header": {
-    "hello": "Cześć",
-    "Im": "Jestem Łukasz",
-    "hireMe": "Napisz do mnie"
+  "hero": {
+    "hello": "Cześć! Jestem Łukasz -",
+    "contactMe": "Napisz do mnie",
+    "description": "Freelancer i Software Developer tworzący aplikacje i makiety z 4 latami doświadczenia."
   },
 
   "numbers": {
