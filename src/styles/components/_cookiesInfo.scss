@@ -1,19 +1,23 @@
 .CookiesInfo {
-  padding: 20px 20px 30px 20px;
-  border-top: 1px solid $middle-gray;
+  padding: 30px 20px;
+  border-top: 1px solid $light-gray;
   background-color: #fff;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
   a {
     text-decoration: underline;
   }
 
   &__close {
-    display: block;
-    margin-left: auto;
     border: 0;
     background-color: transparent;
     cursor: pointer;
-    transition: 0.3s;
+    transition: transform 0.3s;
 
     img {
       height: 20px;

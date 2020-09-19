@@ -1,4 +1,6 @@
 .Header {
+  position: relative;
+  z-index: 10;
   padding: 20px;
   background-color: $white;
   font-weight: 700;
@@ -45,11 +47,6 @@
         &::after {
           bottom: 4px;
         }
-      }
-
-      p {
-        position: relative;
-        z-index: 1;
       }
     }
   }

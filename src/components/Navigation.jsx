@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import { getHrefs } from "../utils/langService";
 
 const NavElem = ({ to, name, path }) => (
-  <li className={to === path && "active"}>
+  <li className={to === path ? "active" : ""}>
     <Link to={to}>{name}</Link>
   </li>
 );

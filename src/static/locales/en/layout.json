@@ -6,6 +6,23 @@
     "contact": "Contact"
   },
   "estimate": "Estimate project",
+
+  "footer": {
+    "vatID": "VAT-ID",
+    "menu": {
+      "home": "Home",
+      "about": "About me",
+      "services": "Services",
+      "projects": "Projects",
+      "contact": "Contact",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "services": {
+      "title": "Services",
+      "list": ["Web Development", "Desktop Development", "Mobile Development", "UX/UI Design"]
+    }
+  },
+
   "privacyPolicy": "Privacy policy",
   "havaAnyProject": "Have Any Project in Mind?",
   "hireMe": "Write to me",

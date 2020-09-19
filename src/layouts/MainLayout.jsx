@@ -25,7 +25,7 @@ const MainLayout = ({ children, lang, path, t }) => {
 
       <main>{children}</main>
 
-      <Footer lang={lang} t={t} />
+      <Footer lang={lang} t={t.footer} path={path} />
 
       {cookiesInfo && <CookiesInfo lang={lang} t={t.cookiesInfo} close={closeCookiesInfo} />}
     </>

@@ -6,6 +6,23 @@
     "contact": "Kontakt"
   },
   "estimate": "Wyceń projekt",
+
+  "footer": {
+    "vatID": "NIP",
+    "menu": {
+      "home": "Home",
+      "about": "O mnie",
+      "services": "Usługi",
+      "projects": "Projekty",
+      "contact": "Kontakt",
+      "privacyPolicy": "Polityka prywatności"
+    },
+    "services": {
+      "title": "Usługi",
+      "list": ["Web Development", "Desktop Development", "Mobile Development", "UX/UI Design"]
+    }
+  },
+
   "privacyPolicy": "Polityka prywatności",
   "havaAnyProject": "Masz Jakiś Projekt na Myśli?",
   "hireMe": "Napisz do mnie",

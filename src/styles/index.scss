@@ -4,6 +4,7 @@
 
 html,
 body {
+  background-color: $lighter-gray;
   color: $dark;
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
@@ -38,6 +39,12 @@ span {
     width: 100%;
     height: 5px;
     background-color: $primary;
+  }
+
+  p,
+  a {
+    position: relative;
+    z-index: 1;
   }
 }
 
