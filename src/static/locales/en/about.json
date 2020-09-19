@@ -5,7 +5,7 @@
     "I currently work as a Front-End Developer. After hours I develop my own projects and learn new technologies. I am also a big fan of Blockchain technology.",
     "Outside of IT, I love traveling, good wine, drinks and series. I like to play table tennis and billiards. I am also interested in the field of fitness."
   ],
-  "hireMe": "Write to me",
+  "hireMe": "Contact me",
   "experience": {
     "title": "Work Experience",
     "subtitle": "I have more than three years of learning self-study programming and working in many teams while creating various projects.",
@@ -39,6 +39,7 @@
   },
   "technologies": {
     "title": "Known technologies",
-    "subtitle": "I'm passionate about new technologies and I want to know more of them."
+    "subtitle": "I'm passionate about new technologies and I want to know more of them.",
+    "other": "Other"
   }
 }

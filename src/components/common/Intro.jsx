@@ -1,12 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Intro = ({ dark, left, text }) => <h2 className={`Heading ${dark ? "dark" : ""} ${left ? "left" : ""}`}>{text}</h2>;
+const Intro = ({ title, description }) => (
+  <>
+    <h2 className="Intro">{title}</h2>
+    {description && <p className="Intro__description">{description}</p>}
+  </>
+);
 
 Intro.propTypes = {
-  dark: PropTypes.bool,
-  left: PropTypes.bool,
-  text: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string
 };
 
 export default Intro;

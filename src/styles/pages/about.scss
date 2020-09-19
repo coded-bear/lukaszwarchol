@@ -2,18 +2,20 @@
 
 .About {
   display: flex;
+  justify-content: space-between;
   align-items: flex-start;
-  width: 100%;
   max-width: 1200px;
   margin: auto;
   padding-bottom: 80px;
 
   &__main-image {
     flex: 2;
+    margin-right: 20px;
     padding: 20px;
 
     img {
       width: 100%;
+      border-radius: 3px;
     }
   }
 
@@ -22,19 +24,24 @@
     padding: 20px;
 
     .LinkButton {
-      margin-top: 30px;
+      margin-top: 50px;
     }
   }
 
   @media (max-width: 900px) {
     flex-direction: column;
+
+    &__main-image {
+      margin-right: 0;
+    }
   }
 }
 
 // EXPERIENCE
 
 .Experience {
-  padding: 80px 10px;
+  padding: 80px 20px;
+  background-color: $white;
 
   &__container {
     display: flex;
@@ -44,17 +51,24 @@
   &__elem {
     width: calc(100% / 3 - 20px);
     margin: 10px;
-    padding: 30px;
-    border: 1px solid $dark;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: $white;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
 
     .date {
-      font-weight: bold;
+      color: $gray;
+      font-size: 15px;
+      font-weight: 700;
       text-transform: uppercase;
     }
 
     h4 {
-      margin: 10px 0 20px 0;
+      margin: 15px 0 20px 0;
       font-size: 24px;
+      font-weight: 700;
     }
   }
 
@@ -81,24 +95,42 @@
 // TECHNOLOGIES
 
 .Technologies {
-  padding: 80px 20px;
+  padding: 80px 20px 0 20px;
+
+  .title {
+    display: inline-flex;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &.active {
+      &::after {
+        bottom: 3px;
+      }
+    }
+
+    p {
+      position: relative;
+      z-index: 10;
+    }
+  }
 
   &__container {
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-end;
-    justify-content: center;
-  }
-
-  &__technology {
-    width: 100px;
-    margin: 20px;
-    font-size: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
     text-align: center;
 
     img {
       max-width: 90px;
       height: 50px;
+      margin-bottom: 12px;
     }
+  }
+
+  &__technology {
+    margin: 25px 45px 0 0;
   }
 }

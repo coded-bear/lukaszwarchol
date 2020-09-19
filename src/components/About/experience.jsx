@@ -1,13 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Subtitle from "../common/Subtitle";
 import Intro from "../common/Intro";
 
 const Experience = ({ t }) => (
   <section className="Experience">
     <div className="container">
-      <Intro text={t.title} />
-      <Subtitle text={t.subtitle} />
+      <Intro title={t.title} description={t.subtitle} />
 
       <div className="Experience__container">
         {t.boxes.map((elem, index) => (

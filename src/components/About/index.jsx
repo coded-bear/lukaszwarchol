@@ -5,7 +5,7 @@ import "../../styles/pages/about.scss";
 import MainLayout from "../../layouts/MainLayout";
 import LinkButton from "../common/LinkButton";
 import Image from "./Image";
-import Heading from "../common/Heading";
+import Intro from "../common/Intro";
 import Experience from "./Experience";
 import Technologies from "./Technologies";
 import { getHrefs } from "../../utils/langService";
@@ -24,13 +24,13 @@ const About = props => {
         </div>
 
         <div className="About__content">
-          <Heading left text={t.title} />
+          <Intro title={t.title} />
 
           {t.description.map((elem, index) => (
             <p key={index}>{elem}</p>
           ))}
 
-          <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`} text={t.hireMe} />
+          <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`}>{t.hireMe}</LinkButton>
         </div>
       </section>
 
