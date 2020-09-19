@@ -1,0 +1,49 @@
+html,
+body {
+  background-color: $lighter-gray;
+  color: $dark;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  padding: 80px 0;
+}
+
+a {
+  color: $dark;
+}
+
+p {
+  line-height: 24px;
+}
+
+span {
+  color: $primary;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.active {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: $primary;
+  }
+
+  p,
+  a {
+    position: relative;
+    z-index: 1;
+  }
+}

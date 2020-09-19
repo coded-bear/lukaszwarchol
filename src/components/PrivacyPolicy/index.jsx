@@ -14,7 +14,7 @@ const PrivacyPolicy = props => {
       <SEO title={t.title} lang={lang} />
 
       <section className="container PrivacyPolicy">
-        <Intro text={t.title} />
+        <Intro title={t.title} />
 
         <p>
           {t.description[0]}
