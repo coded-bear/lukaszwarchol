@@ -3,28 +3,20 @@
   "subtitle": "Zajmuję się tworzeniem stron internetowych, aplikacji webowych oraz makiet. Może Ciebie też coś zainteresuje.",
   "boxes": [
     {
-      "title": "Aplikacje webowe",
+      "title": "Web Development",
       "description": "Tworzę aplikacje webowe, zazwyczaj z wykorzystaniem frameworków i bibliotek  języka JavaScript. Moje aplikacje są bardzo wydajne, oraz wykonane na najwyższym poziomie."
     },
     {
-      "title": "Strony internetowe",
+      "title": "Desktop Development",
       "description": "Tworzę strony internetowe w najnowszych technologiach, dzięki czemu są bardzo szybkie. Umiem również przygotować je pod SEO."
     },
     {
-      "title": "Aplikacje konsolowe",
+      "title": "Mobile Development",
       "description": "Tworzę aplikacje konsolowe, czyli programy wykonujące różne funkcje, nie posiadające strony frontendowej."
     },
     {
       "title": "UX/UI Design",
       "description": "Projektuję makiety dla aplikacji webowych oraz stron internetowych. Są one intuicyjne, nowoczesne, oraz bardzo precyzyjne."
-    },
-    {
-      "title": "Code review",
-      "description": "Analizuję kod napisany przez innego programistę. Mogę też wytknąć kilka błędów, złe praktyki, oraz zalecić jakąś zmianę."
-    },
-    {
-      "title": "Optymalizacja stron internetowych oraz aplikacji",
-      "description": "Optymalizuję strony internetowe w taki sposób, aby były jak najszybsze. Jest to ważne dla SEO i przy pozyskiwaniu nowych klientów."
     }
   ]
 }

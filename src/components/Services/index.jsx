@@ -3,16 +3,13 @@ import PropTypes from "prop-types";
 import SEO from "../seo";
 import "../../styles/pages/services.scss";
 import MainLayout from "../../layouts/MainLayout";
-import Subtitle from "../common/Subtitle";
-import Heading from "../common/Heading";
-import imgWebApp from "../../images/services/web-app.svg";
-import imgWebsite from "../../images/services/website.svg";
-import imgConsoleApp from "../../images/services/console-app.svg";
-import imgMockup from "../../images/services/mockup.svg";
-import imgCodeReview from "../../images/services/code-review.svg";
-import imgOptimization from "../../images/services/optimization.svg";
+import Intro from "../common/Intro";
 
-const images = [imgWebApp, imgWebsite, imgConsoleApp, imgMockup, imgCodeReview, imgOptimization];
+import imgWeb from "../../images/services/web.svg";
+import imgDesktop from "../../images/services/desktop.svg";
+import imgMobile from "../../images/services/mobile.svg";
+import imgMockup from "../../images/services/mockup.svg";
+const images = [imgWeb, imgDesktop, imgMobile, imgMockup];
 
 const Services = props => {
   const { lang, t, layoutT } = props.pageContext;
@@ -24,8 +21,7 @@ const Services = props => {
 
       <section className="Services">
         <div className="container">
-          <Heading text={t.title} />
-          <Subtitle text={t.subtitle} />
+          <Intro title={t.title} description={t.subtitle} />
 
           <div className="Services__container">
             {t.boxes.map((elem, index) => (
