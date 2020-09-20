@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { getHrefs } from "../utils/langService";
+
 import imgClose from "../images/common/close.svg";
 
 const CookiesInfo = ({ lang, t, close }) => (

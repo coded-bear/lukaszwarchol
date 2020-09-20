@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import "../../styles/pages/projects.scss";
 import PropTypes from "prop-types";
 import SEO from "../seo";
-import "../../styles/pages/projects.scss";
 import MainLayout from "../../layouts/MainLayout";
-import Intro from "../common/Intro";
 import ProjectsBtn from "./ProjectsBtn";
 import Project from "./Project";
+import Intro from "../common/Intro";
 import { projectsCategoriesList } from "../../utils/common";
 
 const Projects = props => {

@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 import imgClose from "../../images/common/close.svg";
 
 const FormInfoPopup = ({ info, close }) => (

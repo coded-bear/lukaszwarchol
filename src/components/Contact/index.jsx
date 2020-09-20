@@ -1,11 +1,11 @@
 import React from "react";
+import "../../styles/pages/contact.scss";
 import PropTypes from "prop-types";
 import SEO from "../seo";
-import "../../styles/pages/contact.scss";
 import MainLayout from "../../layouts/MainLayout";
-import Intro from "../common/Intro";
-import ContactForm from "./ContactForm";
 import SocialMedia from "../common/SocialMedia";
+import ContactForm from "./ContactForm";
+import Intro from "../common/Intro";
 
 const Contact = props => {
   const { lang, t, layoutT } = props.pageContext;

@@ -1,13 +1,13 @@
 import React from "react";
+import "../../styles/pages/about.scss";
 import PropTypes from "prop-types";
 import SEO from "../seo";
-import "../../styles/pages/about.scss";
 import MainLayout from "../../layouts/MainLayout";
-import LinkButton from "../common/LinkButton";
-import Image from "./Image";
-import Intro from "../common/Intro";
 import Experience from "./Experience";
 import Technologies from "./Technologies";
+import Image from "./Image";
+import Intro from "../common/Intro";
+import LinkButton from "../common/LinkButton";
 import { getHrefs } from "../../utils/langService";
 
 const About = props => {

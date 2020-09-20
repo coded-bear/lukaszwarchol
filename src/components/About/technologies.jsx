@@ -32,6 +32,11 @@ const Technology = ({ image, name }) => (
   </div>
 );
 
+Technology.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired
+};
+
 const Technologies = ({ t }) => (
   <section className="Technologies">
     <div className="container">
@@ -77,11 +82,6 @@ const Technologies = ({ t }) => (
     </div>
   </section>
 );
-
-Technology.propTypes = {
-  image: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired
-};
 
 Technologies.propTypes = {
   t: PropTypes.object.isRequired

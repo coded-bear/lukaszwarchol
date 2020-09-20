@@ -1,7 +1,7 @@
 import React from "react";
+import "../../styles/pages/privacyPolicy.scss";
 import PropTypes from "prop-types";
 import SEO from "../seo";
-import "../../styles/pages/privacyPolicy.scss";
 import MainLayout from "../../layouts/MainLayout";
 import Intro from "../common/Intro";
 

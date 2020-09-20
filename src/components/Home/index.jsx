@@ -1,14 +1,15 @@
 import React, { useEffect, useRef } from "react";
+import "../../styles/pages/home.scss";
 import PropTypes from "prop-types";
 import SEO from "../seo";
-import "../../styles/pages/home.scss";
 import MainLayout from "../../layouts/MainLayout";
-import LinkButton from "../common/LinkButton";
 import SocialMedia from "../common/SocialMedia";
+import Numbers from "../Numbers";
+import LinkButton from "../common/LinkButton";
 import { getHrefs } from "../../utils/langService";
 import gsap from "gsap";
+
 import Landscape from "../../images/common/landscape.svg";
-import Numbers from "../Numbers";
 
 const Home = props => {
   const { lang, t, layoutT } = props.pageContext;
