@@ -1,2 +1,120 @@
+@import "../basic/colors";
+
 .Projects {
+  padding: 0 20px;
+
+  &__btn {
+    margin-right: 30px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.active {
+      &::after {
+        bottom: 4px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    color: $white;
+
+    .title {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .category {
+      color: $primary;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .links {
+      text-decoration: underline;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  &__project {
+    position: relative;
+    width: calc(50% - 13px);
+    height: 300px;
+    margin-bottom: 26px;
+    border-radius: 5px;
+    background-color: $light-gray;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 20%;
+
+    &:nth-child(even) {
+      margin-left: 26px;
+    }
+
+    &--content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      opacity: 0;
+      padding: 40px;
+      border-radius: 5px;
+      background-color: $dark;
+      transition: opacity 0.3s;
+    }
+
+    &:hover {
+      .Projects__project--content {
+        opacity: 1;
+      }
+    }
+
+    &.swym {
+      background-color: #245894;
+      background-image: url("../../images/projects/swym.svg");
+    }
+
+    &.weather-app {
+      background-image: url("../../images/projects/weather-app.svg");
+      background-size: auto 25%;
+    }
+
+    &.custom-hook-form-controller {
+      background-color: #ffef92;
+    }
+  }
+
+  @media (max-width: 850px) {
+    &__project {
+      width: 100%;
+
+      &:nth-child(even) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__project {
+      height: 260px;
+    }
+  }
 }

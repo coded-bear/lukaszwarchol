@@ -6,26 +6,22 @@
       "name": "SWYM (See What You Missed)",
       "description": "Aplikacja mobilna, stworzona podczas 24-godzinnego hackathonu w Warszawie.",
       "shortName": "swym",
-      "links": {
-        "learnMore": "swym"
-      }
+      "category": 3,
+      "links": []
     },
     {
       "name": "Weather app",
       "description": "Aplikacja pogodowa napisana w React.",
       "shortName": "weather-app",
-      "links": {
-        "github": "https://github.com/coded-bear/weather-app",
-        "learnMore": "weather-app"
-      }
+      "category": 1,
+      "links": [{ "name": "GitHub", "href": "https://github.com/coded-bear/weather-app" }]
     },
     {
       "name": "Custom hook form controller",
       "description": "Niestandardowy sposób zarządzania formularzami za pomocą hooków w React.",
       "shortName": "custom-hook-form-controller",
-      "links": {
-        "github": "https://github.com/coded-bear/custom-hook-form-controller"
-      }
+      "category": 1,
+      "links": [{ "name": "GitHub", "href": "https://github.com/coded-bear/custom-hook-form-controller" }]
     }
   ],
   "learnMore": "Czytaj więcej",

@@ -13,7 +13,7 @@ const FooterLink = ({ name, to, path }) => (
 
 const FooterBasicLink = ({ name, to }) => (
   <li>
-    <a href={to} rel="noopener noreferrer">
+    <a href={to} target="_blank" rel="noopener noreferrer">
       {name}
     </a>
   </li>
