@@ -1,4 +1,30 @@
 {
   "title": "Wyceń Projekt",
-  "subtitle": "Wypełnij formularz, uzyskaj wycenę i kontynuuj rozmowę przez e-mail. Postaramy się odpowiedzieć w ciągu 24 godzin."
+  "subtitle": "Wypełnij formularz, uzyskaj wycenę i kontynuuj rozmowę przez e-mail. Postaramy się odpowiedzieć w ciągu 24 godzin.",
+
+  "form": {
+    "name": {
+      "placeholder": "Twoje imię",
+      "errors": ["Podaj swoje imię", "Nieprawidłowe imię"]
+    },
+    "email": {
+      "placeholder": "Twój email",
+      "errors": ["Podaj adres email", "Nieprawidłowy adres email"]
+    },
+    "phone": {
+      "placeholder": "Numer telefonu",
+      "errors": ["Podaj numer telefonu", "Nieprawidłowy numer telefonu"]
+    },
+    "needNDA": "Potrzebujesz najpierw NDA? Napisz do nas na",
+    "message": {
+      "placeholder": "Twoja wiadomość",
+      "errors": ["Napisz wiadomość"]
+    },
+    "captcha": {
+      "errors": ["Zaakceptuj re-captcha"]
+    },
+    "submit": "Wyślij",
+    "success": "Wiadomość została wysłana!",
+    "error": "Ups, coś poszło nie tak :("
+  }
 }

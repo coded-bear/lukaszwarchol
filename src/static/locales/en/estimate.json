@@ -1,4 +1,30 @@
 {
   "title": "Estimate Project",
-  "subtitle": "Fill in the form, get an estimate and continue the conversation by e-mail. We will try to respond within 24 hours."
+  "subtitle": "Fill in the form, get an estimate and continue the conversation by e-mail. We will try to respond within 24 hours.",
+
+  "form": {
+    "name": {
+      "placeholder": "Your name",
+      "errors": ["Enter Your name", "Incorrect name"]
+    },
+    "email": {
+      "placeholder": "Your email",
+      "errors": ["Enter Your email", "Incorrect email"]
+    },
+    "phone": {
+      "placeholder": "Phone Number",
+      "errors": ["Enter Phone Number", "Incorrect Phone Number"]
+    },
+    "needNDA": "Need NDA first? Write to us at",
+    "message": {
+      "placeholder": "Your message",
+      "errors": ["Write your message"]
+    },
+    "captcha": {
+      "errors": ["Accept re-captcha"]
+    },
+    "submit": "Send",
+    "success": "The message was sent!",
+    "error": "Oops, something went wrong :("
+  }
 }

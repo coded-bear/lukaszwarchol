@@ -1,0 +1,19 @@
+.Estimate {
+  &__form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+
+    .nda {
+      margin-top: 40px;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    #g-recaptcha {
+      margin: 40px 0;
+    }
+  }
+}

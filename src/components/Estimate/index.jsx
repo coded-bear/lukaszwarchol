@@ -3,6 +3,7 @@ import "../../styles/pages/privacyPolicy.scss";
 import PropTypes from "prop-types";
 import SEO from "../seo";
 import MainLayout from "../../layouts/MainLayout";
+import EstimateForm from "./EstimateForm";
 import Intro from "../common/Intro";
 
 const Estimate = props => {
@@ -16,7 +17,7 @@ const Estimate = props => {
       <section className="container Estimate">
         <Intro title={t.title} description={t.subtitle} />
 
-        <div></div>
+        <EstimateForm lang={lang} t={t.form} />
       </section>
     </MainLayout>
   );

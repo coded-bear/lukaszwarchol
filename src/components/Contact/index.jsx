@@ -31,7 +31,7 @@ const Contact = props => {
               <SocialMedia />
             </div>
 
-            <ContactForm t={t.form} lang={lang} />
+            <ContactForm lang={lang} t={t.form} />
           </div>
         </div>
       </section>
