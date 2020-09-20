@@ -23,7 +23,7 @@
     "captcha": {
       "errors": ["Zaakceptuj re-captcha"]
     },
-    "submit": "Wyślij",
+    "submit": "Wyceń",
     "success": "Wiadomość została wysłana!",
     "error": "Ups, coś poszło nie tak :("
   }

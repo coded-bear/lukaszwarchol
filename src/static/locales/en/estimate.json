@@ -23,7 +23,7 @@
     "captcha": {
       "errors": ["Accept re-captcha"]
     },
-    "submit": "Send",
+    "submit": "Estimate",
     "success": "The message was sent!",
     "error": "Oops, something went wrong :("
   }
