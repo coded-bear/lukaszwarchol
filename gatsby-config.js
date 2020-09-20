@@ -56,12 +56,14 @@ module.exports = {
           `/pl/uslugi/`,
           `/pl/projekty/`,
           `/pl/kontakt/`,
+          `/pl/wycena/`,
           `/pl/polityka-prywatnosci/`,
           `/en/`,
           `/en/about-me/`,
           `/en/services/`,
           `/en/projects/`,
           `/en/contact/`,
+          `/en/estimate/`,
           `/en/privacy-policy/`
         ],
         workboxConfig: {

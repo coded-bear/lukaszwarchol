@@ -25,7 +25,7 @@ const Header = ({ lang, path, t }) => (
           ))}
         </div>
 
-        <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`}>{t.estimate}</LinkButton>
+        <LinkButton to={`/${lang}/${getHrefs(lang)[4]}/`}>{t.estimate}</LinkButton>
       </div>
     </div>
   </header>
