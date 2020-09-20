@@ -3,6 +3,10 @@
   "subtitle": "Masz jakiś problem? Może pomysł na projekt? Skontaktuj się ze mną za pomocą poniższego formularza. Jeśli wolisz inne metody kontaktu, poniżej znajduje się mój adres email oraz linki do profili społecznościowych.",
   "vatID": "NIP",
   "form": {
+    "name": {
+      "placeholder": "Twoje imię",
+      "errors": ["Podaj swoje imię", "Nieprawidłowe imię"]
+    },
     "email": {
       "placeholder": "Twój email",
       "errors": ["Podaj adres email", "Nieprawidłowy adres email"]

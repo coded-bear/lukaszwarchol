@@ -23,6 +23,10 @@ button {
   font-family: "Ubuntu", sans-serif;
 }
 
+textarea {
+  resize: none;
+}
+
 span {
   color: $primary;
 }
