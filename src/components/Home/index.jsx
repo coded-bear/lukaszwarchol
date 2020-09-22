@@ -8,6 +8,7 @@ import Numbers from "../Numbers";
 import LinkButton from "../common/LinkButton";
 import { getHrefs } from "../../utils/langService";
 import gsap from "gsap";
+import { contentWriter } from "../../utils/contentWriter";
 
 import Landscape from "../../images/common/landscape.svg";
 
@@ -18,6 +19,9 @@ const Home = props => {
   const landscapeWrapper = useRef(null);
 
   useEffect(() => {
+    const writer = document.querySelector(".writer");
+    contentWriter({ destination: writer, textList: t.hero.textList, time: 80 });
+
     const [elements] = landscapeWrapper.current.children;
 
     const mountains = elements.getElementById("mountains");
@@ -47,7 +51,7 @@ const Home = props => {
           <div className="Home__hero--content">
             <h2>{t.hero.hello}</h2>
             <h2>
-              <span>JavaScript Software Developer</span>
+              <span className="writer"></span>
             </h2>
             <p className="description">{t.hero.description}</p>
 

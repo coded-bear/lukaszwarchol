@@ -17,6 +17,17 @@
         font-weight: 700;
       }
 
+      .writer {
+        display: inline-block;
+        min-height: 50px;
+        padding-right: 5px;
+        border-right: 7px solid #ccc;
+
+        &.with-bg {
+          background-color: #ddd;
+        }
+      }
+
       .description {
         max-width: 660px;
         margin-top: 25px;

@@ -2,7 +2,8 @@
   "hero": {
     "hello": "Cześć! Jestem Łukasz -",
     "contactMe": "Napisz do mnie",
-    "description": "Freelancer i Software Developer tworzący aplikacje i makiety z 4 latami doświadczenia."
+    "description": "Freelancer i Software Developer tworzący aplikacje i makiety z 4 latami doświadczenia.",
+    "textList": ["JavaScript Software Developer", "Pasjonat języka JavaScript i środowiska Node.js", "Specjalista React"]
   },
 
   "numbers": {
