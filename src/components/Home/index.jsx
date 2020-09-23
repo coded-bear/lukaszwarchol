@@ -8,7 +8,6 @@ import Numbers from "../Numbers";
 import LinkButton from "../common/LinkButton";
 import { getHrefs } from "../../utils/langService";
 import gsap from "gsap";
-import { contentWriter } from "../../utils/contentWriter";
 
 import Landscape from "../../images/common/landscape.svg";
 
@@ -19,8 +18,50 @@ const Home = props => {
   const landscapeWrapper = useRef(null);
 
   useEffect(() => {
+    ///////////////////////////////////////////////////////////////////
+    //////////////////////// A N I M A T I O N ////////////////////////
+    ///////////////////////////////////////////////////////////////////
+
     const writer = document.querySelector(".writer");
-    contentWriter({ destination: writer, textList: t.hero.textList, time: 80 });
+    let interval;
+
+    const destination = writer;
+    const textList = t.hero.textList;
+    const time = 80;
+
+    let number = 0;
+    let text = textList[number].split("");
+    let x = 0;
+
+    const animate = () => {
+      destination.innerHTML += text[x];
+
+      if (x >= text.length - 1) {
+        clearInterval(interval);
+
+        setTimeout(() => {
+          if (number >= textList.length - 1) number = 0;
+          else number++;
+          text = textList[number].split("");
+          x = 0;
+          destination.classList.add("with-bg");
+
+          setTimeout(() => {
+            destination.classList.remove("with-bg");
+            destination.innerHTML = "";
+
+            interval = setInterval(animate, time);
+          }, 300);
+          console.log("test");
+        }, 800);
+      } else x++;
+    };
+
+    interval = setInterval(animate, time);
+
+    ///////////////////////////////////////////////////////////////////
+    //////////////////// E N D   A N I M A T I O N ////////////////////
+    ///////////////////////////////////////////////////////////////////
 
     const [elements] = landscapeWrapper.current.children;
 
@@ -40,6 +81,8 @@ const Home = props => {
       .fromTo(sunshine, { x: "+=100", y: "+=400" }, { duration: 3, x: "-=100", y: "-=400", autoAlpha: 1 }, "-=1")
       .fromTo(cloud1, { x: "-=150" }, { duration: 1.5, x: "+=150", autoAlpha: 1 }, "-=1")
       .fromTo(cloud2, { x: "+=150" }, { duration: 1.5, x: "-=150", autoAlpha: 1 }, "-=0.5");
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
