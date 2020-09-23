@@ -18,10 +18,19 @@
       }
 
       .writer {
-        display: inline-block;
+        position: relative;
         min-height: 50px;
         padding-right: 5px;
-        border-right: 7px solid #ccc;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: -7px;
+          width: 7px;
+          height: 50px;
+          background-color: #ccc;
+        }
 
         &.with-bg {
           background-color: #ddd;
