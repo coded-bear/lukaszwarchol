@@ -34,6 +34,10 @@
 
         &.with-bg {
           background-color: #ddd;
+
+          &::after {
+            background-color: transparent;
+          }
         }
       }
 
