@@ -73,8 +73,20 @@
         opacity: 0;
       }
     }
+  }
 
-    @media (max-width: 800px) {
+  @media (max-width: 800px) {
+    &__hero {
+      min-height: auto;
+      margin-bottom: 40px;
+      padding-top: 0;
+
+      &--content {
+        h2 {
+          font-size: 36px;
+        }
+      }
+
       &--right {
         display: none;
       }

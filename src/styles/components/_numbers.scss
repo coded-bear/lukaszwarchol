@@ -20,4 +20,12 @@
   &__elem {
     margin: 20px;
   }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+
+    .number {
+      font-size: 40px;
+    }
+  }
 }
