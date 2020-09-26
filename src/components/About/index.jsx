@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../styles/pages/about.scss";
 import PropTypes from "prop-types";
 import SEO from "../seo";
@@ -9,10 +9,15 @@ import Image from "./Image";
 import Intro from "../common/Intro";
 import LinkButton from "../common/LinkButton";
 import { getHrefs } from "../../utils/langService";
+import gsap from "gsap";
 
 const About = props => {
   const { t, lang, layoutT } = props.pageContext;
   const { path } = props;
+
+  useEffect(() => {
+    gsap.fromTo(".About__main-image", { scale: 0.7, autoAlpha: 0 }, { scale: 1, autoAlpha: 1 });
+  }, []);
 
   return (
     <MainLayout t={layoutT} path={path} lang={lang}>
