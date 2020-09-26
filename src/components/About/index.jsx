@@ -19,18 +19,20 @@ const About = props => {
       <SEO title={t.title} lang={lang} />
 
       <section className="About">
-        <div className="About__main-image">
-          <Image />
-        </div>
+        <div className="container About__container">
+          <div className="About__main-image">
+            <Image />
+          </div>
 
-        <div className="About__content">
-          <Intro title={t.title} />
+          <div className="About__content">
+            <Intro title={t.title} />
 
-          {t.description.map((elem, index) => (
-            <p key={index}>{elem}</p>
-          ))}
+            {t.description.map((elem, index) => (
+              <p key={index}>{elem}</p>
+            ))}
 
-          <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`}>{t.hireMe}</LinkButton>
+            <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`}>{t.hireMe}</LinkButton>
+          </div>
         </div>
       </section>
 

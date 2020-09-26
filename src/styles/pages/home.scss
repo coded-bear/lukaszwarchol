@@ -1,6 +1,8 @@
 @import "../basic/colors";
 
 .Home {
+  padding: 0 20px;
+
   &__hero {
     position: relative;
     display: flex;
@@ -69,6 +71,12 @@
       #cloud1,
       #cloud2 {
         opacity: 0;
+      }
+    }
+
+    @media (max-width: 800px) {
+      &--right {
+        display: none;
       }
     }
   }

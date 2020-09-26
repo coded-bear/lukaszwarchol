@@ -1,17 +1,18 @@
 @import "../basic/colors";
 
 .About {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: auto;
-  padding-bottom: 80px;
+  padding: 0 20px 80px 20px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 
   &__main-image {
     flex: 2;
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: 60px;
 
     img {
       width: 100%;
@@ -21,7 +22,6 @@
 
   &__content {
     flex: 4;
-    padding: 20px;
 
     .LinkButton {
       margin-top: 50px;
@@ -29,7 +29,9 @@
   }
 
   @media (max-width: 900px) {
-    flex-direction: column;
+    &__container {
+      flex-direction: column;
+    }
 
     &__main-image {
       margin-right: 0;
