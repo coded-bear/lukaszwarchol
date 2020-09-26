@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../styles/pages/services.scss";
 import PropTypes from "prop-types";
 import SEO from "../seo";
 import MainLayout from "../../layouts/MainLayout";
 import Intro from "../common/Intro";
+import gsap from "gsap";
 
 import imgWeb from "../../images/services/web.svg";
 import imgDesktop from "../../images/services/desktop.svg";
@@ -14,6 +15,10 @@ const images = [imgWeb, imgDesktop, imgMobile, imgMockup];
 const Services = props => {
   const { lang, t, layoutT } = props.pageContext;
   const { path } = props;
+
+  useEffect(() => {
+    gsap.fromTo(".Services__container", { scale: 0.85 }, { scale: 1 });
+  }, []);
 
   return (
     <MainLayout lang={lang} path={path} t={layoutT}>

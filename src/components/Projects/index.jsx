@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/pages/projects.scss";
 import PropTypes from "prop-types";
 import SEO from "../seo";
@@ -7,11 +7,16 @@ import ProjectsBtn from "./ProjectsBtn";
 import Project from "./Project";
 import Intro from "../common/Intro";
 import { projectsCategoriesList } from "../../utils/common";
+import gsap from "gsap";
 
 const Projects = props => {
   const { lang, t, layoutT } = props.pageContext;
   const { path } = props;
   const [category, setCategory] = useState(0);
+
+  useEffect(() => {
+    gsap.fromTo(".Projects__list", { scale: 0.85 }, { scale: 1 });
+  }, [category]);
 
   return (
     <MainLayout lang={lang} path={path} t={layoutT}>

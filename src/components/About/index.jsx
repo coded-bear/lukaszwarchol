@@ -16,7 +16,7 @@ const About = props => {
   const { path } = props;
 
   useEffect(() => {
-    gsap.fromTo(".About__main-image", { scale: 0.7, autoAlpha: 0 }, { scale: 1, autoAlpha: 1 });
+    gsap.fromTo(".About__main-image", { scale: 0.85, autoAlpha: 0 }, { scale: 1, autoAlpha: 1 });
   }, []);
 
   return (
