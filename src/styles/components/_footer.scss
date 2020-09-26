@@ -34,4 +34,18 @@
     color: $gray;
     font-size: 14px;
   }
+
+  @media (max-width: 950px) {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__column {
+      margin-top: 40px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
 }

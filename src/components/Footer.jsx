@@ -23,7 +23,7 @@ const Footer = ({ lang, t, path }) => (
   <footer className="Footer">
     <div className="container">
       <div className="Footer__container">
-        <div>
+        <div className="Footer__column">
           <img className="Footer__logo" src={imgLogo} alt="Łukasz Warchoł" />
 
           <p>Łukasz Warchoł</p>
@@ -34,7 +34,7 @@ const Footer = ({ lang, t, path }) => (
           </p>
         </div>
 
-        <div>
+        <div className="Footer__column">
           <p className="title">Menu</p>
           <ul>
             <FooterLink name={t.menu.home} to={`/${lang}/`} path={path} />
@@ -47,7 +47,7 @@ const Footer = ({ lang, t, path }) => (
           </ul>
         </div>
 
-        <div>
+        <div className="Footer__column">
           <p className="title">{t.services.title}</p>
           <ul>
             {t.services.list.map((elem, index) => (
@@ -56,7 +56,7 @@ const Footer = ({ lang, t, path }) => (
           </ul>
         </div>
 
-        <div>
+        <div className="Footer__column">
           <p className="title">Social Media</p>
           <ul>
             <FooterBasicLink name="Facebook" to="https://www.facebook.com/lukasz.warchol14" />
