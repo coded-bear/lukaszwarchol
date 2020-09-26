@@ -6,6 +6,7 @@ import LinkButton from "./common/LinkButton";
 import { langsList, changePath, getHrefs } from "../utils/langService";
 
 import imgLogo from "../images/common/lukaszwarchol-logo.svg";
+import HamburgerMenu from "../images/common/menu.svg";
 
 const Header = ({ lang, path, t }) => (
   <header className="Header">
@@ -26,6 +27,10 @@ const Header = ({ lang, path, t }) => (
         </div>
 
         <LinkButton to={`/${lang}/${getHrefs(lang)[4]}/`}>{t.estimate}</LinkButton>
+
+        <button className="Header__menu">
+          <HamburgerMenu />
+        </button>
       </div>
     </div>
   </header>

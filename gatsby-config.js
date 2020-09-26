@@ -34,7 +34,7 @@ module.exports = {
       resolve: `gatsby-plugin-react-svg`,
       options: {
         rule: {
-          include: /landscape\.svg$/
+          include: [/landscape\.svg$/, /menu\.svg$/]
         }
       }
     },
