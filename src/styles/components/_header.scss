@@ -59,4 +59,16 @@
       }
     }
   }
+
+  @media (max-width: 1100px) {
+    &__right {
+      .LinkButton {
+        display: none;
+      }
+    }
+
+    &__change-lang {
+      margin-right: 0;
+    }
+  }
 }
