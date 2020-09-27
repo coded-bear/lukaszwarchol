@@ -2,8 +2,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   z-index: 10;
+  width: 100%;
   padding: 20px;
   background-color: $white;
   font-weight: 700;
@@ -11,10 +11,14 @@
   -moz-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
   transform: translateY(0);
-  transition: transform 0.3s;
+  transition: 0.3s;
 
   &.move {
     transform: translateY(-88px);
+  }
+
+  &.openedMobileMenu {
+    left: -77%;
   }
 
   &__container {

@@ -3,12 +3,14 @@ import PropTypes from "prop-types";
 import "../styles/index.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import MobileNavigation from "../components/MobileNavigation";
 import CookiesInfo from "../components/CookiesInfo";
 import Cookies from "js-cookie";
 import { useScrollPosition } from "../utils/useScrollPosition";
 
 const MainLayout = ({ children, lang, path, t }) => {
   const [cookiesInfo, setCookiesInfo] = useState(false);
+  const [mobileNav, setMobileNav] = useState(false);
   const [hideOnScroll, setHideOnScroll] = useState(true);
 
   useScrollPosition(
@@ -31,6 +33,10 @@ const MainLayout = ({ children, lang, path, t }) => {
   }, [hideOnScroll]);
 
   useEffect(() => {
+    if (!mobileNav && document.body.classList.contains("openedMobileMenu")) document.body.classList.remove("openedMobileMenu");
+  }, [mobileNav]);
+
+  useEffect(() => {
     const ca = Cookies.get("ca");
     if (!ca) setCookiesInfo(true);
   }, []);
@@ -40,16 +46,25 @@ const MainLayout = ({ children, lang, path, t }) => {
     setCookiesInfo(false);
   }, [setCookiesInfo]);
 
+  const toggleMobileNav = () => {
+    setMobileNav(!mobileNav);
+
+    document.querySelector(".MobileNavigation").classList.toggle("open");
+    document.querySelector(".Header").classList.toggle("openedMobileMenu");
+    document.body.classList.toggle("openedMobileMenu");
+  };
+
   return (
-    <>
-      <Header lang={lang} path={path} t={t} />
+    <div className="MainLayout">
+      <Header lang={lang} path={path} t={t} toggleMobileNav={toggleMobileNav} />
+      <MobileNavigation lang={lang} t={{ ...t.nav, estimate: t.estimate }} path={path} />
 
       <main>{children}</main>
 
       <Footer lang={lang} t={t.footer} path={path} />
 
       {cookiesInfo && <CookiesInfo lang={lang} t={t.cookiesInfo} close={closeCookiesInfo} />}
-    </>
+    </div>
   );
 };
 

@@ -1,10 +1,15 @@
 .SocialMedia {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin: 50px 0;
 
   a {
-    margin-right: 30px;
+    margin: 0 30px 30px 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     img {
       height: 24px;

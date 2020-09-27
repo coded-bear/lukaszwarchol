@@ -1,36 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "gatsby";
+import { NavElem } from "./Navigation";
 import { getHrefs } from "../utils/langService";
+import SocialMedia from "./common/SocialMedia";
 
-export const NavElem = ({ to, name, path }) => (
-  <li className={to === path ? "active" : ""}>
-    <Link to={to}>{name}</Link>
-  </li>
-);
-
-NavElem.propTypes = {
-  to: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  path: PropTypes.string.isRequired
-};
-
-const Navigation = ({ lang, t, path }) => (
-  <nav className="Navigation">
+const MobileNavigation = ({ lang, t, path }) => (
+  <div className="MobileNavigation">
     <ul>
       <NavElem to={`/${lang}/`} name="Home" path={path} />
       <NavElem to={`/${lang}/${getHrefs(lang)[0]}/`} name={t.about} path={path} />
       <NavElem to={`/${lang}/${getHrefs(lang)[1]}/`} name={t.services} path={path} />
       <NavElem to={`/${lang}/${getHrefs(lang)[2]}/`} name={t.projects} path={path} />
       <NavElem to={`/${lang}/${getHrefs(lang)[3]}/`} name={t.contact} path={path} />
+      <NavElem to={`/${lang}/${getHrefs(lang)[4]}/`} name={t.estimate} path={path} />
     </ul>
-  </nav>
+
+    <SocialMedia />
+  </div>
 );
 
-Navigation.propTypes = {
+MobileNavigation.propTypes = {
   lang: PropTypes.string.isRequired,
   t: PropTypes.object.isRequired,
   path: PropTypes.string.isRequired
 };
 
-export default Navigation;
+export default MobileNavigation;

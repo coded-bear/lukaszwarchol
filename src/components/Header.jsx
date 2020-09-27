@@ -8,7 +8,7 @@ import { langsList, changePath, getHrefs } from "../utils/langService";
 import imgLogo from "../images/common/lukaszwarchol-logo.svg";
 import HamburgerMenu from "../images/common/menu.svg";
 
-const Header = ({ lang, path, t }) => (
+const Header = ({ lang, path, t, toggleMobileNav }) => (
   <header className="Header">
     <div className="container Header__container">
       <Link to={`/${lang}/`}>
@@ -28,7 +28,7 @@ const Header = ({ lang, path, t }) => (
 
         <LinkButton to={`/${lang}/${getHrefs(lang)[4]}/`}>{t.estimate}</LinkButton>
 
-        <button className="Header__menu">
+        <button className="Header__menu" onClick={toggleMobileNav}>
           <HamburgerMenu />
         </button>
       </div>
@@ -39,7 +39,8 @@ const Header = ({ lang, path, t }) => (
 Header.propTypes = {
   lang: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
-  t: PropTypes.object.isRequired
+  t: PropTypes.object.isRequired,
+  toggleMobileNav: PropTypes.func.isRequired
 };
 
 export default Header;

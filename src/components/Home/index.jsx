@@ -52,7 +52,6 @@ const Home = props => {
 
             interval = setInterval(animate, time);
           }, 300);
-          console.log("test");
         }, 800);
       } else x++;
     };

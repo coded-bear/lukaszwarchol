@@ -1,9 +1,17 @@
 html,
 body {
+  position: relative;
+  left: 0;
   background-color: $lighter-gray;
   color: $dark;
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
+  transition: left 0.3s;
+
+  &.openedMobileMenu {
+    left: -77%;
+    overflow: hidden;
+  }
 }
 
 main {
