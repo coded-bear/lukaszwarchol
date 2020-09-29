@@ -74,15 +74,15 @@ const EstimateForm = ({ lang, t }) => {
       </div>
 
       <div className="Estimate__form--form-box">
-        <Input name="name" type="text" value={values.name} onChange={updateValue} placeholder={t.name.placeholder} maxLength={255} />
-        <Input name="email" type="email" value={values.email} onChange={updateValue} placeholder={t.email.placeholder} maxLength={255} />
-        <Input name="phone" type="text" value={values.phone} onChange={updateValue} placeholder={t.phone.placeholder} maxLength={12} />
+        <Input name="name" type="text" value={values.name} onChange={updateValue} labelText={t.name.placeholder} maxLength={255} />
+        <Input name="email" type="email" value={values.email} onChange={updateValue} labelText={t.email.placeholder} maxLength={255} />
+        <Input name="phone" type="text" value={values.phone} onChange={updateValue} labelText={t.phone.placeholder} maxLength={12} />
 
         <p className="nda">
           {t.needNDA} <a href="mailto:contact@lukaszwarchol.pl">contact@lukaszwarchol.pl</a>
         </p>
 
-        <Textarea name="message" value={values.message} onChange={updateValue} rows={10} placeholder={t.message.placeholder} maxLength={500} />
+        <Textarea name="message" value={values.message} onChange={updateValue} rows={10} labelText={t.message.placeholder} maxLength={500} />
         <Checkbox name="rodo" checked={values.rodo} onChange={updateCheckbox} text="Lorem ipsum dolor sit amet." />
 
         <Recaptcha

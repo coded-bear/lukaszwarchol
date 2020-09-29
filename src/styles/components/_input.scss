@@ -1,6 +1,24 @@
 .Input {
   display: block;
   margin-top: 30px;
+  color: $gray;
+
+  &__labelText {
+    position: relative;
+    top: 33px;
+    left: 10px;
+    font-size: 18px;
+    cursor: text;
+    transition-property: top, font-size;
+    transition-duration: 0.3s;
+  }
+
+  &.focused {
+    .Input__labelText {
+      top: 0;
+      font-size: 12px;
+    }
+  }
 
   input,
   textarea {
@@ -13,6 +31,7 @@
     color: $dark;
     font-family: "Ubuntu", sans-serif;
     font-size: 18px;
+    outline: none;
 
     &::placeholder {
       color: $gray;
