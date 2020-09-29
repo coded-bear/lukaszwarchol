@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "../../styles/pages/estimate.scss";
 import PropTypes from "prop-types";
 import Recaptcha from "react-recaptcha";
@@ -9,6 +9,7 @@ import Button from "../common/Button";
 import FormInfoPopup from "../Contact/FormInfoPopup";
 import useForm from "./useForm";
 import { recaptcha_public_key } from "../../utils/secret";
+import gsap from "gsap";
 
 import imgWeb from "../../images/services/web.svg";
 import imgDesktop from "../../images/services/desktop.svg";
@@ -51,6 +52,10 @@ const EstimateForm = ({ lang, t }) => {
     setInfoPopup,
     t
   );
+
+  useEffect(() => {
+    gsap.fromTo(".Estimate__form--checkboxes", { scale: 0.85 }, { scale: 1 });
+  }, []);
 
   return (
     <form className="Estimate__form" onSubmit={submitHandler}>
