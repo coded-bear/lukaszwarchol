@@ -13,7 +13,7 @@ Checkbox.propTypes = {
   name: PropTypes.string.isRequired,
   checked: PropTypes.bool.isRequired,
   onChange: PropTypes.func.isRequired,
-  text: PropTypes.string.isRequired
+  text: PropTypes.string
 };
 
 export default Checkbox;

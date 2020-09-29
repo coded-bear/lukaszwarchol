@@ -1,24 +1,58 @@
 .Estimate {
   &__form {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
+    &--form-box {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
 
-    .nda {
-      margin-top: 40px;
+      .nda {
+        margin-top: 40px;
 
-      a {
-        text-decoration: underline;
+        a {
+          text-decoration: underline;
+        }
+      }
+
+      #g-recaptcha {
+        margin: 40px 0;
+      }
+
+      .Button {
+        display: block;
+        margin: auto;
       }
     }
 
-    #g-recaptcha {
-      margin: 40px 0;
+    &--checkboxes {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 140px;
+      text-align: center;
+
+      img {
+        height: 100px;
+        margin-bottom: 30px;
+      }
+
+      .title {
+        font-size: 18px;
+      }
+
+      .Checkbox {
+        margin-top: 30px;
+
+        .checkmark {
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+      }
     }
 
-    .Button {
+    &--checkbox {
       display: block;
-      margin: auto;
+      width: calc(100% / 3 - 20px);
+      margin: 10px;
+      cursor: pointer;
     }
   }
 }

@@ -13,6 +13,10 @@ const useForm = (initial, captchaRef, setInfoPopup, t) => {
     setValues({ ...values, [e.target.name]: e.target.checked });
   };
 
+  const updateProjectCategory = e => {
+    setValues({ ...values, projectCategory: { ...values.projectCategory, [e.target.name]: e.target.checked } });
+  };
+
   const resetCaptcha = () => {
     setValues({ ...values, captcha: null });
     captchaRef.current.reset();
@@ -38,7 +42,7 @@ const useForm = (initial, captchaRef, setInfoPopup, t) => {
     }
   };
 
-  return [values, updateValue, updateCheckbox, submitHandler, verifyCallback];
+  return [values, updateValue, updateCheckbox, updateProjectCategory, submitHandler, verifyCallback];
 };
 
 export default useForm;
