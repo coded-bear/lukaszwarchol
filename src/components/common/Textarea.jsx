@@ -6,6 +6,7 @@ const Textarea = ({ name, value, onChange, rows, labelText, maxLength, errorMess
 
   useEffect(() => {
     if (!value) setIsFocused(false);
+    else if (!isFocused) setIsFocused(true);
   }, [value]);
 
   const focused = useCallback(() => {
@@ -18,7 +19,7 @@ const Textarea = ({ name, value, onChange, rows, labelText, maxLength, errorMess
   }, [value, setIsFocused]);
 
   return (
-    <label className={`Input ${isFocused ? "focused" : ""}`}>
+    <label className={`Input ${isFocused ? "focused" : ""} ${errorMessage && "Input__error"}`}>
       <p className="Input__labelText">{labelText}</p>
       <textarea name={name} value={value} onChange={onChange} rows={rows} onFocus={focused} onBlur={blurred} maxLength={maxLength}></textarea>
       {errorMessage && <p className="error">{errorMessage}</p>}

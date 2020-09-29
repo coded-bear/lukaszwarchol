@@ -20,6 +20,9 @@
       "placeholder": "Your message",
       "errors": ["Write your message"]
     },
+    "rodo": {
+      "errors": ["Consent is required"]
+    },
     "captcha": {
       "errors": ["Accept re-captcha"]
     },

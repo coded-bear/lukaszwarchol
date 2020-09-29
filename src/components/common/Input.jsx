@@ -6,6 +6,7 @@ const Input = ({ name, type, value, onChange, labelText, maxLength, errorMessage
 
   useEffect(() => {
     if (!value) setIsFocused(false);
+    else if (!isFocused) setIsFocused(true);
   }, [value]);
 
   const focused = useCallback(() => {
@@ -18,7 +19,7 @@ const Input = ({ name, type, value, onChange, labelText, maxLength, errorMessage
   }, [value, setIsFocused]);
 
   return (
-    <label className={`Input ${isFocused ? "focused" : ""}`}>
+    <label className={`Input ${isFocused ? "focused" : ""} ${errorMessage && "Input__error"}`}>
       <p className="Input__labelText">{labelText}</p>
       <input type={type} name={name} value={value} onChange={onChange} onFocus={focused} onBlur={blurred} maxLength={maxLength} />
       {errorMessage && <p className="error">{errorMessage}</p>}

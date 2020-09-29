@@ -9,6 +9,7 @@ import Button from "../common/Button";
 import FormInfoPopup from "../Contact/FormInfoPopup";
 import useForm from "./useForm";
 import { recaptcha_public_key } from "../../utils/secret";
+import { getErrorMessageByFieldName } from "../../utils/common";
 import gsap from "gsap";
 
 import imgWeb from "../../images/services/web.svg";
@@ -38,7 +39,7 @@ const EstimateForm = ({ lang, t }) => {
   const captchaRef = useRef();
 
   const [infoPopup, setInfoPopup] = useState("");
-  const [values, updateValue, updateCheckbox, updateProjectCategory, submitHandler, verifyCallback] = useForm(
+  const [values, updateValue, updateCheckbox, updateProjectCategory, submitHandler, verifyCallback, errors] = useForm(
     {
       projectCategory: { web: false, desktop: false, mobile: false, ux: false, other: false },
       name: "",
@@ -74,16 +75,54 @@ const EstimateForm = ({ lang, t }) => {
       </div>
 
       <div className="Estimate__form--form-box">
-        <Input name="name" type="text" value={values.name} onChange={updateValue} labelText={t.name.placeholder} maxLength={255} />
-        <Input name="email" type="email" value={values.email} onChange={updateValue} labelText={t.email.placeholder} maxLength={255} />
-        <Input name="phone" type="text" value={values.phone} onChange={updateValue} labelText={t.phone.placeholder} maxLength={12} />
+        <Input
+          name="name"
+          type="text"
+          value={values.name}
+          onChange={updateValue}
+          labelText={t.name.placeholder}
+          maxLength={255}
+          errorMessage={getErrorMessageByFieldName(errors, "name")}
+        />
+        <Input
+          name="email"
+          type="email"
+          value={values.email}
+          onChange={updateValue}
+          labelText={t.email.placeholder}
+          maxLength={255}
+          errorMessage={getErrorMessageByFieldName(errors, "email")}
+        />
+        <Input
+          name="phone"
+          type="text"
+          value={values.phone}
+          onChange={updateValue}
+          labelText={t.phone.placeholder}
+          maxLength={12}
+          errorMessage={getErrorMessageByFieldName(errors, "phone")}
+        />
 
         <p className="nda">
           {t.needNDA} <a href="mailto:contact@lukaszwarchol.pl">contact@lukaszwarchol.pl</a>
         </p>
 
-        <Textarea name="message" value={values.message} onChange={updateValue} rows={10} labelText={t.message.placeholder} maxLength={500} />
-        <Checkbox name="rodo" checked={values.rodo} onChange={updateCheckbox} text="Lorem ipsum dolor sit amet." />
+        <Textarea
+          name="message"
+          value={values.message}
+          onChange={updateValue}
+          rows={10}
+          labelText={t.message.placeholder}
+          maxLength={500}
+          errorMessage={getErrorMessageByFieldName(errors, "message")}
+        />
+        <Checkbox
+          name="rodo"
+          checked={values.rodo}
+          onChange={updateCheckbox}
+          text="Lorem ipsum dolor sit amet."
+          errorMessage={getErrorMessageByFieldName(errors, "rodo")}
+        />
 
         <Recaptcha
           ref={captchaRef}

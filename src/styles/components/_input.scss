@@ -37,4 +37,12 @@
       color: $gray;
     }
   }
+
+  &__error {
+    input,
+    textarea {
+      border-bottom-color: $error;
+      color: $error;
+    }
+  }
 }

@@ -51,4 +51,10 @@
       transform: rotate(45deg);
     }
   }
+
+  &__error {
+    .checkmark {
+      border-color: $error;
+    }
+  }
 }

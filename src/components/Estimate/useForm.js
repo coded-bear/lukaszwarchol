@@ -1,9 +1,11 @@
 import { useState } from "react";
 import * as emailjs from "emailjs-com";
 import { service_id, template_id, user_id } from "../../utils/secret";
+import { regexEmail } from "../../utils/validation";
 
 const useForm = (initial, captchaRef, setInfoPopup, t) => {
   const [values, setValues] = useState(initial);
+  const [errors, setErrors] = useState([]);
 
   const updateValue = e => {
     setValues({ ...values, [e.target.name]: e.target.value });
@@ -26,12 +28,27 @@ const useForm = (initial, captchaRef, setInfoPopup, t) => {
     setValues({ ...values, captcha: response });
   };
 
+  const validate = values => {
+    const errorsList = [];
+
+    if (!values.name) errorsList.push({ fieldName: "name", errorMessage: t.name.errors[0] });
+    if (!values.email) errorsList.push({ fieldName: "email", errorMessage: t.email.errors[0] });
+    else if (!regexEmail.test(values.email)) errorsList.push({ fieldName: "email", errorMessage: t.email.errors[1] });
+    if (!values.phone) errorsList.push({ fieldName: "phone", errorMessage: t.phone.errors[0] });
+    if (!values.message) errorsList.push({ fieldName: "message", errorMessage: t.message.errors[0] });
+    if (!values.rodo) errorsList.push({ fieldName: "rodo", errorMessage: t.rodo.errors[0] });
+
+    return errorsList;
+  };
+
   const submitHandler = async e => {
     e.preventDefault();
 
-    const templateParams = { reply_to: values.email, email: values.email, message: values.message };
+    if (validate(values).length > 0) return setErrors(validate(values));
+    if (errors.length > 0) setErrors([]);
 
     try {
+      const templateParams = { reply_to: values.email, email: values.email, message: values.message };
       const response = await emailjs.send(service_id, template_id, templateParams, user_id);
       resetCaptcha();
 
@@ -42,7 +59,7 @@ const useForm = (initial, captchaRef, setInfoPopup, t) => {
     }
   };
 
-  return [values, updateValue, updateCheckbox, updateProjectCategory, submitHandler, verifyCallback];
+  return [values, updateValue, updateCheckbox, updateProjectCategory, submitHandler, verifyCallback, errors];
 };
 
 export default useForm;
