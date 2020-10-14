@@ -6,7 +6,6 @@ import Layout from "../Layout";
 import ProjectsBtn from "./ProjectsBtn";
 import Project from "./Project";
 import Intro from "../common/Intro";
-import { projectsCategoriesList } from "../../utils/common";
 import gsap from "gsap";
 
 const Projects = props => {
@@ -27,14 +26,14 @@ const Projects = props => {
           <Intro title={t.title} description={t.subtitle} />
 
           <div>
-            {projectsCategoriesList.map((elem, index) => (
+            {t.categories.map((elem, index) => (
               <ProjectsBtn key={index} name={elem} click={() => setCategory(index)} active={category === index} />
             ))}
           </div>
 
           <div className="Projects__list">
             {t.projectsList.map((elem, index) => {
-              if (category === 0 || category === elem.category) return <Project key={index} t={elem} />;
+              if (category === 0 || category === elem.category) return <Project key={index} t={elem} categories={t.categories} />;
             })}
           </div>
         </div>

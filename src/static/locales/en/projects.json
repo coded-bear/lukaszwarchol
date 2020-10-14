@@ -1,6 +1,7 @@
 {
   "title": "Projects",
   "subtitle": "Below you can find some projects that I have already done. There is also place for your projects.",
+  "categories": ["All", "Web Development", "Desktop Development", "Mobile Development", "UX/UI Design"],
   "projectsList": [
     {
       "name": "SWYM (See What You Missed)",

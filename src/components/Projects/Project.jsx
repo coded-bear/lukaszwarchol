@@ -1,12 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { projectsCategoriesList } from "../../utils/common";
 
-const Project = ({ t }) => (
+const Project = ({ t, categories }) => (
   <div className={`Projects__project ${t.shortName}`}>
     <div className="Projects__project--content">
       <div>
-        <p className="category">{projectsCategoriesList[t.category]}</p>
+        <p className="category">{categories[t.category]}</p>
         <h4 className="title">{t.name}</h4>
         <p>{t.description}</p>
       </div>
@@ -23,7 +22,8 @@ const Project = ({ t }) => (
 );
 
 Project.propTypes = {
-  t: PropTypes.object.isRequired
+  t: PropTypes.object.isRequired,
+  categories: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired
 };
 
 export default Project;

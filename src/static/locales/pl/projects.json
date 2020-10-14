@@ -1,6 +1,7 @@
 {
   "title": "Projekty",
   "subtitle": "Poniżej znajduje się część projektów, które do tej pory wykonałem. Jest też miejsce na Twoje projekty.",
+  "categories": ["Wszystkie", "Web Development", "Desktop Development", "Mobile Development", "UX/UI Design"],
   "projectsList": [
     {
       "name": "SWYM (See What You Missed)",
