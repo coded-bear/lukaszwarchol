@@ -1,8 +1,8 @@
 export const langsList = ["pl", "en"];
 
 export const getHrefs = locale => {
-  const plHrefs = ["o-mnie", "uslugi", "projekty", "kontakt", "wycena", "polityka-prywatnosci"];
-  const enHrefs = ["about-me", "services", "projects", "contact", "estimate", "privacy-policy"];
+  const plHrefs = ["o-mnie", "uslugi", "projekty", "kontakt", "polityka-prywatnosci"];
+  const enHrefs = ["about-me", "services", "projects", "contact", "privacy-policy"];
 
   switch (locale) {
     case "en":

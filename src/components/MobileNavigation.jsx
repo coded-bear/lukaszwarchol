@@ -12,7 +12,6 @@ const MobileNavigation = ({ lang, t, path }) => (
       <NavElem to={`/${lang}/${getHrefs(lang)[1]}/`} name={t.services} path={path} />
       <NavElem to={`/${lang}/${getHrefs(lang)[2]}/`} name={t.projects} path={path} />
       <NavElem to={`/${lang}/${getHrefs(lang)[3]}/`} name={t.contact} path={path} />
-      <NavElem to={`/${lang}/${getHrefs(lang)[4]}/`} name={t.estimate} path={path} />
     </ul>
 
     <SocialMedia />

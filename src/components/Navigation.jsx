@@ -22,7 +22,6 @@ const Navigation = ({ lang, t, path }) => (
       <NavElem to={`/${lang}/${getHrefs(lang)[0]}/`} name={t.about} path={path} />
       <NavElem to={`/${lang}/${getHrefs(lang)[1]}/`} name={t.services} path={path} />
       <NavElem to={`/${lang}/${getHrefs(lang)[2]}/`} name={t.projects} path={path} />
-      <NavElem to={`/${lang}/${getHrefs(lang)[3]}/`} name={t.contact} path={path} />
     </ul>
   </nav>
 );

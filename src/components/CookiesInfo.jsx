@@ -9,7 +9,7 @@ const CookiesInfo = ({ lang, t, close }) => (
   <div className="CookiesInfo">
     <div className="container CookiesInfo__container">
       <p>
-        {t.text} <Link to={`/${lang}/${getHrefs(lang)[5]}/`}>{t.privacyPolicy}</Link>
+        {t.text} <Link to={`/${lang}/${getHrefs(lang)[4]}/`}>{t.privacyPolicy}</Link>
       </p>
 
       <button onClick={close} className="CookiesInfo__close">

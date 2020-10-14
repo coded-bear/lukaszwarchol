@@ -1,8 +1,8 @@
 const path = require("path");
 
 const getHrefs = locale => {
-  const plHrefs = ["o-mnie", "uslugi", "projekty", "kontakt", "wycena", "polityka-prywatnosci"];
-  const enHrefs = ["about-me", "services", "projects", "contact", "estimate", "privacy-policy"];
+  const plHrefs = ["o-mnie", "uslugi", "projekty", "kontakt", "polityka-prywatnosci"];
+  const enHrefs = ["about-me", "services", "projects", "contact", "privacy-policy"];
 
   switch (locale) {
     case "pl":
@@ -74,15 +74,6 @@ exports.createPages = ({ actions }) => {
     });
     createPage({
       path: `/${locale}/${getHrefs(locale)[4]}/`,
-      component: path.resolve("src/components/Estimate/index.jsx"),
-      context: {
-        lang: locale,
-        t: require(`./src/static/locales/${locale}/estimate.json`),
-        layoutT: require(`./src/static/locales/${locale}/layout.json`)
-      }
-    });
-    createPage({
-      path: `/${locale}/${getHrefs(locale)[5]}/`,
       component: path.resolve("src/components/PrivacyPolicy/index.jsx"),
       context: {
         lang: locale,

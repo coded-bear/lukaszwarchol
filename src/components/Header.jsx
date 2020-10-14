@@ -26,7 +26,7 @@ const Header = ({ lang, path, t, toggleMobileNav }) => (
           ))}
         </div>
 
-        <LinkButton to={`/${lang}/${getHrefs(lang)[4]}/`}>{t.estimate}</LinkButton>
+        <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`}>{t.nav.contact}</LinkButton>
 
         <button className="Header__menu" onClick={toggleMobileNav}>
           <HamburgerMenu />
