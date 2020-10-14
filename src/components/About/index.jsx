@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../../styles/pages/about.scss";
 import PropTypes from "prop-types";
 import SEO from "../seo";
-import MainLayout from "../../layouts/MainLayout";
+import Layout from "../Layout";
 import Experience from "./Experience";
 import Technologies from "./Technologies";
 import Image from "./Image";
@@ -20,7 +20,7 @@ const About = props => {
   }, []);
 
   return (
-    <MainLayout t={layoutT} path={path} lang={lang}>
+    <Layout t={layoutT} path={path} lang={lang}>
       <SEO title={t.title} lang={lang} />
 
       <section className="About">
@@ -44,7 +44,7 @@ const About = props => {
       <Experience t={t.experience} />
 
       <Technologies t={t.technologies} />
-    </MainLayout>
+    </Layout>
   );
 };
 

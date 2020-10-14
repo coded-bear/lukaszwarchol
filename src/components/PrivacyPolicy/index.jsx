@@ -2,7 +2,7 @@ import React from "react";
 import "../../styles/pages/privacyPolicy.scss";
 import PropTypes from "prop-types";
 import SEO from "../seo";
-import MainLayout from "../../layouts/MainLayout";
+import Layout from "../Layout";
 import Intro from "../common/Intro";
 
 const PrivacyPolicy = props => {
@@ -10,7 +10,7 @@ const PrivacyPolicy = props => {
   const { path } = props;
 
   return (
-    <MainLayout t={layoutT} path={path} lang={lang}>
+    <Layout t={layoutT} path={path} lang={lang}>
       <SEO title={t.title} lang={lang} />
 
       <section className="container PrivacyPolicy">
@@ -55,7 +55,7 @@ const PrivacyPolicy = props => {
           ))}
         </ol>
       </section>
-    </MainLayout>
+    </Layout>
   );
 };
 

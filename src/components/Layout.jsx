@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
 import "../styles/index.scss";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import MobileNavigation from "../components/MobileNavigation";
-import CookiesInfo from "../components/CookiesInfo";
+import Header from "./Header";
+import Footer from "./Footer";
+import MobileNavigation from "./MobileNavigation";
+import CookiesInfo from "./CookiesInfo";
 import Cookies from "js-cookie";
 import { useScrollPosition } from "../utils/useScrollPosition";
 
-const MainLayout = ({ children, lang, path, t }) => {
+const Layout = ({ children, lang, path, t }) => {
   const [cookiesInfo, setCookiesInfo] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
   const [hideOnScroll, setHideOnScroll] = useState(true);
@@ -56,7 +56,7 @@ const MainLayout = ({ children, lang, path, t }) => {
   };
 
   return (
-    <div className="MainLayout">
+    <div className="Layout">
       <Header lang={lang} path={path} t={t} toggleMobileNav={toggleMobileNav} />
       <MobileNavigation lang={lang} t={{ ...t.nav, estimate: t.estimate }} path={path} />
 
@@ -69,11 +69,11 @@ const MainLayout = ({ children, lang, path, t }) => {
   );
 };
 
-MainLayout.propTypes = {
+Layout.propTypes = {
   children: PropTypes.node.isRequired,
   lang: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
   t: PropTypes.object.isRequired
 };
 
-export default MainLayout;
+export default Layout;

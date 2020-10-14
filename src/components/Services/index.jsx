@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../../styles/pages/services.scss";
 import PropTypes from "prop-types";
 import SEO from "../seo";
-import MainLayout from "../../layouts/MainLayout";
+import Layout from "../Layout";
 import Intro from "../common/Intro";
 import gsap from "gsap";
 
@@ -21,7 +21,7 @@ const Services = props => {
   }, []);
 
   return (
-    <MainLayout lang={lang} path={path} t={layoutT}>
+    <Layout lang={lang} path={path} t={layoutT}>
       <SEO title={t.title} lang={lang} />
 
       <section className="Services">
@@ -39,7 +39,7 @@ const Services = props => {
           </div>
         </div>
       </section>
-    </MainLayout>
+    </Layout>
   );
 };
 

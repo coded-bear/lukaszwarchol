@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../../styles/pages/projects.scss";
 import PropTypes from "prop-types";
 import SEO from "../seo";
-import MainLayout from "../../layouts/MainLayout";
+import Layout from "../Layout";
 import ProjectsBtn from "./ProjectsBtn";
 import Project from "./Project";
 import Intro from "../common/Intro";
@@ -19,7 +19,7 @@ const Projects = props => {
   }, [category]);
 
   return (
-    <MainLayout lang={lang} path={path} t={layoutT}>
+    <Layout lang={lang} path={path} t={layoutT}>
       <SEO title={t.title} lang={lang} />
 
       <section className="Projects">
@@ -39,7 +39,7 @@ const Projects = props => {
           </div>
         </div>
       </section>
-    </MainLayout>
+    </Layout>
   );
 };
 
