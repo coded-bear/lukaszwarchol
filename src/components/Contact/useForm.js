@@ -1,7 +1,7 @@
 import { useState } from "react";
 import * as emailjs from "emailjs-com";
 import { service_id, template_id, user_id } from "../../utils/secret";
-import { regexEmail } from "../../utils/validation";
+import { isEmail } from "../../utils/validation";
 
 const useForm = (initial, captchaRef, setInfoPopup, t) => {
   const [values, setValues] = useState(initial);
@@ -29,7 +29,7 @@ const useForm = (initial, captchaRef, setInfoPopup, t) => {
 
     if (!values.name) errorsList.push({ fieldName: "name", errorMessage: t.name.errors[0] });
     if (!values.email) errorsList.push({ fieldName: "email", errorMessage: t.email.errors[0] });
-    else if (!regexEmail.test(values.email)) errorsList.push({ fieldName: "email", errorMessage: t.email.errors[1] });
+    else if (!isEmail(values.email)) errorsList.push({ fieldName: "email", errorMessage: t.email.errors[1] });
     if (!values.message) errorsList.push({ fieldName: "message", errorMessage: t.message.errors[0] });
     if (!values.rodo) errorsList.push({ fieldName: "rodo", errorMessage: t.rodo.errors[0] });
 
