@@ -15,6 +15,7 @@ const MainLayout = ({ children, lang, path, t }) => {
 
   useScrollPosition(
     ({ prevPos, currPos }) => {
+      if (currPos.y > -200) return setHideOnScroll(true);
       const isShow = currPos.y > prevPos.y;
       if (isShow !== hideOnScroll) setHideOnScroll(isShow);
     },
