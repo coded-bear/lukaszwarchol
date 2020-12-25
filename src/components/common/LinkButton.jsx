@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 const LinkButton = ({ to, children }) => (
   <Link to={to} className="LinkButton">
-    {children}
+    <span>{children}</span>
   </Link>
 );
 

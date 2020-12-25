@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Button = ({ onClick, children }) => (
   <button className="LinkButton Button" onClick={onClick}>
-    {children}
+    <span>{children}</span>
   </button>
 );
 
