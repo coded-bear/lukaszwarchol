@@ -16,6 +16,7 @@
       "errors": ["Write your message"]
     },
     "rodo": {
+      "text": "I agree to the processing of my personal data for the purposes necessary to establish contact.",
       "errors": ["Consent is required"]
     },
     "captcha": {

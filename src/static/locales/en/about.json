@@ -1,14 +1,14 @@
 {
   "title": "About Me",
   "description": [
-    "I have been interested in programming for over three years. I started with Web Development. I am passionate about new technologies and solutions. My favorite programming language is JavaScript and I focus on it, but I don't close my horizons to other technologies. There are so many of them that it is a shame not to know anything about them. I am a creative person who never gives up and tries to achieve as much as possible.",
-    "I currently work as a Front-End Developer. After hours I develop my own projects and learn new technologies. I am also a big fan of Blockchain technology.",
-    "Outside of IT, I love traveling, good wine, drinks and series. I like to play table tennis and billiards. I am also interested in the field of fitness."
+    "I have been interested in programming for over four years. I started with Web Development. I am passionate about new technologies and solutions. My favorite programming language is JavaScript and I use it mainly, but I don't close myself to other technologies. There are so many of them that it is a shame not to know anything about them. I am a creative person who never gives up and tries to achieve as much as possible.",
+    "I currently work as a Frontend Developer. After hours I develop my own projects and learn new technologies. I am also a big fan of Blockchain technology.",
+    "Besides IT, I love traveling, good whisky, drinks and series. I like to play billiards or go to the swimming pool."
   ],
   "hireMe": "Contact me",
   "experience": {
     "title": "Work Experience",
-    "subtitle": "I have more than three years of learning self-study programming and working in many teams while creating various projects.",
+    "subtitle": "I have more than four years of learning self-study programming and working in many teams while creating various projects.",
     "boxes": [
       {
         "date": "January 2017 - Currently",
@@ -38,8 +38,8 @@
     ]
   },
   "technologies": {
-    "title": "Known technologies",
-    "subtitle": "I'm passionate about new technologies and I want to know more of them.",
+    "title": "Used technologies",
+    "subtitle": "I'm passionate about new technologies and I try to keep up to date with them.",
     "other": "Other"
   }
 }

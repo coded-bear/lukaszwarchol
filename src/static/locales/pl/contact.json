@@ -16,6 +16,7 @@
       "errors": ["Napisz wiadomość"]
     },
     "rodo": {
+      "text": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celach niezbędnych do nawiązania kontaktu.",
       "errors": ["Consent is required"]
     },
     "captcha": {

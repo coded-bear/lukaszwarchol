@@ -50,13 +50,7 @@ const ContactForm = ({ lang, t }) => {
         maxLength={500}
         errorMessage={getErrorMessageByFieldName(errors, "message")}
       />
-      <Checkbox
-        name="rodo"
-        checked={values.rodo}
-        onChange={updateCheckbox}
-        text="Lorem ipsum dolor sit amet."
-        errorMessage={getErrorMessageByFieldName(errors, "rodo")}
-      />
+      <Checkbox name="rodo" checked={values.rodo} onChange={updateCheckbox} text={t.rodo.text} errorMessage={getErrorMessageByFieldName(errors, "rodo")} />
 
       <Recaptcha
         ref={captchaRef}

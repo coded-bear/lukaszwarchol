@@ -1,14 +1,14 @@
 {
   "title": "O Mnie",
   "description": [
-    "Programowaniem interesuję się od ponad trzech lat. Naukę rozpocząłem od Web Developmentu. Jestem pasjonatem nowych technologii i rozwiązań. Moim ulubionym językiem programowania jest JavaScript i to na nim głównie się skupiam, lecz nie zamykam się na inne technologie. Jest ich tak wiele, że szkoda nic o nich nie wiedzieć. Jestem osobą kreatywną, która nigdy nie odpuszcza i próbuje osiągnąć jak najwięcej.",
-    "Obecnie pracuję jako Front-End Developer. Po godzinach rozwijam własne projekty oraz uczę się nowych technologii. Jestem także wielkim fanem technologii Blockchain.",
-    "Poza IT kocham podróże, dobre wino, drinki oraz seriale. Lubię pograć w tenisa stołowego oraz bilard. Interesuję się także dziedziną fitnessu."
+    "Programowaniem interesuję się od ponad czterech lat. Naukę rozpocząłem od Web Developmentu. Jestem pasjonatem nowych technologii i rozwiązań. Moim ulubionym językiem programowania jest JavaScript i to jego głównie używam, lecz nie zamykam się na inne technologie. Jest ich tak wiele, że szkoda nic o nich nie wiedzieć. Jestem osobą kreatywną, która nigdy nie odpuszcza i próbuje osiągnąć jak najwięcej.",
+    "Obecnie pracuję jako Frontend Developer. Po godzinach rozwijam własne projekty oraz uczę się nowych technologii. Jestem także wielkim fanem technologii Blockchain.",
+    "Poza IT kocham podróże, dobre whisky, drinki oraz seriale. Lubię pograć w bilard lub iść na basen."
   ],
   "hireMe": "Napisz do mnie",
   "experience": {
     "title": "Doświadczenie zawodowe",
-    "subtitle": "Mam za sobą ponad trzy lata samodzielnej nauki programowania oraz pracy w wielu zespołach podczas tworzenia przeróżnych projektów.",
+    "subtitle": "Mam za sobą ponad cztery lata samodzielnej nauki programowania oraz pracy w wielu zespołach podczas tworzenia przeróżnych projektów.",
     "boxes": [
       {
         "date": "Styczeń 2017 - Aktualnie",
@@ -38,8 +38,8 @@
     ]
   },
   "technologies": {
-    "title": "Poznane technologie",
-    "subtitle": "Jestem pasjonatem nowych technologii i chcę poznać ich jeszcze więcej.",
+    "title": "Używane technologie",
+    "subtitle": "Jestem pasjonatem nowych technologii i staram się być z nimi na bieżąco.",
     "other": "Inne"
   }
 }
