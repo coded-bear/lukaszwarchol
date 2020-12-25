@@ -36,7 +36,7 @@ const About = props => {
               <p key={index}>{elem}</p>
             ))}
 
-            <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`}>{t.hireMe}</LinkButton>
+            <LinkButton to={`/${lang}/${getHrefs(lang)[2]}/`}>{t.hireMe}</LinkButton>
           </div>
         </div>
       </section>

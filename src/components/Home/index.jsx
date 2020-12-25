@@ -97,7 +97,7 @@ const Home = props => {
             </h2>
             <p className="description">{t.hero.description}</p>
 
-            <LinkButton to={`/${lang}/${getHrefs(lang)[3]}/`}>{t.hero.contactMe}</LinkButton>
+            <LinkButton to={`/${lang}/${getHrefs(lang)[2]}/`}>{t.hero.contactMe}</LinkButton>
 
             <SocialMedia />
           </div>

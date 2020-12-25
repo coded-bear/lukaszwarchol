@@ -40,9 +40,8 @@ const Footer = ({ lang, t, path }) => (
             <FooterLink name={t.menu.home} to={`/${lang}/`} path={path} />
             <FooterLink name={t.menu.about} to={`/${lang}/${getHrefs(lang)[0]}/`} path={path} />
             <FooterLink name={t.menu.services} to={`/${lang}/${getHrefs(lang)[1]}/`} path={path} />
-            <FooterLink name={t.menu.projects} to={`/${lang}/${getHrefs(lang)[2]}/`} path={path} />
-            <FooterLink name={t.menu.contact} to={`/${lang}/${getHrefs(lang)[3]}/`} path={path} />
-            <FooterLink name={t.menu.privacyPolicy} to={`/${lang}/${getHrefs(lang)[4]}/`} path={path} />
+            <FooterLink name={t.menu.contact} to={`/${lang}/${getHrefs(lang)[2]}/`} path={path} />
+            <FooterLink name={t.menu.privacyPolicy} to={`/${lang}/${getHrefs(lang)[3]}/`} path={path} />
           </ul>
         </div>
 

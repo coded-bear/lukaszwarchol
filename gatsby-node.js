@@ -1,8 +1,8 @@
 const path = require("path");
 
 const getHrefs = locale => {
-  const plHrefs = ["o-mnie", "uslugi", "projekty", "kontakt", "polityka-prywatnosci"];
-  const enHrefs = ["about-me", "services", "projects", "contact", "privacy-policy"];
+  const plHrefs = ["o-mnie", "uslugi", "kontakt", "polityka-prywatnosci"];
+  const enHrefs = ["about-me", "services", "contact", "privacy-policy"];
 
   switch (locale) {
     case "pl":
@@ -56,15 +56,6 @@ exports.createPages = ({ actions }) => {
     });
     createPage({
       path: `/${locale}/${getHrefs(locale)[2]}/`,
-      component: path.resolve("src/components/Projects/index.jsx"),
-      context: {
-        lang: locale,
-        t: require(`./src/static/locales/${locale}/projects.json`),
-        layoutT: require(`./src/static/locales/${locale}/layout.json`)
-      }
-    });
-    createPage({
-      path: `/${locale}/${getHrefs(locale)[3]}/`,
       component: path.resolve("src/components/Contact/index.jsx"),
       context: {
         lang: locale,
@@ -73,7 +64,7 @@ exports.createPages = ({ actions }) => {
       }
     });
     createPage({
-      path: `/${locale}/${getHrefs(locale)[4]}/`,
+      path: `/${locale}/${getHrefs(locale)[3]}/`,
       component: path.resolve("src/components/PrivacyPolicy/index.jsx"),
       context: {
         lang: locale,
