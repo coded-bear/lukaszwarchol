@@ -7,7 +7,7 @@ const Textarea = ({ name, value, onChange, rows, labelText, maxLength, errorMess
   useEffect(() => {
     if (!value) setIsFocused(false);
     else if (!isFocused) setIsFocused(true);
-  }, [value]);
+  }, [value, isFocused]);
 
   const focused = useCallback(() => {
     setIsFocused(true);

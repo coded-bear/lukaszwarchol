@@ -82,7 +82,7 @@ const Home = props => {
       .fromTo(cloud2, { x: "+=150" }, { duration: 1.5, x: "-=150", autoAlpha: 1 }, "-=0.5");
 
     return () => clearInterval(interval);
-  }, []);
+  }, [t.hero.textList]);
 
   return (
     <Layout lang={lang} path={path} t={layoutT}>

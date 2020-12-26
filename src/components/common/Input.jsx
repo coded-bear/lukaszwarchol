@@ -7,7 +7,7 @@ const Input = ({ name, type, value, onChange, labelText, maxLength, errorMessage
   useEffect(() => {
     if (!value) setIsFocused(false);
     else if (!isFocused) setIsFocused(true);
-  }, [value]);
+  }, [value, isFocused]);
 
   const focused = useCallback(() => {
     setIsFocused(true);
