@@ -2,13 +2,13 @@
   "title": "O Mnie",
   "description": [
     "Programowaniem interesuję się od ponad czterech lat. Naukę rozpocząłem od Web Developmentu. Jestem pasjonatem nowych technologii i rozwiązań. Moim ulubionym językiem programowania jest JavaScript i to jego głównie używam, lecz nie zamykam się na inne technologie. Jest ich tak wiele, że szkoda nic o nich nie wiedzieć. Jestem osobą kreatywną, która nigdy nie odpuszcza i próbuje osiągnąć jak najwięcej.",
-    "Obecnie pracuję jako Frontend Developer. Po godzinach rozwijam własne projekty oraz uczę się nowych technologii. Jestem także wielkim fanem technologii Blockchain.",
+    "Obecnie pracuję jako Frontend Developer. Po godzinach rozwijam własne projekty oraz uczę się nowych technologii. Jestem także wielkim fanem technologii Blockchain. Ostatnio zacząłem interesować się giełdą i kryptowalutami.",
     "Poza IT kocham podróże, dobre whisky, drinki oraz seriale. Lubię pograć w bilard lub iść na basen."
   ],
   "hireMe": "Napisz do mnie",
   "experience": {
     "title": "Doświadczenie zawodowe",
-    "subtitle": "Mam za sobą ponad cztery lata samodzielnej nauki programowania oraz pracy w wielu zespołach podczas tworzenia przeróżnych projektów.",
+    "subtitle": "Mam za sobą ponad cztery lata samodzielnej nauki programowania oraz pracy w doświadczonych zespołach podczas tworzenia przeróżnych projektów.",
     "boxes": [
       {
         "date": "Styczeń 2017 - Aktualnie",

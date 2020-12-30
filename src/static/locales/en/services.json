@@ -1,18 +1,18 @@
 {
   "title": "Services",
-  "subtitle": "I create websites, web, desktop, mobile applications, applications and mock-ups. Maybe you will be interest in something.",
+  "subtitle": "I create web, desktop, mobile applications and mock-ups. Maybe you will be interest in something.",
   "boxes": [
     {
       "title": "Web Development",
-      "description": "I create web applications, usually using frameworks and JavaScript libraries. My applications are very efficient, and made at the highest level."
+      "description": "I create web applications, including websites with the latest technologies, so they are very fast, efficient and prepared at the highest level. I also prepare them for SEO."
     },
     {
       "title": "Desktop Development",
-      "description": "I create websites with the latest technology, so they are very fast. I can also prepare them for SEO."
+      "description": ""
     },
     {
       "title": "Mobile Development",
-      "description": "I create console applications, i.e. programs performing various functions, without a frontend side."
+      "description": ""
     },
     {
       "title": "UX/UI Design",

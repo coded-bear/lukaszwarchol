@@ -1,18 +1,18 @@
 {
   "title": "Usługi",
-  "subtitle": "Zajmuję się tworzeniem stron internetowych, aplikacji webowych, desktopowych, mobilnych oraz makiet. Może Ciebie też coś zainteresuje.",
+  "subtitle": "Zajmuję się tworzeniem aplikacji webowych, desktopowych, mobilnych oraz makiet. Może Ciebie też coś zainteresuje.",
   "boxes": [
     {
       "title": "Web Development",
-      "description": "Tworzę aplikacje webowe, zazwyczaj z wykorzystaniem frameworków i bibliotek  języka JavaScript. Moje aplikacje są bardzo wydajne, oraz wykonane na najwyższym poziomie."
+      "description": "Tworzę aplikacje webowe w tym strony internetowe w najnowszyh technologiach, dzięki czemu są bardzo szybkie, wydajne oraz przygotowane na najwyższym poziomie. Przygotowuję je również pod SEO."
     },
     {
       "title": "Desktop Development",
-      "description": "Tworzę strony internetowe w najnowszych technologiach, dzięki czemu są bardzo szybkie. Umiem również przygotować je pod SEO."
+      "description": ""
     },
     {
       "title": "Mobile Development",
-      "description": "Tworzę aplikacje konsolowe, czyli programy wykonujące różne funkcje, nie posiadające strony frontendowej."
+      "description": ""
     },
     {
       "title": "UX/UI Design",
