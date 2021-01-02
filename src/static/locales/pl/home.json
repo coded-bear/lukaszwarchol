@@ -1,7 +1,7 @@
 {
   "hero": {
     "hello": "Cześć! Jestem Łukasz -",
-    "contactMe": "Napisz do mnie",
+    "contactMe": "Skontaktuj się ze mną",
     "description": "Freelancer i Software Developer tworzący aplikacje i makiety.",
     "textList": ["JavaScript Software Developer", "Pasjonat języka JavaScript i środowiska Node.js", "Specjalista React.js"]
   },
