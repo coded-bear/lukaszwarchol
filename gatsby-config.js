@@ -21,10 +21,10 @@ module.exports = {
       options: {
         name: `Łukasz Warchoł`,
         short_name: `Łukasz Warchoł`,
-        start_url: `/`,
+        start_url: `/pl/`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/favicon.png`,
         crossOrigin: `use-credentials`
       }
@@ -36,14 +36,6 @@ module.exports = {
         rule: {
           include: [/landscape\.svg$/, /menu\.svg$/]
         }
-      }
-    },
-    {
-      resolve: `gatsby-plugin-recaptcha`,
-      options: {
-        async: true,
-        defer: true,
-        args: `?onload=onloadCallback&render=explicit`
       }
     },
     {
