@@ -7,7 +7,8 @@ import SocialMedia from "../common/SocialMedia";
 import Numbers from "../Numbers";
 import LinkButton from "../common/LinkButton";
 import { getHrefs } from "../../utils/langService";
-import gsap from "gsap";
+import { writer } from "../../utils/writer";
+import { animateLandscape } from "../../utils/animateLandscape";
 
 import Landscape from "../../images/common/landscape.svg";
 
@@ -16,70 +17,13 @@ const Home = props => {
   const { path } = props;
 
   const landscapeWrapper = useRef(null);
+  const writerRef = useRef(null);
 
   useEffect(() => {
-    ///////////////////////////////////////////////////////////////////
-    //////////////////////// A N I M A T I O N ////////////////////////
-    ///////////////////////////////////////////////////////////////////
-
-    const writer = document.querySelector(".writer");
     let interval;
+    writer(interval, writerRef.current, t.hero.textList, 80);
 
-    const destination = writer;
-    const textList = t.hero.textList;
-    const time = 80;
-
-    let number = 0;
-    let text = textList[number].split("");
-    let x = 0;
-
-    const animate = () => {
-      destination.innerHTML += text[x];
-
-      if (x >= text.length - 1) {
-        clearInterval(interval);
-
-        setTimeout(() => {
-          if (number >= textList.length - 1) number = 0;
-          else number++;
-          text = textList[number].split("");
-          x = 0;
-          destination.classList.add("with-bg");
-
-          setTimeout(() => {
-            destination.classList.remove("with-bg");
-            destination.innerHTML = "";
-
-            interval = setInterval(animate, time);
-          }, 300);
-        }, 800);
-      } else x++;
-    };
-
-    interval = setInterval(animate, time);
-
-    ///////////////////////////////////////////////////////////////////
-    //////////////////// E N D   A N I M A T I O N ////////////////////
-    ///////////////////////////////////////////////////////////////////
-
-    const [elements] = landscapeWrapper.current.children;
-
-    const mountains = elements.getElementById("mountains");
-    const tree = elements.getElementById("tree");
-    const plants = elements.getElementById("plants");
-    const sunshine = elements.getElementById("sunshine");
-    const cloud1 = elements.getElementById("cloud1");
-    const cloud2 = elements.getElementById("cloud2");
-
-    gsap.set([mountains, tree, plants, sunshine, cloud1, cloud2], { autoAlpha: 0 });
-
-    const tl = gsap.timeline({ defaults: { ease: "power3.inOut" } });
-    tl.to(mountains, { duration: 0.5, autoAlpha: 1 })
-      .fromTo(tree, { y: "+=200", scaleY: 0 }, { duration: 1, y: "-=200", scaleY: 1, autoAlpha: 1 }, "-=0.5")
-      .fromTo(plants, { y: "+=100", scaleY: 0 }, { duration: 1, y: "-=100", scaleY: 1, autoAlpha: 1 }, "-=0.5")
-      .fromTo(sunshine, { x: "+=100", y: "+=400" }, { duration: 3, x: "-=100", y: "-=400", autoAlpha: 1 }, "-=1")
-      .fromTo(cloud1, { x: "-=150" }, { duration: 1.5, x: "+=150", autoAlpha: 1 }, "-=1")
-      .fromTo(cloud2, { x: "+=150" }, { duration: 1.5, x: "-=150", autoAlpha: 1 }, "-=0.5");
+    animateLandscape(landscapeWrapper);
 
     return () => clearInterval(interval);
   }, [t.hero.textList]);
@@ -93,7 +37,7 @@ const Home = props => {
           <div className="Home__hero--content">
             <h2>{t.hero.hello}</h2>
             <h2>
-              <span className="writer"></span>
+              <span ref={writerRef} className="writer"></span>
             </h2>
 
             <LinkButton to={`/${lang}/${getHrefs(lang)[2]}/`}>{t.hero.contactMe}</LinkButton>

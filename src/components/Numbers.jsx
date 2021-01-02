@@ -15,10 +15,10 @@ Number.propTypes = {
 
 const Numbers = ({ t }) => (
   <div className="container Numbers">
-    <Number name={t.exp} number="4" />
-    <Number name={t.techs} number="20" />
-    <Number name={t.projects} number="36" />
-    <Number name={t.coffee} number="1056" />
+    <Number name={t.exp} number="4+" />
+    <Number name={t.techs} number="20+" />
+    <Number name={t.projects} number="36+" />
+    <Number name={t.coffee} number="1056+" />
   </div>
 );
 
