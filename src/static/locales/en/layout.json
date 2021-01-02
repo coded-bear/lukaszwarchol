@@ -2,7 +2,6 @@
   "nav": {
     "about": "About me",
     "services": "Services",
-    "projects": "Projects",
     "contact": "Contact"
   },
 
@@ -12,7 +11,6 @@
       "home": "Home",
       "about": "About me",
       "services": "Services",
-      "projects": "Projects",
       "contact": "Contact",
       "privacyPolicy": "Privacy Policy"
     },

@@ -60,7 +60,9 @@ const Layout = ({ children, lang, path, t }) => {
       <Header lang={lang} path={path} t={t} toggleMobileNav={toggleMobileNav} />
       <MobileNavigation lang={lang} t={{ ...t.nav, estimate: t.estimate }} path={path} />
 
-      <main>{children}</main>
+      <main>
+        <div className="Layout__wrapper">{children}</div>
+      </main>
 
       <Footer lang={lang} t={t.footer} path={path} />
 
