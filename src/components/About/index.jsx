@@ -13,14 +13,13 @@ import gsap from "gsap";
 
 const About = props => {
   const { t, lang, layoutT } = props.pageContext;
-  const { path } = props;
 
   useEffect(() => {
     gsap.fromTo(".About__main-image", { scale: 0.85, autoAlpha: 0 }, { scale: 1, autoAlpha: 1 });
   }, []);
 
   return (
-    <Layout t={layoutT} path={path} lang={lang}>
+    <Layout t={layoutT} path={props.location.pathname} lang={lang}>
       <SEO title={t.title} lang={lang} />
 
       <section className="About">
@@ -49,7 +48,6 @@ const About = props => {
 };
 
 About.propTypes = {
-  path: PropTypes.string.isRequired,
   pageContext: PropTypes.shape({
     lang: PropTypes.string.isRequired,
     t: PropTypes.object.isRequired,

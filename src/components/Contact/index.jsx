@@ -8,10 +8,9 @@ import Intro from "../common/Intro";
 
 const Contact = props => {
   const { lang, t, layoutT } = props.pageContext;
-  const { path } = props;
 
   return (
-    <Layout lang={lang} path={path} t={layoutT}>
+    <Layout lang={lang} path={props.location.pathname} t={layoutT}>
       <SEO title={t.title} lang={lang} />
 
       <section className="Contact">
@@ -37,7 +36,6 @@ const Contact = props => {
 };
 
 Contact.propTypes = {
-  path: PropTypes.string.isRequired,
   pageContext: PropTypes.shape({
     lang: PropTypes.string.isRequired,
     t: PropTypes.object.isRequired,

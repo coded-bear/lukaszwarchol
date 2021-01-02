@@ -14,7 +14,6 @@ import Landscape from "../../images/common/landscape.svg";
 
 const Home = props => {
   const { lang, t, layoutT } = props.pageContext;
-  const { path } = props;
 
   const landscapeWrapper = useRef(null);
   const writerRef = useRef(null);
@@ -29,7 +28,7 @@ const Home = props => {
   }, [t.hero.textList]);
 
   return (
-    <Layout lang={lang} path={path} t={layoutT}>
+    <Layout lang={lang} path={props.location.pathname} t={layoutT}>
       <SEO title="JavaScript Software Developer" lang={lang} />
 
       <div className="Home">
@@ -57,7 +56,6 @@ const Home = props => {
 };
 
 Home.propTypes = {
-  path: PropTypes.string.isRequired,
   pageContext: PropTypes.shape({
     lang: PropTypes.string.isRequired,
     t: PropTypes.object.isRequired,

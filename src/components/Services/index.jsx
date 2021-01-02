@@ -14,14 +14,13 @@ const images = [imgWeb, imgDesktop, imgMobile, imgMockup];
 
 const Services = props => {
   const { lang, t, layoutT } = props.pageContext;
-  const { path } = props;
 
   useEffect(() => {
     gsap.fromTo(".Services__container", { scale: 0.85 }, { scale: 1 });
   }, []);
 
   return (
-    <Layout lang={lang} path={path} t={layoutT}>
+    <Layout lang={lang} path={props.location.pathname} t={layoutT}>
       <SEO title={t.title} lang={lang} />
 
       <section className="Services">
@@ -44,7 +43,6 @@ const Services = props => {
 };
 
 Services.propTypes = {
-  path: PropTypes.string.isRequired,
   pageContext: PropTypes.shape({
     lang: PropTypes.string.isRequired,
     t: PropTypes.object.isRequired,

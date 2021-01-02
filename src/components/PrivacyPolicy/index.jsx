@@ -7,10 +7,9 @@ import Intro from "../common/Intro";
 
 const PrivacyPolicy = props => {
   const { t, lang, layoutT } = props.pageContext;
-  const { path } = props;
 
   return (
-    <Layout t={layoutT} path={path} lang={lang}>
+    <Layout t={layoutT} path={props.location.pathname} lang={lang}>
       <SEO title={t.title} lang={lang} />
 
       <section className="container PrivacyPolicy">
@@ -51,7 +50,6 @@ const PrivacyPolicy = props => {
 };
 
 PrivacyPolicy.propTypes = {
-  path: PropTypes.string.isRequired,
   pageContext: PropTypes.shape({
     lang: PropTypes.string.isRequired,
     t: PropTypes.object.isRequired,
