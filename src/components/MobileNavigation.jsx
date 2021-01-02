@@ -7,7 +7,7 @@ import SocialMedia from "./common/SocialMedia";
 const MobileNavigation = ({ lang, t, path }) => (
   <div className="MobileNavigation">
     <ul>
-      <NavElem to={`/${lang}/`} name="Home" path={path} />
+      <NavElem to={`/${lang}/`} name="Home" path={path} active={path === "/"} />
       <NavElem to={`/${lang}/${getHrefs(lang)[0]}/`} name={t.about} path={path} />
       <NavElem to={`/${lang}/${getHrefs(lang)[1]}/`} name={t.services} path={path} />
       <NavElem to={`/${lang}/${getHrefs(lang)[2]}/`} name={t.contact} path={path} />
