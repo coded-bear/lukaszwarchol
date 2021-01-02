@@ -32,10 +32,6 @@ button {
   font-family: "Ubuntu", sans-serif;
 }
 
-textarea {
-  resize: none;
-}
-
 span {
   color: $primary;
 }
@@ -78,8 +74,4 @@ span {
     padding: 38px;
     border: 2px solid $primary;
   }
-}
-
-.error {
-  color: $error;
 }

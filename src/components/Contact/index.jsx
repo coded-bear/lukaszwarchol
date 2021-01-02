@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import SEO from "../seo";
 import Layout from "../Layout";
 import SocialMedia from "../common/SocialMedia";
-import ContactForm from "./ContactForm";
 import Intro from "../common/Intro";
 
 const Contact = props => {
@@ -30,8 +29,6 @@ const Contact = props => {
 
               <SocialMedia />
             </div>
-
-            <ContactForm lang={lang} t={t.form} />
           </div>
         </div>
       </section>

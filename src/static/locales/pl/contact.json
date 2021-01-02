@@ -1,29 +1,5 @@
 {
   "title": "Kontakt",
-  "subtitle": "Masz jakiś problem? Może pomysł na projekt? Skontaktuj się ze mną za pomocą poniższego formularza. Jeśli wolisz inne metody kontaktu, poniżej znajduje się mój adres email oraz linki do profili społecznościowych.",
-  "vatID": "NIP",
-  "form": {
-    "name": {
-      "placeholder": "Twoje imię",
-      "errors": ["Podaj swoje imię", "Nieprawidłowe imię"]
-    },
-    "email": {
-      "placeholder": "Twój email",
-      "errors": ["Podaj adres email", "Nieprawidłowy adres email"]
-    },
-    "message": {
-      "placeholder": "Twoja wiadomość",
-      "errors": ["Napisz wiadomość"]
-    },
-    "rodo": {
-      "text": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celach niezbędnych do nawiązania kontaktu.",
-      "errors": ["Consent is required"]
-    },
-    "captcha": {
-      "errors": ["Zaakceptuj re-captcha"]
-    },
-    "submit": "Wyślij",
-    "success": "Wiadomość została wysłana!",
-    "error": "Ups, coś poszło nie tak :("
-  }
+  "subtitle": "Masz jakiś problem? Może pomysł na projekt? Skontaktuj się ze mną. Poniżej znajduje się mój adres email oraz linki do profili społecznościowych.",
+  "vatID": "NIP"
 }
