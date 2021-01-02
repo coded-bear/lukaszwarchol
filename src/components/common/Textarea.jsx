@@ -19,7 +19,7 @@ const Textarea = ({ name, value, onChange, rows, labelText, maxLength, errorMess
   }, [value, setIsFocused]);
 
   return (
-    <label className={`Input ${isFocused ? "focused" : ""} ${errorMessage && "Input__error"}`}>
+    <label className={`Input ${isFocused ? "focused" : ""} ${errorMessage ? "Input__error" : ""}`}>
       <p className="Input__labelText">{labelText}</p>
       <textarea name={name} value={value} onChange={onChange} rows={rows} onFocus={focused} onBlur={blurred} maxLength={maxLength}></textarea>
       {errorMessage && <p className="error">{errorMessage}</p>}

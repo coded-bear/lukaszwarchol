@@ -13,12 +13,14 @@
       {
         "date": "Styczeń 2017 - Aktualnie",
         "title": "Software Freelancer",
-        "description": "Tworzenie stron internetowych, aplikacji webowych, makiet na potrzeby klientów. Praca z przeróżnymi technologiami wymienionymi poniżej."
+        "description": "Tworzenie stron internetowych, aplikacji webowych, makiet na potrzeby klientów. Praca z przeróżnymi technologiami wymienionymi poniżej.",
+        "currently": true
       },
       {
         "date": "Maj 2019 - Aktualnie",
         "title": "Front-End Developer",
-        "description": "Moja pierwsza praca stacjonarna w korporacji. Tworzenie aplikacji webowych samodzielnie oraz w zespole. Współpraca z grafikami, copywriterami, wykorzystując przy tym przeróżne technologie webowe, C#, JavaScript."
+        "description": "Tworzenie aplikacji webowych samodzielnie oraz w zespole. Współpraca z grafikami, copywriterami, wykorzystując przy tym przeróżne technologie webowe, C#, JavaScript.",
+        "currently": true
       },
       {
         "date": "Wrzesień 2018 - Marzec 2019",

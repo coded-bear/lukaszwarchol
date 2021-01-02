@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import imgFacebook from "../../images/common/facebook.svg";
-import imgLinkedin from "../../images/common/linkedin.svg";
-import imgGithub from "../../images/common/github.svg";
-import imgInstagram from "../../images/common/instagram.svg";
+import imgFacebook from "../../images/social-media/facebook.svg";
+import imgLinkedin from "../../images/social-media/linkedin.svg";
+import imgGithub from "../../images/social-media/github.svg";
+import imgInstagram from "../../images/social-media/instagram.svg";
 
 const SocialMediaElem = ({ href, image, name }) => (
   <a href={href} target="_blank" rel="noopener noreferrer">

@@ -66,6 +66,14 @@
       font-size: 24px;
       font-weight: 700;
     }
+
+    &--currently {
+      border: 1px solid $primary;
+
+      .date {
+        color: $primary;
+      }
+    }
   }
 
   @media (max-width: 900px) {

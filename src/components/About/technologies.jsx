@@ -2,28 +2,27 @@ import React from "react";
 import PropTypes from "prop-types";
 import Intro from "../common/Intro";
 
-import imgHTML from "../../images/about/html.svg";
-import imgCSS from "../../images/about/css.svg";
-import imgSASS from "../../images/about/sass.svg";
-import imgBootstrap from "../../images/about/bootstrap.svg";
-import imgJavaScript from "../../images/about/javascript.svg";
-import imgTypeScript from "../../images/about/typescript.svg";
-import imgJQuery from "../../images/about/jquery.svg";
-import imgReact from "../../images/about/react.svg";
-import imgRedux from "../../images/about/redux.svg";
-import imgNext from "../../images/about/nextjs.svg";
-import imgGatsby from "../../images/about/gatsbyjs.svg";
-import imgWebpack from "../../images/about/webpack.svg";
+import imgHTML from "../../images/technologies/html.svg";
+import imgCSS from "../../images/technologies/css.svg";
+import imgSASS from "../../images/technologies/sass.svg";
+import imgBootstrap from "../../images/technologies/bootstrap.svg";
+import imgJavaScript from "../../images/technologies/javascript.svg";
+import imgTypeScript from "../../images/technologies/typescript.svg";
+import imgJQuery from "../../images/technologies/jquery.svg";
+import imgReact from "../../images/technologies/react.svg";
+import imgRedux from "../../images/technologies/redux.svg";
+import imgNext from "../../images/technologies/nextjs.svg";
+import imgGatsby from "../../images/technologies/gatsbyjs.svg";
+import imgWebpack from "../../images/technologies/webpack.svg";
 
-import imgNode from "../../images/about/nodejs.svg";
-import imgExpress from "../../images/about/express.svg";
-import imgNest from "../../images/about/nest.svg";
-import imgPHP from "../../images/about/php.svg";
-import imgSQL from "../../images/about/sql.svg";
+import imgNode from "../../images/technologies/nodejs.svg";
+import imgExpress from "../../images/technologies/express.svg";
+import imgNest from "../../images/technologies/nest.svg";
+import imgSQL from "../../images/technologies/sql.svg";
 
-import imgWordPress from "../../images/about/wordpress.svg";
-import imgStrapi from "../../images/about/strapi.svg";
-import imgGit from "../../images/about/git.svg";
+import imgWordPress from "../../images/technologies/wordpress.svg";
+import imgStrapi from "../../images/technologies/strapi.svg";
+import imgGit from "../../images/technologies/git.svg";
 
 const Technology = ({ image, name }) => (
   <div className="Technologies__technology">
@@ -67,7 +66,6 @@ const Technologies = ({ t }) => (
         <Technology image={imgNode} name="Node.js" />
         <Technology image={imgExpress} name="Express.js" />
         <Technology image={imgNest} name="Nest.js" />
-        <Technology image={imgPHP} name="PHP" />
         <Technology image={imgSQL} name="SQL" />
       </div>
 

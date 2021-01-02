@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Checkbox = ({ name, checked, onChange, text, errorMessage }) => (
-  <label className={`Checkbox ${errorMessage && "Checkbox__error"}`}>
+  <label className={`Checkbox ${errorMessage ? "Checkbox__error" : ""}`}>
     {text}
     <input type="checkbox" name={name} checked={checked} onChange={onChange} />
     <span className="checkmark"></span>
